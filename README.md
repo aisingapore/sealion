@@ -1,13 +1,13 @@
-# SEA-LION (Southeast Asian Languages in One Network) - A Family of Southeast Asian Language Models
+# SEA-LION (Southeast Asian Languages In One Network) - A Family of Southeast Asian Language Models
 
-SEA-LION is a family of open source language models developed by AI Singapore to better understand and represent the diverse contexts, languages, and cultures of Southeast Asia. 
+SEA-LION is a family of open source language models developed by AI Singapore to better understand and represent the diverse contexts, languages, and cultures of Southeast Asia (SEA). 
 
 ## Key Features
 
 - 3 to 7 billion parameters (larger models coming in 2024)
-- Trained on 980B tokens of text data from 11 languages spoken across Southeast Asia (SEA)
+- Trained on 980B tokens of text data from 11 languages spoken across SEA
 - Specialized vocabulary and tokenization for optimal performance on SEA languages
-- Excels on regional tasks and datasets
+- Excels on tasks in regional languages
 - Open source under the MIT License for community contribution and adoption
 
 ## Getting Started
@@ -33,7 +33,7 @@ SEA-LION is based on the MPT architecture with 32 layers and comes in two sizes:
 - [SEA-LION 3B](https://huggingface.co/aisingapore/sealion3b) : 3 billion parameters 
 - [SEA-LION 7B](https://huggingface.co/aisingapore/sealion7b) : 7 billion parameters
 
-It was trained on a diverse dataset of 980B tokens spanning 11 SEA languages:
+It was trained on a diverse dataset of 980B tokens spanning 11 natural languages:
 
 - English
 - Chinese  
@@ -47,15 +47,15 @@ It was trained on a diverse dataset of 980B tokens spanning 11 SEA languages:
 - Khmer
 - Lao
 
-The model uses a vocabulary of 256,000 tokens and a context length of 2048 tokens. It employs a custom SEA byte-pair encoding (BPE) tokenizer to handle the unique linguistic properties of SEA languages.
+The model uses a vocabulary of 256,000 tokens and a context length of 2048 tokens. For tokenization, the model employs a custom SEA byte-pair encoding (BPE) tokenizer which is specially tailored for SEA languages, ensuring optimal model performance.
 
 ## Performance
 
-SEA-LION does as well or outperforms on regional tasks and datasets:
+SEA-LION achieves better or competitive performances on tasks in regional languages:
 
 [ _Metrics coming soon_ ]
 
-SEA-LION does average when it comes to general LLM tasks (as measured by Hugging Face''s LLM Leaderboard)
+SEA-LION has an average performance on general tasks in English (as measured by Hugging Face's LLM Leaderboard)
 
 [ _Metrics coming soon_ ]
 
@@ -84,7 +84,7 @@ If you use SEA-LION in your work, please cite it as:
 
 ```
 @misc{sea_lion_2023,
-  title={SEA-LION (Southeast Asian Languages in One Network): A Family of Large Language Model for Southeast Asia},
+  title={SEA-LION (Southeast Asian Languages In One Network): A Family of Large Language Models for Southeast Asia},
   author={AI Singapore},
   year={2023},
   howpublished={\url{https://github.com/aisingapore/sealion}}
