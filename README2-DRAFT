@@ -1,11 +1,11 @@
 # SEA-LION - Large Language Model for Southeast Asia
 
-SEA-LION is an open source language model developed by AI Singapore to better understand and represent the diverse contexts, languages, and cultures of Southeast Asia. 
+SEA-LION is a family of open source language models developed by AI Singapore to better understand and represent the diverse contexts, languages, and cultures of Southeast Asia. 
 
 ## Key Features
 
-- 3 to 7 billion parameters
-- Trained on over 1 trillion tokens of text data from 11 languages spoken across Southeast Asia
+- 3 to 7 billion parameters (for now)
+- Trained on 1 trillion tokens of text data from 11 languages spoken across Southeast Asia
 - Specialized vocabulary and tokenization for optimal performance on SEA languages
 - Excels on regional tasks and datasets
 - Open source under the MIT License for community contribution and adoption
@@ -31,7 +31,7 @@ SEA-LION is based on the MPT architecture with 32 layers and comes in two sizes:
 - **sea-lion-3B**: 3 billion parameters 
 - **sea-lion-7B**: 7 billion parameters (coming soon)
 
-It was trained on a diverse dataset of over 1 trillion tokens spanning 11 SEA languages:
+It was trained on a diverse dataset of  1 trillion tokens spanning 11 SEA languages:
 
 - English
 - Chinese  
@@ -53,8 +53,9 @@ SEA-LION does as well or outperforms on regional tasks and datasets:
 
 [Insert Bhasa metrics]
 
-SEA-LION does average when it comes to general LLM tasks (as measured by Hugging Face''s LLM Leaderboard
+SEA-LION does average when it comes to general LLM tasks (as measured by Hugging Face''s LLM Leaderboard)
 
+[Insert metrics]
 
 See the [model card](MODEL_CARD.md) for full details on the datasets, metrics, and results.
 
