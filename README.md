@@ -17,11 +17,15 @@ The SEA-LION model files are available in the `models` directory. See the exampl
 To use SEA-LION:
 
 ```python
-import sea_lion
+# please use transformers 4.34.10
+from transformers import AutoTokenizer, AutoModelForCausalLM
 
-model = sea_lion.load_model("sea_lion_3B")
+tokenizer = AutoTokenizer.from_pretrained("aisingapore/sealion3b", trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained("aisingapore/sealion3b", trust_remote_code=True)
 
-output = model.generate(prompt="Singapore is a", max_length=30)
+tokens = tokenizer("Sea lion in the sea", return_tensors="pt")
+output = model.generate(tokens["input_ids"], max_new_tokens=20)
+print(tokenizer.decode(output[0], skip_special_tokens=True))
 ```
 
 ## Model Details
