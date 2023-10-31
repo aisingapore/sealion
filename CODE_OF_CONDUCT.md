@@ -1,7 +1,3 @@
-Certainly! Here's a simple code of conduct that you can use for your SEA-LION project:
-
----
-
 # SEA-LION Code of Conduct
 
 ## Our Pledge
@@ -40,7 +36,7 @@ The following behaviors are considered unacceptable and will not be tolerated wi
 
 ## Reporting Violations
 
-If you witness or experience behavior that violates this code of conduct, please report it promptly to the project maintainers by contacting [insert contact information].
+If you witness or experience behavior that violates this code of conduct, please report it promptly to the project maintainers by contacting [seallm@aisingapore.org]
 
 All reports will be treated with confidentiality, and the project maintainers will take appropriate action as necessary to address violations. We are committed to providing a safe and welcoming environment for all participants.
 
@@ -51,7 +47,3 @@ Enforcement of this code of conduct will be carried out in a fair and just manne
 ## Attribution
 
 This code of conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
-
----
-
-Feel free to customize this code of conduct as needed and replace the [insert contact information] placeholder with the appropriate contact details for reporting violations within your SEA-LION project. This code of conduct sets clear expectations for behavior within your community and promotes a respectful and inclusive environment.
