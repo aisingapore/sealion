@@ -1,140 +1,94 @@
-# SEA-LION
+# SEA-LION (Southeast Asian Languages in One Network) - A Family of Southeast Asian Language Models
 
-SEA-LION is a collection of LLMs which has been pretrained and instruct-tuned for the South-East Asia (SEA) region.
-The models range from 3 billion to 7 billion parameters.
-SEA-LION stands for <i>South-East Asia Languages In One Network</i>.
+SEA-LION is a family of open source language models developed by AI Singapore to better understand and represent the diverse contexts, languages, and cultures of Southeast Asia. 
 
+## Key Features
+
+- 3 to 7 billion parameters (larger models coming in 2024)
+- Trained on 980B tokens of text data from 11 languages spoken across Southeast Asia (SEA)
+- Specialized vocabulary and tokenization for optimal performance on SEA languages
+- Excels on regional tasks and datasets
+- Open source under the MIT License for community contribution and adoption
+
+## Getting Started
+
+The SEA-LION model files are available in the `models` directory. See the examples in the `examples` folder for how to load and use the model for inference.
+
+To use SEA-LION:
+
+```python
+import sea_lion
+
+model = sea_lion.load_model("sea_lion_3B")
+
+output = model.generate(prompt="Singapore is a", max_length=30)
+```
 
 ## Model Details
 
-### Model Description
+SEA-LION is based on the MPT architecture with 32 layers and comes in two sizes:
 
-The SEA-LION model is a significant leap forward in the field of natural language processing and understanding,
-specifically trained to understand South-East Asia (SEA) regional context.
+- [sea-lion-3B](https://huggingface.co/aisingapore/sealion3b) : 3 billion parameters 
+- [sea-lion-7B](https://huggingface.co/aisingapore/sealion7b) : 7 billion parameters
 
-The SEA-LION model comes in two variants, one with 3 billion parameters and another with 7 billion parameters.
-Both variants are built on the robust MPT architecture and utilize a vocabulary size of 256K.
+It was trained on a diverse dataset of 980B tokens spanning 11 SEA languages:
 
-The model employs our proprietary SEABPETokenizer for tokenization.
-Our SEABPETokenizer is specially tailored for SEA languages, ensuring optimal model performance.
+- English
+- Chinese  
+- Indonesian
+- Malay
+- Thai
+- Vietnamese
+- Filipino
+- Tamil
+- Burmese
+- Khmer
+- Lao
 
-The training data for SEA-LION encompasses 980B tokens.
+The model uses a vocabulary of 256,000 tokens and a context length of 2048 tokens. It employs a custom SEA byte-pair encoding (BPE) tokenizer to handle the unique linguistic properties of SEA languages.
 
-- **Developed by:** Products Pillar, AI Singapore
-- **Funded by:** Singapore NRF
-- **Model type:** Decoder
-- **Language(s) (NLP):** English, Chinese, Indonesian, Malay, Thai, Vietnamese, Filipino, Tamil, Burmese, Khmer, Lao
-- **License:** MIT License
+## Performance
 
+SEA-LION does as well or outperforms on regional tasks and datasets:
 
-## Model Evaluation
+[ _Metrics coming soon_ ]
 
-| Model       | Average |  ARC  | HellaSwag |  MMLU | TruthfulQA |
-|-------------|:-------:|:-----:|:---------:|:-----:|:----------:|
-| SEA-LION 3B |  40.35  | 36.26 |   64.60   | 24.07 |   36.47    |
-| SEA-LION 7B |  42.60  | 39.93 |   68.51   | 26.87 |   35.09    |
+SEA-LION does average when it comes to general LLM tasks (as measured by Hugging Face''s LLM Leaderboard)
 
+[ _Metrics coming soon_ ]
 
+For full details on the datasets, metrics, and results, please see the model cards:
+* [sea-lion-3B](https://huggingface.co/aisingapore/sealion3b)
+* [sea-lion-7B](https://huggingface.co/aisingapore/sealion7b)
 
-## Training Details
+## Contributing
 
-### Data
+We welcome contributions to SEA-LION! Check out the [contributing guide](CONTRIBUTING.md) to get started.
 
-SEA-LION was trained on 980B tokens of the following data:
+Some ways to contribute:
 
-| Data Source               | Tokens | Percentage |
-|---------------------------|-------:|:----------:|
-| RefinedWeb - English      | 571.3B |     62.80% |
-| mC4 - Chinese             |  91.2B |     10.03% |
-| mC4 - Indonesian          |   3.6B |      0.40% |
-| mC4 - Malay               |   0.7B |      0.08% |
-| mC4 - Filipino            |   1.3B |      0.15% |
-| mC4 - Burmese             |   1.2B |      0.13% |
-| mC4 - Vietnamese          |  63.4B |      6.97% |
-| mC4 - Thai                |  10.8B |      1.19% |
-| mC4 - Lao                 |   0.3B |      0.03% |
-| mC4 - Khmer               |   0.9B |      0.11% |
-| mC4 - Tamil               |   2.5B |      0.28% |
-| the Stack - Python        |  20.9B |      2.30% |
-| the Stack - Javascript    |  55.6B |      6.11% |
-| the Stack - Shell         |   1.3B |      0.14% |
-| the Stack - SQL           |   6.4B |      0.70% |
-| the Stack - Markdown      |  26.6B |      2.91% |
-| RedPajama - StackExchange |  21.2B |      2.33% |
-| RedPajama - ArXiv         |  30.6B |      3.35% |
+- Report bugs and issues
+- Enhance the documentation
+- Add more model evaluation tasks and metrics
+- Train versions of the model in more SEA languages
 
+## License
 
-### Infrastructure
+SEA-LION is licensed under the [MIT License](LICENSE).
 
-SEA-LION was trained using [MosaicML Composer](https://github.com/mosaicml/composer)
-on the following hardware:
+## Citation
 
-| Training Details     | SEA-LION 3B  | SEA-LION 7B  |
-|----------------------|:------------:|:------------:|
-| AWS EC2 p4d.24xlarge | 30 instances | 32 instances |
-| Nvidia A100 40GB GPU | 240          | 256          |
-| Training Duration    | 14 days      | 22 days      |
+If you use SEA-LION in your work, please cite it as:
 
-
-### Configuration
-
-| HyperParameter    | SEA-LION 3B        | SEA-LION 7B        |
-|-------------------|:------------------:|:------------------:|
-| Precision         | bfloat16           | bfloat16           |
-| Optimizer         | decoupled_adamw    | decoupled_adamw    |
-| Scheduler         | cosine_with_warmup | cosine_with_warmup |
-| Learning Rate     | 1.6e-4             | 6.0e-5             |
-| Global Batch Size | 1200               | 2048               |
-| Micro Batch Size  | 5                  | 4                  |
-
-
-## Technical Specifications
-
-### Model Architecture and Objective
-
-SEA-LION is a decoder model using the MPT architecture.
-
-| Parameter       | SEA-LION 3B | SEA-LION 7B |
-|-----------------|:-----------:|:-----------:|
-| Layers          | 32          | 32          |
-| d_model         | 2560        | 4096        |
-| head_dim        | 20          | 32          |
-| Vocabulary      | 256000      | 256000      |
-| Sequence Length | 2048        | 2048        |
-
-
-### Tokenizer Details
-
-We sample 20M lines from the training data to train the tokenizer.<br>
-The framework for training is [SentencePiece](https://github.com/google/sentencepiece).<br>
-The tokenizer type is Byte-Pair Encoding (BPE).
-
-
-
-## The Team
-
-Hamsawardhini Rengarajan<br>
-Lam Zhiwen Clarence<br>
-Leong Weiqi<br>
-Li Yier<br>
-Liu Darius<br>
-Lovenia Holy<br>
-Ng Raymond<br>
-Ngui Jian Gang<br>
-Ong Tat-Wee David<br>
-Railey Montalan<br>
-Tai Ngee Chia<br>
-Tan Choon Meng<br>
-Thanh Ngan Nguyen<br>
-Teo Jin Howe<br>
-Teo Wei Yi<br>
-William Tjhi<br>
-Yeo Yeow Tong<br>
-Yong Xianbin<br>
-Yosephine<br>
-Leslie Teo<br>
+```
+@misc{sea_lion_2022,
+  title={SEA-LION: Large Language Model for Southeast Asia},
+  author={AI Singapore},
+  year={2023},
+  howpublished={\url{https://github.com/aisg/sea-lion}}
+}
+```
 
 ## Contact
 
-For more info, please contact us at seallm@aisingapore.org
-
+For questions, comments, or issues, please open a GitHub issue or contact us at seallm@aisingapore.org.
