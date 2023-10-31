@@ -12,8 +12,6 @@ SEA-LION is a family of open source language models developed by AI Singapore to
 
 ## Getting Started
 
-The SEA-LION model files are available in the `models` directory. See the examples in the `examples` folder for how to load and use the model for inference.
-
 To use SEA-LION:
 
 ```python
@@ -32,8 +30,8 @@ print(tokenizer.decode(output[0], skip_special_tokens=True))
 
 SEA-LION is based on the MPT architecture with 32 layers and comes in two sizes:
 
-- [sea-lion-3B](https://huggingface.co/aisingapore/sealion3b) : 3 billion parameters 
-- [sea-lion-7B](https://huggingface.co/aisingapore/sealion7b) : 7 billion parameters
+- [SEA-LION 3B](https://huggingface.co/aisingapore/sealion3b) : 3 billion parameters 
+- [SEA-LION 7B](https://huggingface.co/aisingapore/sealion7b) : 7 billion parameters
 
 It was trained on a diverse dataset of 980B tokens spanning 11 SEA languages:
 
@@ -62,8 +60,8 @@ SEA-LION does average when it comes to general LLM tasks (as measured by Hugging
 [ _Metrics coming soon_ ]
 
 For full details on the datasets, metrics, and results, please see the model cards:
-* [sea-lion-3B](https://huggingface.co/aisingapore/sealion3b)
-* [sea-lion-7B](https://huggingface.co/aisingapore/sealion7b)
+* [SEA-LION 3B](https://huggingface.co/aisingapore/sealion3b)
+* [SEA-LION 7B](https://huggingface.co/aisingapore/sealion7b)
 
 ## Contributing
 
