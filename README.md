@@ -91,6 +91,9 @@ If you use SEA-LION in your work, please cite it as:
 }
 ```
 
+## AI Singapore
+AI Singapore is a national programme supported by the National Research Foundation and hosted by the National University of Singapore.
+
 ## Contact
 
 For questions, comments, or issues, please open a GitHub issue or contact us at seallm@aisingapore.org.
