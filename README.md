@@ -18,7 +18,7 @@ Both variants are built on the robust MPT architecture and utilize a vocabulary 
 The model employs our proprietary SEABPETokenizer for tokenization.
 Our SEABPETokenizer is specially tailored for SEA languages, ensuring optimal model performance.
 
-The training data for SEA-LION is encompasses 1 trillion tokens.
+The training data for SEA-LION encompasses 980B tokens.
 
 - **Developed by:** Products Pillar, AI Singapore
 - **Funded by:** Singapore NRF
@@ -27,41 +27,47 @@ The training data for SEA-LION is encompasses 1 trillion tokens.
 - **License:** MIT License
 
 
-## How to Get Started with the Model
+## Model Evaluation
 
-Please see the `examples` folder for code samples.
+| Model       | Average |  ARC  | HellaSwag |  MMLU | TruthfulQA |
+|-------------|:-------:|:-----:|:---------:|:-----:|:----------:|
+| SEA-LION 3B |  40.35  | 36.26 |   64.60   | 24.07 |   36.47    |
+| SEA-LION 7B |  42.60  | 39.93 |   68.51   | 26.87 |   35.09    |
+
 
 
 ## Training Details
 
-### Training Data
+### Data
 
 SEA-LION was trained on 980B tokens of the following data:
 
-| Data Source            | Tokens | Percentage |
-|------------------------|-------:|:----------:|
-| RefinedWeb - English   | 571.3B |     62.80% |
-| mC4 - Chinese          |  91.2B |     10.03% |
-| mC4 - Indonesian       |   3.6B |      0.40% |
-| mC4 - Malay            |   0.7B |      0.08% |
-| mC4 - Filipino         |   1.3B |      0.15% |
-| mC4 - Burmese          |   1.2B |      0.13% |
-| mC4 - Vietnamese       |  63.4B |      6.97% |
-| mC4 - Thai             |  10.8B |      1.19% |
-| mC4 - Lao              |   0.3B |      0.03% |
-| mC4 - Khmer            |   0.9B |      0.11% |
-| mC4 - Tamil            |   2.5B |      0.28% |
-| Python                 |  20.9B |      2.30% |
-| Javascript             |  55.6B |      6.11% |
-| Shell                  |   1.3B |      0.14% |
-| SQL                    |   6.4B |      0.70% |
-| Markdown               |  26.6B |      2.91% |
-| StackExchange          |  21.2B |      2.33% |
-| ArXiv                  |  30.6B |      3.35% |
+| Data Source               | Tokens | Percentage |
+|---------------------------|-------:|:----------:|
+| RefinedWeb - English      | 571.3B |     62.80% |
+| mC4 - Chinese             |  91.2B |     10.03% |
+| mC4 - Indonesian          |   3.6B |      0.40% |
+| mC4 - Malay               |   0.7B |      0.08% |
+| mC4 - Filipino            |   1.3B |      0.15% |
+| mC4 - Burmese             |   1.2B |      0.13% |
+| mC4 - Vietnamese          |  63.4B |      6.97% |
+| mC4 - Thai                |  10.8B |      1.19% |
+| mC4 - Lao                 |   0.3B |      0.03% |
+| mC4 - Khmer               |   0.9B |      0.11% |
+| mC4 - Tamil               |   2.5B |      0.28% |
+| the Stack - Python        |  20.9B |      2.30% |
+| the Stack - Javascript    |  55.6B |      6.11% |
+| the Stack - Shell         |   1.3B |      0.14% |
+| the Stack - SQL           |   6.4B |      0.70% |
+| the Stack - Markdown      |  26.6B |      2.91% |
+| RedPajama - StackExchange |  21.2B |      2.33% |
+| RedPajama - ArXiv         |  30.6B |      3.35% |
 
-### Training Infrastructure
 
-#### Hardware
+### Infrastructure
+
+SEA-LION was trained using [MosaicML Composer](https://github.com/mosaicml/composer)
+on the following hardware:
 
 | Training Details     | SEA-LION 3B  | SEA-LION 7B  |
 |----------------------|:------------:|:------------:|
@@ -70,31 +76,16 @@ SEA-LION was trained on 980B tokens of the following data:
 | Training Duration    | 14 days      | 22 days      |
 
 
-#### Software
-
-SEA-LION was trained using MosaicML Composer using PyTorch
-FullyShardedDataParallelism (FSDP).
-
-
-
-#### Training HyperParameters
+### Configuration
 
 | HyperParameter    | SEA-LION 3B        | SEA-LION 7B        |
 |-------------------|:------------------:|:------------------:|
 | Precision         | bfloat16           | bfloat16           |
 | Optimizer         | decoupled_adamw    | decoupled_adamw    |
 | Scheduler         | cosine_with_warmup | cosine_with_warmup |
-| Learning Rate     | 1.6e-4             | 6e-5               |
+| Learning Rate     | 1.6e-4             | 6.0e-5             |
 | Global Batch Size | 1200               | 2048               |
 | Micro Batch Size  | 5                  | 4                  |
-
-
-## Evaluation
-
-| Model       | Average |  ARC  | HellaSwag |  MMLU | TruthfulQA |
-|-------------|:-------:|:-----:|:---------:|:-----:|:----------:|
-| SEA-LION 3B |  40.35  | 36.26 |   64.60   | 24.07 |   36.47    |
-| SEA-LION 7B |  42.60  | 39.93 |   68.51   | 26.87 |   35.09    |
 
 
 ## Technical Specifications
@@ -110,6 +101,13 @@ SEA-LION is a decoder model using the MPT architecture.
 | head_dim        | 20          | 32          |
 | Vocabulary      | 256000      | 256000      |
 | Sequence Length | 2048        | 2048        |
+
+
+### Tokenizer Details
+
+We sample 20M lines from the training data to train the tokenizer.<br>
+The framework for training is [SentencePiece](https://github.com/google/sentencepiece).<br>
+The tokenizer type is Byte-Pair Encoding (BPE).
 
 
 
@@ -136,8 +134,7 @@ Yong Xianbin<br>
 Yosephine<br>
 Leslie Teo<br>
 
-## Model Card Contact
+## Contact
 
 For more info, please contact us at seallm@aisingapore.org
-
 
