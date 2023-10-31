@@ -81,11 +81,11 @@ SEA-LION is licensed under the [MIT License](LICENSE).
 If you use SEA-LION in your work, please cite it as:
 
 ```
-@misc{sea_lion_2022,
-  title={SEA-LION: Large Language Model for Southeast Asia},
+@misc{sea_lion_2023,
+  title={SEA-LION (Southeast Asian Languages in One Network): A Family of Large Language Model for Southeast Asia},
   author={AI Singapore},
   year={2023},
-  howpublished={\url{https://github.com/aisg/sea-lion}}
+  howpublished={\url{https://github.com/aisingapore/sealion}}
 }
 ```
 
