@@ -28,7 +28,7 @@ There are several ways you can contribute to SEA-LION:
 
 ### Reporting Bugs
 
-If you encounter any issues, bugs, or unexpected behavior while using SEA-LION, please help us by [reporting them](#). To report a bug:
+If you encounter any issues, bugs, or unexpected behavior while using SEA-LION, please help us by [reporting them](https://github.com/aisingapore/sealion/issues). To report a bug:
 
 1. Check if the issue has already been reported by searching the [GitHub Issues](#) page.
 2. If not, create a new issue with a descriptive title and detailed description of the problem you encountered.
@@ -38,7 +38,7 @@ If you encounter any issues, bugs, or unexpected behavior while using SEA-LION, 
 
 We appreciate your suggestions for improving SEA-LION. If you have an idea for an enhancement or new feature, follow these steps:
 
-1. Check if your suggestion has already been proposed in the [GitHub Issues](#) section.
+1. Check if your suggestion has already been proposed in the [GitHub Issues](https://github.com/aisingapore/sealion/issues) section.
 2. If not, create a new issue with a clear and concise title and a detailed description of your suggestion.
 3. Include any relevant context or examples to illustrate the enhancement's value.
 
@@ -46,11 +46,11 @@ We appreciate your suggestions for improving SEA-LION. If you have an idea for a
 
 If you're interested in contributing code to SEA-LION, you can do so by following these steps:
 
-1. Fork the [SEA-LION repository](#) to your GitHub account.
+1. Fork the [SEA-LION repository](https://github.com/aisingapore/sealion) to your GitHub account.
 2. Clone your forked repository to your local machine:
 
    ```shell
-   git clone https://github.com/your-username/sea-lion.git
+   git clone https://github.com/your-username/sealion.git
    ```
 
 3. Create a new branch for your contribution:
@@ -77,7 +77,7 @@ If you're interested in contributing code to SEA-LION, you can do so by followin
 
 ## Development Setup
 
-If you want to contribute code, you'll need to set up a development environment for SEA-LION. Refer to the [Development Setup](#) guide in the repository for detailed instructions on getting started.
+If you want to contribute code, you'll need to set up a development environment for SEA-LION. Refer to the [Development Setup](https://github.com/aisingapore/sealion/blob/main/README.md) guide in the repository for detailed instructions on getting started.
 
 ## Code of Conduct
 
@@ -85,7 +85,7 @@ Please review and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md). We expect
 
 ## Get Help
 
-If you have questions, need assistance, or want to discuss contributions further, please feel free to [contact us](#) or open an issue for discussion.
+If you have questions, need assistance, or want to discuss contributions further, please feel free to [contact us](sealion@aisingapore.org) or open an issue for discussion.
 
 We appreciate your interest in contributing to SEA-LION, and we look forward to collaborating with you!
 
