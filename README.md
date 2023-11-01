@@ -26,6 +26,13 @@ output = model.generate(tokens["input_ids"], max_new_tokens=20)
 print(tokenizer.decode(output[0], skip_special_tokens=True))
 ```
 
+### How To Download SEA-LION
+
+SEA-LION models are available for download on HuggingFace at:
+* [SEA-LION 3B](https://huggingface.co/aisingapore/sealion3b)
+* [SEA-LION 7B](https://huggingface.co/aisingapore/sealion7b)
+
+
 ## Model Details
 
 SEA-LION is based on the MPT architecture with 32 layers and comes in two sizes:
