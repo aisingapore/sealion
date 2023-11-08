@@ -5,6 +5,7 @@ SEA-LION is a family of open source language models developed by AI Singapore to
 ## Key Features
 
 - 3 to 7 billion parameters (larger models coming in 2024)
+- Instruct-tuned in Bahasa Indonesia (more Southeast Asian languages in 2024)
 - Trained on 980B tokens of text data from 11 languages spoken across SEA
 - Specialized vocabulary and tokenization for optimal performance on SEA languages
 - Excels on tasks in regional languages
@@ -44,6 +45,7 @@ SEA-LION is based on the MPT architecture with 32 layers and comes in two sizes:
 
 - [SEA-LION 3B](https://huggingface.co/aisingapore/sealion3b) : 3 billion parameters 
 - [SEA-LION 7B](https://huggingface.co/aisingapore/sealion7b) : 7 billion parameters
+- [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sealion7b-instruct-nc): 7 billion, instruct-tuned in Bahasa Indonesia
 
 It was trained on a diverse dataset of 980B tokens spanning 11 natural languages:
 
