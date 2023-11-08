@@ -29,8 +29,13 @@ print(tokenizer.decode(output[0], skip_special_tokens=True))
 ### How To Download SEA-LION
 
 SEA-LION models are available for download on HuggingFace at:
+
+**Base Models**
 * [SEA-LION 3B](https://huggingface.co/aisingapore/sealion3b)
 * [SEA-LION 7B](https://huggingface.co/aisingapore/sealion7b)
+
+**Instruct-Tuned**
+* [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sealion7b-instruct-nc)
 
 
 ## Model Details
