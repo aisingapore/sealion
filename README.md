@@ -45,7 +45,7 @@ SEA-LION is based on the MPT architecture with 32 layers and comes in two sizes:
 
 - [SEA-LION 3B](https://huggingface.co/aisingapore/sealion3b) : 3 billion parameters 
 - [SEA-LION 7B](https://huggingface.co/aisingapore/sealion7b) : 7 billion parameters
-- [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sealion7b-instruct-nc): 7 billion, instruct-tuned in Bahasa Indonesia
+- [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sealion7b-instruct-nc): 7 billion parameters, instruct-tuned in Bahasa Indonesia
 
 It was trained on a diverse dataset of 980B tokens spanning 11 natural languages:
 
@@ -76,6 +76,7 @@ SEA-LION has an average performance on general tasks in English (as measured by 
 For full details on the datasets, metrics, and results, please see the model cards:
 * [SEA-LION 3B](https://huggingface.co/aisingapore/sealion3b)
 * [SEA-LION 7B](https://huggingface.co/aisingapore/sealion7b)
+* [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sealion7b-instruct-nc)
 
 ## Contributing
 
