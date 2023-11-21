@@ -67,11 +67,19 @@ The model uses a vocabulary of 256,000 tokens and a context length of 2048 token
 
 SEA-LION achieves better or competitive performances on tasks in regional languages:
 
-[ _Metrics coming soon_ ]
+| Model Name               | Sent (F1) | QA (F1)  | Tox (F1) | MT-EN-ID (ChrF++)| (COMET22)| MT-ID-EN (ChrF++)| (COMET22)| AbsSum (ROUGE-L)| NLI (Acc) | Causal (Acc) |
+|--------------------------|:---------:|:--------:|:--------:|:----------------:|:--------:|:----------------:|:--------:|:---------------:|:---------:|:------------:|
+| sealion7b-instruct-nc    | **76.13** | 24.86    | **24.45**| **52.50**        | **86.97**| 46.82            | 81.34    | **15.44**       | **33.20** | **23.80**    |
+| Mistral-7B-Instruct-v0.1 | 73.66     | **26.08**| 18.60    | 31.08            | 55.29    | 51.20            | 82.38    | 14.41           | 29.20     | 11.00        |
+| Llama-2-7b-chat-hf       | 41.92     | 4.23     | 0.00     | 47.96            | 77.86    | **55.76**        | **86.08**| 4.59            | 0.00      | 0.00         |
+| falcon-7b-instruct       | 0.00      | 8.47     | 7.21     | 1.66             | 30.07    | 16.82            | 46.32    | 1.55            | 0.00      | 2.20         |
 
 SEA-LION has an average performance on general tasks in English (as measured by Hugging Face's LLM Leaderboard)
 
-[ _Metrics coming soon_ ]
+| Model       | ARC   | HellaSwag | MMLU  | TruthfulQA | Average |
+|-------------|:-----:|:---------:|:-----:|:----------:|:-------:|
+| SEA-LION 7B | 39.93 | 68.51     | 26.87 |      35.09 | 42.60   |
+
 
 For full details on the datasets, metrics, and results, please see the model cards:
 * [SEA-LION 3B](https://huggingface.co/aisingapore/sealion3b)
