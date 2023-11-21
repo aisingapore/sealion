@@ -74,7 +74,7 @@ SEA-LION achieves better or competitive performances on tasks in regional langua
 | Llama-2-7b-chat-hf       | 41.92     | 4.23     | 0.00     | 47.96            | 77.86    | **55.76**        | **86.08**| 4.59            | 0.00      | 0.00         |
 | falcon-7b-instruct       | 0.00      | 8.47     | 7.21     | 1.66             | 30.07    | 16.82            | 46.32    | 1.55            | 0.00      | 2.20         |
 
-SEA-LION has an average performance on general tasks in English (as measured by Hugging Face's LLM Leaderboard)
+SEA-LION has an average performance on general tasks in English (as measured by Hugging Face's LLM Leaderboard):
 
 | Model       | ARC   | HellaSwag | MMLU  | TruthfulQA | Average |
 |-------------|:-----:|:---------:|:-----:|:----------:|:-------:|
