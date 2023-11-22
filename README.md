@@ -16,7 +16,7 @@ SEA-LION is a family of open source language models developed by AI Singapore to
 To use SEA-LION:
 
 ```python
-# please use transformers 4.34.10
+# please use transformers 4.34.1
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 tokenizer = AutoTokenizer.from_pretrained("aisingapore/sealion3b", trust_remote_code=True)
