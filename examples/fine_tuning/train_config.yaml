@@ -1,5 +1,5 @@
 name_or_path: aisingapore/sealion7b
-output_dir: our${model_size}_100p_${dataset_name}_${num_train_epochs}epochs
+output_dir: models/our${model_size}_100p_${dataset_name}_${num_train_epochs}epochs
 dataset_name: sample
 model_size: 7B
 run_name: sft_${model_size}
