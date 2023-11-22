@@ -1,7 +1,6 @@
 accelerate==0.24.0
 bitsandbytes==0.41.1
 datasets==2.14.6
-huggingface-hub==0.17.3
 mlflow==2.7.1
 omegaconf==2.3.0
 peft==0.5.0
