@@ -1,8 +1,6 @@
 name_or_path: aisingapore/sealion7b
-output_dir: models/our${model_size}_100p_${dataset_name}_${num_train_epochs}epochs
-dataset_name: sample
-model_size: 7B
-run_name: sft_${model_size}
+output_dir: models/example_sft_model
+run_name: example_fine_tuning
 
 num_train_epochs: 3
 num_gpus: 4
@@ -16,11 +14,6 @@ streaming: False
 shuffle_buffer: 5000
 size_valid_set: 20
 split: "train"
-
-datasets:
-  asean:
-    files:
-    - sample_data/train_sample.csv
 
 peft:
   lora_alpha: 16

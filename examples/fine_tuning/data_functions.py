@@ -1,4 +1,4 @@
-from datasets import concatenate_datasets, load_dataset
+from datasets import load_dataset
 from helper_functions import *
 
 from trl.trainer import ConstantLengthDataset
@@ -24,17 +24,15 @@ prompt_format_without_system = """### USER:
 {response}"""
 
 
-##################### Asean #####################
-def load_asean(args, split_train_test=True):
+def load_dolly(args, split_train_test=True):
     dataset = load_dataset(
-        "csv",
-        data_files={"train": OmegaConf.to_object(args.datasets.asean.files)},
-        split=args.split,
-        use_auth_token=True,
-        num_proc=8 if not args.streaming else None,
-        streaming=args.streaming,
-    )
-    dataset = dataset.map(prepare_asean_text)
+            "Abzu/dolly_hhrlhf",
+            split=args.split,
+            use_auth_token=True,
+            num_proc=8 if not args.streaming else None,
+            streaming = args.streaming
+            )
+    dataset=dataset.map(prepare_dolly_text)
 
     if split_train_test:
         return split_dataset(args, dataset)
@@ -42,9 +40,9 @@ def load_asean(args, split_train_test=True):
         return dataset
 
 
-def prepare_asean_text(example):
+def prepare_dolly_text(example):
     text = prompt_format_without_system.format(
-        instruction=example["Prompt"], response=example["Response"]
+        instruction=example["prompt"], response=example["response"]
     )
     example["text"] = text
     return example
@@ -54,12 +52,7 @@ def create_datasets(tokenizer, conf):
     train_data_list = []
     valid_data_list = []
 
-    train_data, valid_data = load_asean(conf)
-    train_data_list.append(train_data)
-    valid_data_list.append(valid_data)
-
-    train_data = concatenate_datasets(train_data_list)
-    valid_data = concatenate_datasets(valid_data_list)
+    train_data, valid_data = load_dolly(conf)
 
     if conf.streaming:
         print("Loading the dataset in streaming mode")
