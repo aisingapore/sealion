@@ -1,4 +1,5 @@
-# SEA-LION (Southeast Asian Languages In One Network) - A Family of Southeast Asian Language Models
+# SEA-LION (Southeast Asian Languages In One Network)
+# <img align="center" src="images/purple_sealion-64x64.png"> A Family of Southeast Asian Language Models
 
 SEA-LION is a family of open source language models developed by AI Singapore to better understand and represent the diverse contexts, languages, and cultures of Southeast Asia (SEA). 
 
