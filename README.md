@@ -118,7 +118,7 @@ If you use SEA-LION in your work, please cite it as:
 ## Acknowledgements
 
 AI Singapore is a national programme supported by the National Research Foundation, Singapore and hosted by the National University of Singapore.
-Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not reflect the views of National Research Foundation, Singapore.
+Any opinion, finding, conclusion or recommendation expressed in this material are those of the author(s) and do not reflect the views of National Research Foundation, Singapore, or the National University of Singapore.
 
 ## Contact
 
