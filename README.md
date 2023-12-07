@@ -87,6 +87,10 @@ For full details on the datasets, metrics, and results, please see the model car
 * [SEA-LION 7B](https://huggingface.co/aisingapore/sealion7b)
 * [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sealion7b-instruct-nc)
 
+## SEA-LION Demo
+
+A video demo of SEA-LION is available [here](https://aisingapore.github.io/sealion/)
+
 ## Contributing
 
 We welcome contributions to SEA-LION! Check out the [contributing guide](CONTRIBUTING.md) to get started.
