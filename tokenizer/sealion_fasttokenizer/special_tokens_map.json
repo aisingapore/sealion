@@ -44,9 +44,7 @@
     "<|shell|>",
     "<|sql|>"
   ],
-  "bos_token": "<|bos|>",
-  "eos_token": "<|eos|>",
-  "mask_token": "<|mask|>",
-  "pad_token": "<|pad|>",
+  "eos_token": "<|endoftext|>",
+  "pad_token": "<|padding|>",
   "unk_token": "<|unk|>"
 }
