@@ -59,6 +59,23 @@ text = 'ກ່ຽວ​ກັບ​ບໍລິສັດ​ໜຶ່ງ​ທີ
 ['ຫນ', 'ໜຶ່ງ', 'ຶ່ງ']
 ```
 
+# White Space Differences
+
+```python
+text = 'I have     multiple spaces here!!!'
+
+# Converted Fast Tokenizer
+['▁I', '▁have', '     ', '▁multiple', '▁spaces', '▁here', '!!!']
+[357, 479, 256019, 4485, 9496, 1027, 4592]
+
+# From original SPM
+['▁I', '▁have', '▁▁▁▁▁', 'multiple', '▁spaces', '▁here', '!!!']
+[357, 479, 27, 68858, 9496, 1027, 4592]
+
+# Difference
+['▁multiple', '▁▁▁▁▁', 'multiple', '     ']
+```
+
 ## Usage
 
 ```python
