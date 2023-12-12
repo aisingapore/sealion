@@ -8,7 +8,39 @@ This folder contains the fast tokenizer for the SEA-LION tokenizer. This fast to
 
 Please note that due to the conversion process, it is not possible to replicate the exact SentencePiece model accurately. More details in this [Github issue](https://github.com/huggingface/tokenizers/issues/225#issuecomment-612140650).
 
-Please note that the original SentencePiece model does not normalize the input text whereas the converted fast tokenizer applies normalization.
+Please note that the original SentencePiece model does not normalize the input text whereas the converted fast tokenizer applies normalization.  
+
+## Normalization Differences Example
+
+```python
+text = '尽管该顾客又两次回到摊位，但最终不再来了。 中央社7月25日走访该店时，塑料袋已放回原处。'
+
+# Converted Fast Tokenizer
+['▁尽管', '该', '顾客', '又', '两次', '回到', '摊位', ',', '但最终', '不再', '来了', '。', '▁', '中央社', '7', '月', '2', '5', '日', '走访', '该店', '时', ',', '塑料袋', '已', '放', '回', '原', '处', '。']
+[90424, 250428, 19132, 250571, 25218, 17435, 124279, 249832, 100096, 14049, 14608, 249868, 249813, 74216, 249884, 250069, 249846, 249872, 250030, 30115, 227861, 249971, 249832, 104737, 250225, 250356, 250370, 250307, 250327, 249868]
+
+# From original SPM
+['▁尽管', '该', '顾客', '又', '两次', '回到', '摊位', '，', '但最终', '不再', '来了', '。', '▁', '中央社', '7', '月', '2', '5', '日', '走访', '该店', '时', '，', '塑料袋', '已', '放', '回', '原', '处', '。']
+[90424, 250428, 19132, 250571, 25218, 17435, 124279, 251933, 100096, 14049, 14608, 249868, 249813, 74216, 249884, 250069, 249846, 249872, 250030, 30115, 227861, 249971, 251933, 104737, 250225, 250356, 250370, 250307, 250327, 249868]
+
+# Difference
+['，', ',']
+```
+
+```python
+text = '“Aku bilang pada paman… kamu (tidak di sini) untuk membelikanku bee hoon. Anda hanya ingin datang untuk mengambil kantong plastik gratis saya,” kata Ms Sally.'
+
+# Converted Fast Tokenizer
+['▁"', 'Aku', '▁bilang', '▁pada', '▁p', 'aman', '...', '▁kamu', '▁(', 'tidak', '▁di', '▁sini', ')', '▁untuk', '▁membel', 'ik', 'anku', '▁bee', '▁ho', 'on', '.', '▁Anda', '▁hanya', '▁ingin', '▁datang', '▁untuk', '▁mengambil', '▁kantong', '▁plastik', '▁gratis', '▁saya', ',"', '▁kata', '▁Ms', '▁Sally', '.']
+[654, 205241, 29753, 4255, 321, 6278, 753, 8611, 432, 138410, 874, 26327, 249860, 1737, 87797, 490, 153399, 35541, 1060, 307, 249835, 2395, 7754, 10573, 28281, 1737, 27597, 144192, 83793, 15279, 8854, 1328, 20487, 11656, 32455, 249835]
+
+# From original SPM
+['▁"', 'Aku', '▁bilang', '▁pada', '▁p', 'aman', '…', '▁kamu', '▁(', 'tidak', '▁di', '▁sini', ')', '▁untuk', '▁membel', 'ik', 'anku', '▁bee', '▁ho', 'on', '.', '▁Anda', '▁hanya', '▁ingin', '▁datang', '▁untuk', '▁mengambil', '▁kantong', '▁plastik', '▁gratis', '▁saya', ',"', '▁kata', '▁Ms', '▁Sally', '.']
+[654, 205241, 29753, 4255, 321, 6278, 250021, 8611, 432, 138410, 874, 26327, 249860, 1737, 87797, 490, 153399, 35541, 1060, 307, 249835, 2395, 7754, 10573, 28281, 1737, 27597, 144192, 83793, 15279, 8854, 1328, 20487, 11656, 32455, 249835]
+
+# Difference
+['...', '…']
+```
 
 ## Usage
 
