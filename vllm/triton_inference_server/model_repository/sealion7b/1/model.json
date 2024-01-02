@@ -1,0 +1,6 @@
+{
+    "model":"aisingapore/sealion7b",
+    "disable_log_requests": "true",
+    "gpu_memory_utilization": 0.5,
+    "trust_remote_code": "true"
+}
