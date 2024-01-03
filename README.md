@@ -106,11 +106,11 @@ Some ways to contribute:
 
 SEA-LION is licensed under the [MIT License](LICENSE).
 
-## Citation
+## To Cite SEA-LION
 
 If you use SEA-LION in your work, please cite it as:
 
-```
+```bibtex
 @misc{sea_lion_2023,
   title={SEA-LION (Southeast Asian Languages In One Network): A Family of Large Language Models for Southeast Asia},
   author={AI Singapore},
@@ -127,3 +127,16 @@ Any opinion, finding, conclusion or recommendation expressed in this material ar
 ## Contact
 
 For questions, comments, or issues, please open a GitHub issue or contact us at sealion@aisingapore.org.
+
+## Citations
+
+```bibtex
+@misc{lowphansirikul2021wangchanberta,
+    title={WangchanBERTa: Pretraining transformer-based Thai Language Models},
+    author={Lalita Lowphansirikul and Charin Polpanumas and Nawat Jantrakulchai and Sarana Nutanong},
+    year={2021},
+    eprint={2101.09635},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
