@@ -126,7 +126,8 @@ Any opinion, finding, conclusion or recommendation expressed in this material ar
 
 ## Contact
 
-For questions, comments, or issues, please open a GitHub issue or contact us at sealion@aisingapore.org.
+For questions, comments, or issues, please open a GitHub issue or contact us 
+via this [SEA-LION Inquiry Form](https://forms.gle/sLCUVb95wmGf43hi6)
 
 ## Citations
 
