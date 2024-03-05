@@ -3,7 +3,7 @@
 
 ***Updated: 5 March 2024***
 
-SEA-LION is a family of open source language models developed by AI Singapore to better understand and represent the diverse contexts, languages, and cultures of Southeast Asia (SEA). 
+SEA-LION is a family of open-source language models developed by AI Singapore that better understands Southeast Asia's diverse contexts, languages, and cultures (SEA). We hope it makes LLMs more accessible and better represents the region's breadth of cultures and languages.
 
 ## Truly Open Source
 
@@ -75,7 +75,7 @@ SEA-LION has been trained on a diverse dataset of 980B tokens spanning 11 natura
 - Khmer
 - Lao
 
-The dataset is available here [SEA-LION-PILE] (https://huggingface.co/aisingapore/sea-lion-pile)
+The dataset is available here [SEA-LION-PILE](https://huggingface.co/aisingapore/sea-lion-pile)
 
 The models use a vocabulary of 256,000 tokens and a context length of 2048 tokens. For tokenization, the model employs a custom SEA byte-pair encoding (BPE) tokenizer which is specially tailored for SEA languages, ensuring optimal model performance.
 
@@ -84,7 +84,7 @@ The models use a vocabulary of 256,000 tokens and a context length of 2048 token
 
 We use a holistic holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering), but also linguistic and cultural diagnostic tests which are meticulously handcrafted. These are tailored to Southeast Asia.
 
-The benchmark was introduced here ([arXiv](https://arxiv.org/abs/2309.06085v2) and [GitHub](https://github.com/aisingapore/bhasa)).
+The benchmark was introduced here [BHASA: A Holistic Southeast Asian Linguistic and Cultural Evaluation Suite for Large Language Models](https://arxiv.org/abs/2309.06085v2) and [GitHub](https://github.com/aisingapore/bhasa)).
 
 
 ## Performance
