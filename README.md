@@ -1,12 +1,24 @@
 # SEA-LION (Southeast Asian Languages In One Network)
 # <img align="center" src="images/purple_sealion-64x64.png"> A Family of Southeast Asian Language Models
 
+Updated: 5 March 2024
+
 SEA-LION is a family of open source language models developed by AI Singapore to better understand and represent the diverse contexts, languages, and cultures of Southeast Asia (SEA). 
+
+## Open Source
+
+We have benefited greatly from open source, and believe that efforts to better represent our region are well served by truly open source efforts. We contributions include the following (open-source compliant):
+
+1. *Pre-Training* data
+2. Model *training* code
+3. Model *weights*
+4. *Fine-Tuning* data
+5. Evaluation *benchmarks*
 
 ## Key Features
 
-- 3 to 7 billion parameters (larger models coming in 2024)
-- Instruct-tuned in Bahasa Indonesia (more Southeast Asian languages in 2024)
+- 3 to 7 billion parameters (larger models to be released through 2024)
+- Instruct-tuned in Bahasa Indonesia, with more to follow
 - Trained on 980B tokens of text data from 11 languages spoken across SEA
 - Specialized vocabulary and tokenization for optimal performance on SEA languages
 - Excels on tasks in regional languages
@@ -33,20 +45,21 @@ print(tokenizer.decode(output[0], skip_special_tokens=True))
 SEA-LION models are available for download on HuggingFace at:
 
 **Base Models**
-* [SEA-LION 3B](https://huggingface.co/aisingapore/sealion3b)
-* [SEA-LION 7B](https://huggingface.co/aisingapore/sealion7b)
+* [SEA-LION 3B](https://huggingface.co/aisingapore/sea-lion-3b)
+* [SEA-LION 7B](https://huggingface.co/aisingapore/sea-lion-7b)
 
 **Instruct-Tuned**
-* [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sealion7b-instruct-nc)
-
+* [SEA-LION 7B-instruct-research](https://huggingface.co/aisingapore/sealion7b-instruct-research)
+* **LATEST**[SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct)
 
 ## Model Details
 
 SEA-LION is based on the MPT architecture with 32 layers and comes in two sizes:
 
-- [SEA-LION 3B](https://huggingface.co/aisingapore/sealion3b) : 3 billion parameters 
-- [SEA-LION 7B](https://huggingface.co/aisingapore/sealion7b) : 7 billion parameters
-- [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sealion7b-instruct-nc): 7 billion parameters, instruct-tuned in Bahasa Indonesia
+- [SEA-LION 3B](https://huggingface.co/aisingapore/sea-lion-3b) : 3 billion parameters 
+- [SEA-LION 7B](https://huggingface.co/aisingapore/sea-lion-7b) : 7 billion parameters
+- [SEA-LION 7B-instruct-research](https://huggingface.co/aisingapore/sealion7b-instruct-research): 7 billion parameters, instruct-tuned in Bahasa Indonesia
+- **LATEST**[SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sealion7b-instruct): 7 billion parameters, instruct-tuned in Bahasa Indonesia
 
 It was trained on a diverse dataset of 980B tokens spanning 11 natural languages:
 
