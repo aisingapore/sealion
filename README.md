@@ -7,7 +7,7 @@ SEA-LION is a family of open-source language models developed by AI Singapore th
 
 ## Truly Open Source
 
-We have benefited greatly from open source, and believe that efforts to better represent our region are well served by open source efforts. We contributions include the following (open-source compliant):
+We have benefited greatly from the open-source community and believe that efforts to better represent our region will similarly be well served by open-source efforts. We therefore make the following (open-source compliant) contributions:
 
 1. *Pre-Training* data
 2. Model *training* code
@@ -18,7 +18,7 @@ We have benefited greatly from open source, and believe that efforts to better r
 ## Key Features
 
 - 3 to 7 billion parameters (larger models to be released through 2024)
-- Instruct-tuned in Bahasa Indonesia, with more to follow
+- Instruction-tuned in English and Bahasa Indonesia, with more to follow
 - Trained on 980B tokens of text data from 11 languages spoken across SEA
 - Specialized vocabulary and tokenization for optimal performance on SEA languages
 - Excels on tasks in regional languages
@@ -36,7 +36,7 @@ tokenizer = AutoTokenizer.from_pretrained("aisingapore/sea-lion-3b", trust_remot
 model = AutoModelForCausalLM.from_pretrained("aisingapore/sea-lion-3b", trust_remote_code=True)
 
 tokens = tokenizer("Sea lion in the sea", return_tensors="pt")
-output = model.generate(tokens["input_ids"], max_new_tokens=20)
+output = model.generate(tokens["input_ids"], max_new_tokens=20, eos_token_id=tokenizer.eos_token_id)
 print(tokenizer.decode(output[0], skip_special_tokens=True))
 ```
 
@@ -45,21 +45,21 @@ print(tokenizer.decode(output[0], skip_special_tokens=True))
 SEA-LION models are available for download on HuggingFace at:
 
 **Base Models**
-* [SEA-LION 3B](https://huggingface.co/aisingapore/sea-lion-3b)
-* [SEA-LION 7B](https://huggingface.co/aisingapore/sea-lion-7b)
+* [SEA-LION-3B](https://huggingface.co/aisingapore/sea-lion-3b)
+* [SEA-LION-7B](https://huggingface.co/aisingapore/sea-lion-7b)
 
-**Instruct-Tuned**
-* [SEA-LION 7B-instruct-research](https://huggingface.co/aisingapore/sealion7b-instruct-research)
-* **LATEST** [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct)
+**Instruction-Tuned**
+* [SEA-LION-7B-Instruct-Research](https://huggingface.co/aisingapore/sea-lion-7b-instruct-research)
+* **LATEST** [SEA-LION-7B-Instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct)
 
 ## Model Details
 
 SEA-LION is based on the MPT architecture with 32 layers and comes in two sizes:
 
-- [SEA-LION 3B](https://huggingface.co/aisingapore/sea-lion-3b) : 3 billion parameters 
-- [SEA-LION 7B](https://huggingface.co/aisingapore/sea-lion-7b) : 7 billion parameters
-- [SEA-LION 7B-instruct-research](https://huggingface.co/aisingapore/sealion7b-instruct-research): 7 billion parameters, instruct-tuned in Bahasa Indonesia
-- **LATEST** [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sealion7b-instruct): 7 billion parameters, instruct-tuned in Bahasa Indonesia
+- [SEA-LION-3B](https://huggingface.co/aisingapore/sea-lion-3b) : 3 billion parameters 
+- [SEA-LION-7B](https://huggingface.co/aisingapore/sea-lion-7b) : 7 billion parameters
+- [SEA-LION-7B-Instruct-Research](https://huggingface.co/aisingapore/sea-lion-7b-instruct-research): 7 billion parameters, instruction-tuned in Bahasa Indonesia
+- **LATEST** [SEA-LION-7B-Instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct): 7 billion parameters, instruction-tuned in English and Bahasa Indonesia
 
 SEA-LION has been trained on a diverse dataset of 980B tokens spanning 11 natural languages:
 
@@ -75,14 +75,14 @@ SEA-LION has been trained on a diverse dataset of 980B tokens spanning 11 natura
 - Khmer
 - Lao
 
-The dataset is available here [SEA-LION-PILE](https://huggingface.co/aisingapore/sea-lion-pile)
+The dataset is available here [SEA-LION-PILE](https://huggingface.co/aisingapore/sea-lion-pile).
 
 The models use a vocabulary of 256,000 tokens and a context length of 2048 tokens. For tokenization, the model employs a custom SEA byte-pair encoding (BPE) tokenizer which is specially tailored for SEA languages, ensuring optimal model performance.
 
 
 ## Benchmark
 
-We use a holistic holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering), but also linguistic and cultural diagnostic tests which are meticulously handcrafted. These are tailored to Southeast Asia.
+We use a holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering), but also linguistic and cultural diagnostic tests which are meticulously handcrafted. These are tailored to Southeast Asia.
 
 The benchmark was introduced here [BHASA: A Holistic Southeast Asian Linguistic and Cultural Evaluation Suite for Large Language Models](https://arxiv.org/abs/2309.06085v2) and [GitHub](https://github.com/aisingapore/bhasa)).
 
@@ -107,20 +107,20 @@ SEA-LION has an average performance on general tasks in English (as measured by 
 
 | Model       | ARC   | HellaSwag | MMLU  | TruthfulQA | Average |
 |-------------|:-----:|:---------:|:-----:|:----------:|:-------:|
-| SEA-LION 7B | 39.93 | 68.51     | 26.87 |      35.09 | 42.60   |
+| SEA-LION-7B | 39.93 | 68.51     | 26.87 |      35.09 | 42.60   |
 
 
 For full details on the datasets, metrics, and results, please see the model cards:
 
-* [SEA-LION 3B](https://huggingface.co/aisingapore/sea-lion-3b)
-* [SEA-LION 7B](https://huggingface.co/aisingapore/sea-lion-7b)
-* [SEA-LION 7B-instruct-research](https://huggingface.co/aisingapore/sealion7b-instruct-research)
-* **LATEST** [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct)
+* [SEA-LION-3B](https://huggingface.co/aisingapore/sea-lion-3b)
+* [SEA-LION-7B](https://huggingface.co/aisingapore/sea-lion-7b)
+* [SEA-LION-7B-Instruct-Research](https://huggingface.co/aisingapore/sea-lion-7b-instruct-research)
+* **LATEST** [SEA-LION 7B-Instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct)
 
 
 ## SEA-LION Demo
 
-A video demo of SEA-LION is available [here](https://aisingapore.github.io/sealion/)
+A video demo of SEA-LION is available [here](https://aisingapore.github.io/sealion/).
 
 ## Contributing
 
@@ -157,8 +157,7 @@ Any opinion, finding, conclusion or recommendation expressed in this material ar
 
 ## Contact
 
-For questions, comments, or issues, please open a GitHub issue or contact us 
-via this [SEA-LION Inquiry Form](https://forms.gle/sLCUVb95wmGf43hi6)
+For questions, comments, or issues, please open a GitHub issue or contact us via this [SEA-LION Inquiry Form](https://forms.gle/sLCUVb95wmGf43hi6).
 
 ## Citations
 
