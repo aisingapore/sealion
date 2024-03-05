@@ -1,13 +1,13 @@
 # SEA-LION (Southeast Asian Languages In One Network)
 # <img align="center" src="images/purple_sealion-64x64.png"> A Family of Southeast Asian Language Models
 
-Updated: 5 March 2024
+***Updated: 5 March 2024***
 
 SEA-LION is a family of open source language models developed by AI Singapore to better understand and represent the diverse contexts, languages, and cultures of Southeast Asia (SEA). 
 
-## Open Source
+## Truly Open Source
 
-We have benefited greatly from open source, and believe that efforts to better represent our region are well served by truly open source efforts. We contributions include the following (open-source compliant):
+We have benefited greatly from open source, and believe that efforts to better represent our region are well served by open source efforts. We contributions include the following (open-source compliant):
 
 1. *Pre-Training* data
 2. Model *training* code
@@ -32,8 +32,8 @@ To use SEA-LION:
 # please use transformers 4.34.1
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-tokenizer = AutoTokenizer.from_pretrained("aisingapore/sealion3b", trust_remote_code=True)
-model = AutoModelForCausalLM.from_pretrained("aisingapore/sealion3b", trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained("aisingapore/sea-lion-3b", trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained("aisingapore/sea-lion-3b", trust_remote_code=True)
 
 tokens = tokenizer("Sea lion in the sea", return_tensors="pt")
 output = model.generate(tokens["input_ids"], max_new_tokens=20)
@@ -50,7 +50,7 @@ SEA-LION models are available for download on HuggingFace at:
 
 **Instruct-Tuned**
 * [SEA-LION 7B-instruct-research](https://huggingface.co/aisingapore/sealion7b-instruct-research)
-* **LATEST**[SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct)
+* **LATEST** [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct)
 
 ## Model Details
 
@@ -59,9 +59,9 @@ SEA-LION is based on the MPT architecture with 32 layers and comes in two sizes:
 - [SEA-LION 3B](https://huggingface.co/aisingapore/sea-lion-3b) : 3 billion parameters 
 - [SEA-LION 7B](https://huggingface.co/aisingapore/sea-lion-7b) : 7 billion parameters
 - [SEA-LION 7B-instruct-research](https://huggingface.co/aisingapore/sealion7b-instruct-research): 7 billion parameters, instruct-tuned in Bahasa Indonesia
-- **LATEST**[SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sealion7b-instruct): 7 billion parameters, instruct-tuned in Bahasa Indonesia
+- **LATEST** [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sealion7b-instruct): 7 billion parameters, instruct-tuned in Bahasa Indonesia
 
-It was trained on a diverse dataset of 980B tokens spanning 11 natural languages:
+SEA-LION has been trained on a diverse dataset of 980B tokens spanning 11 natural languages:
 
 - English
 - Chinese  
@@ -75,18 +75,33 @@ It was trained on a diverse dataset of 980B tokens spanning 11 natural languages
 - Khmer
 - Lao
 
-The model uses a vocabulary of 256,000 tokens and a context length of 2048 tokens. For tokenization, the model employs a custom SEA byte-pair encoding (BPE) tokenizer which is specially tailored for SEA languages, ensuring optimal model performance.
+The dataset is available here [SEA-LION-PILE] (https://huggingface.co/aisingapore/sea-lion-pile)
+
+The models use a vocabulary of 256,000 tokens and a context length of 2048 tokens. For tokenization, the model employs a custom SEA byte-pair encoding (BPE) tokenizer which is specially tailored for SEA languages, ensuring optimal model performance.
+
+
+## Benchmark
+
+We use a holistic holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering), but also linguistic and cultural diagnostic tests which are meticulously handcrafted. These are tailored to Southeast Asia.
+
+The benchmark was introduced here ([arXiv](https://arxiv.org/abs/2309.06085v2) and [GitHub](https://github.com/aisingapore/bhasa)).
+
 
 ## Performance
 
 SEA-LION achieves better or competitive performances on tasks in regional languages:
 
-| Model Name               | Sent (F1) | QA (F1)  | Tox (F1) | MT-EN-ID (ChrF++)| (COMET22)| MT-ID-EN (ChrF++)| (COMET22)| AbsSum (ROUGE-L)| NLI (Acc) | Causal (Acc) |
-|--------------------------|:---------:|:--------:|:--------:|:----------------:|:--------:|:----------------:|:--------:|:---------------:|:---------:|:------------:|
-| sealion7b-instruct-nc    | **76.13** | 24.86    | **24.45**| **52.50**        | **86.97**| 46.82            | 81.34    | **15.44**       | **33.20** | **23.80**    |
-| Mistral-7B-Instruct-v0.1 | 73.66     | **26.08**| 18.60    | 31.08            | 55.29    | 51.20            | 82.38    | 14.41           | 29.20     | 11.00        |
-| Llama-2-7b-chat-hf       | 41.92     | 4.23     | 0.00     | 47.96            | 77.86    | **55.76**        | **86.08**| 4.59            | 0.00      | 0.00         |
-| falcon-7b-instruct       | 0.00      | 8.47     | 7.21     | 1.66             | 30.07    | 16.82            | 46.32    | 1.55            | 0.00      | 2.20         |
+| Model                          | QA (F1) | Sentiment (F1) | Toxicity (F1) | Eng>Indo (ChrF++) | Indo>Eng (ChrF++) | Summary (ROUGE-L) | NLI (Acc) | Causal (Acc) |
+|--------------------------------|---------|----------------|---------------|-------------------|-------------------|-------------------|-----------|--------------|
+| SEA-LION-7B-Instruct-Research  | 24.86   | 76.13          | 24.45         | 52.50             | 46.82             | 15.44             | 33.20     | 23.80        |
+| SEA-LION-7B-Instruct           | 68.41   | 91.45          | 17.98         | 57.48             | 58.04             | 17.54             | 53.10     | 60.80        |
+| SeaLLM 7B v1                   | 30.96   | 56.29          | 22.60         | 62.23             | 41.55             | 14.03             | 26.50     | 56.60        |
+| SeaLLM 7B v2                   | 44.40   | 80.13          | 55.24         | 64.01             | 63.28             | 17.31             | 43.60     | 82.00        |
+| Sailor-7B                      | 65.43   | 59.48          | 20.48         | 64.27             | 60.68             | 8.69              | 15.10     | 38.40        |
+| Llama 2 7B Chat                | 11.12   | 52.32          | 0.00          | 44.09             | 57.58             | 9.24              | 0.00      | 0.00         |
+| Mistral 7B Instruct v0.1       | 38.85   | 74.38          | 20.83         | 30.60             | 51.43             | 15.63             | 28.60     | 50.80        |
+| GPT-4                          | 73.60   | 74.14          | 63.96         | 69.38             | 67.53             | 18.71             | 83.20     | 96.00        |
+
 
 SEA-LION has an average performance on general tasks in English (as measured by Hugging Face's LLM Leaderboard):
 
@@ -96,9 +111,12 @@ SEA-LION has an average performance on general tasks in English (as measured by 
 
 
 For full details on the datasets, metrics, and results, please see the model cards:
-* [SEA-LION 3B](https://huggingface.co/aisingapore/sealion3b)
-* [SEA-LION 7B](https://huggingface.co/aisingapore/sealion7b)
-* [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sealion7b-instruct-nc)
+
+* [SEA-LION 3B](https://huggingface.co/aisingapore/sea-lion-3b)
+* [SEA-LION 7B](https://huggingface.co/aisingapore/sea-lion-7b)
+* [SEA-LION 7B-instruct-research](https://huggingface.co/aisingapore/sealion7b-instruct-research)
+* **LATEST** [SEA-LION 7B-instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct)
+
 
 ## SEA-LION Demo
 
