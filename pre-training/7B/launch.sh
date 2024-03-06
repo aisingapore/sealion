@@ -123,7 +123,7 @@ loss_monitor_frequency_threshold=0.6
 loss_monitor_magnitude_threshold=0.05
 loss_monitor_slope_threshold=0.1
 loss_monitor_alert_frequency=1200
-loss_monitor_slack_webhook_url='https://hooks.slack.com/services/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'
+loss_monitor_slack_webhook_url=''
 loss_monitor_report_ok='true'
 
 throughput_monitor_window_size=100
@@ -132,7 +132,7 @@ throughput_monitor_split=0.7
 throughput_monitor_pvalue_threshold=1e-4
 throughput_monitor_drop_threshold=0.975
 throughput_monitor_alert_frequency=1200
-throughput_monitor_slack_webhook_url='https://hooks.slack.com/services/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'
+throughput_monitor_slack_webhook_url=''
 throughput_monitor_image_dir="$(pwd)/image"
 
 model_args=" \
