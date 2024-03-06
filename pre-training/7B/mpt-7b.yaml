@@ -1,0 +1,172 @@
+data_local: ./my-copy-c4
+data_remote: # If blank, files must be present in data_local
+max_seq_len: 2048
+global_seed: 17
+tokenizer_name: SEABPETokenizer
+tokenizer_vocab_file:
+
+# Run Name
+run_name: # If left blank, will be read from env var $RUN_NAME
+
+# Model
+model:
+  name: mpt_causal_lm
+  init_device: meta
+  d_model: 4096
+  n_heads: 32
+  n_layers: 32
+  expansion_ratio: 4
+  max_seq_len: ${max_seq_len}
+  # vocab_size: 50368
+  vocab_size: 256000
+  embedding_fraction: 0.1
+  logit_scale: inv_sqrt_d_model
+  attn_config:
+    attn_impl: triton
+    qk_ln: true
+  init_config_defaults:
+    init_std: 0.02
+
+# Tokenizer
+tokenizer:
+  # name: EleutherAI/gpt-neox-20b
+  name: ${tokenizer_name}
+  kwargs:
+    model_max_length: ${max_seq_len}
+    vocab_file: ${tokenizer_vocab_file}
+
+# Dataloaders
+train_loader:
+  name: text
+  dataset:
+    local: ${data_local}
+    remote: ${data_remote}
+    split: train
+    shuffle: false
+    max_seq_len: ${max_seq_len}
+    shuffle_seed: ${global_seed}
+  drop_last: true
+  num_workers: 8
+
+eval_loader:
+  name: text
+  dataset:
+    local: ${data_local}
+    remote: ${data_remote}
+    split: val
+    shuffle: false
+    max_seq_len: ${max_seq_len}
+    shuffle_seed: ${global_seed}
+  drop_last: false
+  num_workers: 8
+
+# Optimization
+scheduler:
+  name: cosine_with_warmup
+  t_warmup: 15000ba
+  alpha_f: 0.1
+
+optimizer:
+  name: decoupled_adamw
+  lr: 6e-5
+  betas:
+  - 0.9
+  - 0.95
+  eps: 1.0e-15
+  weight_decay: 1e-5
+
+algorithms:
+  gradient_clipping:
+    clipping_type: norm
+    clipping_threshold: 1.0
+  # seq_length_warmup:
+  #   duration: 0.14
+  #   min_seq_length: 8
+  #   max_seq_length: 2048
+
+max_duration: 63900ba # ~ 134B tokens
+eval_interval: 5000ba
+eval_first: false
+eval_subset_num_batches: -1
+global_train_batch_size: 1024
+
+# System
+seed: ${global_seed}
+device_eval_batch_size: 8
+device_train_microbatch_size: 8
+# device_train_microbatch_size: auto
+precision: amp_bf16
+
+# FSDP
+fsdp_config:
+  sharding_strategy: FULL_SHARD
+  # sharding_strategy: SHARD_GRAD_OP
+  mixed_precision: DEFAULT
+  activation_checkpointing: true
+  activation_checkpointing_reentrant: false
+  activation_cpu_offload: false
+  limit_all_gathers: true
+  verbose: false
+  state_dict_type: 'sharded'
+  load_monolith_rank0_only: false
+  sync_module_states: false # Needs to be true for load_monolith_rank0_only=true
+  use_orig_params: true # Needs for be false if load_monolith_rank0_only=true
+
+# Logging
+progress_bar: false
+log_to_console: true
+console_log_interval: 1ba
+
+callbacks:
+  speed_monitor:
+    window_size: 10
+  lr_monitor: {}
+  memory_monitor: {}
+  optimizer_monitor:
+    log_optimizer_metrics: false
+    batch_log_interval: 20
+  mono_ckpt_saver:
+    save_folder: ${save_folder}/mono
+    batch_interval:
+    overwrite: true
+  runtime_estimator: {}
+  loss_monitor:
+    window_size: 100
+    frequency_threshold: 0.6
+    magnitude_threshold: 0.05
+    slope_threshold: 0.1
+    alert_frequency: 300
+    slack_webhook_url: null
+    report_ok: false
+  throughput_monitor:
+    window_size: 100
+    moving_avg_window_size: 10
+    split: 0.7
+    pvalue_threshold: 1e-4
+    drop_threshold: 0.975
+    alert_frequency: 300
+    slack_webhook_url: null
+    image_dir: null
+
+loggers:
+  mlflow:
+    experiment_name:
+    run_name: ${run_name}
+    tracking_uri:
+
+# Load from local filesystem or remote object store
+load_path:
+# load_path: ./gpt-13b/checkpoints/latest-rank{rank}.pt
+# load_path: s3://my-bucket/my-folder/gpt-13b/checkpoints/latest-rank{rank}.pt
+
+# Checkpoint to local filesystem or remote object store
+save_folder: ./{run_name}/checkpoints
+# save_folder: s3://my-bucket/my-folder/{run_name}/checkpoints
+save_interval: 5000ba
+save_num_checkpoints_to_keep: 1  # Important, this cleans up checkpoints saved to DISK
+save_overwrite: false  # Need to be false if autoresume is true
+
+# Whether or not to enable autoresume, which allows for stopping and resuming
+# training.
+autoresume: false
+dist_timeout: 600.0

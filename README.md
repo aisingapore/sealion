@@ -1,4 +1,5 @@
 # SEA-LION (Southeast Asian Languages In One Network)
+
 # <img align="center" src="images/purple_sealion-64x64.png"> A Family of Southeast Asian Language Models
 
 ***Updated: 5 March 2024***
@@ -64,7 +65,7 @@ SEA-LION is based on the MPT architecture with 32 layers and comes in two sizes:
 SEA-LION has been trained on a diverse dataset of 980B tokens spanning 11 natural languages:
 
 - English
-- Chinese  
+- Chinese
 - Indonesian
 - Malay
 - Thai
@@ -79,13 +80,11 @@ The dataset is available here [SEA-LION-PILE](https://huggingface.co/aisingapore
 
 The models use a vocabulary of 256,000 tokens and a context length of 2048 tokens. For tokenization, the model employs a custom SEA byte-pair encoding (BPE) tokenizer which is specially tailored for SEA languages, ensuring optimal model performance.
 
-
 ## Benchmark
 
 We use a holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering), but also linguistic and cultural diagnostic tests which are meticulously handcrafted. These are tailored to Southeast Asia.
 
 The benchmark was introduced here [BHASA: A Holistic Southeast Asian Linguistic and Cultural Evaluation Suite for Large Language Models](https://arxiv.org/abs/2309.06085v2) and [GitHub](https://github.com/aisingapore/bhasa)).
-
 
 ## Performance
 
@@ -102,13 +101,11 @@ SEA-LION achieves better or competitive performances on tasks in regional langua
 | Mistral 7B Instruct v0.1       | 38.85   | 74.38          | 20.83         | 30.60             | 51.43             | 15.63             | 28.60     | 50.80        |
 | GPT-4                          | 73.60   | 74.14          | 63.96         | 69.38             | 67.53             | 18.71             | 83.20     | 96.00        |
 
-
 SEA-LION has an average performance on general tasks in English (as measured by Hugging Face's LLM Leaderboard):
 
 | Model       | ARC   | HellaSwag | MMLU  | TruthfulQA | Average |
 |-------------|:-----:|:---------:|:-----:|:----------:|:-------:|
 | SEA-LION-7B | 39.93 | 68.51     | 26.87 |      35.09 | 42.60   |
-
 
 For full details on the datasets, metrics, and results, please see the model cards:
 
@@ -117,10 +114,14 @@ For full details on the datasets, metrics, and results, please see the model car
 * [SEA-LION-7B-Instruct-Research](https://huggingface.co/aisingapore/sea-lion-7b-instruct-research)
 * **LATEST** [SEA-LION 7B-Instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct)
 
-
 ## SEA-LION Demo
 
 A video demo of SEA-LION is available [here](https://aisingapore.github.io/sealion/).
+
+## Pre-Training Config and Guide
+
+SEA-LION 3B and 7B models are trained on 32 nodes of A100 40GB on AWS EC2.  
+The configuration used for pre-training and an overview guide is provided [here](pre-training/README-PRE-TRAINING.md).
 
 ## Contributing
 
