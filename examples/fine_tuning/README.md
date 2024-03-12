@@ -18,7 +18,7 @@ pip install flash-attn==2.5.3
 ### Setting up the accelerate library
 As the accelerate library is used, please ensure that the accelerate configuration has been setup. This can be done by running:
 ``` bash
-acceelerate config
+accelerate config
 ```
 
 ### Modifying the training parameters
