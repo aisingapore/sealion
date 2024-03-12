@@ -30,7 +30,7 @@ There are several ways you can contribute to SEA-LION:
 
 If you encounter any issues, bugs, or unexpected behavior while using SEA-LION, please help us by [reporting them](https://github.com/aisingapore/sealion/issues). To report a bug:
 
-1. Check if the issue has already been reported by searching the [GitHub Issues](#) page.
+1. Check if the issue has already been reported by searching the [GitHub Issues](https://github.com/aisingapore/sealion/issues) page.
 2. If not, create a new issue with a descriptive title and detailed description of the problem you encountered.
 3. Include relevant information such as your operating system, Python version, and any error messages.
 
