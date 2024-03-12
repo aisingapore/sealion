@@ -123,6 +123,11 @@ A video demo of SEA-LION is available [here](https://aisingapore.github.io/seali
 SEA-LION 3B and 7B models are trained on 32 nodes of A100 40GB on AWS EC2.  
 The configuration used for pre-training and an overview guide is provided [here](pre-training/README-PRE-TRAINING.md).
 
+## QLoRA Fine-Tuning Guide
+
+The SEA-LION models can be fine-tuned using the HuggingFace TRL library.
+An overview guide and sample configurations are provided [here](fine-tuning/README.md).
+
 ## Contributing
 
 We welcome contributions to SEA-LION! Check out the [contributing guide](CONTRIBUTING.md) to get started.
