@@ -126,7 +126,7 @@ The configuration used for pre-training and an overview guide is provided [here]
 ## QLoRA Fine-Tuning Guide
 
 The SEA-LION models can be fine-tuned using the HuggingFace TRL library.  
-An overview guide and sample configurations are provided [here](fine-tuning/README.md).
+An overview guide and sample configurations are provided [here](examples/fine-tuning/README.md).
 
 ## Contributing
 
