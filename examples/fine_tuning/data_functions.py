@@ -66,7 +66,7 @@ def _counter(tokenizer, col):
     return _helper
 
 
-def _count_tokens(dataset, tokenizer, cols: list):
+def _count_tokens(dataset, tokenizer, cols, num_proc=8):
     columns = dataset.column_names
     count_dict = {"length": len(dataset)}
 
@@ -74,7 +74,7 @@ def _count_tokens(dataset, tokenizer, cols: list):
         count_dataset = dataset.map(
             _counter(tokenizer, col),
             remove_columns=columns,
-            num_proc=16,
+            num_proc=num_proc,
         )
         count_dict[f"{col}_token_count"] = sum(count_dataset["count"])
     return count_dict
@@ -85,13 +85,15 @@ def load_hf_dataset(conf, dataset, split_train_test=True, tokenizer=None):
         conf.datasets[dataset]["name"],
         split=conf.split,
         token=True,
-        num_proc=8 if not conf.streaming else None,
+        num_proc=conf.num_proc if not conf.streaming else None,
         streaming=conf.streaming,
     )
 
     # count number of tokens in training data
     if tokenizer is not None:
-        count = _count_tokens(dataset, tokenizer, ["prompt", "response"])
+        count = _count_tokens(
+            dataset, tokenizer, ["prompt", "response"], num_proc=conf.num_proc
+        )
     else:
         count = {}
 
@@ -101,9 +103,10 @@ def load_hf_dataset(conf, dataset, split_train_test=True, tokenizer=None):
         template=PROMPT_TEMPLATE[conf.prompt_format],
         system=conf.system_prompt,
     )
-    dataset = dataset.map(format_prompt, num_proc=16)
+    dataset = dataset.map(format_prompt, num_proc=conf.num_proc)
     dataset = dataset.filter(
-        lambda example: len(tokenizer.encode(example["text"])) <= conf.seq_length
+        lambda example: len(tokenizer.encode(example["text"])) <= conf.seq_length,
+        num_proc=conf.num_proc,
     )
     if split_train_test:
         train_dataset, val_dataset = split_dataset(conf, dataset)
