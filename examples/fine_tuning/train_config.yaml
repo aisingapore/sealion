@@ -5,6 +5,7 @@ run_name: example_fine_tuning
 num_train_epochs: 3
 num_gpus: 8
 seed:
+num_proc: 8
 
 prompt_format: sealion
 system_prompt: null
