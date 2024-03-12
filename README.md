@@ -76,7 +76,7 @@ SEA-LION has been trained on a diverse dataset of 980B tokens spanning 11 natura
 - Khmer
 - Lao
 
-The dataset is available here [SEA-LION-PILE](https://huggingface.co/aisingapore/sea-lion-pile).
+The dataset is available here [SEA-LION-PILE](https://huggingface.co/datasets/aisingapore/sea-lion-pile).
 
 The models use a vocabulary of 256,000 tokens and a context length of 2048 tokens. For tokenization, the model employs a custom SEA byte-pair encoding (BPE) tokenizer which is specially tailored for SEA languages, ensuring optimal model performance.
 
