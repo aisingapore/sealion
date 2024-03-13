@@ -3,7 +3,7 @@
 Quick references:
 
 1. [Prompt Format](https://github.com/aisingapore/sealion/blob/main/docs/promptguide.md#prompt-format)
-2. Single Question Answering
+2. [Single Question Answering](https://github.com/aisingapore/sealion/blob/main/docs/promptguide.md#single-question-answering)
 3. Multiple Question Answering
 4. Contextual Question Answering
 5. Translation
