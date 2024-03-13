@@ -2,7 +2,7 @@
 
 Quick references:
 
-* Prompt Format
+* [Prompt Format](## Prompt Format)
 * Single Question Answering
 * ### Multiple Question Answering
 * ### Contextual Question Answering
