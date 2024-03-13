@@ -1,6 +1,6 @@
 # Prompting and Usage Guide
 
-* [Prompt Format](## Prompt Format)
+* ## Prompt Format
 
 ## Prompt Format
 
