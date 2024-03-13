@@ -2,7 +2,7 @@
 
 Quick references:
 
-1. Prompt Format(#prompt-format)
+1. Prompt Format (https://github.com/aisingapore/sealion/blob/main/docs/promptguide.md#prompt-format)
 2. Single Question Answering
 3. Multiple Question Answering
 4. Contextual Question Answering
