@@ -2,16 +2,16 @@
 
 Quick references:
 
-* ## Prompt Format
-* ### Single Question Answering
-* ### Multiple Question Answering
-* ### Contextual Question Answering
-* ### Translation
-* ### Creative Writing
-* ### Reasoning
-* ### Indonesian
-* ### Multilingual
-* ### Repetition Penalty
+1. Prompt Format
+2. Single Question Answering
+3. Multiple Question Answering
+4. Contextual Question Answering
+5. Translation
+6. Creative Writing
+7. Reasoning
+8. Indonesian
+9. Multilingual
+10. Repetition Penalty
 
 ## Prompt Format
 
