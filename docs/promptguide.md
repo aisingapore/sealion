@@ -1,6 +1,17 @@
 # Prompting and Usage Guide
 
+Quick references:
+
 * ## Prompt Format
+* ### Single Question Answering
+* ### Multiple Question Answering
+* ### Contextual Question Answering
+* ### Translation
+* ### Creative Writing
+* ### Reasoning
+* ### Indonesian
+* ### Multilingual
+* ### Repetition Penalty
 
 ## Prompt Format
 
