@@ -118,6 +118,9 @@ For full details on the datasets, metrics, and results, please see the model car
 
 A video demo of SEA-LION is available [here](https://aisingapore.github.io/sealion/).
 
+## Prompting Guide
+A basic prompting guide is provided [here](docs/promptguide.md)
+
 ## Pre-Training Config and Guide
 
 SEA-LION 3B and 7B models are trained on 32 nodes of A100 40GB on AWS EC2.  
