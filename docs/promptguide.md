@@ -1,5 +1,7 @@
 # Prompting and Usage Guide
 
+- [Prompt Format]
+
 ## Prompt Format
 
 To ensure optimal performance from SEA-LION-7B-Instruct, prompts should be formatted in the following way. For instance, given the input "Describe Singapore in a few words", your prompt should look like this:
