@@ -2,8 +2,8 @@
 
 Quick references:
 
-* ## Prompt Format
-* ### Single Question Answering
+* Prompt Format
+* Single Question Answering
 * ### Multiple Question Answering
 * ### Contextual Question Answering
 * ### Translation
