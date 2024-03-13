@@ -4,14 +4,14 @@ Quick references:
 
 1. [Prompt Format](https://github.com/aisingapore/sealion/blob/main/docs/promptguide.md#prompt-format)
 2. [Single Question Answering](https://github.com/aisingapore/sealion/blob/main/docs/promptguide.md#single-question-answering)
-3. Multiple Question Answering
-4. Contextual Question Answering
-5. Translation
-6. Creative Writing
-7. Reasoning
-8. Indonesian
-9. Multilingual
-10. Repetition Penalty
+3. [Multiple Question Answering](https://github.com/aisingapore/sealion/blob/main/docs/promptguide.md#multiple-question-answering)
+4. [Contextual Question Answering](https://github.com/aisingapore/sealion/blob/main/docs/promptguide.md#contextual-question-answering)
+5. [Translation](https://github.com/aisingapore/sealion/blob/main/docs/promptguide.md#translation)
+6. [Creative Writing](https://github.com/aisingapore/sealion/blob/main/docs/promptguide.md#creative-writing)
+7. [Reasoning](https://github.com/aisingapore/sealion/blob/main/docs/promptguide.md#reasoning)
+8. [Indonesian](https://github.com/aisingapore/sealion/blob/main/docs/promptguide.md#indonesian)
+9. [Multilingual](https://github.com/aisingapore/sealion/blob/main/docs/promptguide.md#multilingual)
+10. [Repetition Penalty](https://github.com/aisingapore/sealion/blob/main/docs/promptguide.md#repetition-penalty)
 
 ## Prompt Format
 
