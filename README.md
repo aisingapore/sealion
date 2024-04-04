@@ -131,6 +131,16 @@ The configuration used for pre-training and an overview guide is provided [here]
 The SEA-LION models can be fine-tuned using the HuggingFace TRL library.  
 An overview guide and sample configurations are provided [here](examples/fine-tuning/README.md).
 
+## Deployment Framework
+
+### Text-Generation-Inference (TGI)
+
+SEA-LION is natively supported in TGI from [v1.4.0](https://github.com/huggingface/text-generation-inference/releases/tag/v1.4.0).
+
+### vLLM
+
+For SEA-LION vLLM intergration, please refer to this [guide for instructions](https://github.com/aisingapore/sealion/tree/vllm/vllm).
+
 ## Contributing
 
 We welcome contributions to SEA-LION! Check out the [contributing guide](CONTRIBUTING.md) to get started.
@@ -168,7 +178,7 @@ Any opinion, finding, conclusion or recommendation expressed in this material ar
 
 For questions, comments, or issues, please open a GitHub issue or contact us via this [SEA-LION Inquiry Form](https://forms.gle/sLCUVb95wmGf43hi6).
 
-## Citations
+## References
 
 ```bibtex
 @misc{lowphansirikul2021wangchanberta,
