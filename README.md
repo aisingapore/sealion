@@ -41,7 +41,7 @@ SEA-LION models are available for download on HuggingFace at:
 
 ## Getting Started
 
-To use SEA-LION:
+To use SEA-LION-V2:
 
 ```python
 # please use transformers 4.34.1
@@ -62,28 +62,11 @@ See Hugging Face for model details.
 
 SEA-LION achieves better or competitive performances on tasks in regional languages, while retaining the general performance of LLaMA3.
 
-Our [leaderboard is here](https://leaderboard.sea-lion.ia).
+Our [leaderboard is here](https://leaderboard.sea-lion.ai).
 
 We use a holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering), but also linguistic and cultural diagnostic tests which are meticulously handcrafted. These are tailored to Southeast Asia.
 
 The benchmark was introduced here [BHASA: A Holistic Southeast Asian Linguistic and Cultural Evaluation Suite for Large Language Models](https://arxiv.org/abs/2309.06085v2) and [GitHub](https://github.com/aisingapore/bhasa).
-
-## SEA-LION Demo
-
-A video demo of SEA-LION is available [here](https://aisingapore.github.io/sealion/).
-
-## Prompting Guide
-A basic prompting guide is provided [here](docs/promptguide.md)
-
-## Pre-Training Config and Guide
-
-SEA-LION 3B and 7B models are trained on 32 nodes of A100 40GB on AWS EC2.  
-The configuration used for pre-training and an overview guide is provided [here](pre-training/README-PRE-TRAINING.md).
-
-## QLoRA Fine-Tuning Guide
-
-The SEA-LION models can be fine-tuned using the HuggingFace TRL library.  
-An overview guide and sample configurations are provided [here](examples/fine-tuning/README.md).
 
 ## Deployment Framework
 
@@ -156,7 +139,7 @@ For questions, comments, or issues, please open a GitHub issue or contact us via
 - Excels on tasks in regional languages
 - Open source under the MIT License for community contribution and adoption
 
-### SEA-LION-V1
+
 **Base Models**
 * [SEA-LION-3B](https://huggingface.co/aisingapore/sea-lion-3b)
 * [SEA-LION-7B](https://huggingface.co/aisingapore/sea-lion-7b)
@@ -165,5 +148,7 @@ For questions, comments, or issues, please open a GitHub issue or contact us via
 * [SEA-LION-7B-Instruct-Research](https://huggingface.co/aisingapore/sea-lion-7b-instruct-research)
 * [SEA-LION-7B-Instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct)
 
-## Model Details
+**Model Details**
 Please see model cards on Hugging Face.
+
+Additional information and guides about SEA-LION-V1 can be found [here](sea-lion-v1/SEALIONV1_README.md)
