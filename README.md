@@ -92,7 +92,7 @@ Some ways to contribute:
 
 ## License
 
-SEA-LION is licensed under the [MIT License](LICENSE).
+SEA-LION-V2 is based on Llama-3-8b, and is governed by the [META LLAMA 3 COMMUNITY LICENSE AGREEMENT](LICENSE).
 
 ## To Cite SEA-LION
 
