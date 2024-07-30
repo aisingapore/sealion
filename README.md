@@ -83,7 +83,7 @@ SEA-LION is natively supported in TGI from [v1.4.0](https://github.com/huggingfa
 
 ### vLLM
 
-For SEA-LION vLLM integration, please refer to [serving the SEA-LION model with vLLM]](https://github.com/aisingapore/sealion-vllm).
+For SEA-LION vLLM integration, please refer to [serving the SEA-LION model with vLLM](https://github.com/aisingapore/sealion-vllm).
 
 
 ## Contributing
