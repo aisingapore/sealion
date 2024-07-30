@@ -34,10 +34,10 @@ SEA-LION models are available for download on HuggingFace at:
 
 ### SEA-LION-V2
 **Base Models**
-* [LlaMA3-8B-SEA-LION-V2-Base](https://huggingface.co/aisingapore/llama3-8b-sea-lion-v2)
+* [LlaMA3-8B-SEA-LION-V2-Base](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2-base)
 
 **Instruction-Tuned**
-* [LlaMA3-8B-SEA-LION-V2-Instruct](https://huggingface.co/aisingapore/llama3-8b-sea-lion-v2-instruct)
+* [LlaMA3-8B-SEA-LION-V2-Instruct](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2-instruct)
 
 ## Getting Started
 
