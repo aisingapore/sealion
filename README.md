@@ -44,15 +44,22 @@ SEA-LION models are available for download on HuggingFace at:
 To use SEA-LION-V2:
 
 ```python
-# please use transformers 4.34.1
-from transformers import AutoTokenizer, AutoModelForCausalLM
+# Please use transformers==4.37.2
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
-tokenizer = AutoTokenizer.from_pretrained("aisingapore/sea-lion-3b", trust_remote_code=True)
-model = AutoModelForCausalLM.from_pretrained("aisingapore/sea-lion-3b", trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained("aisingapore/llama3-8b-cpt-sealionv2-instruct")
+model = AutoModelForCausalLM.from_pretrained("aisingapore/llama3-8b-cpt-sealionv2-instruct")
 
-tokens = tokenizer("Sea lion in the sea", return_tensors="pt")
+prompt_template = "### USER:\n{human_prompt}\n\n### RESPONSE:\n"
+prompt = """Apa sentimen dari kalimat berikut ini?
+Kalimat: Buku ini sangat membosankan.
+Jawaban: """
+full_prompt = prompt_template.format(human_prompt=prompt)
+
+tokens = tokenizer(full_prompt, return_tensors="pt")
 output = model.generate(tokens["input_ids"], max_new_tokens=20, eos_token_id=tokenizer.eos_token_id)
 print(tokenizer.decode(output[0], skip_special_tokens=True))
+
 ```
 
 ## Model Details
