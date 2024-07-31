@@ -2,13 +2,13 @@
 
 # <img align="center" src="images/purple_sealion-64x64.png"> A Family of Southeast Asian Language Models
 
-***Updated: 30 July 2024***
+***Updated: 31 July 2024***
 
 SEA-LION is a family of open-source language models developed by AI Singapore that better understands Southeast Asia's diverse contexts, languages, and cultures (SEA). We hope it makes LLMs more accessible and better represents the region's breadth of cultures and languages.
 
 Our first versions of SEA-LION, released in December 2023, were trained from scratched using [SEA-LION-PILE](https://huggingface.co/datasets/aisingapore/sea-lion-pile) (about 1 trillion tokens). Our new version of SEA-LION is based on continued pre-training good open source models. Version 2 is based on Llama 3. We believe that this approach i.e. continued pre-training might be more sustainable over the longer-run. 
 
-## Truly Open Source
+## Transparent and Open Source
 
 We have benefited greatly from the open-source community and believe that efforts to better represent our region will similarly be well served by open-source efforts. SEA-LION will therefore be open and transparent in the following areas:
 
@@ -20,21 +20,21 @@ We have benefited greatly from the open-source community and believe that effort
 
 # LATEST MODELS
 
-## Key Features of SEA-LION-V2 *Latest*
+## Key Features of SEA-LION v2
 
 - Continued Pre-Trained and Fine-Tuned Llama 3 (with more models to follow)
 - Instruction tuned in English, Bahasa Indonesia, Thai, Vietnamese, and Tamil 
 - Trained with to 50B tokens from SEA languages
 - Outperforms base Llama 3 and other models in both general and SEA capabilities
-- Open source under the Meta Llama 3 Community License for community contribution and adoption
+- Our contributions are open source (under MIT license); data and model licenses are listed on their respective Hugging Face data or model cards
 
 See our [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2-instruct) for more detailed model and license information.
 
-## How To Download SEA-LION-V2
+## How To Download SEA-LION v2
 
 SEA-LION models are available for download on HuggingFace at:
 
-### SEA-LION-V2
+### SEA-LION v2
 **Base Models**
 * [Llama3-8B-CPT-SEA-LION-V2-Base](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2-base)
 
@@ -46,7 +46,7 @@ SEA-LION models are available for download on HuggingFace at:
 
 ## Getting Started
 
-To use SEA-LION-V2:
+To use SEA-LION v2:
 
 ```python
 # Please use transformers==4.43.2
@@ -74,7 +74,7 @@ print(outputs[0]["generated_text"][-1])
 
 ```
 
-## Performance and Benchmark
+## Performance and Benchmarks
 
 SEA-LION achieves better or competitive performances on tasks in regional languages, while retaining the general performance of Llama 3.
 
@@ -131,8 +131,7 @@ If you use SEA-LION in your work, please cite it as:
 
 ## Acknowledgements
 
-AI Singapore is a national programme supported by the National Research Foundation, Singapore and hosted by the National University of Singapore.
-Any opinion, finding, conclusion or recommendation expressed in this material are those of the author(s) and do not reflect the views of National Research Foundation, Singapore, or the National University of Singapore.
+AI Singapore is a national programme supported by the National Research Foundation, Singapore and hosted by the National University of Singapore. Any opinion, finding, conclusion or recommendation expressed in this material are those of the author(s) and do not reflect the views of National Research Foundation, Singapore, or the National University of Singapore.
 
 ## Contact
 
@@ -152,7 +151,7 @@ For questions, comments, or issues, please open a GitHub issue or contact us via
 ```
 # OTHER MODELS
 
-## SEA-LION-V1
+## SEA-LION v1
 
 - 3 to 7 billion parameters 
 - Instruction tuned in English and Bahasa Indonesia
@@ -171,7 +170,6 @@ For questions, comments, or issues, please open a GitHub issue or contact us via
 * [SEA-LION-7B-Instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct)
 
 **Model Details**
-
 Please see model cards on Hugging Face.
 
-Additional information and guides about SEA-LION-V1 can be found [here](sea-lion-v1/SEALIONV1_README.md)
+Additional information and guides about SEA-LION v1 can be found [here](sea-lion-v1/SEALIONV1_README.md)
