@@ -100,7 +100,7 @@ To run SEA-LION locally with Ollama via command line:
 1. [Download and install Ollama](https://ollama.com)
 2. Run and chat with SEA-LION with the following command
    ```python
-   ollama run aisingapore/llama3-8b-cpt-sealionv2-instruct 
+   ollama run aisingapore/llama3-8b-cpt-sea-lionv2-instruct
    ```
 
 or [explore SEA-LION with Chainlit and Ollama here](https://github.com/aisingapore/sealion-chainlit-ollama)
