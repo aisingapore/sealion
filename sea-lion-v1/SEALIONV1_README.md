@@ -16,7 +16,7 @@ We have benefited greatly from the open-source community and believe that effort
 4. *Fine-Tuning* data
 5. Evaluation *benchmarks*
 
-## SEA-LION-V1 Key Features
+## SEA-LION v1 Key Features
 
 - 3 to 7 billion parameters (larger models to be released through 2024)
 - Instruction-tuned in English and Bahasa Indonesia, with more to follow
@@ -27,7 +27,7 @@ We have benefited greatly from the open-source community and believe that effort
 
 ## Getting Started
 
-To use SEA-LION-V1 models:
+To use SEA-LION v1 models:
 
 ```python
 # please use transformers 4.34.1
@@ -41,9 +41,9 @@ output = model.generate(tokens["input_ids"], max_new_tokens=20, eos_token_id=tok
 print(tokenizer.decode(output[0], skip_special_tokens=True))
 ```
 
-### How To Download SEA-LION-V1 Models
+### How To Download SEA-LION v1 Models
 
-SEA-LION-V1 models are available for download on HuggingFace at:
+SEA-LION v1 models are available for download on HuggingFace at:
 
 **Base Models**
 * [SEA-LION-3B](https://huggingface.co/aisingapore/sea-lion-3b)
@@ -53,16 +53,16 @@ SEA-LION-V1 models are available for download on HuggingFace at:
 * [SEA-LION-7B-Instruct-Research](https://huggingface.co/aisingapore/sea-lion-7b-instruct-research)
 * [SEA-LION-7B-Instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct)
 
-## SEA-LION-V1 Model Details
+## SEA-LION v1 Model Details
 
-SEA-LION-V1 is based on the MPT architecture with 32 layers and comes in two sizes:
+SEA-LION v1 is based on the MPT architecture with 32 layers and comes in two sizes:
 
 - [SEA-LION-3B](https://huggingface.co/aisingapore/sea-lion-3b) : 3 billion parameters 
 - [SEA-LION-7B](https://huggingface.co/aisingapore/sea-lion-7b) : 7 billion parameters
 - [SEA-LION-7B-Instruct-Research](https://huggingface.co/aisingapore/sea-lion-7b-instruct-research): 7 billion parameters, instruction-tuned in Bahasa Indonesia
 - [SEA-LION-7B-Instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct): 7 billion parameters, instruction-tuned in English and Bahasa Indonesia
 
-SEA-LION-V1 has been trained on a diverse dataset of 980B tokens spanning 11 natural languages:
+SEA-LION v1 has been trained on a diverse dataset of 980B tokens spanning 11 natural languages:
 
 - English
 - Chinese
@@ -88,7 +88,7 @@ The benchmark was introduced here [BHASA: A Holistic Southeast Asian Linguistic 
 
 ## Performance
 
-SEA-LION-V1 achieves better or competitive performances on tasks in regional languages:
+SEA-LION v1 achieves better or competitive performances on tasks in regional languages:
 
 | Model                          | QA (F1) | Sentiment (F1) | Toxicity (F1) | Eng>Indo (ChrF++) | Indo>Eng (ChrF++) | Summary (ROUGE-L) | NLI (Acc) | Causal (Acc) |
 |--------------------------------|---------|----------------|---------------|-------------------|-------------------|-------------------|-----------|--------------|
@@ -101,7 +101,7 @@ SEA-LION-V1 achieves better or competitive performances on tasks in regional lan
 | Mistral 7B Instruct v0.1       | 38.85   | 74.38          | 20.83         | 30.60             | 51.43             | 15.63             | 28.60     | 50.80        |
 | GPT-4                          | 73.60   | 74.14          | 63.96         | 69.38             | 67.53             | 18.71             | 83.20     | 96.00        |
 
-SEA-LION-V1 has an average performance on general tasks in English (as measured by Hugging Face's LLM Leaderboard):
+SEA-LION v1 has an average performance on general tasks in English (as measured by Hugging Face's LLM Leaderboard):
 
 | Model       | ARC   | HellaSwag | MMLU  | TruthfulQA | Average |
 |-------------|:-----:|:---------:|:-----:|:----------:|:-------:|
@@ -114,24 +114,24 @@ For full details on the datasets, metrics, and results, please see the model car
 * [SEA-LION-7B-Instruct-Research](https://huggingface.co/aisingapore/sea-lion-7b-instruct-research)
 * [SEA-LION-7B-Instruct](https://huggingface.co/aisingapore/sea-lion-7b-instruct)
 
-## SEA-LION-V1 Demo
+## SEA-LION v1 Demo
 
 A video demo of SEA-LION v1 is available [here](https://aisingapore.github.io/sealion/).
 
-## SEA-LION-V1 Prompting Guide
+## SEA-LION v1 Prompting Guide
 A basic prompting guide for the SEALION v1 models is provided [here](docs/promptguide.md)
 
-## SEA-LION-V1 Pre-Training Config and Guide
+## SEA-LION v1 Pre-Training Config and Guide
 
 SEA-LION 3B and 7B v1 models are trained on 32 nodes of A100 40GB on AWS EC2.  
 The configuration used for pre-training and an overview guide is provided [here](pre-training/README-PRE-TRAINING.md).
 
-## SEA-LION-V1 QLoRA Fine-Tuning Guide
+## SEA-LION v1 QLoRA Fine-Tuning Guide
 
-The SEA-LION-V1 models can be fine-tuned using the HuggingFace TRL library.  
+The SEA-LION v1 models can be fine-tuned using the HuggingFace TRL library.  
 An overview guide and sample configurations are provided [here](examples/fine-tuning/README.md).
 
-## SEA-LION-V1 Deployment Framework
+## SEA-LION v1 Deployment Framework
 
 ### Text-Generation-Inference (TGI)
 
@@ -152,7 +152,7 @@ Some ways to contribute:
 - Add more model evaluation tasks and metrics
 - Train versions of the model in more SEA languages
 
-## SEA-LION-V1 Model License
+## SEA-LION v1 Model License
 
 See Hugging Face for model license details
 
