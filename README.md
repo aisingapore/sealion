@@ -24,11 +24,11 @@ We have benefited greatly from the open-source community and believe that effort
 
 - Continued Pre-Trained and Fine-Tuned Llama 3 (with more models to follow)
 - Instruction tuned in English, Bahasa Indonesia, Thai, Vietnamese, and Tamil 
-- Trained with to 50B tokens from SEA languages
+- Trained with up to 50B tokens from SEA languages
 - Outperforms base Llama 3 and other models in both general and SEA capabilities
 - Our contributions are open source (under MIT license); data and model licenses are listed on their respective Hugging Face data or model cards
 
-See our [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2-instruct) for more detailed model and license information.
+See our [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2-instruct) page for more detailed model and license information.
 
 ## How To Download SEA-LION v2
 
@@ -76,11 +76,11 @@ print(outputs[0]["generated_text"][-1])
 
 ## Performance and Benchmarks
 
-SEA-LION achieves better or competitive performances on tasks in regional languages, while retaining the general performance of Llama 3.
+SEA-LION achieves better or competitive performances on tasks in regional languages while retaining the general performance of Llama 3.
 
 Our [leaderboard is here](https://leaderboard.sea-lion.ai).
 
-We use a holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering), but also linguistic and cultural diagnostic tests which are meticulously handcrafted. These are tailored to Southeast Asia.
+We use a holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering) but also meticulously handcrafted linguistic and cultural diagnostic tests tailored to Southeast Asia.
 
 The benchmark was introduced here [BHASA: A Holistic Southeast Asian Linguistic and Cultural Evaluation Suite for Large Language Models](https://arxiv.org/abs/2309.06085v2) and [GitHub](https://github.com/aisingapore/bhasa).
 
@@ -96,7 +96,7 @@ Please refer to [serving the SEA-LION model with vLLM](https://github.com/aising
 
 ### Ollama
 
-To run SEA-LION locally with Ollama via command line:
+To run SEA-LION locally with Ollama via the command line:
 1. [Download and install Ollama](https://ollama.com)
 2. Run and chat with SEA-LION with the following command
    ```python
@@ -135,7 +135,7 @@ AI Singapore is a national programme supported by the National Research Foundati
 
 ## Contact
 
-For questions, comments, or issues, please open a GitHub issue or contact us via this [SEA-LION Inquiry Form](https://forms.gle/sLCUVb95wmGf43hi6).
+If you have questions, comments, or issues, please open a GitHub issue or contact us via this [SEA-LION Inquiry Form](https://forms.gle/sLCUVb95wmGf43hi6).
 
 ## References
 
@@ -156,7 +156,7 @@ For questions, comments, or issues, please open a GitHub issue or contact us via
 - 3 to 7 billion parameters 
 - Instruction tuned in English and Bahasa Indonesia
 - Trained with 980B tokens of text data from 11 languages spoken across SEA
-- Specialized vocabulary and tokenization for optimal performance on SEA languages
+- Specialized vocabulary and tokenization for optimal performance in SEA languages
 - Excels on tasks in regional languages
 - Open source under the MIT License for community contribution and adoption
 
