@@ -84,13 +84,13 @@ The benchmark was introduced here [BHASA: A Holistic Southeast Asian Linguistic 
 
 ## Deployment Framework
 
-### Text-Generation-Inference (TGI)
+### Text Generation Inference (TGI)
 
-SEA-LION is natively supported in TGI from [v1.4.0](https://github.com/huggingface/text-generation-inference/releases/tag/v1.4.0).
+Please refer to [serving the SEA-LION model with TGI](https://github.com/aisingapore/sealion-tgi).
 
 ### vLLM
 
-For SEA-LION vLLM integration, please refer to [serving the SEA-LION model with vLLM](https://github.com/aisingapore/sealion-vllm).
+Please refer to [serving the SEA-LION model with vLLM](https://github.com/aisingapore/sealion-vllm).
 
 
 ## Contributing
