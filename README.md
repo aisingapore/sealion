@@ -26,7 +26,7 @@ We have benefited greatly from the open-source community and believe that effort
 - Instruction tuned in English, Bahasa Indonesia, Thai, Vietnamese, and Tamil 
 - Trained with to 50B tokens from SEA languages
 - Outperforms base LLaMA3 and other models in both general and SEA capabilities
-- Open source under the MIT License for community contribution and adoption
+- Open source under the Meta LLaMA3 Community License for community contribution and adoption
 
 ## How To Download SEA-LION-V2
 
@@ -44,21 +44,28 @@ SEA-LION models are available for download on HuggingFace at:
 To use SEA-LION-V2:
 
 ```python
-# Please use transformers==4.37.2
-from transformers import AutoModelForCausalLM, AutoTokenizer
+# Please use transformers==4.43.2
 
-tokenizer = AutoTokenizer.from_pretrained("aisingapore/llama3-8b-cpt-sealionv2-instruct")
-model = AutoModelForCausalLM.from_pretrained("aisingapore/llama3-8b-cpt-sealionv2-instruct")
+import transformers
+import torch
 
-prompt_template = "### USER:\n{human_prompt}\n\n### RESPONSE:\n"
-prompt = """Apa sentimen dari kalimat berikut ini?
-Kalimat: Buku ini sangat membosankan.
-Jawaban: """
-full_prompt = prompt_template.format(human_prompt=prompt)
+model_id = "aisingapore/llama3-8b-cpt-sealionv2-instruct"
 
-tokens = tokenizer(full_prompt, return_tensors="pt")
-output = model.generate(tokens["input_ids"], max_new_tokens=20, eos_token_id=tokenizer.eos_token_id)
-print(tokenizer.decode(output[0], skip_special_tokens=True))
+pipeline = transformers.pipeline(
+    "text-generation",
+    model=model_id,
+    model_kwargs={"torch_dtype": torch.bfloat16},
+    device_map="auto",
+)
+messages = [
+    {"role": "user", "content": "Apa sentimen dari kalimat berikut ini?\nKalimat: Buku ini sangat membosankan.\nJawaban: "},
+]
+
+outputs = pipeline(
+    messages,
+    max_new_tokens=256,
+)
+print(outputs[0]["generated_text"][-1])
 
 ```
 
