@@ -152,9 +152,9 @@ Some ways to contribute:
 - Add more model evaluation tasks and metrics
 - Train versions of the model in more SEA languages
 
-## License
+## SEA-LION-V1 Model License
 
-SEA-LION-V1 is licensed under the [MIT License](LICENSE).
+See Hugging Face for model license details
 
 ## To Cite SEA-LION
 
