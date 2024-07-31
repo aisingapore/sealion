@@ -28,6 +28,8 @@ We have benefited greatly from the open-source community and believe that effort
 - Outperforms base Llama 3 and other models in both general and SEA capabilities
 - Open source under the Meta Llama 3 Community License for community contribution and adoption
 
+See our [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2-instruct) for more detailed model and license information.
+
 ## How To Download SEA-LION-V2
 
 SEA-LION models are available for download on HuggingFace at:
@@ -72,9 +74,6 @@ print(outputs[0]["generated_text"][-1])
 
 ```
 
-## Model Details
-See Hugging Face for model details.
-
 ## Performance and Benchmark
 
 SEA-LION achieves better or competitive performances on tasks in regional languages, while retaining the general performance of Llama 3.
@@ -97,13 +96,14 @@ Please refer to [serving the SEA-LION model with vLLM](https://github.com/aising
 
 ### Ollama
 
-To run SEA-LION locally with Ollama
+To run SEA-LION locally with Ollama via command line:
 1. [Download and install Ollama](https://ollama.com)
 2. Run and chat with SEA-LION with the following command
-```python
-ollama run 
-```
+   ```python
+   ollama run aisingapore/llama3-8b-cpt-sealionv2-instruct 
+   ```
 
+or [explore SEA-LION with Chainlit and Ollama here](https://github.com/aisingapore/sealion-chainlit-ollama)
 
 ## Contributing
 
@@ -115,10 +115,6 @@ Some ways to contribute:
 - Enhance the documentation
 - Add more model evaluation tasks and metrics
 - Train versions of the model in more SEA languages
-
-## Model License
-
-See Hugging Face for model license details
 
 ## To Cite SEA-LION
 
