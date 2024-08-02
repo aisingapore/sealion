@@ -137,18 +137,7 @@ AI Singapore is a national programme supported by the National Research Foundati
 
 If you have questions, comments, or issues, please open a GitHub issue or contact us via this [SEA-LION Inquiry Form](https://forms.gle/sLCUVb95wmGf43hi6).
 
-## References
 
-```bibtex
-@misc{lowphansirikul2021wangchanberta,
-    title={WangchanBERTa: Pretraining transformer-based Thai Language Models},
-    author={Lalita Lowphansirikul and Charin Polpanumas and Nawat Jantrakulchai and Sarana Nutanong},
-    year={2021},
-    eprint={2101.09635},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
-}
-```
 # OTHER MODELS
 
 ## SEA-LION v1
