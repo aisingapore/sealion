@@ -2,11 +2,11 @@
 
 # <img align="center" src="images/purple_sealion-64x64.png"> A Family of Southeast Asian Language Models
 
-***Updated: 31 July 2024***
+***Updated: 21 August 2024***
 
 SEA-LION is a family of open-source language models developed by AI Singapore that better understands Southeast Asia's diverse contexts, languages, and cultures (SEA). We hope it makes LLMs more accessible and better represents the region's breadth of cultures and languages.
 
-Our first versions of SEA-LION, released in December 2023, were trained from scratched using [SEA-LION-PILE](https://huggingface.co/datasets/aisingapore/sea-lion-pile) (about 1 trillion tokens). Our new version of SEA-LION is based on continued pre-training good open source models. Version 2 is based on Llama 3. We believe that this approach i.e. continued pre-training might be more sustainable over the longer-run. 
+Our first versions of SEA-LION, released in December 2023, were trained from scratch using [SEA-LION-PILE](https://huggingface.co/datasets/aisingapore/sea-lion-pile) (about 1 trillion tokens). Our new version of SEA-LION is based on continued pre-training good open source models. Version 2-2.x is based on Llama 3. We believe that this approach, i.e., continued pre-training, might be more sustainable over the longer run. 
 
 ## Transparent and Open Source
 
@@ -20,7 +20,7 @@ We have benefited greatly from the open-source community and believe that effort
 
 # LATEST MODELS
 
-## Key Features of SEA-LION v2
+## Key Features of SEA-LION v2.1
 
 - Continued Pre-Trained and Fine-Tuned Llama 3 (with more models to follow)
 - Instruction tuned in English, Bahasa Indonesia, Thai, Vietnamese, and Tamil 
@@ -28,25 +28,25 @@ We have benefited greatly from the open-source community and believe that effort
 - Outperforms base Llama 3 and other models in both general and SEA capabilities
 - Our contributions are open source (under MIT license); data and model licenses are listed on their respective Hugging Face data or model cards
 
-See our [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2-instruct) page for more detailed model and license information.
+See our [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2.1-instruct) page for more detailed model and license information.
 
-## How To Download SEA-LION v2
+## How To Download SEA-LION v2 and v2.1
 
 SEA-LION models are available for download on HuggingFace at:
 
-### SEA-LION v2
+### SEA-LION v2 and v2.1
 **Base Models**
 * [Llama3-8B-CPT-SEA-LION-V2-Base](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2-base)
 
 **Instruction-Tuned Models**
-* [Llama3-8B-CPT-SEA-LION-V2-Instruct](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2-instruct)
+* [Llama3-8B-CPT-SEA-LION-V2-Instruct](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2.1-instruct)
 
 **Quantized Models**
-* [Llama3-8B-CPT-SEA-LION-V2-Instruct-GGUF](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2-instruct-gguf)
+* [Llama3-8B-CPT-SEA-LION-V2-Instruct-GGUF](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct-gguf)
 
 ## Getting Started
 
-To use SEA-LION v2:
+To use SEA-LION v2.x:
 
 ```python
 # Please use transformers==4.43.2
