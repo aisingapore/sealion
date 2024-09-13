@@ -28,7 +28,7 @@ We have benefited greatly from the open-source community and believe that effort
 - Outperforms base Llama 3 and other models in both general and SEA capabilities
 - Our contributions are open source (under MIT license); data and model licenses are listed on their respective Hugging Face data or model cards
 
-See our [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2.1-instruct) page for more detailed model and license information.
+See our [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct) page for more detailed model and license information.
 
 ## How To Download SEA-LION v2 and v2.1
 
@@ -36,10 +36,10 @@ SEA-LION models are available for download on HuggingFace at:
 
 ### SEA-LION v2 and v2.1
 **Base Models**
-* [Llama3-8B-CPT-SEA-LION-V2-Base](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2-base)
+* [Llama3-8B-CPT-SEA-LION-V2-Base](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2-base)
 
 **Instruction-Tuned Models**
-* [Llama3-8B-CPT-SEA-LION-V2.1-Instruct](https://huggingface.co/aisingapore/llama3-8b-cpt-sealionv2.1-instruct)
+* [Llama3-8B-CPT-SEA-LION-V2.1-Instruct](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct)
 
 **Quantized Models**
 * [Llama3-8B-CPT-SEA-LION-V2.1-Instruct-GGUF](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct-gguf)
