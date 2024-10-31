@@ -2,17 +2,17 @@
 
 # <img align="center" src="images/purple_sealion-64x64.png"> A Family of Southeast Asian Language Models
 
-***Updated: 21 August 2024***
+***Updated: 1 November 2024***
 
 SEA-LION is a family of open-source language models developed by AI Singapore that better understands Southeast Asia's diverse contexts, languages, and cultures (SEA). We hope it makes LLMs more accessible and better represents the region's breadth of cultures and languages.
 
-Our first versions of SEA-LION, released in December 2023, were trained from scratch using [SEA-LION-PILE](https://huggingface.co/datasets/aisingapore/sea-lion-pile) (about 1 trillion tokens). Our new version of SEA-LION is based on continued pre-training good open source models. Version 2-2.x is based on Llama 3. We believe that this approach, i.e., continued pre-training, might be more sustainable over the longer run. 
+Version 3 is based on Google's Gemma 2. It is a 9B parameter model, with 200 billion tokens from 11+2 Southeast Asian languages (English, Chinese, Indonesian, Malay, Thai, Vietnamese, Filipino, Tamil, Burmese, Khmer, and Lao), and Javanese and Sudanese. 
 
 ## Transparent and Open Source
 
 We have benefited greatly from the open-source community and believe that efforts to better represent our region will similarly be well served by open-source efforts. SEA-LION will therefore be open and transparent in the following areas:
 
-1. *Pre-Training* data
+1. *Pre-Training* data [SEA-LION-PILE](https://huggingface.co/datasets/aisingapore/sea-lion-pile) (
 2. Model *training* code
 3. Model *weights*
 4. *Fine-Tuning* data
@@ -20,33 +20,31 @@ We have benefited greatly from the open-source community and believe that effort
 
 # LATEST MODELS
 
-## Key Features of SEA-LION v2.1
+## Key Features of SEA-LION v3
 
-- Continued Pre-Trained and Fine-Tuned Llama 3 (with more models to follow)
-- Instruction tuned in English, Bahasa Indonesia, Thai, Vietnamese, and Tamil 
-- Trained with up to 50B tokens from SEA languages
-- Outperforms base Llama 3 and other models in both general and SEA capabilities
-- Our contributions are open source (under MIT license); data and model licenses are listed on their respective Hugging Face data or model cards
+- Continued Pre-Training from Gemma 2 base with 200B tokens from 11+2 Southeast Asian languages (English, Chinese, Indonesian, Malay, Thai, Vietnamese, Filipino, Tamil, Burmese, Khmer, Lao, Javanese and Sudanese
+- Further fine-tuning to improve general and SEA capabilities, and optimize for instruction following and multi-turn conversations
+- Outperforms similar sized open source models, and even some larger models in both general and SEA capabilities
+- Our contributions are open source (under MIT license); model licenses are derived from the Gemma, and listed on their respective Hugging Face model cards
 
-See our [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct) page for more detailed model and license information.
+See our [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-instruct) page for more detailed model and license information.
 
-## How To Download SEA-LION v2 and v2.1
+## How To Download SEA-LION v3
 
 SEA-LION models are available for download on HuggingFace at:
 
-### SEA-LION v2 and v2.1
 **Base Models**
-* [Llama3-8B-CPT-SEA-LION-V2-Base](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2-base)
+* [Gemma2-9B-CPT-SEA-LION-V3-Base](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-base)
 
 **Instruction-Tuned Models**
-* [Llama3-8B-CPT-SEA-LION-V2.1-Instruct](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct)
+* [Gemma2-9B-CPT-SEA-LION-V3-Instruct](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-instruct)
 
 **Quantized Models**
-* [Llama3-8B-CPT-SEA-LION-V2.1-Instruct-GGUF](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct-gguf)
+* To be released soon
 
 ## Getting Started
 
-To use SEA-LION v2.x:
+To use SEA-LION v3:
 
 ```python
 # Please use transformers==4.43.2
@@ -54,7 +52,7 @@ To use SEA-LION v2.x:
 import transformers
 import torch
 
-model_id = "aisingapore/llama3-8b-cpt-sealionv2-instruct"
+model_id = "aisingapore/gemma2-9b-cpt-sealionv3-instruct"
 
 pipeline = transformers.pipeline(
     "text-generation",
@@ -76,7 +74,7 @@ print(outputs[0]["generated_text"][-1])
 
 ## Performance and Benchmarks
 
-SEA-LION achieves better or competitive performances on tasks in regional languages while retaining the general performance of Llama 3.
+SEA-LION achieves better or competitive performances on tasks in regional languages while retaining the general performance of Gemma 2.
 
 Our [leaderboard is here](https://leaderboard.sea-lion.ai).
 
@@ -161,4 +159,28 @@ If you have questions, comments, or issues, please open a GitHub issue or contac
 **Model Details**
 Please see model cards on Hugging Face.
 
-Additional information and guides about SEA-LION v1 can be found [here](sea-lion-v1/SEALIONV1_README.md)
+Additional information and guides about SEA-LION v1 can be found [here](sea-lion-v1/README.md)
+
+## SEA-LION v2
+
+- Continued Pre-Trained and Fine-Tuned Llama 3
+- Instruction tuned in English, Bahasa Indonesia, Thai, Vietnamese, and Tamil 
+- Trained with up to 50B tokens from SEA languages
+- Outperforms base Llama 3 and other models in both general and SEA capabilities
+- Our contributions are open source (under MIT license); model licenses are listed on their respective Hugging Face model cards
+
+**Base Models**
+* [Llama3-8B-CPT-SEA-LION-V2-Base](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2-base)
+
+**Instruction-Tuned Models**
+* [Llama3-8B-CPT-SEA-LION-V2.1-Instruct](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct)
+* [Llama3-8B-CPT-SEA-LION-V2-Instruct](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2-instruct)
+
+**Quantized Models**
+* [Llama3-8B-CPT-SEA-LION-V2.1-Instruct-GGUF](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct-gguf)
+* [Llama3-8B-CPT-SEA-LION-V2-Instruct-GGUF](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2-instruct-gguf)
+
+**Model Details**
+Please see model cards on Hugging Face.
+
+Additional information and guides about SEA-LION v2.x can be found [here](sea-lion-v2/README.md)
