@@ -9,7 +9,7 @@ peft==0.5.0
 sentencepiece==0.1.97
 tokenizers==0.14.1
 torch==2.1.0+cu118
-transformers==4.34.1
+transformers==4.38.0
 triton==2.1.0
 triton-pre-mlir @ git+https://github.com/vchiley/triton.git@86c7fe23397467ade531513291f729c12dd8d15e#subdirectory=python
 trl==0.7.2
