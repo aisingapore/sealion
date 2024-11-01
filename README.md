@@ -74,7 +74,7 @@ print(outputs[0]["generated_text"][-1])
 
 ## Performance and Benchmarks
 
-SEA-LION achieves better or competitive performances on tasks in regional languages while retaining the general performance of Gemma 2.
+SEA-LION achieves better or competitive performance on tasks in regional languages while retaining the general performance of Gemma 2.
 
 Our [leaderboard is here](https://leaderboard.sea-lion.ai).
 
@@ -129,7 +129,9 @@ If you use SEA-LION in your work, please cite it as:
 
 ## Acknowledgements
 
-AI Singapore is a national programme supported by the National Research Foundation, Singapore and hosted by the National University of Singapore. Any opinion, finding, conclusion or recommendation expressed in this material are those of the author(s) and do not reflect the views of National Research Foundation, Singapore, or the National University of Singapore.
+AI Singapore is a national programme supported by the National Research Foundation, Singapore and hosted by the National University of Singapore. Any opinion, finding, conclusion or recommendation expressed in this material are those of the author(s) and do not reflect the views of National Research Foundation, Singapore, or the National University of Singapore. We also acknowledge the support of the Infocomm Media Development Authority (IMDA) of Singapore.
+
+SEA-LION would not be possible without the support of a growing list of Singapore, regional, and international collaborators. Please see our website for more details.
 
 ## Contact
 
