@@ -39,6 +39,13 @@ SEA-LION models are available for download on HuggingFace at:
 **Instruction-Tuned Models**
 * [Gemma2-9B-CPT-SEA-LION-V3-Instruct](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-instruct)
 
+On Kaggle at:
+
+**Intruction-Tuned Model**
+* To be released soon
+
+On Ollama at:
+
 **Quantized Models**
 * To be released soon
 
