@@ -12,7 +12,7 @@ Version 3 is based on Google's Gemma 2. It is a 9B parameter model, with 200 bil
 
 We have benefited greatly from the open-source community and believe that efforts to better represent our region will similarly be well served by open-source efforts. SEA-LION will therefore be open and transparent in the following areas:
 
-1. *Pre-Training* data [SEA-LION-PILE](https://huggingface.co/datasets/aisingapore/sea-lion-pile) (
+1. *Pre-Training* data [SEA-LION-PILE](https://huggingface.co/datasets/aisingapore/sea-lion-pile)
 2. Model *training* code
 3. Model *weights*
 4. *Fine-Tuning* data
