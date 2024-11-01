@@ -16,7 +16,7 @@ We have benefited greatly from the open-source community and believe that effort
 2. Model *training* code
 3. Model *weights*
 4. *Fine-Tuning* data
-5. Evaluation *benchmarks*
+5. Evaluation *benchmarks* [GitHub](https://github.com/aisingapore/bhasa)
 
 # LATEST MODELS
 
