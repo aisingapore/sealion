@@ -6,7 +6,7 @@
 
 SEA-LION is a family of open-source language models developed by AI Singapore that better understands Southeast Asia's diverse contexts, languages, and cultures (SEA). We hope it makes LLMs more accessible and better represents the region's breadth of cultures and languages.
 
-Version 3 is based on Google's Gemma 2. It is a 9B parameter model, with 200 billion tokens from 11+2 Southeast Asian languages (English, Chinese, Indonesian, Malay, Thai, Vietnamese, Filipino, Tamil, Burmese, Khmer, and Lao), and Javanese and Sudanese. 
+Version 3 is based on Google's Gemma 2. It is a 9B parameter model, with 200 billion tokens from 11+2 Southeast Asian languages (English, Chinese, Indonesian, Malay, Thai, Vietnamese, Filipino, Tamil, Burmese, Khmer, and Lao).
 
 ## Transparent and Open Source
 
@@ -22,7 +22,7 @@ We have benefited greatly from the open-source community and believe that effort
 
 ## Key Features of SEA-LION v3
 
-- Continued Pre-Training from Gemma 2 base with 200B tokens from 11+2 Southeast Asian languages (English, Chinese, Indonesian, Malay, Thai, Vietnamese, Filipino, Tamil, Burmese, Khmer, Lao, Javanese and Sudanese
+- Continued Pre-Training from Gemma 2 base with 200B tokens from 11 Southeast Asian languages (English, Chinese, Indonesian, Malay, Thai, Vietnamese, Filipino, Tamil, Burmese, Khmer, Lao
 - Further fine-tuning to improve general and SEA capabilities, and optimize for instruction following and multi-turn conversations
 - Outperforms similar sized open source models, and even some larger models in both general and SEA capabilities
 - Our contributions are open source (under MIT license); model licenses are derived from the Gemma, and listed on their respective Hugging Face model cards
