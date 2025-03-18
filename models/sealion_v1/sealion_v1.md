@@ -112,8 +112,8 @@ SEA-LION 3B and SEA-LION 7B base models had an average performance on general ta
 
 | Model        | ARC   | HellaSwag | MMLU  | TruthfulQA | Average |
 |--------------|:-------:|:-----------:|:-------:|:------------:|:---------:|
-| SEA-LION-3B  | 36.26 | 64.59     | 24.07 | 36.46      | 40.35   |
-| SEA-LION-7B  | 39.93 | 68.51     | 26.87 | 35.09      | 42.60   |
+| SEA-LION 3B  | 36.26 | 64.59     | 24.07 | 36.46      | 40.35   |
+| SEA-LION 7B  | 39.93 | 68.51     | 26.87 | 35.09      | 42.60   |
 
 For up-to-date comparison of SEA-LION performance against other latest models, please refer to our [SEA-LION Leaderboard](https://leaderboard.sea-lion.ai)
 

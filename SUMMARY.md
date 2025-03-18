@@ -24,12 +24,12 @@
 * [SEA-HELM](benchmarks/seahelm.md)
 
 <!-- Uncomment the items below as and when the content becomes available -->
-<!-- ## Guides -->
+## Guides
 
-<!-- * [Inferencing](guides/inferencing/README.md)
+* [Inferencing](guides/inferencing/README.md)
   * [SEA-LION API](guides/inferencing/api.md)
-  * [SEA-LION on Local](guides/inferencing/local_hosting.md)
-  * [SEA-LION on Cloud](guides/inferencing/cloud_hosting.md) -->
+  <!-- * [SEA-LION on Local](guides/inferencing/local_hosting.md) -->
+  <!-- * [SEA-LION on Cloud](guides/inferencing/cloud_hosting.md) -->
 <!-- * [Prompting](guides/prompting/README.md)
 * [Fine-tuning](guides/finetuning/README.md)
 * [Example Use Cases](guides/use_cases/README.md) -->
