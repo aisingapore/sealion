@@ -6,7 +6,7 @@ South East Asian Languages in One Network (SEA-LION) is a family of open-source 
 
 It is an open-source project anchored by the Products Pillar of AI Singapore. Our work in SEA-LION aims to create LLMs that cater to under-represented population groups and low resource languages in the SEA region. You can [read more about our motivations for SEA-LION here](overview/why_sealion.md).
 
-This guide provides information and resources on SEA-LION including how to access the models, hosting, and how-to guides.
+This site provides information and resources on SEA-LION, including how to access the models, hosting, and how-to guides.
 
 ## Key Features of SEA-LION
 
