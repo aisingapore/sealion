@@ -31,7 +31,7 @@ At a glance:
 - **License:**  [Llama3.1 Community License](https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE)
 
 
-## LLAMA3.1 70B CPT SEA-LIONv3 Base
+## Llama3.1 70B CPT SEA-LIONv3 Base
 ### Training Infrastructure
 Llama3.1 70B CPT SEA-LIONv3 was trained in two stages using [MosaicML Composer](https://github.com/mosaicml/composer) on the following hardware:
 
@@ -110,7 +110,7 @@ SEA-IFEval evaluates a model's ability to adhere to constraints provided in the 
 For more details on Llama3.1 70B CPT SEA-LIONv3 base benchmark performance, please refer to the SEA-HELM leaderboard, https://leaderboard.sea-lion.ai/.
 
 
-## LLAMA3.1 70B CPT SEA-LIONv3 Instruct
+## Llama3.1 70B CPT SEA-LIONv3 Instruct
 ### Fine-Tuning Methodology
 Llama3.1 70B CPT SEA-LIONv3 Instruct was tuned using a combination of a full parameter fine-tune, on-policy alignment, and model merges of the best performing checkpoints. The training process for fine-tuning was approximately 3200 GPU hours, on a single node of 8x H100-80GB GPUs.
 
@@ -145,7 +145,7 @@ SEA-MTBench evaluates a model's ability to engage in multi-turn (2 turns) conver
 
 For more details on Llama3.1 70B CPT SEA-LIONv3 Instruct benchmark performance, please refer to the SEA-HELM leaderboard, https://leaderboard.sea-lion.ai/.
 
-## LLAMA3.1 70B CPT SEA-LIONv3.1 Instruct GGUF
+## Llama3.1 70B CPT SEA-LIONv3.1 Instruct GGUF
 The following quantized GGUF formats of our Llama3.1 70B CPT SEA-LIONv3 Instruct model are available:
 - llama3.1-70B-cpt-sea-lionv3-instruct-F16
 - llama3.1-70B-cpt-sea-lionv3-instruct-Q2_K

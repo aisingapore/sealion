@@ -31,7 +31,7 @@ At a glance:
 - **License:**  [Llama3.1 Community License](https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE)
 
 
-## LLAMA3.1 8B CPT SEA-LIONv3 Base
+## Llama3.1 8B CPT SEA-LIONv3 Base
 ### Training Infrastructure
 Llama3.1 8B CPT SEA-LIONv3 was trained using [MosaicML Composer](https://github.com/mosaicml/composer) on the following hardware:
 
@@ -107,7 +107,7 @@ SEA-IFEval evaluates a model's ability to adhere to constraints provided in the 
 
 For more details on Llama3.1 8B CPT SEA-LIONv3 base benchmark performance, please refer to the SEA-HELM leaderboard, https://leaderboard.sea-lion.ai/.
 
-## LLAMA3.1 8B CPT SEA-LIONv3 Instruct
+## Llama3.1 8B CPT SEA-LIONv3 Instruct
 ### Fine-Tuning Methodology
 Llama3.1 8B CPT SEA-LIONv3 Instruct is a multilingual model that has been fine-tuned in two stages on approximately 12.3M English instruction-completion pairs alongside a pool of 4.5M Southeast Asian instruction-completion pairs from SEA languages such as Indonesian, Javanese, Sundanese, Tamil, Thai and Vietnamese.
 
@@ -146,7 +146,7 @@ SEA-MTBench evaluates a model's ability to engage in multi-turn (2 turns) conver
 
 For more details on Llama3.1 8B CPT SEA-LIONv3 Instruct benchmark performance, please refer to the SEA-HELM leaderboard, https://leaderboard.sea-lion.ai/.
 
-## LLAMA3.1 8B CPT SEA-LIONv3 Instruct GGUF
+## Llama3.1 8B CPT SEA-LIONv3 Instruct GGUF
 The following quantized GGUF formats of our Llama3.1 8B CPT SEA-LIONv3 Instruct model are available:
 - llama3.1-8B-cpt-sea-lionv3-instruct-F16
 - llama3.1-8b-cpt-sea-lionv3-instruct-Q2_K
