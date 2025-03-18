@@ -40,7 +40,6 @@ Replace YOUR_API_KEY with your generated API key.
 SEA-LION's API endpoints for chat and embeddings are compatible with OpenAI's API and libraries.
 
 {% tabs %}
-
 {% tab title="curl" %} 
 ```curl
 curl -X 'POST' \
@@ -79,9 +78,7 @@ completion = client.chat.completions.create(
 print(completion.choices[0].message.content)
 ```
 {% endtab %}
-
-
-<br>
+{% endtabs %}
 
 
 
