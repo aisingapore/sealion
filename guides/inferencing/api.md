@@ -3,6 +3,8 @@
 
 The SEA-LION API provides a quick and simple interface to our various SEA-LION models for text generation, translation, summarization, and more. 
 
+Usage of the SEA-LION API is subject to our [Terms of Use](https://sea-lion.ai/terms-of-use/) and [Privacy Policy](https://sea-lion.ai/privacy-policy/)
+
 ### Getting an API Key
 
 To get started with SEA-LION API, you'll need to first create an API key via our [SEA-LION Playground](https://playground.sea-lion.ai/):
@@ -51,7 +53,7 @@ curl -X 'POST' \
     "max_completion_tokens": 20,
     "messages": [
       {
-        "content": "What is Deep Learning?",
+        "content": "Hi SEA-LION",
         "role": "user"
       }
     ],
@@ -65,12 +67,17 @@ curl -X 'POST' \
 from openai import OpenAI
 client = OpenAI()
 
+client = openai.OpenAI(
+    api_key=YOUR_API_KEY,
+    base_url="https://api.sea-lion.ai/v1" 
+)
+
 completion = client.chat.completions.create(
     model="aisingapore/gemma2-9b-cpt-sea-lionv3-instruct",
     messages=[
         {
             "role": "user",
-            "content": "What is Deep Learning"
+            "content": "Hi SEA-LION"
         }
     ]
 )
@@ -79,6 +86,15 @@ print(completion.choices[0].message.content)
 ```
 {% endtab %}
 {% endtabs %}
+
+
+### Rate Limits
+
+Limits help us mitigate misuse and manage API capacity and help ensure that everyone has fair access to the API.
+
+SEA-LION API usage frequency will be subject to rate limits applied on requests per minute (RPM).
+
+As of 18 Mar 2025, our rate limits is set to **10 requests per minute per user**.
 
 
 
