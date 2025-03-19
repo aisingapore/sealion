@@ -1,7 +1,7 @@
 # Llama-SEA-LION-v3-70B
 ## Introduction
 
-Our Llama-SEA-LION-v3-70B models have been continued pre-trained on top of [Llama-3.1-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct) that is 70 billion parameters in size. Similar to our Llama-SEA-LION-v3-8B model, our Llama-SEA-LION-v3-70B also has a **context length of 128K tokens**, making them our SEA-LION models with the longest context length to date. 
+Our Llama-SEA-LION-v3-70B models have been continued pre-trained on top of [Llama 3.1 70B Instruct](https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct) that is 70 billion parameters in size. Similar to our Llama-SEA-LION-v3-8B model, our Llama-SEA-LION-v3-70B also has a **context length of 128K tokens**, making them our SEA-LION models with the longest context length to date. 
 
 Llama-SEA-LION-v3-70B was trained on data comprised of approximately 200B tokens across 11 SEA languages: Burmese, Chinese, English, Filipino, Indonesia, Khmer, Lao, Malay, Tamil, Thai and Vietnamese.
 
@@ -9,7 +9,7 @@ Llama-SEA-LION-v3-70B-IT was fine-tuned in two stages on approximately 12.3M Eng
 
 At a glance:
 - **Model type:** Decoder
-- **Tokenizer**: Default tokenizer used in Llama-3.1-70B-Instruct
+- **Tokenizer**: Default tokenizer used in Llama 3.1 70B Instruct
 - **Available Formats**:
   - Base (llama3.1-70b-cpt-sea-lionv3-base)
   - Instruct (llama3.1-70b-cpt-sea-lionv3-instruct)
@@ -54,7 +54,7 @@ Llama-SEA-LION-v3-70B was trained in two stages using [MosaicML Composer](https:
 | Global Batch Size | 512                      |
 
 ### Tokenizer
-For tokenisation, the model employs the default tokenizer used in Llama-3.1-70B-Instruct.
+For tokenisation, the model employs the default tokenizer used in Llama 3.1 70B Instruct.
 
 ### Training Data
 Llama-SEA-LION-v3-70B base model was continued pre-trained on 200B tokens of the following data:

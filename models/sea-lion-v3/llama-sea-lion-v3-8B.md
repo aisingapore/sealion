@@ -1,6 +1,6 @@
 # Llama-SEA-LION-v3-8B 
 ## Introduction
-Our Llama-SEA-LION-v3-8B models have been continued pre-trained on top of [Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct) that is 8 billion parameters in size, with **context length of 128K tokens**, making it one of the SEA-LION models with the longest context length to date. It achieves state-of-the-art performance on regional benchmarks like SEA-HELM and outperforms models such as Llama 3.3 70B Instruct on key metrics.
+Our Llama-SEA-LION-v3-8B models have been continued pre-trained on top of [Llama 3.1 8B Instruct](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct) that is 8 billion parameters in size, with **context length of 128K tokens**, making it one of the SEA-LION models with the longest context length to date. It achieves state-of-the-art performance on regional benchmarks like SEA-HELM and outperforms models such as Llama 3.3 70B Instruct on key metrics.
 
 Llama-SEA-LION-v3-8B was trained on data comprised of approximately 200B tokens across 11 SEA languages: Burmese, Chinese, English, Filipino, Indonesia, Khmer, Lao, Malay, Tamil, Thai and Vietnamese.
 
@@ -8,7 +8,7 @@ Llama-SEA-LION-v3-8B-IT was fine-tuned in two stages on approximately 12.3M Engl
 
 At a glance:
 - **Model type:** Decoder
-- **Tokenizer**: Default tokenizer used in Llama-3.1-8B-Instruct
+- **Tokenizer**: Default tokenizer used in Llama 3.1 8B Instruct
 - **Context Length**: 128K 
 - **Available Formats**:
   - Base (llama3.1-8b-cpt-sea-lionv3-base)
