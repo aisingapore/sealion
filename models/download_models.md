@@ -14,7 +14,7 @@ SEA-LION models are available for download via the following channels:
 
 <br>
 
-**Llama3.1 8B CPT SEA-LIONv3**
+**Llama-SEA-LION-v3-8B**
 | Model                | Download   |
 |----------------------|------------|
 | llama3.1-8b-cpt-sea-lionv3-base           | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-base), [Kaggle](https://www.kaggle.com/models/ai-singapore/llama3.1-8b-cpt-sea-lionv3-base)      |
@@ -23,7 +23,7 @@ SEA-LION models are available for download via the following channels:
 
 <br>
 
-**Llama3.1 70B CPT SEA-LIONv3**
+**Llama-SEA-LION-v3-70B**
 | Model                | Download   |
 |----------------------|------------|
 | llama3.1-70b-cpt-sea-lionv3-base           | [HuggingFace](https://huggingface.co/aisingapore/llama3.1-70b-cpt-sea-lionv3-base)      |

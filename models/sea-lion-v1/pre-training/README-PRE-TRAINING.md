@@ -1,6 +1,6 @@
 # SEA-LION Pre-Training Setup Guide
 
-## SEA-LION 3B and 7B models are trained on 32 nodes of A100 40GB on AWS EC2
+## SEA-LION-v1-3B and 7B models are trained on 32 nodes of A100 40GB on AWS EC2
 
 ### Software Stack
 

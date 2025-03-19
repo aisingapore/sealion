@@ -109,7 +109,7 @@ For more details on Llama-SEA-LION-v3-8B base benchmark performance, please refe
 
 ## Llama-SEA-LION-v3-8B-IT
 ### Fine-Tuning Methodology
-Llama-SEA-LION-v3-8B-IT is a multilingual model that has been fine-tuned in two stages on approximately 12.3M English instruction-completion pairs alongside a pool of 4.5M Southeast Asian instruction-completion pairs from SEA languages such as Indonesian, Javanese, Sundanese, Tamil, Thai and Vietnamese.
+Llama-SEA-LION-v3-8B-IT is a multilingual instruction-following model that has been fine-tuned in two stages on approximately 12.3M English instruction-completion pairs alongside a pool of 4.5M Southeast Asian instruction-completion pairs from SEA languages such as Indonesian, Javanese, Sundanese, Tamil, Thai and Vietnamese.
 
 We performed instruction tuning in English and also in SEA languages such as Indonesian, Javanese, Sundanese, Tamil, Thai and Vietnamese on our continued pre-trained Llama-SEA-LION-v3-8B, to create Llama-SEA-LION-v3-8B-IT.
 

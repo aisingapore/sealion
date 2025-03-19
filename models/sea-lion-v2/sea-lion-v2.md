@@ -1,6 +1,6 @@
 # SEA-LION v2
 ## Introduction
-SEA-LION version 2, released in July 2024, has been continued-pretrained on top of the [Meta-Llama-3-8B-Instruct model](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct) that is 8 billion parameters in size, with **context length of 8192 tokens**.
+SEA-LION version 2, released in July 2024, has been continued-pretrained on top of the [Llama 3 8B Instruct model](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct) that is 8 billion parameters in size, with **context length of 8192 tokens**.
 
 Using continued-pretraining let us leverage the powerful capabilities of the Llama3 base model and build a stronger model with far fewer resources than pre-training from scratch. Compared to the 980B tokens used in for SEA-LION v1, approximately **48B** tokens across 5 SEA languages (English, Indonesia, Tamil, Thai and Vietnamese) was used for the continued pre-training of SEA-LION v2. 
 
@@ -22,18 +22,18 @@ At a glance:
 - **License:**  [Llama3 Community License](https://huggingface.co/meta-llama/Meta-Llama-3-8B/blob/main/LICENSE)
 
 
-## Llama3 8B CPT SEA-LIONv2 Base
+## Llama-SEA-LION-v2-8B
 ### Training Infrastructure
-Llama3 8B CPT SEA-LIONv2 Base was trained using [MosaicML Composer](https://github.com/mosaicml/composer) on the following hardware:
+Llama-SEA-LION-v2-8B Base was trained using [MosaicML Composer](https://github.com/mosaicml/composer) on the following hardware:
 
-| Training Details     | Llama3 8B CPT SEA-LIONv2 Base |
+| Training Details     | Llama-SEA-LION-v2-8B |
 |----------------------|:--------------------:|
 | AWS EC2 p5d.24xlarge |          8 instances |
 | Nvidia H100 80GB GPU |          64          |
 | Training Duration    |          2 days      |
 
 **Configuration**
-| HyperParameter    | Llama3 8B CPT SEA-LIONv2 Base |
+| HyperParameter    | Llama-SEA-LION-v2-8B |
 |-------------------|:--------------------:|
 | Precision         | bfloat16             |
 | Optimizer         | decoupled_adamw      |
@@ -47,7 +47,7 @@ Llama3 8B CPT SEA-LIONv2 Base was trained using [MosaicML Composer](https://gith
 For tokenisation, the model employs the default tokenizer used in Llama 3 8B Instruct.
 
 ### Training Data
-The Llama3 8B CPT SEA-LIONv2 Base model was continued pre-trained on 48B tokens of the following data:
+The Llama-SEA-LION-v2-8B base model was continued pre-trained on 48B tokens of the following data:
 
 | Data Source               | Unique Tokens (B) | Multiplier | Total Tokens (B) | Percentage (%) |
 |---------------------------|:-----------------:|:----------:|:----------------:|:--------------:|
@@ -73,7 +73,7 @@ Note:
 - Tamil news is sourced with permission from [Seithi](https://seithi.mediacorp.sg/)
 
 ### Benchmark Performance
-We evaluated Llama3 8B CPT SEA-LIONv2 Base model on general language capabilities.
+We evaluated Llama-SEA-LION-v2-8B base model on general language capabilities.
 
 #### General Language Capabilities
 For the evaluation of general language capabilities in SEA languages, we employed the [BHASA evaluation benchmark](https://arxiv.org/abs/2309.06085v2) across a variety of tasks.
@@ -81,26 +81,26 @@ These tasks include Question Answering (QA), Sentiment Analysis (Sentiment), Tox
 
 The evaluation was done **five-shot** with native prompts and only a sample of 100-1000 instances for each dataset was used as per the setting described in the paper.
 
-For more details on Llama3 8B CPT SEA-LIONv2 base benchmark performance, please refer to the SEA HELM leaderboard, https://leaderboard.sea-lion.ai/
+For more details on Llama-SEA-LION-v2-8B base benchmark performance, please refer to the SEA HELM leaderboard, https://leaderboard.sea-lion.ai/
 
 <br>
 
-## Llama3 8B CPT SEA-LIONv2.1 Instruct
+## Llama-SEA-LION-v2.1-8B-IT
 
-Llama3 8B CPT SEA-LIONv2.1 Instruct is a multilingual model which has been fine-tuned with around 100,000 English instruction-completion pairs alongside a smaller pool of around 50,000 instruction-completion pairs from other ASEAN languages, such as Indonesian, Thai and Vietnamese.
+Llama-SEA-LION-v2.1-8B-IT is a multilingual instruction-following model which has been fine-tuned with around 100,000 English instruction-completion pairs alongside a smaller pool of around 50,000 instruction-completion pairs from other ASEAN languages, such as Indonesian, Thai and Vietnamese.
 
 These instructions have been carefully curated and rewritten to ensure the model was trained on truly open, commercially permissive and high quality datasets.
 
 ### Fine-Tuning Methodology
-The Llama3 8B CPT SEA-LIONv2.1 Instruct model was fine-tuned using 8x A100-40GB using parameter efficient fine tuning in the form of LoRA.
+The Llama-SEA-LION-v2.1-8B-IT model was fine-tuned using 8x A100-40GB using parameter efficient fine tuning in the form of LoRA.
 
 ### Fine-Tuning Data
-Llama3 8B CPT SEA-LIONv2.1 Instruct was trained on a wide range of instructions that were manually and stringently verified by our team. A large portion of the effort was dedicated to ensuring that each instruction-completion pair that the model sees is of high quality and any errors were corrected and rewritten by native speakers or else dropped from our mix.
+Llama-SEA-LION-v2.1-8B-IT was trained on a wide range of instructions that were manually and stringently verified by our team. A large portion of the effort was dedicated to ensuring that each instruction-completion pair that the model sees is of high quality and any errors were corrected and rewritten by native speakers or else dropped from our mix.
 
 In addition, special care was taken to ensure that the datasets used had commercially permissive licenses through verification with the original data source. 
 
 ### Benchmark Performance
-We evaluated Llama3 8B CPT SEA-LIONv2.1 Instruct on both general language capabilities and instruction-following capabilities.
+We evaluated Llama-SEA-LION-v2.1-8B-IT on both general language capabilities and instruction-following capabilities.
 
 #### General Language Capabilities
 For the evaluation of general language capabilities, we employed the [BHASA evaluation benchmark](https://arxiv.org/abs/2309.06085v2) across a variety of tasks. These tasks include Question Answering (QA), Sentiment Analysis (Sentiment), Toxicity Detection (Toxicity), Translation in both directions (Eng>Lang & Lang>Eng), Abstractive Summarization (Summ), Causal Reasoning (Causal) and Natural Language Inference (NLI).
@@ -111,7 +111,7 @@ The evaluation was done **zero-shot** with native prompts and only a sample of 1
 
 
 #### Instruction-following Capabilities
-Since Llama3 8B CPT SEA-LIONv2.1 Instruct is an instruction-following model, we also evaluated it on instruction-following capabilities with two datasets, [IFEval](https://arxiv.org/abs/2311.07911) and [MT-Bench](https://arxiv.org/abs/2306.05685).
+Since Llama-SEA-LION-v2.1-8B-IT is an instruction-following model, we also evaluated it on instruction-following capabilities with two datasets, [IFEval](https://arxiv.org/abs/2311.07911) and [MT-Bench](https://arxiv.org/abs/2306.05685).
 
 As these two datasets were originally in English, the linguists and native speakers in the team worked together to filter, localize and translate the datasets into the respective target languages to ensure that the examples remained reasonable, meaningful and natural.
 
@@ -126,8 +126,8 @@ MT-Bench evaluates a model's ability to engage in multi-turn (2 turns) conversat
 
 <br>
 
-## Llama3 8B CPT SEA-LIONv2.1 Instruct GGUF
-The following quantized GGUF formats of our Llama3 8B CPT SEA-LIONv2.1 Instruct model are available:
+## Llama-SEA-LION-v2.1-8B-IT-GGUF
+The following quantized GGUF formats of our Llama-SEA-LION-v2.1-8B-IT model are available:
 - llama3-8b-cpt-sea-lionv2.1-instruct-Q2_K
 - llama3-8b-cpt-sea-lionv2.1-instruct-Q3_K_M
 - llama3-8b-cpt-sea-lionv2.1-instruct-Q4_0
@@ -156,7 +156,7 @@ llama3-8b-cpt-sea-lionv2-base           | [HuggingFace](https://huggingface.co/a
 <br>
 
 ## Usage
-Llama3 8B CPT SEA-LIONv2.1 Instruct can be run using the 🤗 Transformers library 
+Llama-SEA-LION-v2.1-8B-IT can be run using the 🤗 Transformers library 
 ```python
 # Please use transformers==4.43.2
 

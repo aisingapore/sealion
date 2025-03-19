@@ -2,9 +2,9 @@
 ## Introduction
 SEA-LION version 1, released in December 2023, was our first collection of Large Language Models (LLMs) that were specifically **pretrained** and **instruct-tuned** for the Southeast Asia (SEA) region, making a significant leap forward in the field of Natural Language Processing in understanding the SEA regional context.
 
-SEA-LION v1 comes in two model sizes – one with 3 billion parameters (SEA-LION 3B) and another with 7 billion parameters (SEA-LION 7B). Both variants are built on the robust MPT architecture and utilise a vocabulary size of 256K, with **context length of 2048 tokens**.
+SEA-LION v1 comes in two model sizes – one with 3 billion parameters (SEA-LION-v1-3B) and another with 7 billion parameters (SEA-LION-v1-7B). Both variants are built on the robust MPT architecture and utilise a vocabulary size of 256K, with **context length of 2048 tokens**.
 
-Our SEA-LION 7B model was then further instruct-tuned to produce SEA-LION 7B Instruct.
+Our SEA-LION-v1-7B model was then further instruct-tuned to produce SEA-LION-v1-7B-IT.
 
 At a glance:
 - **Model type:** Decoder
@@ -28,10 +28,10 @@ At a glance:
    11. Lao
 - **License:** MIT
 
-## SEA-LION 3B / SEA-LION 7B
+## SEA-LION-v1-3B / SEA-LION-v1-7B
 ### Model Architecture
-SEA-LION 3B and SEA-LION 7B are both decoder models built on the robust MPT architecture:
-| Parameter         | SEA-LION 3B | SEA-LION 7B |
+SEA-LION-v1-3B and SEA-LION-v1-7B are both decoder models built on the robust MPT architecture:
+| Parameter         | SEA-LION-v1-3B | SEA-LION-v1-7B |
 |------------------|:------------:|:------------:|
 | Layers          | 32         | 32         |
 | d_model        | 2560       | 4096       |
@@ -42,7 +42,7 @@ SEA-LION 3B and SEA-LION 7B are both decoder models built on the robust MPT arch
 
 ### Training Infrastructure
 SEA-LION v1 was trained using [MosaicML Composer](https://github.com/mosaicml/composer) on the following hardware:
-| Training Details             | SEA-LION 3B  | SEA-LION 7B  |
+| Training Details             | SEA-LION-v1-3B  | SEA-LION-v1-7B  |
 |------------------------------|:-------------:|:-------------:|
 | AWS EC2 p4d.24xlarge        | 30 instances | 32 instances |
 | Nvidia A100 40GB GPU        | 240         | 256         |
@@ -50,7 +50,7 @@ SEA-LION v1 was trained using [MosaicML Composer](https://github.com/mosaicml/co
 
 
 **Configuration:**
-| HyperParameter     | SEA-LION 3B          | SEA-LION 7B          |
+| HyperParameter     | SEA-LION-v1-3B          | SEA-LION-v1-7B          |
 |--------------------|:---------------------:|:---------------------:|
 | Precision         | bfloat16            | bfloat16            |
 | Optimizer        | decoupled_adamw      | decoupled_adamw      |
@@ -63,12 +63,12 @@ For full details on our SEA-LION v1 training infrastructure and configuration, p
 
 
 ### Tokenizer
-For tokenization, both SEA-LION 3B and SEA-LION 7B employed our custom SEABPETokenizer, which is specially tailored for SEA languages, ensuring optimal model performance.
+For tokenization, both SEA-LION-v1-3B and SEA-LION-v1-7B employed our custom SEABPETokenizer, which is specially tailored for SEA languages, ensuring optimal model performance.
 
 SEABPETokenizer was trained by sampling 20M lines from the model training data, using the SentencePiece framework. The tokenizer type is Byte-Pair Encoding (BPE).
 
 ### Training Data
-SEA-LION 3B and SEA-LION 7B were trained on 980B tokens of text data from 11 languages spoken across SEA:
+SEA-LION-v1-3B and SEA-LION-v1-7B were trained on 980B tokens of text data from 11 languages spoken across SEA:
 - English
 - Chinese
 - Indonesian
@@ -108,42 +108,42 @@ The dataset is available here: [SEA-LION-PILE](https://huggingface.co/datasets/a
 
 
 ### Performance
-SEA-LION 3B and SEA-LION 7B base models had an average performance on general tasks in English (as measured by Hugging Face's LLM Leaderboard):
+SEA-LION-v1-3B and SEA-LION-v1-7B base models had an average performance on general tasks in English (as measured by Hugging Face's LLM Leaderboard):
 
 | Model        | ARC   | HellaSwag | MMLU  | TruthfulQA | Average |
 |--------------|:-------:|:-----------:|:-------:|:------------:|:---------:|
-| SEA-LION 3B  | 36.26 | 64.59     | 24.07 | 36.46      | 40.35   |
-| SEA-LION 7B  | 39.93 | 68.51     | 26.87 | 35.09      | 42.60   |
+| SEA-LION-v1-3B  | 36.26 | 64.59     | 24.07 | 36.46      | 40.35   |
+| SEA-LION-v1-7B  | 39.93 | 68.51     | 26.87 | 35.09      | 42.60   |
 
 For up-to-date comparison of SEA-LION performance against other latest models, please refer to our [SEA-LION Leaderboard](https://leaderboard.sea-lion.ai)
 
 
-## SEA-LION 7B Instruct
+## SEA-LION-v1-7B-IT
 
-SEA-LION 7B Instruct is a multilingual model which has been fine-tuned with thousands of English and Indonesian instruction-completion pairs alongside a smaller pool of instruction-completion pairs from other ASEAN languages, using our pre-trained SEA-LION 7B as base. 
+SEA-LION-v1-7B-IT is a multilingual model which has been fine-tuned with thousands of English and Indonesian instruction-completion pairs alongside a smaller pool of instruction-completion pairs from other ASEAN languages, using our pre-trained SEA-LION-v1-7B as base. 
 
 These instructions have been carefully curated and rewritten to ensure the model was trained on truly open, commercially permissive and high quality datasets.
 
 
 ### Fine-Tuning Methodology
 
-The SEA-LION 7B Instruct was fine-tuned using 8x A100-40GB using parameter efficient fine tuning in the form of LoRA.
+The SEA-LION-v1-7B-IT was fine-tuned using 8x A100-40GB using parameter efficient fine tuning in the form of LoRA.
 
-To perform similar fine-tuning on our SEA-LION 7B base model using the HuggingFace TRL library, you can refer to sample configurations provided in our [SEA-LION QLoRA Fine-Tuning Guide.](./fine-tuning/README.md)
+To perform similar fine-tuning on our SEA-LION-v1-7B base model using the HuggingFace TRL library, you can refer to sample configurations provided in our [SEA-LION QLoRA Fine-Tuning Guide.](./fine-tuning/README.md)
 
 
 ### Fine-Tuning Data
-SEA-LION 7B Instruct was trained on a wide range of instructions that were manually and stringently verified by our team. A large portion of the effort was dedicated to ensuring that each instruction-completion pair that the model sees is of a high quality and any errors were corrected and rewritten by native speakers or else dropped from our mix.
+SEA-LION-v1-7B-IT was trained on a wide range of instructions that were manually and stringently verified by our team. A large portion of the effort was dedicated to ensuring that each instruction-completion pair that the model sees is of a high quality and any errors were corrected and rewritten by native speakers or else dropped from our mix.
 
 In addition, special care was taken to ensure that the datasets used had commercially permissive licenses through verification with the original data source.
 
 
 ### Benchmarks
-We evaluated SEA-LION 7B Instruct on the BHASA benchmark ([arXiv](https://arxiv.org/abs/2309.06085v2) and [GitHub](https://github.com/aisingapore/bhasa)) across a variety of tasks.
+We evaluated SEA-LION-v1-7B-IT on the BHASA benchmark ([arXiv](https://arxiv.org/abs/2309.06085v2) and [GitHub](https://github.com/aisingapore/bhasa)) across a variety of tasks.
 
 BHASA stands out amongst other evaluations for SEA languages for its holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering), but also linguistic and cultural diagnostic tests which are meticulously handcrafted.
 
-The evaluation was done zero-shot with Indonesian prompts and only a sample of 100-1000 instances for each dataset was used as per the setting described in the BHASA paper. ]
+The evaluation was done zero-shot with Indonesian prompts and only a sample of 100-1000 instances for each dataset was used as per the setting described in the BHASA paper.
 
 - For Natural Language Understanding (NLU) tasks, we tested the model on Sentiment Analysis (Sentiment) using the NusaX dataset, Question Answering (QA) using the TyDiQA dataset, and Toxicity Detection (Toxicity) using the Indonesian Multi-Label Hate Speech Detection dataset. The metrics used are F1 scores for all three tasks.
 - For Natural Language Generation (NLG) tasks, we tested the model on Machine Translation from English to Indonesian (Eng>Indo) and from Indonesian to English (Indo>Eng) using the FLORES-200 dataset, and Abstractive Summarization (Summary) using the XLSum dataset. The metrics used for Machine Translation and Abstractive Summarization are ChrF++ and ROUGE-L respectively.
@@ -169,7 +169,7 @@ For up-to-date comparison of SEA-LION performance against other latest models, p
 
 ## SEA-LION-7B-Instruct-GGUF
 
-Support for SEA-LION v1 GGUF was merged into `llama.cpp` as of 4th Apr 2024.
+Support for SEA-LION-v1-IT-GGUF was merged into `llama.cpp` as of 4th Apr 2024.
 
 SEA-LION can be run using the `llama.cpp` library from commit id [bb43cf7](https://github.com/ggerganov/llama.cpp/commit/bb43cf7e9d86d69ffd9c7f008f75db890a35b45a) or later.
 
@@ -197,7 +197,7 @@ python convert-hf-to-gguf.py {{model path}}
 For other parameters and how to use them, please refer to [llama.cpp documentation.](https://github.com/ggerganov/llama.cpp/blob/master/examples/main/README.md)
 
 
-The following quantized GGUF formats of our SEA-LION 7B Instruct model are available:
+The following quantized GGUF formats of our SEA-LION-v1-7B-IT model are available:
 - sea-lion-7b-instruct-Q2_K
 - sea-lion-7b-instruct-Q3_K_M
 - sea-lion-7b-instruct-Q4_0
@@ -217,14 +217,14 @@ SEA-LION v1 models are available for download via the following channels:
 
 | Model                | Download   |
 |----------------------|------------|
-| SEA-LION 3B          | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-3b)      |
-| SEA-LION 7B          | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b)      |
-| SEA-LION 7B Instruct | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b-instruct)      |
-| SEA-LION 7B Instruct GGUF | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b-instruct-gguf)      |
+| SEA-LION-v1-3B          | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-3b)      |
+| SEA-LION-v1-7B          | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b)      |
+| SEA-LION-v1-7B-IT | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b-instruct)      |
+| SEA-LION-v1-7B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b-instruct-gguf)      |
 
 
 ## Usage
-SEA-LION 7B Instruct can be run using the 🤗 Transformers library
+SEA-LION-v1-7B-IT can be run using the 🤗 Transformers library
 
 ```python
 # Please use transformers==4.37.2
@@ -245,7 +245,7 @@ print(tokenizer.decode(output[0], skip_special_tokens=True))
 ```
 
 ## Prompting Guide
-A basic prompting guide for the SEALION v1 models is provided [here](./sealion_v1_promptguide.md)
+A basic prompting guide for the SEALION v1 models is provided [here](./sealion-v1_promptguide.md)
 
 ## Disclaimer
 

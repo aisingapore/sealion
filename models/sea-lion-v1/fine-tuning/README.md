@@ -1,5 +1,5 @@
 # SEA-LION QLoRA Fine-Tuning Guide
-The following is a fine-tuning example using the SEA-LION 7B model and the `Abzu/dolly_hhrlhf` dataset.
+The following is a fine-tuning example using the SEA-LION-v1-7B model and the `Abzu/dolly_hhrlhf` dataset.
 
 ## Tested setup
 This guide was tested on a machine containing 8× A100(40GB) GPUs.

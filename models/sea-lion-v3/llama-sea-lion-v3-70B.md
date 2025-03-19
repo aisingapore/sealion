@@ -112,7 +112,7 @@ For more details on Llama-SEA-LION-v3-70B base benchmark performance, please ref
 
 ## Llama-SEA-LION-v3-70B-IT
 ### Fine-Tuning Methodology
-Llama-SEA-LION-v3-70B-IT was tuned using a combination of a full parameter fine-tune, on-policy alignment, and model merges of the best performing checkpoints. The training process for fine-tuning was approximately 3200 GPU hours, on a single node of 8x H100-80GB GPUs.
+Llama-SEA-LION-v3-70B-IT is a multilingual instruction-following model that has been tuned using a combination of a full parameter fine-tune, on-policy alignment, and model merges of the best performing checkpoints. The training process for fine-tuning was approximately 3200 GPU hours, on a single node of 8x H100-80GB GPUs.
 
 ### Fine-Tuning Data
 Llama-SEA-LION-v3-70B-IT was trained on a wide range of synthetic instructions, alongside publicly available instructions hand-curated by the team with the assistance of native speakers. In addition, special care was taken to ensure that the datasets used had commercially permissive licenses through verification with the original data sources.

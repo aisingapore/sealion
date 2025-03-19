@@ -15,7 +15,7 @@ Quick references:
 
 ## Prompt Format
 
-To ensure optimal performance from SEA-LION 7B Instruct, prompts should be formatted in the following way. For instance, given the input "Describe Singapore in a few words", your prompt should look like this:
+To ensure optimal performance from SEA-LION-v1-7B-IT, prompts should be formatted in the following way. For instance, given the input "Describe Singapore in a few words", your prompt should look like this:
 
 ```
 ### USER:
@@ -27,11 +27,11 @@ Describe Singapore in a few words.
 
 __NOTE: the newline characters ie. “””### USER:\n{input}\n\n### RESPONSE:\n”””_
 
-Additionally, SEA-LION 7B Instruct has not been tuned to explicitly support system prompts, though we have noticed changes in behaviour when they are incorporated regardless.
+Additionally, SEA-LION-v1-7B-IT has not been tuned to explicitly support system prompts, though we have noticed changes in behaviour when they are incorporated regardless.
 
 ## Guidelines
 
-In our experiments with SEA-LION 7B Instruct, beyond the above instruction format, we have found that crafting your instructions carefully can significantly enhance the model's performance and the quality of its response. Below are some strategies and guidelines to consider when formulating your instructions. Remember, these are illustrative and not exhaustive, and they are not meant to be rigid rules but rather suggestions to optimise your interaction with the model. 
+In our experiments with SEA-LION-v1-7B-IT, beyond the above instruction format, we have found that crafting your instructions carefully can significantly enhance the model's performance and the quality of its response. Below are some strategies and guidelines to consider when formulating your instructions. Remember, these are illustrative and not exhaustive, and they are not meant to be rigid rules but rather suggestions to optimise your interaction with the model. 
 
 ### Single Question Answering
 
@@ -197,7 +197,7 @@ The sentiment of the sentence is positive because it is stated that it is the bi
 
 ### Indonesian
 
-SEA-LION 7B Instruct is also capable of handling prompts in native Indonesian. Similar to English, when crafting your prompt in Indonesian, keeping the above guidelines in mind is strongly advised. 
+SEA-LION-v1-7B-IT is also capable of handling prompts in native Indonesian. Similar to English, when crafting your prompt in Indonesian, keeping the above guidelines in mind is strongly advised. 
 
 Here is an example of the model’s capabilities in answering multiple questions given a context in Indonesian.
 ```

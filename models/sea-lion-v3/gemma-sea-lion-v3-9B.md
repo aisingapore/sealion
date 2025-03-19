@@ -104,7 +104,7 @@ For more details on Gemma-SEA-LION-v3-9B base benchmark performance, please refe
 
 ## Gemma-SEA-LION-v3-9B-IT
 
-Gemma-SEA-LION-v3-9B-IT is a multilingual model which has been fine-tuned with around **500,000 English instruction-completion pairs** alongside a larger pool of around **1,000,000 instruction-completion pairs** from other ASEAN languages, such as Indonesian, Thai and Vietnamese.
+Gemma-SEA-LION-v3-9B-IT is a multilingual instruction-following model which has been fine-tuned with around **500,000 English instruction-completion pairs** alongside a larger pool of around **1,000,000 instruction-completion pairs** from other ASEAN languages, such as Indonesian, Thai and Vietnamese.
 
 ### Fine-Tuning Methodology
 Gemma-SEA-LION-v3-9B-IT was built using a combination of a full parameter fine-tune, on-policy alignment, and model merges of the best performing checkpoints. The training process for fine-tuning was approximately 15 hours, with alignment taking 2 hours, both on 8x H100-80GB GPUs.
