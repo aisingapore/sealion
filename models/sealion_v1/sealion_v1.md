@@ -1,8 +1,8 @@
-# SEA-LION V1
+# SEA-LION v1
 ## Introduction
 SEA-LION version 1, released in December 2023, was our first collection of Large Language Models (LLMs) that were specifically **pretrained** and **instruct-tuned** for the Southeast Asia (SEA) region, making a significant leap forward in the field of Natural Language Processing in understanding the SEA regional context.
 
-SEA-LION V1 comes in two model sizes – one with 3 billion parameters (SEA-LION 3B) and another with 7 billion parameters (SEA-LION 7B). Both variants are built on the robust MPT architecture and utilise a vocabulary size of 256K, with **context length of 2048 tokens**.
+SEA-LION v1 comes in two model sizes – one with 3 billion parameters (SEA-LION 3B) and another with 7 billion parameters (SEA-LION 7B). Both variants are built on the robust MPT architecture and utilise a vocabulary size of 256K, with **context length of 2048 tokens**.
 
 Our SEA-LION 7B model was then further instruct-tuned to produce SEA-LION 7B Instruct.
 
@@ -41,7 +41,7 @@ SEA-LION 3B and SEA-LION 7B are both decoder models built on the robust MPT arch
 
 
 ### Training Infrastructure
-SEA-LION V1 was trained using [MosaicML Composer](https://github.com/mosaicml/composer) on the following hardware:
+SEA-LION v1 was trained using [MosaicML Composer](https://github.com/mosaicml/composer) on the following hardware:
 | Training Details             | SEA-LION 3B  | SEA-LION 7B  |
 |------------------------------|:-------------:|:-------------:|
 | AWS EC2 p4d.24xlarge        | 30 instances | 32 instances |
@@ -59,7 +59,7 @@ SEA-LION V1 was trained using [MosaicML Composer](https://github.com/mosaicml/co
 | Global Batch Size | 1200                | 2048                |
 | Micro Batch Size  | 5                   | 4                   |
 
-For full details on our SEA-LION V1 training infrastructure and configuration, please refer to our [SEA-LION Pre-Training Setup Guide](./pre-training/README-PRE-TRAINING.md)
+For full details on our SEA-LION v1 training infrastructure and configuration, please refer to our [SEA-LION Pre-Training Setup Guide](./pre-training/README-PRE-TRAINING.md)
 
 
 ### Tokenizer
@@ -151,7 +151,7 @@ The evaluation was done zero-shot with Indonesian prompts and only a sample of 1
 
 
 ### Performance
-SEA-LION V1 models achieved better or competitive performances on tasks in regional languages at the time of release:
+SEA-LION v1 models achieved better or competitive performances on tasks in regional languages at the time of release:
 
 | Model                          | QA (F1) | Sentiment (F1) | Toxicity (F1) | Eng>Indo (ChrF++) | Indo>Eng (ChrF++) | Summary (ROUGE-L) | NLI (Acc) | Causal (Acc) |
 |--------------------------------|---------|----------------|---------------|-------------------|-------------------|-------------------|-----------|--------------|
@@ -169,7 +169,7 @@ For up-to-date comparison of SEA-LION performance against other latest models, p
 
 ## SEA-LION-7B-Instruct-GGUF
 
-Support for SEA-LION V1 GGUF was merged into `llama.cpp` as of 4th Apr 2024.
+Support for SEA-LION v1 GGUF was merged into `llama.cpp` as of 4th Apr 2024.
 
 SEA-LION can be run using the `llama.cpp` library from commit id [bb43cf7](https://github.com/ggerganov/llama.cpp/commit/bb43cf7e9d86d69ffd9c7f008f75db890a35b45a) or later.
 
@@ -210,9 +210,9 @@ The following quantized GGUF formats of our SEA-LION 7B Instruct model are avail
 Please refer to our [How To Download](#how-to-download) section for more details on how to access them.
 
 ## Download the Model(s)
-SEA-LION V1 models are available for download via the following channels:
+SEA-LION v1 models are available for download via the following channels:
 
-[HuggingFace SEA-LION V1 Collection](https://huggingface.co/collections/aisingapore/sea-lionv1-672589cd29a1781afa6be35e)
+[HuggingFace SEA-LION v1 Collection](https://huggingface.co/collections/aisingapore/sea-lionv1-672589cd29a1781afa6be35e)
 
 
 | Model                | Download   |
@@ -245,7 +245,7 @@ print(tokenizer.decode(output[0], skip_special_tokens=True))
 ```
 
 ## Prompting Guide
-A basic prompting guide for the SEALION V1 models is provided [here](./sealion_v1_promptguide.md)
+A basic prompting guide for the SEALION v1 models is provided [here](./sealion_v1_promptguide.md)
 
 ## Disclaimer
 

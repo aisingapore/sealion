@@ -1,8 +1,8 @@
-# SEA-LION V2
+# SEA-LION v2
 ## Introduction
 SEA-LION version 2, released in July 2024, has been continued-pretrained on top of the [Meta-Llama-3-8B-Instruct model](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct) that is 8 billion parameters in size, with **context length of 8192 tokens**.
 
-Using continued-pretraining let us leverage the powerful capabilities of the Llama3 base model and build a stronger model with far fewer resources than pre-training from scratch. Compared to the 980B tokens used in for SEA-LION V1, approximately **48B** tokens across 5 SEA languages (English, Indonesia, Tamil, Thai and Vietnamese) was used for the continued pre-training of SEA-LION V2. 
+Using continued-pretraining let us leverage the powerful capabilities of the Llama3 base model and build a stronger model with far fewer resources than pre-training from scratch. Compared to the 980B tokens used in for SEA-LION v1, approximately **48B** tokens across 5 SEA languages (English, Indonesia, Tamil, Thai and Vietnamese) was used for the continued pre-training of SEA-LION v2. 
 
 At a glance:
 - **Model type:** Decoder
@@ -142,9 +142,9 @@ Please refer to our [How To Download](#how-to-download) section for more details
 <br>
 
 ## Download the Model(s)
-SEA-LION V2 models are available for download via the following channels:
+SEA-LION v2 models are available for download via the following channels:
 
-[HuggingFace SEA-LION V2 Collection](https://huggingface.co/collections/aisingapore/sea-lionv2-672589c4c7ea47e4174d3e7f)
+[HuggingFace SEA-LION v2 Collection](https://huggingface.co/collections/aisingapore/sea-lionv2-672589c4c7ea47e4174d3e7f)
 
 
 | Model                | Download   |

@@ -1,2 +1,2 @@
-# Deploying SEA-LION on Cloud
+# Deploying SEA-LION on the Cloud
 

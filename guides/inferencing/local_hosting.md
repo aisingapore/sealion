@@ -1,2 +1,2 @@
-# Running SEA-LION on a Local Machine
+# Running SEA-LION on a local machine
 

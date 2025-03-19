@@ -59,7 +59,7 @@ Llama3.1 8B CPT SEA-LIONv3 base model was continued pre-trained on 200B tokens o
 
 | Language                 | Source                                 | Total Tokens (B) | Percentage (%) | Total percentage (%) |
 | ------------------------ | -------------------------------------- | ---------------- | -------------- | -------------------- |
-| Code                     | StackV2                                | 40               | 20             | 20                   |
+| Code                     | Stackv2                                | 40               | 20             | 20                   |
 | English                  | Dolma                                  | 37.5             | 18.75          | 25                   |
 |                          | Fineweb-Edu                            | 7.5              | 3.75           |
 |                          | Others                                 | 5                | 2.5            |
@@ -165,7 +165,7 @@ Please refer to our [How To Download](#how-to-download) section for more details
 ## Download the Model(s)
 Llama3.1 8B CPT SEA-LIONv3 models are available for download via the following channels:
 
-[HuggingFace SEA-LION V3 Collection](https://huggingface.co/collections/aisingapore/sea-lionv3-672589a39cdadd6a5b199581)
+[HuggingFace SEA-LION v3 Collection](https://huggingface.co/collections/aisingapore/sea-lionv3-672589a39cdadd6a5b199581)
 
 
 | Model                | Download   |

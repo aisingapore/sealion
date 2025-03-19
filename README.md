@@ -45,7 +45,7 @@ Visit our [Leaderboard](https://leaderboard.sea-lion.ai/) for more detailed brea
 
 We have benefited greatly from the open-source community and believe that efforts to better represent our region will similarly be well served by open-source efforts.
 
-All SEA-LION releases will therefore embrace an open-source ethos under the MIT license as much as possible; however, the exact licensing terms may vary depending on the underlying base model’s restrictions or requirements. For instance, if the model leverages Meta’s Llama3 codebase, it may be bound by the [Llama3 License](https://huggingface.co/meta-llama/Meta-Llama-3-8B/blob/main/LICENSE), which places certain restrictions on commercial use. Similarly, the Gemma2-based variants may carry different terms. Users should always refer to the Hugging Face model card of each specific SEA-LION model for the most accurate, up-to-date license information.
+All SEA-LION releases will therefore embrace an open-source ethos under the MIT license as much as possible; however, the exact licensing terms may vary depending on the underlying base model’s restrictions or requirements. For instance, if the model leverages Meta’s Llama3 codebase, it may be bound by the [Llama3 License](https://huggingface.co/meta-llama/Meta-Llama-3-8B/blob/main/LICENSE), which places certain restrictions on commercial use. Similarly, the Gemma-based variants may carry different terms. Users should always refer to the Hugging Face model card of each specific SEA-LION model for the most accurate, up-to-date license information.
 
 SEA-LION will also be open and transparent in the following areas throughout this guide:
 

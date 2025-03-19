@@ -3,9 +3,9 @@
 SEA-LION models are available for download via the following channels:
 
 ## SEA-LION v3 (Latest)
-[Full HuggingFace SEA-LION V3 Collection](https://huggingface.co/collections/aisingapore/sea-lionv3-672589a39cdadd6a5b199581)
+[Full HuggingFace SEA-LION v3 Collection](https://huggingface.co/collections/aisingapore/sea-lionv3-672589a39cdadd6a5b199581)
 
-**Gemma2 9B CPT SEA-LIONv3**
+**Gemma SEA-LION-v3 9B**
 | Model                | Download   |
 |----------------------|------------|
 | gemma2-9b-cpt-sea-lionv3-base           | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-base), [Kaggle](https://www.kaggle.com/models/ai-singapore/gemma2-9b-cpt-sea-lionv3-base)      |
@@ -33,7 +33,7 @@ SEA-LION models are available for download via the following channels:
 <br>
 
 ## SEA-LION v2
-[Full HuggingFace SEA-LION V2 Collection](https://huggingface.co/collections/aisingapore/sea-lionv2-672589c4c7ea47e4174d3e7f)
+[Full HuggingFace SEA-LION v2 Collection](https://huggingface.co/collections/aisingapore/sea-lionv2-672589c4c7ea47e4174d3e7f)
 
 
 | Model                | Download   |
@@ -46,7 +46,7 @@ llama3-8b-cpt-sea-lionv2-base           | [HuggingFace](https://huggingface.co/a
 <br>
 
 ## SEA-LION v1
-[Full HuggingFace SEA-LION V1 Collection](https://huggingface.co/collections/aisingapore/sea-lionv1-672589cd29a1781afa6be35e)
+[Full HuggingFace SEA-LION v1 Collection](https://huggingface.co/collections/aisingapore/sea-lionv1-672589cd29a1781afa6be35e)
 
 
 | Model                | Download   |
