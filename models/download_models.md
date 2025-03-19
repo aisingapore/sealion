@@ -52,6 +52,6 @@ SEA-LION models are available for download via the following channels:
 | Model                | Download   |
 |----------------------|------------|
 | SEA-LION-v1-3B          | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-3b)      |
-| SEA-LION-v1--7B          | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b)      |
-| SEA-LION-v1--7B-IT | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b-instruct)      |
-| SEA-LION-v1--7B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b-instruct-gguf)     
+| SEA-LION-v1-7B          | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b)      |
+| SEA-LION-v1-7B-IT | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b-instruct)      |
+| SEA-LION-v1-7B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b-instruct-gguf)     
