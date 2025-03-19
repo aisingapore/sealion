@@ -24,7 +24,7 @@ At a glance:
 
 ## Llama-SEA-LION-v2-8B
 ### Training Infrastructure
-Llama-SEA-LION-v2-8B Base was trained using [MosaicML Composer](https://github.com/mosaicml/composer) on the following hardware:
+Llama-SEA-LION-v2-8B was trained using [MosaicML Composer](https://github.com/mosaicml/composer) on the following hardware:
 
 | Training Details     | Llama-SEA-LION-v2-8B |
 |----------------------|:--------------------:|
@@ -81,7 +81,7 @@ These tasks include Question Answering (QA), Sentiment Analysis (Sentiment), Tox
 
 The evaluation was done **five-shot** with native prompts and only a sample of 100-1000 instances for each dataset was used as per the setting described in the paper.
 
-For more details on Llama-SEA-LION-v2-8B base benchmark performance, please refer to the SEA HELM leaderboard, https://leaderboard.sea-lion.ai/
+For more details on Llama-SEA-LION-v2-8B benchmark performance, please refer to the SEA HELM leaderboard, https://leaderboard.sea-lion.ai/
 
 <br>
 
