@@ -3,7 +3,7 @@
 ## Introduction
 Our Gemma-SEA-LION-v3-9B models have been continued pre-trained on top of the Gemma2 base model that is 9 billion parameters in size, and has a **context length of 8192**.
 
-The training data for Gemma-SEA-LION-v3-9B comprises approximately 200 billion tokens of Burmese, Chinese, English, Filipino, Indonesia, Khmer, Lao, Malay, Tamil, Thai and Vietnamese. The training data is sampled from the Dolma dataset, the original SEA-LION pretraining data, and Wiki sources for Burmese, Chinese, English, Filipino, Khmer, Lao, Malay, Indonesian, Tamil, Thai and Vietnamese. In addition, the training data for SFT for the Instruct model includes Javanese and Sudanese.
+The training data for Gemma-SEA-LION-v3-9B comprises approximately **200B tokens** of Burmese, Chinese, English, Filipino, Indonesia, Khmer, Lao, Malay, Tamil, Thai and Vietnamese. The training data is sampled from the Dolma dataset, the original SEA-LION pretraining data, and Wiki sources for Burmese, Chinese, English, Filipino, Khmer, Lao, Malay, Indonesian, Tamil, Thai and Vietnamese. In addition, the training data for SFT for the Instruct model includes Javanese and Sudanese.
 
 Gemma-SEA-LION-v3-9B benefits from the strong Gemma2 performance in Southeast Asian (SEA) languages, allowing it to significantly outperform its predecessors across SEA evaluation metrics, indicating improved language capabilities for the SEA region.
 
@@ -91,7 +91,7 @@ Note:
 We evaluated Gemma-SEA-LION-v3-9B base model on general language capabilities.
 
 #### General Language Capabilities
-For the evaluation of general language capabilities, we employed the [SEA-HELM (also known as BHASA) evaluation benchmark](https://arxiv.org/abs/2309.06085v2) across a variety of tasks.
+For the evaluation of general language capabilities, we employed the [SEA-HELM](benchmarks/sea-helm.md) (also known as BHASA) evaluation benchmark across a variety of tasks.
 These tasks include Question Answering (QA), Sentiment Analysis (Sentiment), Toxicity Detection (Toxicity), Translation in both directions (Eng>Lang & Lang>Eng), Abstractive Summarization (Summ), Causal Reasoning (Causal) and Natural Language Inference (NLI).
 
 Note: SEA-HELM is implemented using prompts to elicit answers in a strict format. For all tasks, the model is expected to provide an answer tag from which the answer is automatically extracted. For tasks where options are provided, the answer should comprise one of the pre-defined options. The scores for each task is normalised to account for baseline performance due to random chance.
@@ -120,7 +120,7 @@ Our partners at GoTo have continued pretrained and instruction tuned a variant o
 We evaluated Gemma-SEA-LION-v3-9B-IT on both general language capabilities and instruction-following capabilities.
 
 #### General Language Capabilities
-For the evaluation of general language capabilities, we employed the [SEA-HELM (also known as BHASA) evaluation benchmark](https://arxiv.org/abs/2309.06085v2) across a variety of tasks.
+For the evaluation of general language capabilities, we employed the [SEA-HELM](benchmarks/sea-helm.md) (also known as BHASA) evaluation benchmark across a variety of tasks.
 These tasks include Question Answering (QA), Sentiment Analysis (Sentiment), Toxicity Detection (Toxicity), Translation in both directions (Eng>Lang & Lang>Eng), Abstractive Summarization (Summ), Causal Reasoning (Causal) and Natural Language Inference (NLI).
 
 Note: SEA-HELM is implemented using prompts to elicit answers in a strict format. For all tasks, the model is expected to provide an answer tag from which the answer is automatically extracted. For tasks where options are provided, the answer should comprise one of the pre-defined options. The scores for each task is normalised to account for baseline performance due to random chance.

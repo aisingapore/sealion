@@ -3,9 +3,9 @@
 
 Our Llama-SEA-LION-v3-70B models have been continued pre-trained on top of [Llama 3.1 70B Instruct](https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct) that is 70 billion parameters in size. Similar to our Llama-SEA-LION-v3-8B model, our Llama-SEA-LION-v3-70B also has a **context length of 128K tokens**, making them our SEA-LION models with the longest context length to date. 
 
-Llama-SEA-LION-v3-70B was trained on data comprised of approximately 200B tokens across 11 SEA languages: Burmese, Chinese, English, Filipino, Indonesia, Khmer, Lao, Malay, Tamil, Thai and Vietnamese.
+Llama-SEA-LION-v3-70B was trained on data comprised of approximately **200B tokens** across 11 SEA languages: Burmese, Chinese, English, Filipino, Indonesia, Khmer, Lao, Malay, Tamil, Thai and Vietnamese.
 
-Llama-SEA-LION-v3-70B-IT was fine-tuned in two stages on approximately 12.3M English instruction-completion pairs alongside a pool of 4.5M Southeast Asian instruction-completion pairs from SEA languages such as Indonesian, Javanese, Sundanese, Tamil, Thai and Vietnamese.
+Llama-SEA-LION-v3-70B-IT was fine-tuned in two stages on approximately **12.3M English instruction-completion pairs** alongside a pool of **4.5M Southeast Asian instruction-completion pairs** from SEA languages such as Indonesian, Javanese, Sundanese, Tamil, Thai and Vietnamese.
 
 At a glance:
 - **Model type:** Decoder
@@ -92,7 +92,7 @@ Note:
 We evaluated Llama-SEA-LION-v3-70B base model on general language capabilities and constraint-following behaviour.
 
 #### General Language Capabilities and Constraint-following Behaviour
-For the evaluation of general language capabilities, we employed the [SEA-HELM (also known as BHASA) evaluation benchmark](https://arxiv.org/abs/2309.06085v2) across a variety of tasks.
+For the evaluation of general language capabilities, we employed the [SEA-HELM](benchmarks/sea-helm.md) (also known as BHASA) evaluation benchmark across a variety of tasks.
 These tasks include Question Answering (QA), Sentiment Analysis (Sentiment), Toxicity Detection (Toxicity), Translation in both directions (Eng>Lang & Lang>Eng), Abstractive Summarisation (Abssum), Causal Reasoning (Causal) and Natural Language Inference (NLI).
 
 Note: SEA-HELM is implemented using prompts to elicit answers in a strict format. For all tasks, the model is expected to provide an answer tag from which the answer is automatically extracted. For tasks where options are provided, the answer should comprise one of the pre-defined options. The scores for each task is normalised to account for baseline performance due to random chance.
@@ -121,7 +121,7 @@ Llama-SEA-LION-v3-70B-IT was trained on a wide range of synthetic instructions, 
 We evaluated Llama-SEA-LION-v3-70B-IT on both general language capabilities and instruction-following capabilities.
 
 #### General Language Capabilities
-For the evaluation of general language capabilities, we employed the [SEA-HELM (also known as BHASA) evaluation benchmark](https://arxiv.org/abs/2309.06085v2) across a variety of tasks.
+For the evaluation of general language capabilities, we employed the [SEA-HELM](benchmarks/sea-helm.md) (also known as BHASA) evaluation benchmark across a variety of tasks.
 These tasks include Question Answering (QA), Sentiment Analysis (Sentiment), Toxicity Detection (Toxicity), Translation in both directions (Eng>Lang & Lang>Eng), Abstractive Summarisation (Abssum), Causal Reasoning (Causal) and Natural Language Inference (NLI).
 
 Note: SEA-HELM is implemented using prompts to elicit answers in a strict format. For all tasks, the model is expected to provide an answer tag from which the answer is automatically extracted. For tasks where options are provided, the answer should comprise one of the pre-defined options. The scores for each task is normalised to account for baseline performance due to random chance.
