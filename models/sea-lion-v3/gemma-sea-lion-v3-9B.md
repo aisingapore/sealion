@@ -54,7 +54,7 @@ Gemma-SEA-LION-v3-9B was trained using [MosaicML Composer](https://github.com/mo
 
 ### Tokenizer
 
-For tokenisation, the model employs the default tokenizer used in Gemma 2 9B.
+For tokenisation, the model employs the default tokenizer used in Gemma2 9B.
 
 ### Training Data
 Gemma-SEA-LION-v3-9B base model was continued pre-trained on 200B tokens of the following data:
@@ -82,7 +82,7 @@ Gemma-SEA-LION-v3-9B base model was continued pre-trained on 200B tokens of the 
 |                          | Others           | 0.8              | 0.4            |
 
 Note: 
-- All token counts are counted using Gemma 2 9B tokenizer
+- All token counts are counted using Gemma2 9B tokenizer
 - SEA-LION Pile v1 is processed from Common Crawl WET, which is published [here](https://huggingface.co/datasets/aisingapore/sea-lion-pile). The cutoff date of this version is September 2020.
 - SEA-LION Pile v2 is processed from Common Crawl WARC from October 2020 to April 2024.
 - Tamil news is sourced with permission from [Seithi](https://seithi.mediacorp.sg/)
