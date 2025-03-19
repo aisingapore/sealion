@@ -10,9 +10,9 @@ At a glance:
 - **Training Data Size**: 48B tokens of SEA data
 - **Context Length**: 8192 
 - **Available Formats**:
-  - Base (llama3-8b-cpt-sea-lionv2-base)
-  - Instruct (llama3-8b-cpt-sea-lionv2.1-instruct)
-  - GGUF (llama3-8b-cpt-sea-lionv2.1-instruct-gguf)
+  - Base (Llama-SEA-LION-v2-8B)
+  - Instruct (Llama-SEA-LION-v2-8B-IT)
+  - GGUF (Llama-SEA-LION-v2-8B-IT-GGUF)
 - **Supported Languages:** 
    1. English 
    2. Indonesian 

@@ -10,10 +10,10 @@ At a glance:
 - **Model type:** Decoder
 - **Tokenizer**: Custom SEABPETokenizer
 - **Available Formats**:
-  - 3B Base (sea-lion-3b)
-  - 7B Base (sea-lion-7b)
-  - 7B Instruct (sea-lion-7b-instruct)
-  - 7B GGUF (sea-lion-7b-instruct-gguf)
+  - 3B Base (SEA-LION-v1-3B)
+  - 7B Base (SEA-LION-v1-7B)
+  - 7B Instruct (SEA-LION-v1-7B-IT)
+  - 7B GGUF (SEA-LION-v1-7B-IT-GGUF)
 - **Languages:**
    1. English
    2. Chinese
