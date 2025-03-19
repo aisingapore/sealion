@@ -11,8 +11,8 @@ At a glance:
 - **Context Length**: 8192 
 - **Available Formats**:
   - Base (Llama-SEA-LION-v2-8B)
-  - Instruct (Llama-SEA-LION-v2-8B-IT)
-  - GGUF (Llama-SEA-LION-v2-8B-IT-GGUF)
+  - Instruct (Llama-SEA-LION-v2.0.1-8B-IT)
+  - GGUF (Llama-SEA-LION-v2.0.1-8B-IT-GGUF)
 - **Supported Languages:** 
    1. English 
    2. Indonesian 
