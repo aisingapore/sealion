@@ -169,9 +169,9 @@ Gemma-SEA-LION-v3-9B models are available for download via the following channel
 
 | Model                | Download   |
 |----------------------|------------|
-| gemma2-9b-cpt-sea-lionv3-base           | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-base), [Kaggle](https://www.kaggle.com/models/ai-singapore/gemma2-9b-cpt-sea-lionv3-base)      |
-| gemma2-9b-cpt-sea-lionv3-instruct | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-instruct), [Kaggle](https://www.kaggle.com/models/ai-singapore/gemma2-9b-cpt-sea-lionv3-instruct)      |
-| gemma2-9b-cpt-sea-lionv3-instruct-gguf | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-instruct-gguf), [Ollama](https://ollama.com/aisingapore/gemma2-9b-cpt-sea-lionv3-instruct)      |
+| Gemma-SEA-LION-v3-9B           | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-base), [Kaggle](https://www.kaggle.com/models/ai-singapore/gemma2-9b-cpt-sea-lionv3-base)      |
+| Gemma-SEA-LION-v3-9B-IT | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-instruct), [Kaggle](https://www.kaggle.com/models/ai-singapore/gemma2-9b-cpt-sea-lionv3-instruct)      |
+| Gemma-SEA-LION-v3-9B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-instruct-gguf), [Ollama](https://ollama.com/aisingapore/gemma2-9b-cpt-sea-lionv3-instruct)      |
 
 <br>
 

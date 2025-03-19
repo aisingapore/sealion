@@ -170,9 +170,9 @@ Llama-SEA-LION-v3-8B models are available for download via the following channel
 
 | Model                | Download   |
 |----------------------|------------|
-| llama3.1-8b-cpt-sea-lionv3-base           | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-base), [Kaggle](https://www.kaggle.com/models/ai-singapore/llama3.1-8b-cpt-sea-lionv3-base)      |
-| llama3.1-8b-cpt-sea-lionv3-instruct | [HuggingFace](hhttps://huggingface.co/aisingapore/llama3.1-8b-cpt-sea-lionv3-instruct), [Kaggle](https://www.kaggle.com/models/ai-singapore/llama3.1-8b-cpt-sea-lionv3-instruct)      |
-| llama3.1-8b-cpt-sea-lionv3-instruct-gguf | [HuggingFace](https://huggingface.co/aisingapore/llama3.1-8b-cpt-sea-lionv3-instruct-gguf), [Ollama](https://ollama.com/aisingapore/llama3.1-8b-cpt-sea-lionv3-instruct)      |
+| Llama-SEA-LION-v3-8B           | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-base), [Kaggle](https://www.kaggle.com/models/ai-singapore/llama3.1-8b-cpt-sea-lionv3-base)      |
+| Llama-SEA-LION-v3-8B-IT | [HuggingFace](hhttps://huggingface.co/aisingapore/llama3.1-8b-cpt-sea-lionv3-instruct), [Kaggle](https://www.kaggle.com/models/ai-singapore/llama3.1-8b-cpt-sea-lionv3-instruct)      |
+| Llama-SEA-LION-v3-8B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/llama3.1-8b-cpt-sea-lionv3-instruct-gguf), [Ollama](https://ollama.com/aisingapore/llama3.1-8b-cpt-sea-lionv3-instruct)      |
 
 <br>
 
