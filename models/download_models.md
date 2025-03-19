@@ -5,7 +5,7 @@ SEA-LION models are available for download via the following channels:
 ## SEA-LION v3 (Latest)
 [Full HuggingFace SEA-LION v3 Collection](https://huggingface.co/collections/aisingapore/sea-lionv3-672589a39cdadd6a5b199581)
 
-**Gemma SEA-LION-v3 9B**
+**Gemma-SEA-LION-v3-9B**
 | Model                | Download   |
 |----------------------|------------|
 | gemma2-9b-cpt-sea-lionv3-base           | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-base), [Kaggle](https://www.kaggle.com/models/ai-singapore/gemma2-9b-cpt-sea-lionv3-base)      |
