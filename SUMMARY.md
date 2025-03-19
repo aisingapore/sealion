@@ -3,25 +3,25 @@
 ## Overview
 
 * [SEA-LION](README.md)
-  * [Motivations](overview/why_sealion.md)
+  * [Motivations](overview/why_sea-lion.md)
   * [Contributing](overview/contributions.md)
   * [Code of Conduct](overview/code_of_conduct.md)
   * [FAQ](overview/faq.md)
 
 ## Models
 
-* [SEA-LION v3 (Latest)](models/sealion_v3/sealion_v3.md)
-  * [Gemma-SEA-LION-v3-9B](models/sealion_v3/sealion_v3_gemma2_9B.md)
-  * [Llama-SEA-LION-v3-8B](models/sealion_v3/sealion_v3_llama3_1_8B.md)
-  * [Llama-SEA-LION-v3-70B](models/sealion_v3/sealion_v3_llama3_1_70B.md)
-* [SEA-LION v2](models/sealion_v2/sealion_v2.md)
-* [SEA-LION v1](models/sealion_v1/sealion_v1.md)
-* [SEA-LION Foundation Family](models/sealion_adaptations.md)
+* [SEA-LION v3 (Latest)](models/sealion_v3/sea-lion-v3.md)
+  * [Gemma-SEA-LION-v3-9B](models/sea-lion-v3/gemma-sea-lion-v3-9B.md)
+  * [Llama-SEA-LION-v3-8B](models/sea-lion-v3/llama-sea-lion-v3-8B.md)
+  * [Llama-SEA-LION-v3-70B](models/sea-lion-v3/llama-sea-lion-v3-70B.md)
+* [SEA-LION v2](models/sea-lion-v2/sea-lion-v2.md)
+* [SEA-LION v1](models/sea-lion-v1/sea-lion-v1.md)
+* [SEA-LION Foundation Family](models/sea-lion_adaptations.md)
 * [Getting the models](models/download_models.md)
 
 ## Benchmarks
 
-* [SEA-HELM](benchmarks/seahelm.md)
+* [SEA-HELM](benchmarks/sea-helm.md)
 
 <!-- Uncomment the items below as and when the content becomes available -->
 ## Guides
