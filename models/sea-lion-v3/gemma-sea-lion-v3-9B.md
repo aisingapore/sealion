@@ -15,9 +15,9 @@ At a glance:
 - **Training Data Size**: 200B tokens of SEA data
 - **Context Length**: 8192 
 - **Available Formats**:
-  - Base (gemma2-9b-cpt-sea-lionv3-base)
-  - Instruct (gemma2-9b-cpt-sea-lionv3-instruct)
-  - GGUF (gemma2-9b-cpt-sea-lionv3-instruct-gguf)
+  - Base (Gemma-SEA-LION-v3-9B)
+  - Instruct (Gemma-SEA-LION-v3-9B-IT)
+  - GGUF (Gemma-SEA-LION-v3-9B-IT-GGUF)
 - **Supported Languages:** 
    1. Burmese
    2. Chinese

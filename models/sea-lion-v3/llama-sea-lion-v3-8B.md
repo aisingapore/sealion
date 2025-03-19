@@ -11,9 +11,9 @@ At a glance:
 - **Tokenizer**: Default tokenizer used in Llama 3.1 8B Instruct
 - **Context Length**: 128K 
 - **Available Formats**:
-  - Base (llama3.1-8b-cpt-sea-lionv3-base)
-  - Instruct (llama3.1-8b-cpt-sea-lionv3-instruct)
-  - GGUF (llama3.1-8b-cpt-sea-lionv3-instruct-gguf)
+  - Base (Llama-SEA-LION-v3-8B)
+  - Instruct (Llama-SEA-LION-v3-8B-IT)
+  - GGUF (Llama-SEA-LION-v3-8B-IT-GGUF)
 - **Supported Languages:** 
   1. Burmese
   2. Chinese

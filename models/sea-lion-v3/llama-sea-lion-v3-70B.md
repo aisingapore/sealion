@@ -11,9 +11,9 @@ At a glance:
 - **Model type:** Decoder
 - **Tokenizer**: Default tokenizer used in Llama 3.1 70B Instruct
 - **Available Formats**:
-  - Base (llama3.1-70b-cpt-sea-lionv3-base)
-  - Instruct (llama3.1-70b-cpt-sea-lionv3-instruct)
-  - GGUF (llama3.1-70b-cpt-sea-lionv3-instruct-gguf)
+  - Base (Llama-SEA-LION-v3-70B)
+  - Instruct (Llama-SEA-LION-v3-70B-IT)
+  - GGUF (Llama-SEA-LION-v3-70B-IT-GGUF)
 - **Languages supported:** 
   1. Burmese
   2. Chinese
