@@ -4,7 +4,7 @@ SEA-HELM (SouthEast Asian Holistic Evaluation of Language Models) is a comprehen
 
 Formerly known as BHASA, SEA-HELM has been expanded and integrated with HELM to provide a more rigorous and authentic evaluation. It addresses the critical need for multilingual and multicultural benchmarks in the rapidly evolving field of LLMs.
 
-SEA-HELM serves as a valuable resource for developers looking to create and assess LLMs for linguistic accuracy and cultural sensitivity in the Southeast Asian context. It currently covers Filipino, Indonesian, Tamil, Thai, and Vietnamese.
+SEA-HELM serves as a valuable resource for developers looking to create and assess LLMs for linguistic accuracy and cultural sensitivity in the Southeast Asian context. It currently covers Filipino, Indonesian, Javanese, Sundanese, Tamil, Thai, and Vietnamese.
 
 ## Motivations
 
