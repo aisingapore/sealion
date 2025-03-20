@@ -94,7 +94,7 @@ Our SEA-HELM evaluation datasets are publicly available on [HuggingFace](https:/
 
 While SEA-HELM aims for holistic evaluations, it is not yet exhaustive in its coverage of languages and tasks. Areas for improvement include:
 
-- Expanding SEA language coverage beyond the current five languages (e.g., Burmese, Khmer, Lao).
+- Expanding SEA language coverage beyond the current seven languages (e.g., Burmese, Khmer, Lao).
 - Exploring automatic LLM evaluations for better benchmarking.
 - Enhancing the safety pillar to include more real-world risk factors.
 - Adding more cultural and linguistic assessments
