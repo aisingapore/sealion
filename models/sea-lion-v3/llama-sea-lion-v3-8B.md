@@ -158,7 +158,7 @@ The following quantized GGUF formats of our Llama-SEA-LION-v3-8B-IT model are av
 - llama3.1-8b-cpt-sea-lionv3-instruct-Q6_K
 - llama3.1-8b-cpt-sea-lionv3-instruct-Q8_0
 
-Please refer to our [Download the Model(s)](#download-the-models) section for more details on how to access them.
+Please refer to our [Download the Model(s)](#download-the-model-s) section for more details on how to access them.
 
 <br>
 
