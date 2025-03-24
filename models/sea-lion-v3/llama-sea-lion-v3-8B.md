@@ -90,7 +90,7 @@ Note:
 We evaluated Llama-SEA-LION-v3-8B base model on general language capabilities and constraint-following behaviour.
 
 #### General Language Capabilities and Constraint-following Behaviour
-For the evaluation of general language capabilities, we employed the [SEA-HELM](benchmarks/sea-helm.md) (also known as BHASA) evaluation benchmark across a variety of tasks.
+For the evaluation of general language capabilities, we employed the [SEA-HELM](/benchmarks/sea-helm.md) (also known as BHASA) evaluation benchmark across a variety of tasks.
 These tasks include Question Answering (QA), Sentiment Analysis (Sentiment), Toxicity Detection (Toxicity), Translation in both directions (Eng>Lang & Lang>Eng), Abstractive Summarisation (Abssum), Causal Reasoning (Causal) and Natural Language Inference (NLI).
 
 Note: SEA-HELM is implemented using prompts to elicit answers in a strict format. For all tasks, the model is expected to provide an answer tag from which the answer is automatically extracted. For tasks where options are provided, the answer should comprise one of the pre-defined options. The scores for each task is normalised to account for baseline performance due to random chance.
@@ -122,7 +122,7 @@ Llama-SEA-LION-v3-8B-IT was trained on a wide range of synthetic instructions, a
 We evaluated Llama-SEA-LION-v3-8B Instruct on both general language capabilities and instruction-following capabilities.
 
 #### General Language Capabilities
-For the evaluation of general language capabilities, we employed the [SEA-HELM](benchmarks/sea-helm.md) (also known as BHASA) evaluation benchmark across a variety of tasks.
+For the evaluation of general language capabilities, we employed the [SEA-HELM](/benchmarks/sea-helm.md) (also known as BHASA) evaluation benchmark across a variety of tasks.
 These tasks include Question Answering (QA), Sentiment Analysis (Sentiment), Toxicity Detection (Toxicity), Translation in both directions (Eng>Lang & Lang>Eng), Abstractive Summarisation (Abssum), Causal Reasoning (Causal) and Natural Language Inference (NLI).
 
 Note: SEA-HELM is implemented using prompts to elicit answers in a strict format. For all tasks, the model is expected to provide an answer tag from which the answer is automatically extracted. For tasks where options are provided, the answer should comprise one of the pre-defined options. The scores for each task is normalised to account for baseline performance due to random chance.
@@ -158,7 +158,7 @@ The following quantized GGUF formats of our Llama-SEA-LION-v3-8B-IT model are av
 - llama3.1-8b-cpt-sea-lionv3-instruct-Q6_K
 - llama3.1-8b-cpt-sea-lionv3-instruct-Q8_0
 
-Please refer to our [How To Download](#how-to-download) section for more details on how to access them.
+Please refer to our [Download the Model(s)](#download-the-models) section for more details on how to access them.
 
 <br>
 
