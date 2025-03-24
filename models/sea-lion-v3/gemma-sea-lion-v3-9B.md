@@ -158,7 +158,7 @@ The following quantized GGUF formats of our Gemma-SEA-LION-v3-9B-IT model are av
 - gemma2-9b-cpt-sea-lionv3-instruct-Q6_K
 - gemma2-9b-cpt-sea-lionv3-instruct-Q8_0
 
-Please refer to our [Download the Model(s)](#download-the-models) section for more details on how to access them.
+Please refer to our [Download the Model(s)](#download-the-model-s) section for more details on how to access them.
 
 
 ## Download the Model(s)
