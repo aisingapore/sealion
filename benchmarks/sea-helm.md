@@ -87,6 +87,8 @@ The [leaderboard](https://leaderboard.sea-lion.ai) offers multiple views, includ
 
 ## SEA-HELM Datasets and Resources
 
+The full codebase for SEA-HELM is provided open-source on [Github](https://github.com/aisingapore/sea-helm).
+
 Our SEA-HELM evaluation datasets are publicly available on [HuggingFace](https://huggingface.co/collections/aisingapore/sea-helm-evaluation-datasets-67593d0bb8c9f17f9f6b0fcb). 
 
 
