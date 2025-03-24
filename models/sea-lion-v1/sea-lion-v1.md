@@ -207,7 +207,7 @@ The following quantized GGUF formats of our SEA-LION-v1-7B-IT model are availabl
 - sea-lion-7b-instruct-Q6_K
 - sea-lion-7b-instruct-Q8_0
 
-Please refer to our [How To Download](#how-to-download) section for more details on how to access them.
+Please refer to our [Download the Model(s)](#download-the-models) section for more details on how to access them.
 
 ## Download the Model(s)
 SEA-LION v1 models are available for download via the following channels:
@@ -245,7 +245,7 @@ print(tokenizer.decode(output[0], skip_special_tokens=True))
 ```
 
 ## Prompting Guide
-A basic prompting guide for the SEALION v1 models is provided [here](./sealion-v1_promptguide.md)
+A basic prompting guide for the SEALION v1 models is provided [here](./sea-lion-v1_promptguide.md)
 
 ## Disclaimer
 
