@@ -4,7 +4,7 @@ _Built for Southeast Asia, by Southeast Asia_
 
 South East Asian Languages in One Network (SEA-LION) is a family of open-source Large Language Models (LLMs) that better understands Southeast Asia’s (SEA) diverse contexts, languages, and cultures.
 
-It is an open-source project anchored by the Products Pillar of AI Singapore. Our work in SEA-LION aims to create LLMs that cater to under-represented population groups and low resource languages in the SEA region. You can [read more about our motivations for SEA-LION here](overview/why_sealion.md).
+It is an open-source project anchored by the Products Pillar of AI Singapore. Our work in SEA-LION aims to create LLMs that cater to under-represented population groups and low resource languages in the SEA region. You can [read more about our motivations for SEA-LION here](/overview/why_sea-lion.md).
 
 This site provides information and resources on SEA-LION, including how to access the models, hosting, and how-to guides.
 
@@ -12,11 +12,11 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection | Size | Context Length | Training Strategy          | Available in            |
 |------------------|------|----------------|----------------------------|-------------------------|
-| **SEA-LION v3**  | 9B   | 8192           | CPT¹ of Gemma2            | Base, Instruct, GGUF    |
+| **[SEA-LION v3](/models/sea-lion-v3/sea-lion-v3.md)**  | 9B   | 8192           | CPT¹ of Gemma2            | Base, Instruct, GGUF    |
 |                  | 8B   | 128K           | CPT of Llama 3.1 8B       | Base, Instruct, GGUF    |
 |                  | 70B  | 128K           | CPT of Llama 3.1 70B      | Base, Instruct, GGUF    |
-| **SEA-LION v2**  | 8B   | 8192           | CPT of Llama3             | Base, Instruct, GGUF    |
-| **SEA-LION v1**  | 3B   | 2048           | Pre-training from scratch  | Base                    |
+| **[SEA-LION v2](/models/sea-lion-v2/sea-lion-v2.md)**  | 8B   | 8192           | CPT of Llama3             | Base, Instruct, GGUF    |
+| **[SEA-LION v1](/models/sea-lion-v1/sea-lion-v1.md)**  | 3B   | 2048           | Pre-training from scratch  | Base                    |
 |                  | 7B   | 2048           | Pre-training from scratch  | Instruct                |
 
 ¹ Continued Pre-Training
