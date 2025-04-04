@@ -11,8 +11,8 @@ At a glance:
 - **Context Length**: 8192 
 - **Available Formats**:
   - Base (Llama-SEA-LION-v2-8B)
-  - Instruct (Llama-SEA-LION-v2.0.1-8B-IT)
-  - GGUF (Llama-SEA-LION-v2.0.1-8B-IT-GGUF)
+  - Instruct (Llama-SEA-LION-v2-8B-IT)
+  - GGUF (Llama-SEA-LION-v2-8B-IT-GGUF)
 - **Supported Languages:** 
    1. English 
    2. Indonesian 
@@ -85,22 +85,22 @@ For more details on Llama-SEA-LION-v2-8B benchmark performance, please refer to 
 
 <br>
 
-## Llama-SEA-LION-v2.0.1-8B-IT
+## Llama-SEA-LION-v2-8B-IT
 
-Llama-SEA-LION-v2.0.1-8B-IT is a multilingual instruction-following model which has been fine-tuned with around 100,000 English instruction-completion pairs alongside a smaller pool of around 50,000 instruction-completion pairs from other ASEAN languages, such as Indonesian, Thai and Vietnamese.
+Llama-SEA-LION-v2-8B-IT is a multilingual instruction-following model which has been fine-tuned with around 100,000 English instruction-completion pairs alongside a smaller pool of around 50,000 instruction-completion pairs from other ASEAN languages, such as Indonesian, Thai and Vietnamese.
 
 These instructions have been carefully curated and rewritten to ensure the model was trained on truly open, commercially permissive and high quality datasets.
 
 ### Fine-Tuning Methodology
-The Llama-SEA-LION-v2.0.1-8B-IT model was fine-tuned using 8x A100-40GB using parameter efficient fine tuning in the form of LoRA.
+The Llama-SEA-LION-v2-8B-IT model was fine-tuned using 8x A100-40GB using parameter efficient fine tuning in the form of LoRA.
 
 ### Fine-Tuning Data
-Llama-SEA-LION-v2.0.1-8B-IT was trained on a wide range of instructions that were manually and stringently verified by our team. A large portion of the effort was dedicated to ensuring that each instruction-completion pair that the model sees is of high quality and any errors were corrected and rewritten by native speakers or else dropped from our mix.
+Llama-SEA-LION-v2-8B-IT was trained on a wide range of instructions that were manually and stringently verified by our team. A large portion of the effort was dedicated to ensuring that each instruction-completion pair that the model sees is of high quality and any errors were corrected and rewritten by native speakers or else dropped from our mix.
 
 In addition, special care was taken to ensure that the datasets used had commercially permissive licenses through verification with the original data source. 
 
 ### Benchmark Performance
-We evaluated Llama-SEA-LION-v2.0.1-8B-IT on both general language capabilities and instruction-following capabilities.
+We evaluated Llama-SEA-LION-v2-8B-IT on both general language capabilities and instruction-following capabilities.
 
 #### General Language Capabilities
 For the evaluation of general language capabilities, we employed the [BHASA evaluation benchmark](https://arxiv.org/abs/2309.06085v2) across a variety of tasks. These tasks include Question Answering (QA), Sentiment Analysis (Sentiment), Toxicity Detection (Toxicity), Translation in both directions (Eng>Lang & Lang>Eng), Abstractive Summarization (Summ), Causal Reasoning (Causal) and Natural Language Inference (NLI).
@@ -111,7 +111,7 @@ The evaluation was done **zero-shot** with native prompts and only a sample of 1
 
 
 #### Instruction-following Capabilities
-Since Llama-SEA-LION-v2.0.1-8B-IT is an instruction-following model, we also evaluated it on instruction-following capabilities with two datasets, [IFEval](https://arxiv.org/abs/2311.07911) and [MT-Bench](https://arxiv.org/abs/2306.05685).
+Since Llama-SEA-LION-v2-8B-IT is an instruction-following model, we also evaluated it on instruction-following capabilities with two datasets, [IFEval](https://arxiv.org/abs/2311.07911) and [MT-Bench](https://arxiv.org/abs/2306.05685).
 
 As these two datasets were originally in English, the linguists and native speakers in the team worked together to filter, localize and translate the datasets into the respective target languages to ensure that the examples remained reasonable, meaningful and natural.
 
@@ -126,8 +126,8 @@ MT-Bench evaluates a model's ability to engage in multi-turn (2 turns) conversat
 
 <br>
 
-## Llama-SEA-LION-v2.0.1-8B-IT-GGUF
-The following quantized GGUF formats of our Llama-SEA-LION-v2.0.1-8B-IT model are available:
+## Llama-SEA-LION-v2-8B-IT-GGUF
+The following quantized GGUF formats of our Llama-SEA-LION-v2-8B-IT model are available:
 - llama3-8b-cpt-sea-lionv2.1-instruct-Q2_K
 - llama3-8b-cpt-sea-lionv2.1-instruct-Q3_K_M
 - llama3-8b-cpt-sea-lionv2.1-instruct-Q4_0
@@ -150,13 +150,13 @@ SEA-LION v2 models are available for download via the following channels:
 | Model                | Download   |
 |----------------------|------------|
 | Llama-SEA-LION-v2-8B           | [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2-base)      |
-| Llama-SEA-LION-v2.0.1-8B-IT | [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct)      |
-| Llama-SEA-LION-v2.01-8B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct-gguf), [Ollama](https://ollama.com/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct)      |
+| Llama-SEA-LION-v2-8B-IT | [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct)      |
+| Llama-SEA-LION-v2-8B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct-gguf), [Ollama](https://ollama.com/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct)      |
 
 <br>
 
 ## Usage
-Llama-SEA-LION-v2.0.1-8B-IT can be run using the 🤗 Transformers library 
+Llama-SEA-LION-v2-8B-IT can be run using the 🤗 Transformers library 
 ```python
 # Please use transformers==4.43.2
 
