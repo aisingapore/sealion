@@ -163,7 +163,7 @@ Llama-SEA-LION-v2-8B-IT can be run using the 🤗 Transformers library
 import transformers
 import torch
 
-model_id = "aisingapore/llama3-8b-cpt-SEA-Lionv2.1-instruct"
+model_id = "aisingapore/Llama-SEA-LION-v2-8B-IT"
 
 pipeline = transformers.pipeline(
     "text-generation",
