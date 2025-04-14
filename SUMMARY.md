@@ -10,6 +10,9 @@
 
 ## Models
 
+* [SEA-LION v3.5 (Latest)](models/sea-lion-v3.5/sea-lion-v3.5.md)
+  * [Llama-SEA-LION-v3.5-8B-R](models/sea-lion-v3.5/llama-sea-lion-v3.5-8B-R.md)
+  * [Llama-SEA-LION-v3.5-70B-R](models/sea-lion-v3.5/llama-sea-lion-v3.5-70B-R.md)
 * [SEA-LION v3 (Latest)](models/sea-lion-v3/sea-lion-v3.md)
   * [Gemma-SEA-LION-v3-9B](models/sea-lion-v3/gemma-sea-lion-v3-9B.md)
   * [Llama-SEA-LION-v3-8B](models/sea-lion-v3/llama-sea-lion-v3-8B.md)

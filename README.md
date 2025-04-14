@@ -12,7 +12,9 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection | Size | Context Length | Training Strategy          | Available in            |
 |------------------|------|----------------|----------------------------|-------------------------|
-| **[SEA-LION v3](/models/sea-lion-v3/sea-lion-v3.md)**  | 9B   | 8192           | CPT¹ of Gemma2            | Base, Instruct, GGUF    |
+| **[SEA-LION v3.5](/models/sea-lion-v3.5/sea-lion-v3.5.md)** | 8B   | 128K           | CPT¹ of Llama 3.1 8B | Reasoning, GGUF    |
+|                  | 70B  | 128K           | CPT of Llama 3.1 70B | Reasoning, GGUF    |
+| **[SEA-LION v3](/models/sea-lion-v3/sea-lion-v3.md)**  | 9B   | 8192           | CPT of Gemma2            | Base, Instruct, GGUF    |
 |                  | 8B   | 128K           | CPT of Llama 3.1 8B       | Base, Instruct, GGUF    |
 |                  | 70B  | 128K           | CPT of Llama 3.1 70B      | Base, Instruct, GGUF    |
 | **[SEA-LION v2](/models/sea-lion-v2/sea-lion-v2.md)**  | 8B   | 8192           | CPT of Llama3             | Base, Instruct, GGUF    |

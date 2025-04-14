@@ -57,7 +57,7 @@ curl -X 'POST' \
         "role": "user"
       }
     ],
-    "model": "aisingapore/gemma2-9b-cpt-sea-lionv3-instruct"
+    "model": "aisingapore/Gemma-SEA-LION-v3-9B-IT"
   }'
 ```
 {% endtab %}
@@ -65,19 +65,17 @@ curl -X 'POST' \
 {% tab title="python" %}
 ```python
 from openai import OpenAI
-client = OpenAI()
-
-client = openai.OpenAI(
+client = OpenAI(
     api_key=YOUR_API_KEY,
     base_url="https://api.sea-lion.ai/v1" 
 )
 
 completion = client.chat.completions.create(
-    model="aisingapore/gemma2-9b-cpt-sea-lionv3-instruct",
+    model="aisingapore/Gemma-SEA-LION-v3-9B-IT",
     messages=[
         {
             "role": "user",
-            "content": "Hi SEA-LION"
+            "content": "What is Deep Learning"
         }
     ]
 )

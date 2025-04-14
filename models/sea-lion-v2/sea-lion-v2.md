@@ -128,14 +128,14 @@ MT-Bench evaluates a model's ability to engage in multi-turn (2 turns) conversat
 
 ## Llama-SEA-LION-v2-8B-IT-GGUF
 The following quantized GGUF formats of our Llama-SEA-LION-v2-8B-IT model are available:
-- llama3-8b-cpt-sea-lionv2.1-instruct-Q2_K
-- llama3-8b-cpt-sea-lionv2.1-instruct-Q3_K_M
-- llama3-8b-cpt-sea-lionv2.1-instruct-Q4_0
-- llama3-8b-cpt-sea-lionv2.1-instruct-Q4_K_M
-- llama3-8b-cpt-sea-lionv2.1-instruct-Q5_0
-- llama3-8b-cpt-sea-lionv2.1-instruct-Q5_K_M
-- llama3-8b-cpt-sea-lionv2.1-instruct-Q6_K
-- llama3-8b-cpt-sea-lionv2.1-instruct-Q8_0
+- Llama-SEA-LION-v2-8B-IT-Q2_K
+- Llama-SEA-LION-v2-8B-IT-Q3_K_M
+- Llama-SEA-LION-v2-8B-IT-Q4_0
+- Llama-SEA-LION-v2-8B-IT-Q4_K_M
+- Llama-SEA-LION-v2-8B-IT-Q5_0
+- Llama-SEA-LION-v2-8B-IT-Q5_K_M
+- Llama-SEA-LION-v2-8B-IT-Q6_K
+- Llama-SEA-LION-v2-8B-IT-Q8_0
 
 Please refer to our [Download the Model(s)](#download-the-model-s) section for more details on how to access them.
 
@@ -149,9 +149,9 @@ SEA-LION v2 models are available for download via the following channels:
 
 | Model                | Download   |
 |----------------------|------------|
-| Llama-SEA-LION-v2-8B           | [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2-base)      |
-| Llama-SEA-LION-v2-8B-IT | [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct)      |
-| Llama-SEA-LION-v2-8B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct-gguf), [Ollama](https://ollama.com/aisingapore/llama3-8b-cpt-sea-lionv2.1-instruct)      |
+| Llama-SEA-LION-v2-8B           | [HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-LION-v2-8B)      |
+| Llama-SEA-LION-v2-8B-IT | [HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-LION-v2-8B-IT)      |
+| Llama-SEA-LION-v2-8B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-LION-v2-8B-IT-GGUF), [Ollama](https://ollama.com/aisingapore/Llama-SEA-LION-v2-8B-IT)      |
 
 <br>
 

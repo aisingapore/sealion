@@ -148,15 +148,15 @@ For more details on Gemma-SEA-LION-v3-9B-IT benchmark performance, please refer 
 
 ## Gemma-SEA-LION-v3-9B-IT-GGUF
 The following quantized GGUF formats of our Gemma-SEA-LION-v3-9B-IT model are available:
-- gemma2-9b-cpt-sea-lionv3-instruct-F16
-- gemma2-9b-cpt-sea-lionv3-instruct-Q2_K
-- gemma2-9b-cpt-sea-lionv3-instruct-Q3_K_M
-- gemma2-9b-cpt-sea-lionv3-instruct-Q4_0
-- gemma2-9b-cpt-sea-lionv3-instruct-Q4_K_M
-- gemma2-9b-cpt-sea-lionv3-instruct-Q5_0
-- gemma2-9b-cpt-sea-lionv3-instruct-Q5_K_M
-- gemma2-9b-cpt-sea-lionv3-instruct-Q6_K
-- gemma2-9b-cpt-sea-lionv3-instruct-Q8_0
+- Gemma-SEA-LION-v3-9B-IT-F16
+- Gemma-SEA-LION-v3-9B-IT-Q2_K
+- Gemma-SEA-LION-v3-9B-IT-Q3_K_M
+- Gemma-SEA-LION-v3-9B-IT-Q4_0
+- Gemma-SEA-LION-v3-9B-IT-Q4_K_M
+- Gemma-SEA-LION-v3-9B-IT-Q5_0
+- Gemma-SEA-LION-v3-9B-IT-Q5_K_M
+- Gemma-SEA-LION-v3-9B-IT-Q6_K
+- Gemma-SEA-LION-v3-9B-IT-Q8_0
 
 Please refer to our [Download the Model(s)](#download-the-model-s) section for more details on how to access them.
 
@@ -169,9 +169,9 @@ Gemma-SEA-LION-v3-9B models are available for download via the following channel
 
 | Model                | Download   |
 |----------------------|------------|
-| Gemma-SEA-LION-v3-9B           | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-base), [Kaggle](https://www.kaggle.com/models/ai-singapore/gemma2-9b-cpt-sea-lionv3-base)      |
-| Gemma-SEA-LION-v3-9B-IT | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-instruct), [Kaggle](https://www.kaggle.com/models/ai-singapore/gemma2-9b-cpt-sea-lionv3-instruct)      |
-| Gemma-SEA-LION-v3-9B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/gemma2-9b-cpt-sea-lionv3-instruct-gguf), [Ollama](https://ollama.com/aisingapore/gemma2-9b-cpt-sea-lionv3-instruct)      |
+| Gemma-SEA-LION-v3-9B           | [HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v3-9B), [Kaggle](https://www.kaggle.com/models/ai-singapore/gemma2-9b-cpt-sea-lionv3-base)      |
+| Gemma-SEA-LION-v3-9B-IT | [HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v3-9B-IT), [Kaggle](https://www.kaggle.com/models/ai-singapore/gemma2-9b-cpt-sea-lionv3-instruct)      |
+| Gemma-SEA-LION-v3-9B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v3-9B-IT-GGUF), [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v3-9B-IT)      |
 
 <br>
 
@@ -185,7 +185,7 @@ Gemma-SEA-LION-v3-9B-IT can be run using the 🤗 Transformers library
 import transformers
 import torch
 
-model_id = "aisingapore/gemma2-9b-cpt-sea-lionv3-instruct"
+model_id = "aisingapore/Gemma-SEA-LION-v3-9B-IT"
 
 pipeline = transformers.pipeline(
     "text-generation",
