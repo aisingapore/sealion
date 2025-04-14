@@ -82,6 +82,20 @@ If you use SEA-LION in your work, please cite it as:
 }
 ```
 
+If you are using SEA-LION v3 for your work, please cite it as:
+
+```bibtex
+@misc{2504.05747,
+      title={SEA-LION: Southeast Asian Languages in One Network},
+      author={Raymond Ng and Thanh Ngan Nguyen and Yuli Huang and Ngee Chia Tai and Wai Yi Leong and Wei Qi Leong and Xianbin Yong and Jian Gang Ngui and Yosephine Susanto and Nicholas Cheng and Hamsawardhini Rengarajan and Peerat Limkonchotiwat and Adithya Venkatadri Hulagadri and Kok Wai Teng and Yeo Yeow Tong and Bryan Siow and Wei Yi Teo and Wayne Lau and Choon Meng Tan and Brandon Ong and Zhi Hao Ong and Jann Railey Montalan and Adwin Chan and Sajeban Antonyrex and Ren Lee and Esther Choa and David Ong Tat-Wee and Bing Jie Darius Liu and William Chandra Tjhi and Erik Cambria and Leslie Teo},
+      year={2025},
+      eprint={2504.05747},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2504.05747},
+}
+```
+
 ## Acknowledgements
 
 AI Singapore is a national programme supported by the National Research Foundation, Singapore and hosted by the National University of Singapore. Any opinion, finding, conclusion or recommendation expressed in this material are those of the author(s) and do not reflect the views of National Research Foundation, Singapore, or the National University of Singapore.
