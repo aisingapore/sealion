@@ -34,6 +34,7 @@ SEA-LION has seen:
 * In v2, outperformance for SEA tasks, while retaining credible performance on standard (English) benchmarks
 * In v2.1, key improvements in conversational abilities across SEA languages, while providing more helpful and contextually appropriate responses to user prompts
 * In v3, outperforms similar sized open source models, and even some larger models in both general and SEA capabilities
+* In v3.5, ability to handle reasoning tasks, with the versatility of handling general tasks as well while maintaining similar performance with state-of-the-art models.
 
 We use a holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering) but also [meticulously handcrafted linguistic and cultural diagnostic tests tailored to Southeast Asia](https://arxiv.org/abs/2309.06085v2).
 

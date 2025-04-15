@@ -1,4 +1,4 @@
-# Llama-SEA-LION-v3.5-70B-R
+# Llama-SEA-LION-v3.5-70B
 ## Introduction
 
 Llama-SEA-LION-v3.5-70B-R is a hybrid model offering versatile functionality, handling both complex reasoning tasks and general text generation, with mode selection managed through the tokenizer's chat template.
@@ -72,6 +72,10 @@ SEA-MTBench evaluates a model's ability to engage in multi-turn (2 turns) conver
 For more details on Llama-SEA-LION-v3.5-70B-R benchmark performance, please refer to the [SEA-HELM leaderboard](https://leaderboard.sea-lion.ai/).
 
 <br>
+
+## Llama-SEA-LION-v3.5-70B-R-GGUF
+
+_TO be available soon_ 
 
 ## Download the Model(s)
 Llama-SEA-LION-v3.5-70B-R models are available for download via the following channels:
