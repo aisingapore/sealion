@@ -57,7 +57,7 @@ curl -X 'POST' \
         "role": "user"
       }
     ],
-    "model": "aisingapore/gemma2-9b-cpt-sea-lionv3-instruct"
+    "model": "aisingapore/Gemma-SEA-LION-v3-9B-IT"
   }'
 ```
 {% endtab %}
@@ -65,19 +65,18 @@ curl -X 'POST' \
 {% tab title="python" %}
 ```python
 from openai import OpenAI
-client = OpenAI()
 
-client = openai.OpenAI(
+client = OpenAI(
     api_key=YOUR_API_KEY,
     base_url="https://api.sea-lion.ai/v1" 
 )
 
 completion = client.chat.completions.create(
-    model="aisingapore/gemma2-9b-cpt-sea-lionv3-instruct",
+    model="aisingapore/Gemma-SEA-LION-v3-9B-IT",
     messages=[
         {
             "role": "user",
-            "content": "Hi SEA-LION"
+            "content": "What is Deep Learning"
         }
     ]
 )
@@ -95,6 +94,8 @@ Limits help us mitigate misuse and manage API capacity and help ensure that ever
 SEA-LION API usage frequency will be subject to rate limits applied on requests per minute (RPM).
 
 As of 18 Mar 2025, our rate limits is set to **10 requests per minute per user**.
+
+If you have any questions or want to speak about getting a rate limit increase, reach out to sealion@aisingapore.org.
 
 
 

@@ -12,14 +12,18 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection | Size | Context Length | Training Strategy          | Available in            |
 |------------------|------|----------------|----------------------------|-------------------------|
-| **[SEA-LION v3](/models/sea-lion-v3/sea-lion-v3.md)**  | 9B   | 8192           | CPT¹ of Gemma2            | Base, Instruct, GGUF    |
+| **[SEA-LION v3.5](/models/sea-lion-v3.5/sea-lion-v3.5.md)** | 8B   | 128K           | SFT¹ of Llama-SEA-LION-v3-8B-IT | Reasoning, GGUF    |
+|                  | 70B  | 128K           | SFT of Llama-SEA-LION-v3-70B-IT | Reasoning, GGUF    |
+| **[SEA-LION v3](/models/sea-lion-v3/sea-lion-v3.md)**  | 9B   | 8192           | CPT² of Gemma2            | Base, Instruct, GGUF    |
 |                  | 8B   | 128K           | CPT of Llama 3.1 8B       | Base, Instruct, GGUF    |
 |                  | 70B  | 128K           | CPT of Llama 3.1 70B      | Base, Instruct, GGUF    |
 | **[SEA-LION v2](/models/sea-lion-v2/sea-lion-v2.md)**  | 8B   | 8192           | CPT of Llama3             | Base, Instruct, GGUF    |
 | **[SEA-LION v1](/models/sea-lion-v1/sea-lion-v1.md)**  | 3B   | 2048           | Pre-training from scratch  | Base                    |
 |                  | 7B   | 2048           | Pre-training from scratch  | Instruct                |
 
-¹ Continued Pre-Training
+¹ Supervised Fine-Training
+
+² Continued Pre-Training
 
 
 ## Performance and Benchmarks
@@ -30,6 +34,7 @@ SEA-LION has seen:
 * In v2, outperformance for SEA tasks, while retaining credible performance on standard (English) benchmarks
 * In v2.1, key improvements in conversational abilities across SEA languages, while providing more helpful and contextually appropriate responses to user prompts
 * In v3, outperforms similar sized open source models, and even some larger models in both general and SEA capabilities
+* In v3.5, ability to handle reasoning tasks, with the versatility of handling general tasks as well while maintaining similar performance with state-of-the-art models.
 
 We use a holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering) but also [meticulously handcrafted linguistic and cultural diagnostic tests tailored to Southeast Asia](https://arxiv.org/abs/2309.06085v2).
 

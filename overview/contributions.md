@@ -58,10 +58,10 @@ We appreciate your suggestions for improving SEA-LION. If you have an idea for a
 2. If not, create a new issue with a clear and concise title and a detailed description of your suggestion.
 3. Include any relevant context or examples to illustrate the enhancement's value.
 
-### Code Contribution
+<!-- ### Code Contribution
 If you're interested in contributing code to SEA-LION, you can do so by following these steps:
 
-_[TO UPDATE - code contribution to training recipes? demo use cases?]_
+_[TO UPDATE - code contribution to training recipes? demo use cases?]_ -->
 
 ### Code of Conduct
 Please review and adhere to our [Code of Conduct](./code_of_conduct.md). We expect all contributors and community members to treat each other with respect and kindness.

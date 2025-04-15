@@ -217,10 +217,10 @@ SEA-LION v1 models are available for download via the following channels:
 
 | Model                | Download   |
 |----------------------|------------|
-| SEA-LION-v1-3B          | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-3b)      |
-| SEA-LION-v1-7B          | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b)      |
-| SEA-LION-v1-7B-IT | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b-instruct)      |
-| SEA-LION-v1-7B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/sea-lion-7b-instruct-gguf)      |
+| SEA-LION-v1-3B          | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-v1-3B)      |
+| SEA-LION-v1-7B          | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-v1-7B)      |
+| SEA-LION-v1-7B-IT | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-v1-7B-IT)      |
+| SEA-LION-v1-7B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-v1-7B-IT-GGUF)      |
 
 
 ## Usage
@@ -230,8 +230,8 @@ SEA-LION-v1-7B-IT can be run using the 🤗 Transformers library
 # Please use transformers==4.37.2
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-tokenizer = AutoTokenizer.from_pretrained("aisingapore/sea-lion-7b-instruct", trust_remote_code=True)
-model = AutoModelForCausalLM.from_pretrained("aisingapore/sea-lion-7b-instruct", trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained("aisingapore/SEA-LION-v1-7B-IT", trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained("aisingapore/SEA-LION-v1-7B-IT", trust_remote_code=True)
 
 prompt_template = "### USER:\n{human_prompt}\n\n### RESPONSE:\n"
 prompt = """Apa sentimen dari kalimat berikut ini?
