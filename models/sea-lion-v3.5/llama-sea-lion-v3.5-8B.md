@@ -4,7 +4,7 @@ Llama-SEA-LION-v3.5-8B-R is a hybrid model offering versatile functionality, han
 
 We performed instruction tuning in English and also in SEA languages such as Filipino, Indonesian, Tamil, Thai and Vietnamese on our [continued pre-trained Llama-SEA-LION-v3-8B](../sea-lion-v3/llama-sea-lion-v3-8B.md), a decoder model using the Llama 3.1 architecture, to create Llama-SEA-LION-v3.5-8B-R. 
 
-By leveraging on SEA-LION v3’s strong foundation, Llama-SEA-LION-v3.5-8B-R ensures broader accessibility and usability, empowering diverse communities and use cases throughout the region. It is particularly suited for knowledge-intensive tasks, and for high-demand environments where advanced reasoning and comprehensive language comprehension are essential.
+By leveraging on SEA-LION v3’s strong foundation, Llama-SEA-LION-v3.5-8B-R ensures broader accessibility and usability, empowering diverse communities and use cases throughout the region. It is particularly suited for cost-efficient, low-latency applications where regional language support and advanced reasoning is critical.
 
 For tokenisation, the model employs the default tokenizer used in Llama 3.1 70B Instruct. The model has a context length of 128k.
 
@@ -33,17 +33,17 @@ At a glance:
 - **License:**  [Llama3.1 Community License](https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct/blob/main/LICENSE)
 
 
-## Llama-SEA-LION-v3-8B-R
+## Llama-SEA-LION-v3.5-8B-R
 
 ### Post-Training
 
-Both reasoning models, SEA-LION-R, were trained with an additional series of supervised fine-tuning atop our existing SEA-LION-IT models across multiple stages, culminating in a final tune with distilled reasoning data of **1.5M** traces from Deepseek-R1 across multiple SEA languages such as Indonesian Tamil, Thai, Tagalog and Vietnamese.
+Llama-SEA-LION-v3.5-8B-R was trained with an additional series of supervised fine-tuning atop our existing Llama-SEA-LION-v3-8B-IT models across multiple stages, culminating in a final tune with distilled reasoning data of **1.5M** traces from Deepseek-R1 across multiple SEA languages such as Indonesian Tamil, Thai, Tagalog and Vietnamese.
 
-A distinctive feature of SEA-LION-R is its dynamic reasoning toggle. By default, the model operates in a detailed reasoning mode, thoughtfully guiding users through step-by-step solutions. Users retain full control, easily switching reasoning mode off using customizable chat template configurations, allowing concise interactions suitable for straightforward queries. During the tuning process, reasoning and non-reasoning data were simultaneously incorporated, resulting in a versatile model adaptable to varied user needs.
+A distinctive feature of Llama-SEA-LION-v3.5-8B-R is its dynamic reasoning toggle. By default, the model operates in a detailed reasoning mode, thoughtfully guiding users through step-by-step solutions. Users retain full control, easily switching reasoning mode off using customizable chat template configurations, allowing concise interactions suitable for straightforward queries. During the tuning process, reasoning and non-reasoning data were simultaneously incorporated, resulting in a versatile model adaptable to varied user needs.
 
 We also scaled up our instruction set to **30M** instructions (across a training time of a month on a single node for the 70B), incorporating the latest in open-source alongside multiple rounds of synthetic aggregation and rewrite, improving the quality of its responses and leaning the model towards accounting for our region's unique cultural diversity and history. It comprises a mix of curated publicly available open source data, synthetic generations from stronger models and handwritten instructions centered around Southeast Asian culture (particularly from Project SEALD), general multilingual instruction-following and chat prompt-response pairs.
 
-SEA-LION-R training uniquely emphasizes region-specific data aggregation and synthetic instruction generation, undergoing multiple refinement cycles and model merging to enhance multilingual proficiency and reasoning capabilities, ensuring exceptional performance across both complex and general-purpose tasks. This ensures that SEA-LION v3.5 maintains its superior performance while mitigating issues like catastrophic forgetting.
+Llama-SEA-LION-v3.5-8B-R training uniquely emphasizes region-specific data aggregation and synthetic instruction generation, undergoing multiple refinement cycles and model merging to enhance multilingual proficiency and reasoning capabilities, ensuring exceptional performance across both complex and general-purpose tasks. This ensures that Llama-SEA-LION-v3.5-8B-R maintains its superior performance while mitigating issues like catastrophic forgetting.
 
 ### Benchmark Performance
 
