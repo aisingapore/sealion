@@ -2,7 +2,7 @@
 ## Introduction
 Llama-SEA-LION-v3.5-8B-R is a hybrid model offering versatile functionality, handling both complex reasoning tasks and general text generation, with mode selection managed through the tokenizer's chat template.
 
-We performed instruction tuning in English and also in SEA languages such as Filipino, Indonesian, Tamil, Thai and Vietnamese on our [continued pre-trained Llama-SEA-LION-v3-8B](../sea-lion-v3/llama-sea-lion-v3-8B.md), a decoder model using the Llama 3.1 architecture, to create Llama-SEA-LION-v3.5-8B-R. 
+We performed instruction tuning in English and also in SEA languages such as Filipino, Indonesian, Tamil, Thai and Vietnamese on our [continued pre-trained Llama-SEA-LION-v3-8B-IT](../sea-lion-v3/llama-sea-lion-v3-8B.md), a decoder model using the Llama 3.1 architecture, to create Llama-SEA-LION-v3.5-8B-R. 
 
 By leveraging on SEA-LION v3’s strong foundation, Llama-SEA-LION-v3.5-8B-R ensures broader accessibility and usability, empowering diverse communities and use cases throughout the region. It is particularly suited for cost-efficient, low-latency applications where regional language support and advanced reasoning is critical.
 
