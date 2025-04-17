@@ -21,7 +21,7 @@ This site provides information and resources on SEA-LION, including how to acces
 | **[SEA-LION v1](/models/sea-lion-v1/sea-lion-v1.md)**  | 3B   | 2048           | Pre-training from scratch  | Base                    |
 |                  | 7B   | 2048           | Pre-training from scratch  | Instruct                |
 
-¹ Supervised Fine-Training
+¹ Supervised Fine-Tuning
 
 ² Continued Pre-Training
 
