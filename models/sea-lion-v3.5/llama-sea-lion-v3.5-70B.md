@@ -98,7 +98,7 @@ Llama-SEA-LION-v3.5-70B-R models are available for download via the following ch
 
 | Model                | Download   |
 |----------------------|------------|
-| Llama-SEA-LION-v3.5-70B-R           | [HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-LION-v3.5-70B-R), [Kaggle]()      |
+| Llama-SEA-LION-v3.5-70B-R           | [HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-LION-v3.5-70B-R)     |
 | Llama-SEA-LION-v3.5-70B-R-GGUF | [HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-LION-v3.5-70B-R-GGUF), [Ollama](https://ollama.com/aisingapore/Llama-SEA-LION-v3.5-70B-R) |
 
 <br>
