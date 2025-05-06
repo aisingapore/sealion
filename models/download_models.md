@@ -9,7 +9,7 @@ SEA-LION models are available for download via the following channels:
 | Model                | Download   |
 |----------------------|------------|
 | Llama-SEA-LION-v3.5-8B-R      | [HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-LION-v3.5-8B-R) |
-| Llama-SEA-LION-v3.5-8B-R-GGUF | _coming soon_ |
+| Llama-SEA-LION-v3.5-8B-R-GGUF | [HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-LION-v3.5-8B-R-GGUF), [Ollama](https://ollama.com/aisingapore/Llama-SEA-LION-v3.5-8B-R) |
 
 <br>
 
@@ -17,7 +17,7 @@ SEA-LION models are available for download via the following channels:
 | Model                | Download   |
 |----------------------|------------|
 | Llama-SEA-LION-v3.5-70B-R    | [HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-LION-v3.5-70B-R)      |
-| Llama-SEA-LION-v3.5-70B-R-GGUF | _coming soon_ |
+| Llama-SEA-LION-v3.5-70B-R-GGUF | [HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-LION-v3.5-70B-R-GGUF), [Ollama](https://ollama.com/aisingapore/Llama-SEA-LION-v3.5-70B-R) |
 
 
 ## SEA-LION v3
