@@ -15,7 +15,7 @@ At a glance:
 - **Context Length**: 128K 
 - **Available Formats**:
   - Reasoning (Llama-SEA-LION-v3.5-8B-R)
-  - GGUF (Llama-SEA-LION-v3.5-8B-R-GGUF) _`coming soon`_
+  - GGUF (Llama-SEA-LION-v3.5-8B-R-GGUF)
 - **Supported Languages:** 
   1. Burmese
   2. Chinese
@@ -76,7 +76,20 @@ For more details on Llama-SEA-LION-v3.5-8B-R benchmark performance, please refer
 
 ## Llama-SEA-LION-v3.5-8B-R-GGUF
 
-_TO be available soon_ 
+The following quantized GGUF formats of our Llama-SEA-LION-v3.5-8B-R model are available:
+- Llama-SEA-LION-v3.5-8B-R-F16
+- Llama-SEA-LION-v3.5-8B-R-Q2_K
+- Llama-SEA-LION-v3.5-8B-R-Q3_K_M
+- Llama-SEA-LION-v3.5-8B-R-Q4_0
+- Llama-SEA-LION-v3.5-8B-R-Q4_K_M
+- Llama-SEA-LION-v3.5-8B-R-Q5_0
+- Llama-SEA-LION-v3.5-8B-R-Q5_K_M
+- Llama-SEA-LION-v3.5-8B-R-Q6_K
+- Llama-SEA-LION-v3.5-8B-R-Q8_0
+
+Please refer to our [Download the Model(s)](#download-the-model-s) section for more details on how to access them.
+
+<br>
 
 ## Download the Model(s)
 Llama-SEA-LION-v3.5-8B-R models are available for download via the following channels:
@@ -87,7 +100,7 @@ Llama-SEA-LION-v3.5-8B-R models are available for download via the following cha
 | Model                | Download   |
 |----------------------|------------|
 | Llama-SEA-LION-v3.5-8B-R           | [HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-LION-v3.5-8B-R)      |
-| Llama-SEA-LION-v3.5-8B-R-GGUF | _coming soon_ |
+| Llama-SEA-LION-v3.5-8B-R-GGUF | [HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-LION-v3.5-8B-R-GGUF), [Ollama](https://ollama.com/aisingapore/Llama-SEA-LION-v3.5-8B-R) |
 
 <br>
 
