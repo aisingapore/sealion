@@ -11,7 +11,9 @@ To get started with SEA-LION API, you'll need to first create an API key via our
 
 1. Sign in to SEA-LION Playground via your Google account
 
-2. Navigate to our API Key Manager page by clicking on Settings -> API Key
+2. Navigate to our API Key Manager page by clicking on
+ - `API Key` on the side menu, or
+ - `Launch Key Manager` on the home dashboard
 
 ![API Key Navigation](./images/api_key_navigation.png)
 
@@ -39,25 +41,25 @@ Replace YOUR_API_KEY with your generated API key.
 
 #### Step 2: Call the API
 
-SEA-LION's API endpoints for chat and embeddings are compatible with OpenAI's API and libraries.
+SEA-LION's API endpoints for chat are compatible with OpenAI's API and libraries.
+
+### Calling our Instruct models
 
 {% tabs %}
 {% tab title="curl" %} 
-```curl
-curl -X 'POST' \
-  https://api.sea-lion.ai/v1/chat/completions \
+```
+curl https://api.sea-lion.ai/v1/chat/completions \
   -H 'accept: text/plain' \
   -H 'Authorization: Bearer YOUR_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '{
-    "max_completion_tokens": 20,
+    "model": "aisingapore/Gemma-SEA-LION-v3-9B-IT",
     "messages": [
       {
-        "content": "Hi SEA-LION",
-        "role": "user"
+        "role": "user",
+        "content": "Tell me a Singlish joke!"
       }
     ],
-    "model": "aisingapore/Gemma-SEA-LION-v3-9B-IT"
   }'
 ```
 {% endtab %}
@@ -76,7 +78,7 @@ completion = client.chat.completions.create(
     messages=[
         {
             "role": "user",
-            "content": "What is Deep Learning"
+            "content": "Tell me a Singlish joke!"
         }
     ]
 )
@@ -86,6 +88,124 @@ print(completion.choices[0].message.content)
 {% endtab %}
 {% endtabs %}
 
+### Calling our Reasoning models
+
+Our reasoning models defaults to reasoning with `thinking_mode="on"` passed to the chat template. To use non-thinking mode ie. standard generations, pass `thinking_mode="off"` to the chat template instead.
+
+{% tabs %}
+{% tab title="curl" %} 
+```
+curl https://api.sea-lion.ai/v1/chat/completions \
+  -H 'accept: text/plain' \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "model": "aisingapore/Llama-SEA-LION-v3.5-8B-R",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Tell me a Singlish joke!"
+      }
+    ],  
+    "chat_template_kwargs": {
+	    "thinking_mode": "off"
+    }
+  }'
+```
+{% endtab %}
+
+{% tab title="python" %}
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    api_key=YOUR_API_KEY,
+    base_url="https://api.sea-lion.ai/v1" 
+)
+
+completion = client.chat.completions.create(
+    model="aisingapore/Llama-SEA-LION-v3.5-8B-R",
+    messages=[
+        {
+            "role": "user",
+            "content": "Tell me a Singlish joke!"
+        }
+    ],
+    extra_body={
+        "chat_template_kwargs": {
+            "thinking_mode": "off"
+        }
+    },
+)
+
+print(completion.choices[0].message.content)
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+If you are not observing any changes in response when toggling `thinking_mode` on/off, your API responses might have been cached.
+
+You can disable cache temporarily for your testing by setting the `no-cache` flag to `true`
+
+{% tabs %}
+{% tab title="curl" %} 
+```
+curl https://api.sea-lion.ai/v1/chat/completions \
+  -H 'accept: text/plain' \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "model": "aisingapore/Llama-SEA-LION-v3.5-8B-R",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Tell me a Singlish joke!"
+      }
+    ],  
+    "chat_template_kwargs": {
+	    "thinking_mode": "off"
+    },
+    "cache": {
+      "no-cache": True
+    }
+  }'
+```
+{% endtab %}
+
+{% tab title="python" %}
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    api_key=YOUR_API_KEY,
+    base_url="https://api.sea-lion.ai/v1" 
+)
+
+completion = client.chat.completions.create(
+    model="aisingapore/Llama-SEA-LION-v3.5-8B-R",
+    messages=[
+        {
+            "role": "user",
+            "content": "Tell me a Singlish joke!"
+        }
+    ],
+    extra_body={
+        "chat_template_kwargs": {
+            "thinking_mode": "off"
+        }, 
+        "cache": {
+            "no-cache": True
+        }
+    },
+)
+
+print(completion.choices[0].message.content)
+```
+{% endtab %}
+{% endtabs %}
+
+{% endhint %}
 
 ### Rate Limits
 
