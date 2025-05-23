@@ -5,7 +5,7 @@ The SEA-LION API provides a quick and simple interface to our various SEA-LION m
 
 Usage of the SEA-LION API is subject to our [Terms of Use](https://sea-lion.ai/terms-of-use/) and [Privacy Policy](https://sea-lion.ai/privacy-policy/)
 
-### Getting an API Key
+## Getting an API Key
 
 To get started with SEA-LION API, you'll need to first create an API key via our [SEA-LION Playground](https://playground.sea-lion.ai/):
 
@@ -26,13 +26,13 @@ To get started with SEA-LION API, you'll need to first create an API key via our
 An API key will be generated for you after you click "Create". **Make sure to copy or download the generated key** and keep it in a safe place since you won't be able to view it again. 
 
 <!-- ![API Key Save](./images/api_key_save.png) -->
-<figure><img src="./images/api_key_save.png" img width="90%"></figure>
+<figure><img src="./images/api_key_save.png" img width="60%"></figure>
 
 Only 1 API key is allowed to be created per user.
 
-### How To Use Your API Key
+## How To Use Your API Key
 
-#### Step 1. Find the Available Models
+### Step 1. Find the Available Models
 
 To find the available SEA-LION models for your API key, use the following curl command.
 
@@ -42,11 +42,11 @@ curl 'https://api.sea-lion.ai/v1/models' \
 ```
 Replace YOUR_API_KEY with your generated API key.
 
-#### Step 2: Call the API
+### Step 2: Call the API
 
 SEA-LION's API endpoints for chat are compatible with OpenAI's API and libraries.
 
-### Calling our Instruct models
+#### Calling our Instruct models
 
 {% tabs %}
 {% tab title="curl" %} 
@@ -91,7 +91,7 @@ print(completion.choices[0].message.content)
 {% endtab %}
 {% endtabs %}
 
-### Calling our Reasoning models
+#### Calling our Reasoning models
 
 Our v3.5 models offers dynamic reasoning capabilities, and defaults to reasoning with `thinking_mode="on"` passed to the chat template. To use non-thinking mode ie. standard generations, pass `thinking_mode="off"` to the chat template instead.
 
@@ -210,7 +210,7 @@ print(completion.choices[0].message.content)
 
 {% endhint %}
 
-### Rate Limits
+## Rate Limits
 
 Limits help us mitigate misuse and manage API capacity and help ensure that everyone has fair access to the API.
 
