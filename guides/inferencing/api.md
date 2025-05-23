@@ -90,7 +90,7 @@ print(completion.choices[0].message.content)
 
 ### Calling our Reasoning models
 
-Our reasoning models defaults to reasoning with `thinking_mode="on"` passed to the chat template. To use non-thinking mode ie. standard generations, pass `thinking_mode="off"` to the chat template instead.
+Our v3.5 models offers dynamic reasoning capabilities, and defaults to reasoning with `thinking_mode="on"` passed to the chat template. To use non-thinking mode ie. standard generations, pass `thinking_mode="off"` to the chat template instead.
 
 {% tabs %}
 {% tab title="curl" %} 
@@ -167,7 +167,7 @@ curl https://api.sea-lion.ai/v1/chat/completions \
 	    "thinking_mode": "off"
     },
     "cache": {
-      "no-cache": True
+      "no-cache": true
     }
   }'
 ```
