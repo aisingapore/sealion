@@ -15,15 +15,18 @@ To get started with SEA-LION API, you'll need to first create an API key via our
  - `API Key` on the side menu, or
  - `Launch Key Manager` on the home dashboard
 
-![API Key Navigation](./images/api_key_navigation.png)
+<figure><img src="./images/api_key_navigation.png" img width="100%"></figure>
+
 
 3. Click on the "Create New Trial API Key" button, and enter a name for your API key.
 
-![API Key Create](./images/api_key_create.png)
+<!-- ![API Key Create](./images/api_key_create.png) -->
+<figure><img src="./images/api_key_create.png" img width="100%"></figure>
 
 An API key will be generated for you after you click "Create". **Make sure to copy or download the generated key** and keep it in a safe place since you won't be able to view it again. 
 
-![API Key Create](./images/api_key_save.png)
+<!-- ![API Key Save](./images/api_key_save.png) -->
+<figure><img src="./images/api_key_save.png" img width="90%"></figure>
 
 Only 1 API key is allowed to be created per user.
 
