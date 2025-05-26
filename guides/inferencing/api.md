@@ -26,7 +26,7 @@ To get started with SEA-LION API, you'll need to first create an API key via our
 An API key will be generated for you after you click "Create". **Make sure to copy or download the generated key** and keep it in a safe place since you won't be able to view it again. 
 
 <!-- ![API Key Save](./images/api_key_save.png) -->
-<figure><img src="./images/api_key_save.png" width="60%"></figure>
+<figure><img src="./images/api_key_save.png" width=300></figure>
 
 Only 1 API key is allowed to be created per user.
 
