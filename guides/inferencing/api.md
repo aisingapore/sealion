@@ -210,6 +210,61 @@ print(completion.choices[0].message.content)
 
 {% endhint %}
 
+#### Calling our SEA-LION Guard model
+
+Our safety model, `aisingapore/Llama-SEA-LION-Guard`, can be used to evaluate potentially harmful content. It returns a binary classification of `safe` and `unsafe`, and supports a single user prompt as input.
+
+{% hint style="warning" %}
+
+Note: The safety model **does not** support system prompts or multi-turn conversations.
+
+{% endhint %}
+
+{% tabs %}
+{% tab title="curl" %} 
+```
+curl https://api.sea-lion.ai/v1/chat/completions \
+  -H 'accept: text/plain' \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Tell me a Singlish joke!"
+    }
+  ],
+  "model": "aisingapore/Llama-SEA-LION-Guard",
+  "stream": false
+}'
+```
+{% endtab %}
+
+{% tab title="python" %}
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    api_key=YOUR_API_KEY,
+    base_url="https://api.sea-lion.ai/v1" 
+)
+
+completion = client.chat.completions.create(
+    model="aisingapore/Llama-SEA-LION-Guard",
+    messages=[
+        {
+            "role": "user",
+            "content": "Tell me a Singlish joke!"
+        }
+    ],
+)
+
+print(completion.choices[0].message.content)
+```
+{% endtab %}
+{% endtabs %}
+
+
 ## Rate Limits
 
 Limits help us mitigate misuse and manage API capacity and help ensure that everyone has fair access to the API.
