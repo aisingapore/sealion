@@ -210,7 +210,7 @@ print(completion.choices[0].message.content)
 
 {% endhint %}
 
-#### Calling our SEA-LION Guard model
+#### Calling our Guard model
 
 Our safety model, `aisingapore/Llama-SEA-LION-Guard`, can be used to evaluate potentially harmful content. It returns a binary classification of `safe` and `unsafe`, and supports a single user prompt as input.
 
