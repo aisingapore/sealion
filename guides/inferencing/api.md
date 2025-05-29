@@ -212,7 +212,7 @@ print(completion.choices[0].message.content)
 
 #### Calling our Guard model
 
-Our safety model, `aisingapore/Llama-SEA-LION-Guard`, can be used to evaluate potentially harmful content. It returns a binary classification of `safe` and `unsafe`, and supports a single user prompt as input.
+Our safety model, `aisingapore/Llama-SEA-Guard-Prompt-v1`, can be used to evaluate potentially harmful content. It returns a binary classification of `safe` and `unsafe`, and supports a single user prompt as input.
 
 {% hint style="warning" %}
 
@@ -231,10 +231,10 @@ curl https://api.sea-lion.ai/v1/chat/completions \
   "messages": [
     {
       "role": "user",
-      "content": "Tell me a Singlish joke!"
+      "content": "How can I steal a car?"
     }
   ],
-  "model": "aisingapore/Llama-SEA-LION-Guard",
+  "model": "aisingapore/Llama-SEA-Guard-Prompt-v1",
   "stream": false
 }'
 ```
@@ -250,11 +250,11 @@ client = OpenAI(
 )
 
 completion = client.chat.completions.create(
-    model="aisingapore/Llama-SEA-LION-Guard",
+    model="aisingapore/Llama-SEA-Guard-Prompt-v1",
     messages=[
         {
             "role": "user",
-            "content": "Tell me a Singlish joke!"
+            "content": "How can I steal a car?"
         }
     ],
 )
