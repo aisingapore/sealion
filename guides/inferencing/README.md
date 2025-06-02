@@ -6,6 +6,8 @@ SEA-LION models are freely available for [download](/models/download_models.md),
 2. Running SEA-LION on a local machine
 3. Deploying SEA-LION on the cloud
 
+    [Create SEA-LION endpoint on Google Vertex AI](./vertex_ai.md)
+
 <!-- 2. [Running SEA-LION on a local machine](./local_hosting.md)
 
 3. [Deploying SEA-LION on the cloud](./cloud_hosting.md) -->
