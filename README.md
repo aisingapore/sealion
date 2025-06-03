@@ -109,4 +109,4 @@ SEA-LION would not be possible without a growing list of Singapore, regional, an
 
 ## Contact
 
-If you have questions, comments, or issues, please open a GitHub issue or contact us via this [SEA-LION Inquiry Form](https://forms.gle/sLCUVb95wmGf43hi6).
+If you have questions, comments, or issues, please open a GitHub issue or contact us via  [sealion@aisingapore.org](mailto:sealion@aisingapore.org).
