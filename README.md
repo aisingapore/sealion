@@ -1,8 +1,8 @@
-**South East Asian Languages in One Network**
+**Southeast Asian Languages in One Network**
 
 _Built for Southeast Asia, by Southeast Asia_
 
-South East Asian Languages in One Network (SEA-LION) is a family of open-source Large Language Models (LLMs) that better understands Southeast Asia’s (SEA) diverse contexts, languages, and cultures.
+Southeast Asian Languages in One Network (SEA-LION) is a family of open-source Large Language Models (LLMs) that better understands Southeast Asia’s (SEA) diverse contexts, languages, and cultures.
 
 It is an open-source project anchored by the Products Pillar of AI Singapore. Our work in SEA-LION aims to create LLMs that cater to under-represented population groups and low resource languages in the SEA region. You can [read more about our motivations for SEA-LION here](/overview/why_sea-lion.md).
 
@@ -30,7 +30,7 @@ This site provides information and resources on SEA-LION, including how to acces
 
 SEA-LION has seen:
 
-* In v1, ability to outperform most models based on SEA-HELM (SouthEast Asian Holistic Evaluation of Language Models) when it was released
+* In v1, ability to outperform most models based on SEA-HELM (Southeast Asian Holistic Evaluation of Language Models) when it was released
 * In v2, outperformance for SEA tasks, while retaining credible performance on standard (English) benchmarks
 * In v2.1, key improvements in conversational abilities across SEA languages, while providing more helpful and contextually appropriate responses to user prompts
 * In v3, outperforms similar sized open source models, and even some larger models in both general and SEA capabilities

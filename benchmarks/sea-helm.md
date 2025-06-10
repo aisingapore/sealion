@@ -1,6 +1,6 @@
-# SEA-HELM: SouthEast Asian Holistic Evaluation of Language Models
+# SEA-HELM: Southeast Asian Holistic Evaluation of Language Models
 
-SEA-HELM (SouthEast Asian Holistic Evaluation of Language Models) is a comprehensive benchmark suite designed to evaluate the linguistic and cultural competencies of Large Language Models (LLMs) in Southeast Asian (SEA) languages.
+SEA-HELM (Southeast Asian Holistic Evaluation of Language Models) is a comprehensive benchmark suite designed to evaluate the linguistic and cultural competencies of Large Language Models (LLMs) in Southeast Asian (SEA) languages.
 
 Formerly known as BHASA, SEA-HELM has been expanded and integrated with HELM to provide a more rigorous and authentic evaluation. It addresses the critical need for multilingual and multicultural benchmarks in the rapidly evolving field of LLMs.
 
@@ -59,7 +59,7 @@ This pillar focuses on evaluating capabilities unique to LLMs, such as instructi
 
 
 ### 3. SEA Linguistics
-This pillar focuses on systematically diagnosing language proficiency and grammatical understanding of language models in Southeast Asian languages by utilizing LINDSEA (LINguistic Diagnostics for SouthEast Asian languages).
+This pillar focuses on systematically diagnosing language proficiency and grammatical understanding of language models in Southeast Asian languages by utilizing LINDSEA (LINguistic Diagnostics for Southeast Asian languages).
 
 LINDSEA is a high-quality, manually-crafted linguistic dataset designed to provide a fine-grained evaluation of a model’s linguistic abilities, and is the first dataset of its kind created for SEA languages. 
 
