@@ -32,6 +32,7 @@
 * [Inferencing](guides/inferencing/README.md)
   * [SEA-LION API](guides/inferencing/api.md)
   * [Google Vertex AI](guides/inferencing/vertex_ai.md)
+  * [Amazon Bedrock Custom Model Import](guides/inferencing/amazon_bedrock_custom_model_import.md.md)
   <!-- * [SEA-LION on Local](guides/inferencing/local_hosting.md) -->
   <!-- * [SEA-LION on Cloud](guides/inferencing/cloud_hosting.md) -->
 <!-- * [Prompting](guides/prompting/README.md)
