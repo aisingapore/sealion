@@ -6,6 +6,8 @@ At the time of writing, the [supported model architectures](https://docs.aws.ama
 
 This article outlines the process of importing the SEA-LION model into Amazon Bedrock and includes a demo application that integrates with the imported model.
 
+<figure><img src="./images/amazon_bedrock_imported_models.png" width="100%"></figure>
+
 ## Prerequisites
 
 If you do not already have an Amazon Web Services (AWS) account, please [sign up](https://aws.amazon.com/resources/create-account/) first.
@@ -22,13 +24,13 @@ Please check that the following are installed on your development machine.
 
 ## Amazon Bedrock
 
-[Amazon Bedrock](https://aws.amazon.com/bedrock/) is a fully managed service that simplifies the deployment and scaling of AI models. It provides access to high-performing foundation models, enabling a serverless experience for model deployment and integration. With Custom Model Import, users can upload their own models and use a unified platform for AI development.
+[Amazon Bedrock](https://aws.amazon.com/bedrock/) is a fully managed service that simplifies the deployment and scaling of AI models. It provides access to high-performing foundation models, enabling a serverless experience for model deployment and integration. With **Custom Model Import**, users can upload their own models and use a unified platform for AI development.
 
 ### Pricing Model of Custom Model Import
 
-There is no charge to import a custom model to Bedrock. Once you import a model, you will be able to access it on-demand without requiring to perform any control plane action.
+There is no charge to import a custom model to Bedrock. Once you import a model, you will be able to access it **on-demand** without requiring to perform any control plane action.
 
-You are only charged for model inference, based on the number of copies of your custom model required to service your inference volume and the duration each model copy is active, billed in 5-minute windows.
+You are only **charged for model inference**, based on the number of copies of your custom model required to service your inference volume and the duration each model copy is active, **billed in 5-minute windows**.
 
 A model copy is a single instance of an imported model ready to serve inference requests. The price per model copy per minute depends on factors such as architecture, context length, AWS Region, compute unit version (hardware generation), and is tiered by model copy size.
 
@@ -44,11 +46,21 @@ Upload the contents of https://huggingface.co/aisingapore/Llama-SEA-LION-v3-8B-I
 
 As the time of writing, Amazon Bedrock Custom Model Import is supported in the us-east-1 (N. Virginia) and us-west-2 (Oregon) regions. Please check the [Amazon Bedrock documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-import-model.html) for the latest information.
 
-Select a supported region in the AWS Console. Navigate to Amazon Bedrock, Imported Models. Click the Import Model button.
+Select a supported region in the AWS Console. Navigate to Amazon Bedrock, **Imported Models**. Click the **Import Model** button.
 
 Input the model name and the S3 location of the uploaded model. Update the other [settings](https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-import-model-job.html) accordingly. Click **Import Model** to start the import.
 
+<figure><img src="./images/amazon_bedrock_import_model_name.png" width="100%"></figure>
+
+<figure><img src="./images/amazon_bedrock_import_model_from_s3.png" width="100%"></figure>
+
 After the import is completed, locate the model in **Imported models**.
+
+<figure><img src="./images/amazon_bedrock_imported_models.png" width="100%"></figure>
+
+Click the copy button to copy the **ARN** (Amazon Resource Name).
+
+<figure><img src="./images/amazon_bedrock_import_model_copy_arn.png" width="100%"></figure>
 
 ## Demo
 
@@ -98,13 +110,11 @@ Run the demo.
 python sealion_bedrock.py
 ```
 
+<figure><img src="./images/amazon_bedrock_import_model_runtime.webp" width="100%"></figure>
+
 ## Exception Handling
 
 Amazon Bedrock Custom Model Import optimizes the hardware utilization by removing the models that are not active. The demo might throw an exception that indicates the model is not ready for inference. Please refer to https://docs.aws.amazon.com/bedrock/latest/userguide/invoke-imported-model.html#handle-model-not-ready-exception and customize your applications to handle it gracefully.
-
-## Further Work
-
-The demo uses the AWS SDK to integrate with the imported model. If you are looking for how to work with OpenAI-compatible APIs, given their popularity, please refer to the next article.
 
 ## Links
 
