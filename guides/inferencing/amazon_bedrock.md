@@ -42,7 +42,7 @@ Please refer to the [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pric
 
 The model used in this guide is [Llama-SEA-LION-v3-8B-IT](https://huggingface.co/aisingapore/Llama-SEA-LION-v3-8B-IT). This section describes the steps to import the model.
 
-Upload the contents of https://huggingface.co/aisingapore/Llama-SEA-LION-v3-8B-IT to an Amazon S3 bucket. Please take note of the [Amazon S3 Pricing](https://aws.amazon.com/s3/pricing/).
+Upload the contents of [https://huggingface.co/aisingapore/Llama-SEA-LION-v3-8B-IT](https://huggingface.co/aisingapore/Llama-SEA-LION-v3-8B-IT) to an Amazon S3 bucket. Please take note of the [Amazon S3 Pricing](https://aws.amazon.com/s3/pricing/).
 
 As the time of writing, Amazon Bedrock Custom Model Import is supported in the us-east-1 (N. Virginia) and us-west-2 (Oregon) regions. Please check the [Amazon Bedrock documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-import-model.html) for the latest information.
 
