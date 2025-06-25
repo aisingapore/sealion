@@ -115,6 +115,10 @@ python sealion_bedrock.py
 
 Amazon Bedrock Custom Model Import optimizes the hardware utilization by removing the models that are not active. The demo might throw an exception that indicates the model is not ready for inference. Please refer to [https://docs.aws.amazon.com/bedrock/latest/userguide/invoke-imported-model.html#handle-model-not-ready-exception](https://docs.aws.amazon.com/bedrock/latest/userguide/invoke-imported-model.html#handle-model-not-ready-exception) and customize your applications to handle it gracefully.
 
+## Further Work
+
+The demo uses the [AWS SDK](https://docs.aws.amazon.com/bedrock/latest/userguide/sdk-general-information-section.html) to integrate with the imported model. If you are looking for how to work with OpenAI-compatible APIs, given their popularity, please refer to the next [guide](./bedrock_access_gateway.md).
+
 ## Links
 
 - SEA-LION models on Hugging Face: [https://huggingface.co/aisingapore](https://huggingface.co/aisingapore)
