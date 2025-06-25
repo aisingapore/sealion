@@ -102,7 +102,7 @@ Install the packages.
 pip install -r requirements.txt
 ```
 
-Set up the Boto3 credentials: [https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html] (https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html)
+Set up the Boto3 credentials: [https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html)
 
 Run the demo.
 ```bash
