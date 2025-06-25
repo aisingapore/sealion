@@ -85,7 +85,7 @@ Edit the value of `ENDPOINT_ARN` in the environment file and paste the **ARN** o
 
 Edit the value of `AWS_REGION` (e.g. us-east-1) in the environment file to match the region where the model was imported.
 
-Before running the demo, it is a good practice to create a virtual environment to isolate the app. Please follow these steps to create a virtual environment, or feel free to use your preferred tool
+Before running the demo, it is a good practice to create a virtual environment to isolate the app. Please follow these steps to create a virtual environment, or feel free to use your preferred tool.
 
 Initialise the virtual environment.
 ```bash
@@ -102,8 +102,7 @@ Install the packages.
 pip install -r requirements.txt
 ```
 
-Set up the Boto3 credentials.
-https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html
+Set up the Boto3 credentials: [https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html] (https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html)
 
 Run the demo.
 ```bash
@@ -114,9 +113,9 @@ python sealion_bedrock.py
 
 ## Exception Handling
 
-Amazon Bedrock Custom Model Import optimizes the hardware utilization by removing the models that are not active. The demo might throw an exception that indicates the model is not ready for inference. Please refer to https://docs.aws.amazon.com/bedrock/latest/userguide/invoke-imported-model.html#handle-model-not-ready-exception and customize your applications to handle it gracefully.
+Amazon Bedrock Custom Model Import optimizes the hardware utilization by removing the models that are not active. The demo might throw an exception that indicates the model is not ready for inference. Please refer to [https://docs.aws.amazon.com/bedrock/latest/userguide/invoke-imported-model.html#handle-model-not-ready-exception](https://docs.aws.amazon.com/bedrock/latest/userguide/invoke-imported-model.html#handle-model-not-ready-exception) and customize your applications to handle it gracefully.
 
 ## Links
 
-- SEA-LION models on Hugging Face: https://huggingface.co/aisingapore
-- Import a customized model into Amazon Bedrock: https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-import-model.html
+- SEA-LION models on Hugging Face: [https://huggingface.co/aisingapore](https://huggingface.co/aisingapore)
+- Import a customized model into Amazon Bedrock: [https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-import-model.html](https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-import-model.html)
