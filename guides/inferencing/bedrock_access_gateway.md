@@ -1,6 +1,6 @@
 # OpenAI-compatible APIs with SEA-LION and Bedrock Access Gateway
 
-In the [previous guide](./amazon_bedrock.md), we have shown how to leverage on Amazon Bedrock‘s Custom Model Import to deploy SEA-LION on the cloud. After importing the SEA-LION models, you can build applications with the AWS SDK. This article describes an alternative method to build the applications with OpenAI-compatible APIs served by the **Bedrock Access Gateway**.
+In the [previous guide](./amazon_bedrock.md), we have shown how to leverage on Amazon Bedrock‘s Custom Model Import to deploy SEA-LION in the cloud. After importing the SEA-LION models, you can build applications with the AWS SDK. This guide describes an alternative method to build the applications with OpenAI-compatible APIs served by the **Bedrock Access Gateway**.
 
 <figure><img src="./images/bedrock_access_gateway_docker_compose_up.webp" width="100%"></figure>
 
@@ -97,7 +97,7 @@ curl http://localhost:8000/api/v1/chat/completions \
 
 ## Demo
 
-With the gateway, the demo from the previous [guide](./amazon_bedrock.md) can use the [Python library for OpenAI API](https://pypi.org/project/openai/) to integrate with the imported model. Follow the steps in the post to set it up. Run the demo with the `--api` parameter.
+With the gateway, the demo from the [previous guide](./amazon_bedrock.md) can use the [Python library for OpenAI API](https://pypi.org/project/openai/) to integrate with the imported model. Follow the steps in the guide to set it up. Run the demo with the `--api` parameter.
 
 ```bash
 python sealion_bedrock.py --api
