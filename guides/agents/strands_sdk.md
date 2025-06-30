@@ -156,6 +156,7 @@ Create a specialized agent that can be used as a tool by other agents:
 **`translate_agent.py`**
 ```python
 import os
+import sys
 
 from dotenv import load_dotenv
 from strands import Agent, tool

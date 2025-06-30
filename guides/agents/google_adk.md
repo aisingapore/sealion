@@ -58,7 +58,10 @@ from google.adk.agents import Agent
 from google.adk.models.lite_llm import LiteLlm
 from google.adk.tools.agent_tool import AgentTool
 
+# Import your custom tools from your tools.py script, or place in this script
 from .tools import searxng_search
+
+# Import your specialised agent from your agent's script, or place in this script
 from .translator import root_agent as translator
 
 load_dotenv()
@@ -204,7 +207,7 @@ You must only output the translated text. Do not include any additional explanat
 root_agent = LlmAgent(
    name="translator_agent",
    model=LiteLlm(
-        model=f"openai/{os.getenv('MODEL', 'aisingapore/Llama-SEA-LION-v3-70B-IT')}"
+        model=f"openai/{os.getenv('MODEL', 'aisingapore/Gemma-SEA-LION-v3-9B-IT')}"
     ),
    description="Agent that translates text to a specified language.",
    instruction=TRANSLATOR_PROMPT,
@@ -244,7 +247,10 @@ from google.adk.tools.agent_tool import AgentTool
 from google.adk.runners import Runner
 from google.genai.types import Content, Part
 
+# Import your custom tools from your tools.py script, or place in this script
 from .tools import searxng_search
+
+# Import your specialised agent from your agent's script, or place in this script
 from .translator import root_agent as translator
 
 load_dotenv()
@@ -402,4 +408,4 @@ Always provide clear docstrings for custom tools, including:
 
 - Web interface (`adk web`) is the recommended way to interact with agents
 - CLI implementation requires proper session management
-- Agent composition using `AgentTool` allows for specialised agents to do focused singular tasks. For using agents in a workflow or loop, consider [the difference between sub-agents and agent tools](https://google.github.io/adk-docs/tools/function-tools/#key-difference-from-sub-agents)
+- Agent composition using `AgentTool` allows for specialised agents to do focused singular tasks. For using agents in a workflow or loop, consider [the difference between sub-agents and agent tools](https://google.github.io/adk-docs/tools/function-tools/#key-difference-from-sub-agents). If it suits your use-case, you can [explore workflow agents and sub-agents](https://google.github.io/adk-docs/agents/workflow-agents/)
