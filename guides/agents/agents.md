@@ -33,8 +33,8 @@ Develop and deploy agents with Google ADK:
 For optimal agent performance, we recommend using the following SEA-LION models:
 
 - **`aisingapore/Llama-SEA-LION-v3-70B-IT`/`aisingapore/Llama-SEA-LION-v3-8B-IT`** - Suitable for tool-calling, long context tasks or creative response.
-- **`aisingapore/Gemma-SEA-LION-v3-9B-IT`** - Suitable for tool-calling, smaller tasks with succinct response. 
-- **`aisingapore/Llama-SEA-LION-v3.5-70B-R`/`aisingapore/Llama-SEA-LION-v3.5-8B-R`** - Display reasoning process.
+- **`aisingapore/Gemma-SEA-LION-v3-9B-IT`** - Suitable for smaller tasks with succinct response. 
+- **`aisingapore/Llama-SEA-LION-v3.5-70B-R`/`aisingapore/Llama-SEA-LION-v3.5-8B-R`** - Display reasoning process and long context tasks.
 
 ## Key Features
 
