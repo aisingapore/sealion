@@ -40,6 +40,10 @@
 * [Fine-tuning](guides/finetuning/README.md)
 * [Example Use Cases](guides/use_cases/README.md) -->
 
+* [Agents](guides/agents/agents.md)
+  * [Strands Agents SDK](guides/agents/strands_sdk.md)
+  * [Google ADK](guides/agents/google_adk.md)
+
 ## Resources
 
 * [Publications](resources/publications.md)
