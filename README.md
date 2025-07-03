@@ -61,7 +61,7 @@ SEA-LION will also be open and transparent in the following areas throughout thi
 
 ## Community
 
-We welcome contributions to SEA-LION! Check out the [contributing guide](overview/contributing.md) to get started.
+We welcome contributions to SEA-LION! Check out the [contributing guide](overview/contributions.md) to get started.
 
 Some ways to contribute:
 
@@ -70,7 +70,7 @@ Some ways to contribute:
 * Add more model evaluation tasks and metrics
 * Train versions of the model in more SEA languages
 
-Check out our [collaborations guide](overview/collaboration.md) also, for possible ways to further enhance and expand the capabilities of SEA-LION together.
+Check out our [collaborations guide](overview/contributions.md) also, for possible ways to further enhance and expand the capabilities of SEA-LION together.
 
 ## To Cite SEA-LION
 
