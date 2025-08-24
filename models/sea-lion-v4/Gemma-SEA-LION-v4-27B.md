@@ -40,7 +40,7 @@ At a glance:
 - **Context length:** 128k 
 - **Language(s):**  Bahasa Indonesia, Burmese, Chinese, English, Khmer, Lao, Malay, Tagalog, Tamil, Thai and Vietnamese
 - **License:** [Gemma Terms of Use](https://ai.google.dev/gemma/terms)
-- **Finetuned from model:** [Gemma-3-27B-IT](https://huggingface.co/google/gemma-3-27b-it)
+- **Continued pretrained and finetuned from model:** [Gemma-3-27B-IT](https://huggingface.co/google/gemma-3-27b-it)
 
 As of 25 Aug 2025, Gemma-SEA-LION-v4-27B-IT excels at Southeast Asian (SEA) tasks when compared to other open models with fewer than 200 billion parameters and demonstrates performance comparable to that of larger and top closed models. For detailed rankings, please refer to the [leaderboard](https://leaderboard.sea-lion.ai/).
 
@@ -204,12 +204,10 @@ For details on Gemma-SEA-LION-v4-27B-IT performance, please refer to the SEA-HEL
 ## Gemma-SEA-LION-v4-27B-IT Quantized Version
 The following quantized versions of our Gemma-SEA-LION-v4-27B-IT model are available:
 
-- [Gemma-SEA-LION-v4-27B-IT-Q4_K_M](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-GGUF)
-- [Gemma-SEA-LION-v4-27B-IT-Q8_0](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-GGUF)
-
-- [Gemma-SEA-LION-v4-27B-IT-NVFP4](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-NVFP4 )
-
-- [Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic)
+- Gemma-SEA-LION-v4-27B-IT-Q4_K_M
+- Gemma-SEA-LION-v4-27B-IT-Q8_0
+- Gemma-SEA-LION-v4-27B-IT-NVFP4
+- Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic
 
 
 Please refer to our [Download the Model(s)](https://github.com/aisingapore/sealion/blob/main/models/sea-lion-v3.5/llama-sea-lion-v3.5-70B.md#download-the-model-s) section for more details on how to access them.
@@ -224,7 +222,10 @@ Gemma-SEA-LION-v4-27B models are available for download via the following channe
 |Model	                        |Download                                                      |
 |-------------------------------|--------------------------------------------------------------|
 |Gemma-SEA-LION-v4-27B	        |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4)|
-|Gemma-SEA-LION-v4-27B-IT-GGUF	|[HuggingFace](), [Ollama]()                                   |
+|Gemma-SEA-LION-v4-27B-IT	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT) |
+|Gemma-SEA-LION-v4-27B-IT-GGUF	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-GGUF) |
+|Gemma-SEA-LION-v4-27B-IT-NVFP4	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-NVFP4) |
+|Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-FP8-Dynamic) |
 
 ## Usage
 Use the code below to get started with the model.

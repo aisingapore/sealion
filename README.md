@@ -12,7 +12,7 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection | Size | Context Length | Training Strategy          | Available in            |
 |------------------|------|----------------|----------------------------|-------------------------|
-| **[SEA-LION v4](/models/sea-lion-v4/sea-lion-v4.md)** | 27B   | 128K           | SFT¹ of Gemma-SEA-LION-v3-27B | Base, Instruct, GGUF, NVFP4    |
+| **[SEA-LION v4](/models/sea-lion-v4/sea-lion-v4.md)** | 27B   | 128K           | CFT¹ of Gemma 3 27B IT | Base, Instruct, GGUF, NVFP4, FP8_Dynamic    |
 | **[SEA-LION v3.5](/models/sea-lion-v3.5/sea-lion-v3.5.md)** | 8B   | 128K           | SFT¹ of Llama-SEA-LION-v3-8B-IT | Reasoning, GGUF    |
 |                  | 70B  | 128K           | SFT of Llama-SEA-LION-v3-70B-IT | Reasoning, GGUF    |
 | **[SEA-LION v3](/models/sea-lion-v3/sea-lion-v3.md)**  | 9B   | 8192           | CPT² of Gemma2            | Base, Instruct, GGUF    |

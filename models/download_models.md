@@ -3,13 +3,16 @@
 SEA-LION models are available for download via the following channels:
 
 ## SEA-LION v4 (Latest)
-[Full HuggingFace SEA-LION v4 Collection](https://huggingface.co/collections/aisingapore/)
+[Full HuggingFace SEA-LION v4 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v4-68aa7bb8061d497a4f9f2fec)
 
-| Model                | Download   |
-|----------------------|------------|
-| Gemma-SEA-LION-v4-27B | [HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B) |
-| Gemma-SEA-LION-v4-27B-IT | [HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT)      |
-| Gemma-SEA-LION-v4-27B-GGUF | [HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF), [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4-27B-IT) |
+**Gemma-SEA-LION-v4-27B**
+|Model	                        |Download                                                      |
+|-------------------------------|--------------------------------------------------------------|
+|Gemma-SEA-LION-v4-27B	        |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4)|
+|Gemma-SEA-LION-v4-27B-IT	    |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT) |
+|Gemma-SEA-LION-v4-27B-IT-GGUF	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-GGUF) |
+|Gemma-SEA-LION-v4-27B-IT-NVFP4	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-NVFP4) |
+|Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-FP8-Dynamic) |
 
 
 ## SEA-LION v3.5
