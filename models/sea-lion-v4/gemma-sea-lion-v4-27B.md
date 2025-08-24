@@ -210,7 +210,7 @@ The following quantized versions of our Gemma-SEA-LION-v4-27B-IT model are avail
 - Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic
 
 
-Please refer to our [Download the Model(s)](https://github.com/aisingapore/sealion/blob/main/models/sea-lion-v3.5/llama-sea-lion-v3.5-70B.md#download-the-model-s) section for more details on how to access them.
+Please refer to our [Download the Model(s)](#download-the-model-s) section for more details on how to access them.
 
 ## How to Get Started with the Model
 
@@ -221,11 +221,11 @@ Gemma-SEA-LION-v4-27B models are available for download via the following channe
 
 |Model	                        |Download                                                      |
 |-------------------------------|--------------------------------------------------------------|
-|Gemma-SEA-LION-v4-27B	        |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4)|
-|Gemma-SEA-LION-v4-27B-IT	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT) |
-|Gemma-SEA-LION-v4-27B-IT-GGUF	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-GGUF), [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4-27B-IT) |
-|Gemma-SEA-LION-v4-27B-IT-NVFP4	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-NVFP4) |
-|Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-FP8-Dynamic) |
+|Gemma-SEA-LION-v4-27B	        |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B)|
+|Gemma-SEA-LION-v4-27B-IT	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT) |
+|Gemma-SEA-LION-v4-27B-IT-GGUF	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF), [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4-27B-IT) |
+|Gemma-SEA-LION-v4-27B-IT-NVFP4	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-NVFP4) |
+|Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-27B-FP8-Dynamic) |
 
 ## Usage
 Use the code below to get started with the model.
