@@ -10,10 +10,11 @@ SEA-LION models are available for download via the following channels:
 |-------------------------------|--------------------------------------------------------------|
 |Gemma-SEA-LION-v4-27B	        |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4)|
 |Gemma-SEA-LION-v4-27B-IT	    |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT) |
-|Gemma-SEA-LION-v4-27B-IT-GGUF	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-GGUF) |
+|Gemma-SEA-LION-v4-27B-IT-GGUF	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-GGUF), [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4-27B-IT) |
 |Gemma-SEA-LION-v4-27B-IT-NVFP4	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-NVFP4) |
 |Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-FP8-Dynamic) |
 
+<br>
 
 ## SEA-LION v3.5
 [Full HuggingFace SEA-LION v3.5 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v35-67fc3ab84300d7e6088fa32c)
