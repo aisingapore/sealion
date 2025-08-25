@@ -11,7 +11,6 @@
 ## Models
 * [SEA-LION v4 (Latest)](models/sea-lion-v4/sea-lion-v4.md)
   * [Gemma-SEA-LION-v4-27B](models/sea-lion-v4/gemma-sea-lion-v4-27B.md)
-  * [Gemma-SEA-LION-v4-27B-IT (Quantized)](models/sea-lion-v4/gemma-sea-lion-v4-27B-IT-quantized.md)
 * [SEA-LION v3.5](models/sea-lion-v3.5/sea-lion-v3.5.md)
   * [Llama-SEA-LION-v3.5-8B](models/sea-lion-v3.5/llama-sea-lion-v3.5-8B.md)
   * [Llama-SEA-LION-v3.5-70B](models/sea-lion-v3.5/llama-sea-lion-v3.5-70B.md)

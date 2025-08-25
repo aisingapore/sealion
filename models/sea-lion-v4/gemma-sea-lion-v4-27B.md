@@ -210,14 +210,14 @@ The following quantized versions of our Gemma-SEA-LION-v4-27B-IT model are avail
 - Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic
 
 
-Please refer to our [Download the Model(s)](#download-the-model-s) section for more details on how to access them.
+Please refer to our [Download the Models](#download-the-models) section for more details on how to access them.
 
 ## How to Get Started with the Model
 
-## Download the Models(s)
+## Download the Models
 
 Gemma-SEA-LION-v4-27B models are available for download via the following channels:
-🤗HuggingFace SEA-LION v4 Collection
+🤗[HuggingFace SEA-LION v4 Collection]((https://huggingface.co/collections/aisingapore/sea-lion-v4-68aa7bb8061d497a4f9f2fec))
 
 |Model	                        |Download                                                      |
 |-------------------------------|--------------------------------------------------------------|
