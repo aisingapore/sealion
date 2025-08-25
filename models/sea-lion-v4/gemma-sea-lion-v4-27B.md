@@ -121,14 +121,14 @@ Our post-training workflow consists of multiple stages: instruction fine-tuning,
 ## Evaluation
 
 <!-- This section describes the evaluation protocols and provides the results. -->
-We  evaluated Gemma-SEA-LION-v4-27B on both general language capabilities and instruction-following capabilites. 
+We evaluated Gemma-SEA-LION-v4-27B models on both general language capabilities and instruction-following capabilites. 
 ### Testing Data, Factors & Metrics
 
 #### Testing Data
 
 <!-- This should link to a Dataset Card if possible. -->
 
-We evaluated Gemma-SEA-LION-v4-27B on both general language capabilities and instruction-following capabilites.
+We evaluated Gemma-SEA-LION-v4-27B models on both general language capabilities and instruction-following capabilites.
 
 General language capabilities
 
@@ -192,7 +192,7 @@ The following metrics were used:
 
 ### Results
 
-For details on Gemma-SEA-LION-v4-27B-IT performance, please refer to the SEA-HELM leaderboard, [Leaderboard results on SEA-HELM](https://leaderboard.sea-lion.ai/).
+For details on Gemma-SEA-LION-v4-27B model performances, please refer to the SEA-HELM leaderboard, [Leaderboard results on SEA-HELM](https://leaderboard.sea-lion.ai/).
 
 
 
@@ -232,7 +232,7 @@ import torch
 
 pipe = pipeline(
     "text-generation",
-    model="aisingapore/Gemma-SEA-LION-v4-27B",
+    model="aisingapore/Gemma-SEA-LION-v4-27B-IT",
     device="cuda",
     torch_dtype=torch.bfloat16
 )
@@ -257,7 +257,7 @@ print(output[0]["generated_text"][-1]["content"])
 
 ## Disclaimer
 
-The model has not been aligned for safety. Developers and users should perform their own safety 
+The models have not been aligned for safety. Developers and users should perform their own safety 
 fine-tuning and related security measures. In no event shall the authors be held liable for any claims, damages, or other liabilities arising from the use of the released weights and codes.
 
 
@@ -265,8 +265,8 @@ fine-tuning and related security measures. In no event shall the authors be held
 
 <!-- This section is meant to convey both technical and sociotechnical limitations. -->
 
-*The model was not tested for robustness against adversarial prompting.* It is important for users to be aware that our model exhibits certain limitations that warrant consideration. 
-Like many LLMs, the model can hallucinate and occasionally generates irrelevant content, 
+*The models were not tested for robustness against adversarial prompting.* It is important for users to be aware that our models exhibit certain limitations that warrant consideration. 
+Like many LLMs, the models can hallucinate and occasionally generates irrelevant content, 
 introducing fictional elements that are not grounded in the provided context. 
 Users should also exercise caution in interpreting and validating the model's responses 
 due to the potential inconsistencies.
@@ -282,7 +282,7 @@ and may not exhibit significant improvements or differences in this area. [🤗 
 ## More Information
 
 This is the repository for the commercial instruction-tuned model. 
-The model has *not* been aligned for safety. Developers and users should perform their own safety 
+The models have *not* been aligned for safety. Developers and users should perform their own safety 
 fine-tuning and related security measures. In no event shall the authors be held liable 
 for any claims, damages, or other liabilities arising from the use of the released weights and codes.
 
