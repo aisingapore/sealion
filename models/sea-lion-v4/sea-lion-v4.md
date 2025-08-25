@@ -5,6 +5,6 @@ SEA-LION version 4, released on Aug 25, is our first multimodal models trained o
 - [Gemma-SEA-LION-v4-27B-IT](./gemma-sea-lion-v4-27B.md#training-procedure) is suited for knowledge-intensive tasks, and for high-demand contexts where comprehensive language comprehension are essential.
 - [Gemma-SEA-LION-v4-27B-IT-GGUF, NVFP4, FP8_Dynamic](./gemma-sea-lion-v4-27B.md#gemma-sea-lion-v4-27b-it-quantized-version) supports inference on a range of consumer-grade GPUs and are compatible with various inference engines.
 
-Trained off our SEA-LION v3.5 models, SEA-LION v4 continues our mission to create language models that understand and respond with greater cultural awareness and depth across Southeast Asia. In addition, SEA-LION v4 has the ability to handle both image and text input as a multimodal model.
+SEA-LION v4 continues our mission to create language models that understand and respond with greater cultural awareness and depth across Southeast Asia. In addition, SEA-LION v4 has the ability to handle both image and text input as a multimodal model.
 
 For detailed information of each of the SEA-LION v4 models, please refer to their individual documentation pages via the links above.
