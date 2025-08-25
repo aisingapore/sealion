@@ -36,7 +36,7 @@
   * [Google Vertex AI](guides/inferencing/vertex_ai.md)
   * [Amazon Bedrock Custom Model Import](guides/inferencing/amazon_bedrock.md)
   * [Bedrock Access Gateway](guides/inferencing/bedrock_access_gateway.md)
-  * [vLLM on HPC Cluster](guides/inferencing/vllm_hpc.md)
+  * [vLLM on Linux](guides/inferencing/vllm_linux.md)
   <!-- * [SEA-LION on Local](guides/inferencing/local_hosting.md) -->
   <!-- * [SEA-LION on Cloud](guides/inferencing/cloud_hosting.md) -->
 <!-- * [Prompting](guides/prompting/README.md)

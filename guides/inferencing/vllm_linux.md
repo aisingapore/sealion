@@ -1,13 +1,13 @@
-# Deployment using vLLM on HPC cluster
+# Deployment using vLLM on Linux Server 
 
-The following guide explains the procedures for deploying a SEA-LION model on a High Performance Computing (HPC) cluster. Consult your cluster’s documentation to obtain the procedures for job submission and accessing the compute nodes. 
+The following guide explains the procedures for deploying a SEA-LION model on a Linux server.
 
 ## Prerequisites
 - OS: Linux
 - Python: 3.9-3.12
 - vLLM version: 0.10.1.1
-- HPC cluster with uv installed as a module. The CUDA drivers (version 12) need to be installed.
-- To run NVFP4 version of the model most efficiently, ensure that your GPU hardware can support (e.g. Nvidia Blackwell architecture).
+- uv 0.7.x installed
+- CUDA drivers version 12 installed
 
 ## Environment Setup
 To get started, you will need to create an environment and install vLLM. The steps below outline how to install and use **uv** as the package manager, and then proceeding to install vLLM.
@@ -22,49 +22,36 @@ cd /home/sealion-user
 mkdir sealion_test && cd sealion_test
 ```
 
-3. Load the uv module. 
-```bash
-module load uv
-```
-
-4. Initialize uv
+3. Initialize uv
 ```bash
 uv init
 ```
 
-5. Add the vllm dependency
+4. Add the vllm dependency
 ```bash
 uv add vllm
 ```
 
-6. Clone vllm github repository and rename the top-level directory to `vllm_code`. The renaming is necessary to prevent Python from importing modules from the vllm repository directory instead of the packages installed in the environment.
+5. Clone vllm github repository and rename the top-level directory to `vllm_code`. The renaming is necessary to prevent Python from importing modules from the vllm repository directory instead of the packages installed in the environment.
 ```bash
 git clone https://github.com/vllm-project/vllm.git && mv vllm vllm_code
 ```
 
 ## Model Deployment using vLLM
-The steps below outline how to host a vLLM service using an interactive job on a HPC cluster with GPUs.
+The steps below outline how to host a vLLM service using GPUs.
 
-1. Submit an interactive job requesting one or more GPUs depending on the specifications of your hardware.
-2. Navigate to working directory and activate environment:
+1. Navigate to working directory and activate environment:
 ```bash
 cd /home/sealion-user/sealion_test && source/.venv/bin/activate
 ```
-3. Load uv module and set relevant values of environment variables. It is necessary to set VLLM_CACHE_ROOT to prevent errors arising from insufficient disk space as a result of using the default vLLM cache directory:
+
+2. Set relevant values of environment variables. It is necessary to set VLLM_CACHE_ROOT to prevent errors arising from insufficient disk space as a result of using the default vLLM cache directory:
 ```bash
-module load uv
 export CUDA_VISIBLE_DEVICES=0
 export VLLM_CACHE_ROOT=/home/sealion-user/sealion_test/
 ```
 
-4. Login to HuggingFace. Enter HuggingFace access token when prompted. (Optional)
-```bash
-huggingface-cli login
-```
-
-5. Check the compute node where the job is running from the terminal.
-
-6. Start the server with the desired model. The `aisingapore/Gemma-SEA-LION-v4-27B-IT` model is used in this example.
+3. Start the server with the desired model. The `aisingapore/Gemma-SEA-LION-v4-27B-IT` model is used in this example.
 ```bash
 python -m vllm.entrypoints.openai.api_server --model aisingapore/Gemma-SEA-LION-v4-27B-IT
 ```
@@ -74,9 +61,7 @@ Alternatively, the server can be started with the below command:
 vllm serve aisingapore/Gemma-SEA-LION-v4-27B-IT
 ```
 
-7. Start a new terminal and enter the compute node where the job is running. 
-
-8. Create a python script similar to the following:
+4. Create a python script `main.py` similar to the following:
 ```bash
 import requests
 
@@ -93,12 +78,7 @@ response = requests.post(
 print(response.json())
 ```
 
-9. Navigate to the working directory and activate the environment
-```bash
-cd /home/sealion-user/sealion_test && source .venv/bin/activate
-```
-
-10. Run the python script. The following assumes it is called main.py
+5. Run the python script. The following assumes it is called `main.py`.
 ```bash
 python main.py
 ```

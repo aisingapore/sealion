@@ -8,5 +8,5 @@ SEA-LION models are freely available for [download](/models/download_models.md),
     - [Create SEA-LION endpoint on Google Vertex AI](./vertex_ai.md)
     - [Importing and Using SEA-LION in a Serverless On-Demand Environment with Amazon Bedrock](./amazon_bedrock.md)
     - [OpenAI-compatible APIs with SEA-LION and Bedrock Access Gateway](./bedrock_access_gateway.md)
-    - [Deploying SEA-LION using vLLM on HPC cluster](./vllm_hpc.md)
+    - [Deploying SEA-LION using vLLM on Linux server](./vllm_linux.md)
 
