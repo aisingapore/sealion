@@ -223,7 +223,6 @@ Gemma-SEA-LION-v4-27B models are available for download via the following channe
 |Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-IT-27B-FP8-Dynamic) |
 
 ## Usage
-Use the code below to get started with the model.
 
 Use the code below to get started with the model using the 🤗 Transformers library.
 ```python
