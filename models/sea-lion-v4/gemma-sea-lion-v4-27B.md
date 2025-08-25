@@ -1,23 +1,22 @@
 ---
 # For reference on model card metadata, see the spec: https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1
 # Doc / guide: https://huggingface.co/docs/hub/model-cards
-Gemma-SEA-LION-v4-27B (Both Model for Github) Last updated: 2025-08-21
+Gemma-SEA-LION-v4-27B (Both Model for Github) Last updated: 2025-08-25 
 ---
 
 # Gemma-SEA-LION-v4-27B
 
-Last updated: 2025-08-21
+Last updated: 2025-08-25
 
 
-**SEA-LION** is a collection of Large Language Models (LLMs) which have been pretrained and instruct-tuned 
-for the Southeast Asia (SEA) region.
+**SEA-LION** is a collection of Large Language Models (LLMs) which have been pretrained and instruct-tuned for the Southeast Asia (SEA) region.
 
 <!-- Introduction -->
 ## Introduction
 SEA-LION stands for *Southeast Asian Languages In One Network*. 
 
 Gemma-SEA-LION-v4-27B is based on Gemma 3 (which supports over 100 languages) and is a multilingual model that
-has undergone continued pre-training on approximately **500B tokens**, sampled from a pool of 1 trillion tokens across 11 SEA languages: Bahasa Indonesia, Burmese, Chinese, English, Khmer, Lao, Malay, Tagalog, Tamil, Thai and Vietnamese, 
+has undergone continued pre-training on approximately **500B tokens**, sampled from a pool of 1 trillion tokens across 11 SEA languages: Burmese, English, Indonesia, Khmer, Lao, Malay, Mandarin, Tagalog, Tamil, Thai and Vietnamese, 
 to create *Gemma-SEA-LION-v4-27B*. Subsequently, we performed post-training on 
 Gemma-SEA-LION-v4-27B using multiple RL algorithms to produce *Gemma-SEA-LION-v4-27B-IT*.
 
@@ -38,7 +37,7 @@ At a glance:
 - **Shared by:** Products Pillar, AI Singapore
 - **Model type:** Decoder
 - **Context length:** 128k 
-- **Language(s):**  Bahasa Indonesia, Burmese, Chinese, English, Khmer, Lao, Malay, Tagalog, Tamil, Thai and Vietnamese
+- **Language(s):**  Burmese, English, Indonesia, Khmer, Lao, Malay, Mandarin, Tagalog, Tamil, Thai and Vietnamese
 - **License:** [Gemma Terms of Use](https://ai.google.dev/gemma/terms)
 - **Continued pretrained and finetuned from model:** [Gemma-3-27B-IT](https://huggingface.co/google/gemma-3-27b-it)
 
@@ -50,9 +49,7 @@ As of 25 Aug 2025, Gemma-SEA-LION-v4-27B-IT excels at Southeast Asian (SEA) task
 
 <!-- This should link to a Dataset Card, perhaps with a short stub of information on what the training data is all about as well as documentation related to data pre-processing or additional filtering. -->
 
-The dataset comprises Bahasa Indonesia, Burmese, Chinese, English, Khmer, Lao, Malay, Tagalog, Tamil, 
-Thai and Vietnamese languages, collected from a mixture of sources including web data, code, open-source datasets, 
-and synthetically generated datasets, amounting to a total of 500 billion tokens.
+The dataset comprises Burmese, English, Indonesia, Khmer, Lao, Malay, Mandarin, Tagalog, Tamil, Thai and Vietnamese languages, collected from a mixture of sources including web data, code, open-source datasets, and synthetically generated datasets, amounting to a total of 500 billion tokens.
 
 The 500 billion tokens are sampled from a much larger pool of 1 trillion tokens from open-sourced datasets with the optimal datamix shown below determined by our experiments.
 
@@ -112,13 +109,14 @@ The cutoff date of this version is September 2020.
 | Scheduler         | CosineAnnealing       |
 | Learning Rate     | 4.00E-08              |
 | Global Batch Size | 1024                  |
- <!--fp32, fp16 mixed precision, bf16 mixed precision, bf16 non-mixed precision, fp16 non-mixed precision, fp8 mixed precision -->
-Gemma-SEA-LION-v4-27B has undergone post-training using a QA pairs dataset in Bahasa Indonesia, 
-Burmese, Chinese, English, Khmer, Lao, Malay, Tagalog, Tamil, Thai, and Vietnamese, comprising approximately 10M samples in total, to create *Gemma-SEA-LION-v4-27B-IT*.
 
-We perform post-training using a variety of Reinforcement Learning (RL) methods. The instruction fine-tuning dataset combines our SEA-Instruct, Infinity-Instruct, and OpenMath-Instruct 2 with open-source datasets such as nvidia/Llama-Nemotron-Post-Training-Dataset (RL set) and zwhe99/DeepMath-103K. Prompt sampling is guided by a gradient-based analysis process.
 
-Our post-training workflow consists of multiple stages: instruction fine-tuning, model merging, online RL for both instruction following and math using DRGPPO, and on-policy alignment via APO. For alignment, rejected–chosen pairs are generated from the target model, with the chosen responses obtained by rewriting and improving upon the rejected outputs.
+Gemma-SEA-LION-v4-27B has undergone post-training using a QA pairs dataset in Burmese, English, Indonesia, Khmer, Lao, Malay, Tagalog, Tamil, Thai and Vietnamese, comprising approximately 10M samples in total, to create *Gemma-SEA-LION-v4-27B-IT*.
+
+The instruction fine-tuning dataset combines our SEA-Instruct, Infinity-Instruct, and OpenMath-Instruct 2 with open-source datasets. For the Online RL datasets, open sourced datasets such as nvidia/Llama-Nemotron-Post-Training-Dataset (RL set) and zwhe99/DeepMath-103K were used. For alignment, rejected-chosen pairs are generated from the target model, with the chosen responses obtained by rewriting and improving upon the rejected outputs. Prompt sampling is guided by a gradient-based analysis process.
+
+Our post-training workflow consists of multiple stages: instruction fine-tuning, model merging, online RL for both instruction following and math using DRGPPO, and then followed by on-policy alignment via APO.
+
 
 ## Evaluation
 
@@ -136,8 +134,7 @@ General language capabilities
 
 For the evaluation of general language capabilities, we employed the [SEA-HELM evaluation benchmark](https://arxiv.org/abs/2502.14301) across a variety of tasks. 
 These tasks include Question Answering (QA), Sentiment Analysis (Sentiment), Toxicity Detection (Toxicity), Translation in both directions (Eng>Lang & Lang>Eng), 
-Abstractive Summarisation (Abssum), Causal Reasoning (Causal), Natural Language Inference (NLI), Linguistic Diagnostics (LINDSEA), Cultural Knowledge (Kalahi) 
-and Global MMLU Lite.
+Abstractive Summarisation (Abssum), Causal Reasoning (Causal), Natural Language Inference (NLI), Linguistic Diagnostics (LINDSEA), Cultural Knowledge (Kalahi) and Global MMLU Lite.
 
 Instruction-following and Multi-turn Chat
 
@@ -194,8 +191,6 @@ The following metrics were used:
 
 
 ### Results
-
-*Coming soon!*
 
 For details on Gemma-SEA-LION-v4-27B-IT performance, please refer to the SEA-HELM leaderboard, [Leaderboard results on SEA-HELM](https://leaderboard.sea-lion.ai/).
 
