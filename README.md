@@ -12,6 +12,7 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection | Size | Context Length | Training Strategy          | Available in            |
 |------------------|------|----------------|----------------------------|-------------------------|
+| **[SEA-LION v4](/models/sea-lion-v4/sea-lion-v4.md)** | 27B   | 128K           | CPT² of Gemma 3 27B IT | Base, Instruct, GGUF, NVFP4, FP8_Dynamic    |
 | **[SEA-LION v3.5](/models/sea-lion-v3.5/sea-lion-v3.5.md)** | 8B   | 128K           | SFT¹ of Llama-SEA-LION-v3-8B-IT | Reasoning, GGUF    |
 |                  | 70B  | 128K           | SFT of Llama-SEA-LION-v3-70B-IT | Reasoning, GGUF    |
 | **[SEA-LION v3](/models/sea-lion-v3/sea-lion-v3.md)**  | 9B   | 8192           | CPT² of Gemma2            | Base, Instruct, GGUF    |
@@ -35,6 +36,7 @@ SEA-LION has seen:
 * In v2.1, key improvements in conversational abilities across SEA languages, while providing more helpful and contextually appropriate responses to user prompts
 * In v3, outperforms similar sized open source models, and even some larger models in both general and SEA capabilities
 * In v3.5, ability to handle reasoning tasks, with the versatility of handling general tasks as well while maintaining similar performance with state-of-the-art models.
+* In v4, our first multimodal SEA-LION model, this release extends SEA-LION beyond text to handle image + text inputs, while continuing our focus on Southeast Asian languages, culture, and use cases. 
 
 We use a holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering) but also [meticulously handcrafted linguistic and cultural diagnostic tests tailored to Southeast Asia](https://arxiv.org/abs/2309.06085v2).
 

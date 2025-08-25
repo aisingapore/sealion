@@ -9,8 +9,9 @@
   * [FAQ](overview/faq.md)
 
 ## Models
-
-* [SEA-LION v3.5 (Latest)](models/sea-lion-v3.5/sea-lion-v3.5.md)
+* [SEA-LION v4 (Latest)](models/sea-lion-v4/sea-lion-v4.md)
+  * [Gemma-SEA-LION-v4-27B](models/sea-lion-v4/gemma-sea-lion-v4-27B.md)
+* [SEA-LION v3.5](models/sea-lion-v3.5/sea-lion-v3.5.md)
   * [Llama-SEA-LION-v3.5-8B](models/sea-lion-v3.5/llama-sea-lion-v3.5-8B.md)
   * [Llama-SEA-LION-v3.5-70B](models/sea-lion-v3.5/llama-sea-lion-v3.5-70B.md)
 * [SEA-LION v3](models/sea-lion-v3/sea-lion-v3.md)
@@ -34,6 +35,7 @@
   * [Google Vertex AI](guides/inferencing/vertex_ai.md)
   * [Amazon Bedrock Custom Model Import](guides/inferencing/amazon_bedrock.md)
   * [Bedrock Access Gateway](guides/inferencing/bedrock_access_gateway.md)
+  * [vLLM on Linux](guides/inferencing/vllm_linux.md)
   <!-- * [SEA-LION on Local](guides/inferencing/local_hosting.md) -->
   <!-- * [SEA-LION on Cloud](guides/inferencing/cloud_hosting.md) -->
 <!-- * [Prompting](guides/prompting/README.md)

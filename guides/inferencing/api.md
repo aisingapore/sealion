@@ -56,7 +56,7 @@ curl https://api.sea-lion.ai/v1/chat/completions \
   -H 'Authorization: Bearer YOUR_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '{
-    "model": "aisingapore/Gemma-SEA-LION-v3-9B-IT",
+    "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
     "messages": [
       {
         "role": "user",
@@ -77,7 +77,7 @@ client = OpenAI(
 )
 
 completion = client.chat.completions.create(
-    model="aisingapore/Gemma-SEA-LION-v3-9B-IT",
+    model="aisingapore/Gemma-SEA-LION-v4-27B-IT",
     messages=[
         {
             "role": "user",
@@ -103,7 +103,7 @@ curl https://api.sea-lion.ai/v1/chat/completions \
   -H 'Authorization: Bearer YOUR_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '{
-    "model": "aisingapore/Llama-SEA-LION-v3.5-8B-R",
+    "model": "aisingapore/Llama-SEA-LION-v3.5-70B-R",
     "messages": [
       {
         "role": "user",
@@ -127,7 +127,7 @@ client = OpenAI(
 )
 
 completion = client.chat.completions.create(
-    model="aisingapore/Llama-SEA-LION-v3.5-8B-R",
+    model="aisingapore/Llama-SEA-LION-v3.5-70B-R",
     messages=[
         {
             "role": "user",
@@ -159,7 +159,7 @@ curl https://api.sea-lion.ai/v1/chat/completions \
   -H 'Authorization: Bearer YOUR_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '{
-    "model": "aisingapore/Llama-SEA-LION-v3.5-8B-R",
+    "model": "aisingapore/Llama-SEA-LION-v3.5-70B-R",
     "messages": [
       {
         "role": "user",
@@ -186,7 +186,7 @@ client = OpenAI(
 )
 
 completion = client.chat.completions.create(
-    model="aisingapore/Llama-SEA-LION-v3.5-8B-R",
+    model="aisingapore/Llama-SEA-LION-v3.5-70B-R",
     messages=[
         {
             "role": "user",
