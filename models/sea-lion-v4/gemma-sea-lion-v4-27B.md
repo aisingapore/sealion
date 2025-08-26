@@ -201,6 +201,7 @@ The following quantized versions of our Gemma-SEA-LION-v4-27B-IT model are avail
 
 - Gemma-SEA-LION-v4-27B-IT-Q4_K_M
 - Gemma-SEA-LION-v4-27B-IT-Q8_0
+- Gemma-SEA-LION-v4-27B-IT-BF16
 - Gemma-SEA-LION-v4-27B-IT-NVFP4
 - Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic
 
