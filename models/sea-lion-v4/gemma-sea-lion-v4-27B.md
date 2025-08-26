@@ -1,7 +1,7 @@
 ---
 # For reference on model card metadata, see the spec: https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1
 # Doc / guide: https://huggingface.co/docs/hub/model-cards
-Gemma-SEA-LION-v4-27B (Both Model for Github) Last updated: 2025-08-25 
+Gemma-SEA-LION-v4-27B (Both Models for Github) Last updated: 2025-08-26 
 ---
 
 # Gemma-SEA-LION-v4-27B
