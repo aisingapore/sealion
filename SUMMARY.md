@@ -43,6 +43,9 @@
 * [Fine-tuning](guides/finetuning/README.md)
 * [Example Use Cases](guides/use_cases/README.md) -->
 
+* [Tool-Calling](guides/tool_calling/tool_calling.md)
+  * [Tool Implementation Example](guides/tool_calling/tool_examples.md)
+
 * [Agents](guides/agents/agents.md)
   * [Strands Agents SDK](guides/agents/strands_sdk.md)
   * [Google ADK](guides/agents/google_adk.md)
