@@ -78,7 +78,7 @@ request_data_any_tool = {
 {
   "choices": [{
     "message": {
-      "content": "```tool_code\nget_time(timezone=\"Singapore\")\n```",
+      "content": "```tool_code\nget_time(timezone=\"Asia/Singapore\")\n```",
       "role": "assistant"
     }
   }]
@@ -310,3 +310,8 @@ async def process_user_message(user_message, messages, api_config, session):
 - Implement parallel tool execution when multiple tools are called
 - Use connection pooling for HTTP requests in tool implementations
 - Consider implementing tool call batching for efficiency
+
+### Relevant Links
+ - [Gemma 3 Function Calling Example](https://www.philschmid.de/gemma-function-calling)
+ - [OpenAI API Reference - `tools`](https://platform.openai.com/docs/api-reference/chat/create#chat-create-tools)
+ - [OpenAI Function Calling Guide](https://platform.openai.com/docs/guides/function-calling)
