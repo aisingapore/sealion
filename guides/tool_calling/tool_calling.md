@@ -177,7 +177,7 @@ else:
 
 ## Implementation Example
 
-Here's a complete implementation that handles all three model types:
+Here's an examples that handles all three models, making use of the components provided in the [tool implementation page](./tool_examples.md):
 
 ```python
 async def process_user_message(user_message, messages, api_config, session):
@@ -195,7 +195,7 @@ async def process_user_message(user_message, messages, api_config, session):
         "temperature": 0,
     }
     
-    # Only add tools for non-reasoning models (except Gemma v4)
+    # Only add tools for non-reasoning models
     if not is_reasoning_model:
         request_data["tools"] = tools
         request_data["tool_choice"] = "auto"

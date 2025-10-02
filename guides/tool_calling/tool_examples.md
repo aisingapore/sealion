@@ -8,8 +8,8 @@ This example includes the components typically needed for tool calling:
 
 - **Tool Functions**: Working implementations for weather, time, and web search
 - **Schema Definitions**: OpenAI-compatible tool schemas for model integration  
-- **System Prompts**: Prompts configured for different model types (Gemma v4, Llama v3, etc.)
-- **Response Parsing**: Parsing logic for both native and text-based tool calls
+- **System Prompt**: Sample prompt configured for model to execute tool-calling if it is not equipped to do so via chat template
+- **Response Parsing**: Parsing logic for text-based tool calls
 - **Execution Framework**: Tool execution system with error handling
 - **Customization Guide**: Instructions for adapting these examples to your own tools
 
@@ -215,7 +215,7 @@ def build_tool_schema():
     ]
 ```
 
-### System Prompt Configuration
+### System Prompt
 
 ```python
 def build_system_message():
@@ -336,7 +336,7 @@ To create your own tools:
 2. **Add error handling**: Always validate inputs and handle exceptions gracefully
 3. **Update the tool schema**: Define the function signature for the model
 4. **Modify the execution framework**: Add your function to the `execute_tool_calls` function
-5. **Update system prompts**: Include your tool in the system message (for Gemma v4)
+5. **Update system prompts**: Include your tool in the system message
 
 Example of a custom tool:
 
