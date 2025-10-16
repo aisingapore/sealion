@@ -61,7 +61,7 @@ credentials, _ = default(scopes=["https://www.googleapis.com/auth/cloud-platform
 credentials.refresh(google.auth.transport.requests.Request())
 
 client = openai.OpenAI(
-    base_url = f"https://{LOCATION}-aiplatform.googleapis.com/v1/projects/{PROJECT_ID}/locatio ns/{LOCATION}/endpoints/{ENDPOINT}",
+    base_url = f"https://{LOCATION}-aiplatform.googleapis.com/v1/projects/{PROJECT_ID}/locations/{LOCATION}/endpoints/{ENDPOINT}",
     api_key = credentials.token,
 )
 
@@ -133,5 +133,12 @@ curl -X POST \
 When run,
 ```
 ./curl_test.sh
-{"id":"chatcmpl-da744c88eaa848929593366bec8f8900","object":"chat.completion","created":1760605976,"model":"aisingapore/Gemma-SEA-LION-v4-27B-IT","choices":[{"index":0,"message":{"role":"assistant","content":"There once was a baker named Sue,\nWhose bread was a wonderful hue.\nWith berries so bright,\nA delectable sight,\nAnd a taste that was lovely and new!\n","refusal":null,"annotations":null,"audio":null,"function_call":null,"tool_calls":[],"reasoning_content":null},"logprobs":null,"finish_reason":"stop","stop_reason":106}],"service_tier":null,"system_fingerprint":null,"usage":{"prompt_tokens":19,"total_tokens":59,"completion_tokens":40,"prompt_tokens_details":null},"prompt_logprobs":null,"kv_transfer_params":null}
+{"id":"chatcmpl-da744c88eaa848929593366bec8f8900","object":"chat.completion","created":1760605976,
+"model":"aisingapore/Gemma-SEA-LION-v4-27B-IT","choices":[{"index":0,"message":{"role":"assistant",
+"content":"There once was a baker named Sue,\nWhose bread was a wonderful hue.\nWith berries so bright,\nA delectable sight,\nAnd a taste that was lovely and new!\n",
+"refusal":null,"annotations":null,"audio":null,"function_call":null,"tool_calls":[],
+"reasoning_content":null},"logprobs":null,"finish_reason":"stop","stop_reason":106}],
+"service_tier":null,"system_fingerprint":null,
+"usage":{"prompt_tokens":19,"total_tokens":59,"completion_tokens":40,"prompt_tokens_details":null},
+"prompt_logprobs":null,"kv_transfer_params":null}
 ```
