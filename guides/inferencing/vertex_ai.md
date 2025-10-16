@@ -38,7 +38,7 @@ the model to. Then click on Deploy to complete the deployment.
     d. Create a new Python environment and install the following packages:
     `pip install google-cloud-aiplatform openai`
 
-7. Create a Python program like the following:
+7. Create a Python program `vt-test.py` containing the following code:
 
 ```
 import openai
@@ -94,3 +94,44 @@ He solved problems with hand,
 And his name echoed day and night.
 ```
 
+10. Below is a sample `bash` script `curl_test.sh` for calling the endpoint via CLI using `curl`:
+
+```
+#!/bin/bash
+
+# 1. Set your variables
+export PROJECT_ID="<your GCP project ID>"
+export LOCATION="<region of your deployed endpoint>"
+export ENDPOINT_ID="Your endpoint ID (from the above screenshot)"
+
+# 2. Get a fresh access token
+export ACCESS_TOKEN=$(gcloud auth print-access-token)
+
+# 3. Define the request payload
+read -r -d '' PAYLOAD << EOM
+{
+  "model": "",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Write me a 5-line limerick"
+    }
+  ],
+  "max_tokens": 500,
+  "stream": false
+}
+EOM
+
+# 4. Make the curl request
+curl -X POST \
+    -H "Authorization: Bearer ${ACCESS_TOKEN}" \
+    -H "Content-Type: application/json" \
+    "https://${LOCATION}-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/${LOCATION}/endpoints/${ENDPOINT_ID}/chat/completions" \
+    -d "${PAYLOAD}"
+```
+
+When run,
+```
+./curl_test.sh
+{"id":"chatcmpl-da744c88eaa848929593366bec8f8900","object":"chat.completion","created":1760605976,"model":"aisingapore/Gemma-SEA-LION-v4-27B-IT","choices":[{"index":0,"message":{"role":"assistant","content":"There once was a baker named Sue,\nWhose bread was a wonderful hue.\nWith berries so bright,\nA delectable sight,\nAnd a taste that was lovely and new!\n","refusal":null,"annotations":null,"audio":null,"function_call":null,"tool_calls":[],"reasoning_content":null},"logprobs":null,"finish_reason":"stop","stop_reason":106}],"service_tier":null,"system_fingerprint":null,"usage":{"prompt_tokens":19,"total_tokens":59,"completion_tokens":40,"prompt_tokens_details":null},"prompt_logprobs":null,"kv_transfer_params":null}
+```
