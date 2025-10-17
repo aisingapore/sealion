@@ -212,13 +212,15 @@ print(completion.choices[0].message.content)
 
 #### Calling our Guard model
 
-Our safety model, `aisingapore/Llama-SEA-Guard-Prompt-v1`, can be used to evaluate potentially harmful content. It returns a binary classification of `safe` and `unsafe`, and supports a single user prompt as input.
+Our safety model, `aisingapore/SEA-Guard`, can be used to evaluate potentially harmful content. It returns a binary classification of `safe` and `unsafe`, and supports 3 flexible input modes, depending on your use case.
 
 {% hint style="warning" %}
 
 Note: The safety model **does not** support system prompts or multi-turn conversations.
 
 {% endhint %}
+
+**Mode 1: Prompt-only Classification**
 
 {% tabs %}
 {% tab title="curl" %} 
@@ -231,10 +233,10 @@ curl https://api.sea-lion.ai/v1/chat/completions \
   "messages": [
     {
       "role": "user",
-      "content": "How can I steal a car?"
+      "content": {PROMPT}
     }
   ],
-  "model": "aisingapore/Llama-SEA-Guard-Prompt-v1",
+  "model": "aisingapore/SEA-Guard",
   "stream": false
 }'
 ```
@@ -250,11 +252,103 @@ client = OpenAI(
 )
 
 completion = client.chat.completions.create(
-    model="aisingapore/Llama-SEA-Guard-Prompt-v1",
+    model="aisingapore/SEA-Guard",
     messages=[
         {
             "role": "user",
-            "content": "How can I steal a car?"
+            "content": {PROMPT}
+        }
+    ],
+)
+
+print(completion.choices[0].message.content)
+```
+{% endtab %}
+{% endtabs %}
+
+**Mode 2: Prompt + Response Classification**
+
+{% tabs %}
+{% tab title="curl" %} 
+```
+curl https://api.sea-lion.ai/v1/chat/completions \
+  -H 'accept: text/plain' \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Human user:{PROMPT}\nAI assistant:{RESPONSE}."
+    }
+  ],
+  "model": "aisingapore/SEA-Guard",
+  "stream": false
+}'
+```
+{% endtab %}
+
+{% tab title="python" %}
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    api_key=YOUR_API_KEY,
+    base_url="https://api.sea-lion.ai/v1" 
+)
+
+completion = client.chat.completions.create(
+    model="aisingapore/SEA-Guard",
+    messages=[
+        {
+            "role": "user",
+            "content": "Human user:{PROMPT}\nAI assistant:{RESPONSE}."
+        }
+    ],
+)
+
+print(completion.choices[0].message.content)
+```
+{% endtab %}
+{% endtabs %}
+
+**Mode 3: Response-only Classification**
+
+{% tabs %}
+{% tab title="curl" %} 
+```
+curl https://api.sea-lion.ai/v1/chat/completions \
+  -H 'accept: text/plain' \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Human user:\nAI assistant:{RESPONSE}."
+    }
+  ],
+  "model": "aisingapore/SEA-Guard",
+  "stream": false
+}'
+```
+{% endtab %}
+
+{% tab title="python" %}
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    api_key=YOUR_API_KEY,
+    base_url="https://api.sea-lion.ai/v1" 
+)
+
+completion = client.chat.completions.create(
+    model="aisingapore/SEA-Guard",
+    messages=[
+        {
+            "role": "user",
+            "content": "Human user:\nAI assistant:{RESPONSE}."
         }
     ],
 )
