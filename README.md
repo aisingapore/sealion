@@ -13,12 +13,14 @@ This site provides information and resources on SEA-LION, including how to acces
 | Model Collection | Size | Context Length | Training Strategy          | Available in            |
 |------------------|------|----------------|----------------------------|-------------------------|
 | **[SEA-LION v4](/models/sea-lion-v4/sea-lion-v4.md)** | 27B   | 128K           | CPT² of Gemma 3 27B IT | Base, Instruct, GGUF, NVFP4, FP8_Dynamic    |
+|                  | 27B  | 128K           | SFT¹ of Gemma-SEA-LION-v4-27B-IT | VLM    |
+|                  | 32B  | 128K           | SFT¹ of Qwen3-32B | Instruct, GPTQ-4BIT, GPTQ-8BIT    |
 | **[SEA-LION v3.5](/models/sea-lion-v3.5/sea-lion-v3.5.md)** | 8B   | 128K           | SFT¹ of Llama-SEA-LION-v3-8B-IT | Reasoning, GGUF    |
-|                  | 70B  | 128K           | SFT of Llama-SEA-LION-v3-70B-IT | Reasoning, GGUF    |
+|                  | 70B  | 128K           | SFT¹ of Llama-SEA-LION-v3-70B-IT | Reasoning, GGUF    |
 | **[SEA-LION v3](/models/sea-lion-v3/sea-lion-v3.md)**  | 9B   | 8192           | CPT² of Gemma2            | Base, Instruct, GGUF    |
-|                  | 8B   | 128K           | CPT of Llama 3.1 8B       | Base, Instruct, GGUF    |
-|                  | 70B  | 128K           | CPT of Llama 3.1 70B      | Base, Instruct, GGUF    |
-| **[SEA-LION v2](/models/sea-lion-v2/sea-lion-v2.md)**  | 8B   | 8192           | CPT of Llama3             | Base, Instruct, GGUF    |
+|                  | 8B   | 128K           | CPT² of Llama 3.1 8B       | Base, Instruct, GGUF    |
+|                  | 70B  | 128K           | CPT² of Llama 3.1 70B      | Base, Instruct, GGUF    |
+| **[SEA-LION v2](/models/sea-lion-v2/sea-lion-v2.md)**  | 8B   | 8192           | CPT² of Llama3             | Base, Instruct, GGUF    |
 | **[SEA-LION v1](/models/sea-lion-v1/sea-lion-v1.md)**  | 3B   | 2048           | Pre-training from scratch  | Base                    |
 |                  | 7B   | 2048           | Pre-training from scratch  | Instruct                |
 
