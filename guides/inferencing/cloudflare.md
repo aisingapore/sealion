@@ -74,7 +74,8 @@ print(result)
 {% endtab %}
 {% endtabs %}
 
-Cloudflare's Workers AI also supports OpenAI compatible endpoints for text generation (/v1/chat/completions) 
+
+Cloudflare also supports OpenAI compatible endpoints for text generation (/v1/chat/completions) 
 
 {% tabs %}
 {% tab title="curl" %} 
@@ -118,3 +119,5 @@ completion = client.chat.completions.create(
 
 print(completion.choices[0].message.content)
 ```
+{% endtab %}
+{% endtabs %}
