@@ -10,4 +10,5 @@ SEA-LION models are freely available for [download](/models/download_models.md),
     - [OpenAI-compatible APIs with Llama-SEA-LION models and Bedrock Access Gateway](./bedrock_access_gateway.md)
     - [Deploying Gemma-SEA-LION models using AWS Sagemaker AI](./Gemma-SEA-LION-v4-27B-Instruct.ipynb)
     - [Deploying SEA-LION using vLLM on Linux server](./vllm_linux.md)
-
+4. Leveraging our Partner API Platforms
+    - Cloudflare Workers AI Platform
