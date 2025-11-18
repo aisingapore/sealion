@@ -11,4 +11,4 @@ SEA-LION models are freely available for [download](/models/download_models.md),
     - [Deploying Gemma-SEA-LION models using AWS Sagemaker AI](./Gemma-SEA-LION-v4-27B-Instruct.ipynb)
     - [Deploying SEA-LION using vLLM on Linux server](./vllm_linux.md)
 4. Leveraging our Partner API Platforms
-    - Cloudflare Workers AI Platform
+    - [Cloudflare Workers AI Platform](guides/inferencing/cloudflare.md)
