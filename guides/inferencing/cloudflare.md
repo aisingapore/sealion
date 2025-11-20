@@ -68,8 +68,8 @@ response = requests.post(
       ]
     }
 )
-result = response.json()
-print(result)
+completion = response.json()
+print(completion["result"]["choices"][0]["message"]["content"])
 ```
 {% endtab %}
 {% endtabs %}
@@ -102,9 +102,12 @@ curl --request POST \
 ```python
 from openai import OpenAI
 
+ACCOUNT_ID = os.environ.get("CLOUDFLARE_ACCOUNT_ID")
+AUTH_TOKEN = os.environ.get("CLOUDFLARE_AUTH_TOKEN")
+
 client = OpenAI(
-    api_key=YOUR_CLOUDFLARE_API_KEY,
-    base_url="https://api.cloudflare.com/client/v4/accounts/${env.CLOUDFLARE_ACCOUNT_ID}/ai/v1" 
+    api_key=AUTH_TOKEN,
+    base_url=f"https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/v1" 
 )
 
 completion = client.chat.completions.create(
