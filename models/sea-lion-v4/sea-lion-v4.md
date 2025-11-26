@@ -7,6 +7,7 @@ SEA-LION version 4, released on Aug 25, is our first multimodal models trained o
 - [Gemma-SEA-LION-v4-27B-VL](./gemma-sea-lion-v4-27B-VL.md)  is our powerful vision-language model, expertly trained to interpret both images and text with a deep, nuanced understanding of Southeast Asian cultural contexts.
 - [Qwen-SEA-LION-v4-32B-IT](./qwen-sea-lion-v4-32B.md) is our flagship instruction-tuned model, designed for maximum performance in general SEA context tasks.
 - [Qwen-SEA-LION-v4-32B-IT-4BIT, 8BIT](./qwen-sea-lion-v4-32B.md#available-versions)  offers a near-perfect balance of performance and efficiency, making the power of SEA-LION accessible on resource-constrained hardware like consumer-grade GPUs.
+- [Qwen-SEA-LION-v4-4B-VL and 8B-VL](./qwen-sea-lion-v4-VL.md) are our latest specialized vision-language models featuring a native 256K context window and superior OCR capabilities for Indonesian, Thai, and Vietnamese. The 4B model is optimized for efficient edge deployment, while the 8B model is engineered for complex multi-modal reasoning.
 
 SEA-LION v4 continues our mission to create language models that understand and respond with greater cultural awareness and depth across Southeast Asia. In addition, SEA-LION v4 has the ability to handle both image and text input as a multimodal model.
 
