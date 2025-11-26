@@ -1,6 +1,6 @@
 # SEA-LION v4
 
-SEA-LION version 4, released on Aug 25, is our first multimodal models trained on Southeast Asian text, each with their unique strengths:
+SEA-LION version 4, first released in Aug 2025, is our first multimodal models trained on Southeast Asian text, each with their unique strengths:
 - [Gemma-SEA-LION-v4-27B](./gemma-sea-lion-v4-27B.md) is suited for translation, abstractive summarisation, natural language inference and causal reasoning, metaphor understanding, question answering, paraphrase and sentiment analysis applications where regional language support and advanced reasoning is critical.
 - [Gemma-SEA-LION-v4-27B-IT](./gemma-sea-lion-v4-27B.md#training-procedure) is suited for knowledge-intensive tasks, and for high-demand contexts where comprehensive language comprehension are essential.
 - [Gemma-SEA-LION-v4-27B-IT-GGUF, NVFP4, FP8_Dynamic](./gemma-sea-lion-v4-27B.md#gemma-sea-lion-v4-27b-it-quantized-version) supports inference on a range of consumer-grade GPUs and are compatible with various inference engines.
