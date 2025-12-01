@@ -8,21 +8,30 @@ Qwen-SEA-LION-v4-VL Last updated: 2025-11-27
 
 <!-- Provide a quick summary of what the model is/does. -->
 
-Last update: 2025-11-27
+Last update: 2025-12-1
 
 
 **SEA-LION** is a collection of Large Language Models (LLMs) which have been pretrained and instruct-tuned for the Southeast Asia (SEA) region.
+
+
+
+**Qwen-SEA-LION-v4-4B-VL** are 4/8-billion parameter Vision-Language Models (VLM) built upon the Qwen3-VL-4B/8B-Instruct architecture. To ensure **domain adaptation** for the region, the model underwent rigorous supervised fine-tuning (SFT) on a curated dataset of approximately **9 million** instruction-text pairs. This extensive post-training instills **multilingual** and **multicultural** fluency, covering English and 7 key SEA languages: Burmese, Indonesian, Filipino, Malay, Tamil, Thai, and Vietnamese.
+
+Qwen-SEA-LION-v4-4B/8B-VL inherits the following features from Qwen3-VL:
+
+- Long-Context Multimodal Architecture (Native 256K context window)
+- Edge-Optimized Inference (Resource Efficient)
+- Enhanced Vision-Language Capabilities
+- Tool Use
 
 <!-- Introduction -->
 ## Introduction
 
 SEA-LION stands for *Southeast Asian Languages In One Network*. 
 
-Qwen-SEA-LION-v4-8B-VL is our Vision-Language Model (VLM) built upon the Qwen3-VL-4B-Instruct architecture. 
-To ensure **domain adaptation** for the region, the model underwent rigorous supervised fine-tuning (SFT) on a curated dataset 
-of approximately **8 million** instruction-text pairs. This extensive post-training instills **Multicultural** fluency, covering 7 key SEA languages: Burmese, Indonesian, Malay, Tagalog, Tamil, Thai, and Vietnamese.
+Qwen-SEA-LION-v4-4B/8B-VL are 4/8-billion parameter Vision-Language Models (VLM) built upon the Qwen3-VL-4B/8B-Instruct architecture. To ensure **domain adaptation** for the region, the model underwent rigorous supervised fine-tuning (SFT) on a curated dataset of approximately **9 million** instruction-text pairs. This extensive post-training instills **multilingual** and **multicultural** fluency, covering English and 7 key SEA languages: Burmese, Indonesian, Filipino, Malay, Tamil, Thai, and Vietnamese.
 
-Qwen-SEA-LION-v4-VL inherits the following features from Qwen3-VL:
+Qwen-SEA-LION-v4-4B/8B-VL inherits the following features from Qwen3-VL:
 
 - Long-Context Multimodal Architecture (Native 256K context window)
 
@@ -35,13 +44,12 @@ Qwen-SEA-LION-v4-VL inherits the following features from Qwen3-VL:
 
 For tokenization, the model employs the default tokenizer used in Qwen3-VL.
 
-
-- **Developed by:** Products Pillar, AI Singapore
+- **Developed by:** AI Products Pillar, AI Singapore
 - **Funded by:** Singapore NRF
-- **Shared by:** Products Pillar, AI Singapore
+- **Shared by:** AI Products Pillar, AI Singapore
 - **Model type:** Decoder
 - **Context length:** 256k
-- **Language(s):** fine-tuned on Burmese, Indonesian, Malay, Tagalog, Tamil, Thai, and Vietnamese
+- **Language(s):** fine-tuned on Burmese, Indonesian, Filipino, Malay, Tamil, Thai, and Vietnamese
 - **License:** [Apache-2.0](https://choosealicense.com/licenses/apache-2.0/)
 - **Finetuned from model:** [Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct), [Qwen3-VL-8B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)
 
@@ -60,7 +68,7 @@ The instruction fine-tuning text dataset comprises of a collection of OSS & synt
 
 #### Training Hyperparameters
 
-- **Training regime:** Our post-training workflow consists of instruction fine-tuning and model merging. <!--fp32, fp16 mixed precision, bf16 mixed precision, bf16 non-mixed precision, fp16 non-mixed precision, fp8 mixed precision -->
+- **Training regime:** Our workflow consists of instruction fine-tuning and model merging. <!--fp32, fp16 mixed precision, bf16 mixed precision, bf16 non-mixed precision, fp16 non-mixed precision, fp8 mixed precision -->
 
 
 ## Evaluation
@@ -75,62 +83,31 @@ The instruction fine-tuning text dataset comprises of a collection of OSS & synt
 
 We evaluated Qwen-SEA-LION-v4-4B/8B-VL on general language capabilities.
 
-**Testing Data**
+*General language capabilities*
 
-General language capabilities
+For the evaluation of general language capabilities, we employed the [SEA-HELM evaluation benchmark](https://arxiv.org/abs/2502.14301) across a variety of tasks. These tasks include Question Answering (QA), Sentiment Analysis (Sentiment), Toxicity Detection (Toxicity), Translation in both directions (Eng>Lang & Lang>Eng), Abstractive Summarisation (Abssum), Causal Reasoning (Causal), Natural Language Inference (NLI), Linguistic Diagnostics (LINDSEA), Cultural Knowledge (Kalahi) and Global MMLU Lite.
 
-For the evaluation of general language capabilities, we employed the 
-[SEA-HELM evaluation benchmark](https://arxiv.org/abs/2502.14301) across a variety of tasks. 
-These tasks include Question Answering (QA), Sentiment Analysis (Sentiment), 
-Toxicity Detection (Toxicity), Translation in both directions (Eng>Lang & Lang>Eng), 
-Abstractive Summarisation (Abssum), Causal Reasoning (Causal), Natural Language Inference (NLI), 
-Linguistic Diagnostics (LINDSEA), Cultural Knowledge (Kalahi) and Global MMLU Lite.
+*Instruction-following and Multi-turn Chat*
 
-Instruction-following and Multi-turn Chat
-
-We evaluated the models on instruction-following and multi-turn chat capabilities with SEA-IFEval 
-(based on [IFEval](https://arxiv.org/abs/2311.07911)) and SEA-MTBench 
-(based on [MT-Bench](https://arxiv.org/abs/2306.05685)) respectively. 
-The two datasets were originally in English, the linguists and native speakers in the team worked 
-together to filter, localise and translate the datasets into the respective target languages 
-to ensure that the examples remained reasonable, meaningful and natural.
-
+We evaluated the models on instruction-following and multi-turn chat capabilities with SEA-IFEval (based on [IFEval](https://arxiv.org/abs/2311.07911)) and SEA-MTBench (based on [MT-Bench](https://arxiv.org/abs/2306.05685)) respectively. The two datasets were originally in English, the linguists and native speakers in the team worked together to filter, localise and translate the datasets into the respective target languages to ensure that the examples remained reasonable, meaningful and natural.
 
 #### Factors
 
-<!-- These are the things the evaluation is disaggregating by, e.g., subpopulations or domains. -->
+All evaluations were run with the model specific generation parameters defined in the model config. Each evaluation comprised of 8 runs with different seeds and the final results were averaged across these runs.
 
-All evaluations were run with the model specific generation parameters defined in the model config. 
-Each evaluation comprised of 8 runs with different seeds and the final results were averaged across 
-these runs.
+For all tasks, the model was expected to provide an answer tag from which the answer was automatically extracted. For tasks where options were provided, the answer should comprise one of the pre-defined options.
 
-For all tasks, the model was expected to provide an answer tag from which the answer was 
-automatically extracted. For tasks where options were provided, the answer should comprise one of 
-the pre-defined options.
+The evaluation was done **zero-shot** with native prompts on a sample of 100-1000 instances for each dataset.
 
-The evaluation was done **zero-shot** with native prompts on a sample of 100-1000 instances 
-for each dataset.  
+*SEA-IFEval*
 
-SEA-IFEval
+SEA-IFEval evaluates a model's ability to adhere to constraints provided in the prompt, for example beginning a response with a specific word/phrase or answering with a certain number of sections. Additionally, accuracy is normalised by the proportion of responses in the correct language (if the model performs the task correctly but responds in the wrong language, it is judged to have failed the task).
 
-SEA-IFEval evaluates a model's ability to adhere to constraints provided in the prompt, 
-for example beginning a response with a specific word/phrase or answering with a certain number 
-of sections. Additionally, accuracy is normalised by the proportion of responses in 
-the correct language (if the model performs the task correctly but responds in the wrong language, 
-it is judged to have failed the task).
+*SEA-MTBench*
 
-SEA-MTBench
-
-SEA-MTBench evaluates a model's ability to engage in multi-turn (2 turns) conversations and 
-respond in ways that align with human needs. We use `gpt-4.1-2025-04-14` as the judge model and 
-compare against `gpt-4.1-2025-04-14` as the baseline model. The metric used is the weighted win rate 
-against the baseline model (i.e. average win rate across each category: Math, Reasoning, STEM, 
-Humanities, Roleplay, Writing, Extraction).
-
+SEA-MTBench evaluates a model's ability to engage in multi-turn (2 turns) conversations and respond in ways that align with human needs. We use `gpt-4.1-2025-04-14` as the judge model and compare against `gpt-4.1-2025-04-14` as the baseline model. The metric used is the weighted win rate against the baseline model (i.e. average win rate across each category: Math, Reasoning, STEM, Humanities, Roleplay, Writing, Extraction).
 
 #### Metrics
-
-<!-- These are the evaluation metrics being used, ideally with a description of why. -->
 
 The following metrics were used for text capabilities:
 
@@ -146,26 +123,19 @@ The following metrics were used for text capabilities:
 | Natural Language Inference | Accuracy |
 | LINDSEA | Accuracy |
 | Global MMLU Lite | Accuracy |
-| Thai Exam | Accuracy |
+| ThaiExam | Accuracy |
 | Kalahi | Accuracy |
 | SEA-IFEval | Accuracy |
 | SEA-MTBench | Win rate against a reference |
 
-
-### Results
-
-For details on Qwen-SEA-LION-v4-VL performances, please refer to the SEA-HELM leaderboard, <https://leaderboard.sea-lion.ai/>.
-
-
-
 ### Retaining VL Capabilities
 
-We also evaluated the model on two types of tasks using datasets specifically focused on Southeast Asian examples to benchmark against the original base models (Qwen3-VL-4B/8B).
+We also evaluated our models on two types of tasks using datasets specifically focused on Southeast Asian examples to benchmark and compared our models' performances against the original base models (Qwen3-VL-4B/8B).
 
-- Visual Question Answering (VQA): We utilized Multiple Choice Question (MCQ) style tasks, including MARVL, CVQA, and WorldCuisines.
+- Visual Question Answering (VQA): We utilised Multiple Choice Question (MCQ) style tasks, including MARVL, CVQA, and WorldCuisines.
 - Image Captioning: We employed the XM3600 dataset, evaluating strictly on examples relevant to the SEA region.
 
-Key Insight: Despite our fine-tuning process focusing primarily on text data (approximately 8 million regional Q&A and instruction pairs), our evaluation confirms that Qwen-SEA-LION-v4 (4B/8B) successfully retains the high-performance vision-language capabilities of the original base models.
+Key Insight: Despite our fine-tuning process focusing primarily on text data (approximately 8 million regional Q&A and instruction pairs), our evaluations confirm that Qwen-SEA-LION-v4 (4B/8B) successfully retains the high-performance vision-language capabilities of the original base models.
 
 #### Factors
 
@@ -175,12 +145,13 @@ The evaluation was done **zero-shot** with native prompts.
 
 The following metrics were used to measure performance:
 
-- **Normalized accuracy** was the primary metric for the VQA tasks (CVQA, MARVL, and WorldCuisines).
+- **Normalised accuracy** was the primary metric for the VQA tasks (CVQA, MARVL, and WorldCuisines).
 - **RefCLIP Score** was used for the XM3600 image captioning task.
 
 ### Results
-The showing results are of using 8B model. It was coducted on 27 November 2025.
-![VL_result!](results-v4-8B-VL.png "The VL capabilities were retained despite training using text only.")
+
+For details on Qwen-SEA-LION-v4-VL performances, please refer to the SEA-HELM leaderboard, <https://leaderboard.sea-lion.ai/>.
+
 
 ## Download the Models
 
