@@ -29,7 +29,7 @@ Qwen-SEA-LION-v4-4B/8B-VL inherits the following features from Qwen3-VL:
 
 SEA-LION stands for *Southeast Asian Languages In One Network*. 
 
-Qwen-SEA-LION-v4-4B/8B-VL are 4/8-billion parameter Vision-Language Models (VLM) built upon the Qwen3-VL-4B/8B-Instruct architecture. To ensure **domain adaptation** for the region, the model underwent rigorous supervised fine-tuning (SFT) on a curated dataset of approximately **9 million** instruction-text pairs. This extensive post-training instills **multilingual** and **multicultural** fluency, covering English and 7 key SEA languages: Burmese, Indonesian, Filipino, Malay, Tamil, Thai, and Vietnamese.
+Qwen-SEA-LION-v4-4B/8B-VL contains 4/8-billion parameter Vision-Language Models (VLM) built upon the Qwen3-VL-4B/8B-Instruct architecture. To ensure **domain adaptation** for the region, the model underwent rigorous supervised fine-tuning (SFT) on a curated dataset of approximately **9 million** instruction-text pairs. This extensive post-training instills **multilingual** and **multicultural** fluency, covering English and 7 key SEA languages: Burmese, Indonesian, Filipino, Malay, Tamil, Thai, and Vietnamese.
 
 Qwen-SEA-LION-v4-4B/8B-VL inherits the following features from Qwen3-VL:
 
