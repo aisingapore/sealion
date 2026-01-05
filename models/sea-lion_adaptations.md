@@ -16,7 +16,18 @@ The SEA-LION models have served as a foundation for developing localized AI solu
 </tr>
 <tr>
 <td valign="top">SEA-LION v3</td>
-<td><p>→ <a href="https://huggingface.co/aisingapore/Gemma2-9b-WangchanLIONv2-instruct">Gemma2 9B WangchanLIONv2 (Thai)</a>: The Gemma2 9B WangchanLIONv2 Instruct model is a collaborative effort between VISTEC and AI Singapore. It has been fine-tuned with approximately 3,760,000 Thai instruction-completion pairs derived from human-annotated instructions, FLAN-style automatic data construction, and synthetic samples. This multilingual model supports both Thai and English languages.</p><p></p><p>→ <a href="https://huggingface.co/GoToCompany/gemma2-9b-cpt-sahabatai-v1-instruct">Gemma2 9B CPT Sahabat-AI (Indonesian)</a>: The Gemma2 9B CPT Sahabat-AI v1 Instruct model, co-developed by GoTo Group and AI Singapore, has been fine-tuned with approximately 448,000 Indonesian instruction-completion pairs, along with 96,000 in Javanese, 98,000 in Sundanese, and an additional 129,000 in English. This multilingual model supports Indonesian, Javanese, Sundanese, and English.</p>
+<td><p>→ <a href="https://huggingface.co/aisingapore/Gemma2-9b-WangchanLIONv2-instruct">Gemma2 9B WangchanLIONv2 (Thai)</a>: The Gemma2 9B WangchanLIONv2 Instruct model is a collaborative effort between VISTEC and AI Singapore. It has been fine-tuned with approximately 3,760,000 Thai instruction-completion pairs derived from human-annotated instructions, FLAN-style automatic data construction, and synthetic samples. This multilingual model supports both Thai and English languages.</p>
+<p></p><p>→ <a href="https://huggingface.co/GoToCompany/gemma2-9b-cpt-sahabatai-v1-instruct">Gemma2 9B CPT Sahabat-AI (Indonesian)</a>: The Gemma2 9B CPT Sahabat-AI v1 Instruct model, co-developed by GoTo Group and AI Singapore, has been fine-tuned with approximately 448,000 Indonesian instruction-completion pairs, along with 96,000 in Javanese, 98,000 in Sundanese, and an additional 129,000 in English. This multilingual model supports Indonesian, Javanese, Sundanese, and English.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">SEA-LION v4</td>
+<td><p>→ <a href="https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-VL">Gemma 3 27B SEA-LION v4 (Multimodal)</a>: The first multimodal release in the SEA-LION family, based on the Gemma 3 27B architecture. Co-developed with Google, this 27B model supports a 128K context window. It underwent post-training on ~10M samples across 11 SEA languages and features vision-text capabilities for document understanding and visual Q&A. This model supports text and image understanding with a commercially permissive license. It is designed to handle Southeast Asian cultural nuances and visual contexts.</p>
+<p></p><p>→ <a href="https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-4B-VL"> Qwen-SEA-LION-v4-4B/8B-IT (Flagship)</a>: The lightweight flagship multimodal model built on the Qwen3-VL framework, optimized for regional linguistic and cultural nuances.</p>
+<p></p><p>→ <a href="">Apertus 8B SEA-LION v4 (Coming Soon)</a>: A fully open regional adaptation based on the Swiss AI "Apertus" architecture, focusing on highly efficient, transparent, and community-driven multilingual support. Features 15T token pre-training across 1,000+ languages with a focus on deep multilingual depth and transparency.
+</p>
+<p></p><p>→ <a href="">Gemma 3 4B SEA-LION v4 (Coming Soon)</a>: A lightweight, edge-optimized multimodal variant of the v4 family, designed to bring robust Southeast Asian language and vision capabilities to mobile and resource-constrained devices. Inherits Gemma 3's 128K context window and SigLIP-based vision capabilities for efficient on-device reasoning.
+
 </td>
 </tr>
 </tbody></table>

@@ -33,7 +33,7 @@
 <!-- Uncomment the items below as and when the content becomes available -->
 ## Guides
 
-* [Inferencing](guides/inferencing/README.md)
+* [Model Deployment & Inferencing](guides/inferencing/README.md)
   * [SEA-LION API](guides/inferencing/api.md)
   * [Google Vertex AI](guides/inferencing/vertex_ai.md)
   * [Amazon Bedrock Custom Model Import](guides/inferencing/amazon_bedrock.md)
@@ -46,10 +46,10 @@
 * [Fine-tuning](guides/finetuning/README.md)
 * [Example Use Cases](guides/use_cases/README.md) -->
 
-* [Tool-Calling](guides/tool_calling/tool_calling.md)
+* [Capabilities & Tool-Use](guides/tool_calling/tool_calling.md)
   * [Tool Implementation Example](guides/tool_calling/tool_examples.md)
 
-* [Agents](guides/agents/agents.md)
+* [Agentic Frameworks](guides/agents/agents.md)
   * [Strands Agents SDK](guides/agents/strands_sdk.md)
   * [Google ADK](guides/agents/google_adk.md)
 
