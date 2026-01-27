@@ -5,6 +5,12 @@ SEA-LION models are available for download via the following channels:
 ## SEA-LION v4 (Latest)
 [Full HuggingFace SEA-LION v4 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v4-68aa7bb8061d497a4f9f2fec)
 
+**Qwen-SEA-LION-v4-VL**
+|Model	                        |Download                                                      |
+|-------------------------------|--------------------------------------------------------------|
+|Qwen-SEA-LION-v4-4B-VL	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-4B-VL)|
+|Qwen-SEA-LION-v4-8B-VL	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-8B-VL)|
+
 **Qwen-SEA-LION-v4-32B-IT**
 |Model	                        |Download                                                      |
 |-------------------------------|--------------------------------------------------------------|
