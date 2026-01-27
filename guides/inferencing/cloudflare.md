@@ -1,8 +1,9 @@
 # SEA-LION via Cloudflare Workers AI Platform
 
-Our Gemma-SEALION-v4-27B-IT model is now supported on the Cloudflare Workers AI for on-demand inferencing, subject to Cloudflare's [Data Usage]() and [Pricing Plans]().
+Our Gemma-SEALION-v4-27B-IT model is now supported on the Cloudflare Workers AI for on-demand inferencing, subject to Cloudflare's [Data Usage](https://developers.cloudflare.com/workers-ai/platform/data-usage/) and [Pricing Plans](https://developers.cloudflare.com/workers-ai/platform/pricing/).
 
-This quickstart guide will instruct you through setting up your Workers AI account and REST API to easily experiment with Gemma-SEALION-v4-27B-IT.
+This quickstart guide will instruct you through setting up your Workers AI account and REST API to easily experiment with Gemma-SEALION-v4-27B-IT. For more detailed information, you can refer directly to the latest guide on Cloudflare [here](https://developers.cloudflare.com/workers-ai/models/gemma-sea-lion-v4-27b-it/)
+
 
 ### Step 1. Create a Cloudflare Account
 Sign up for a [Cloudflare account](https://dash.cloudflare.com/sign-up/workers-and-pages) if you have not already done so.
