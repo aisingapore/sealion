@@ -29,20 +29,20 @@ To get these values:
 After creating your API token, authenticate and make requests to the Worker AI API using your API token in the request.
 
 {% tabs %}
-{% tab title="curl" %} 
-```
+{% tab title="curl" %}
+```bash
 curl https://api.cloudflare.com/client/v4/accounts/{$CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/aisingapore/gemma-sea-lion-v4-27b-it \
   -X POST \
   -H 'Authorization: Bearer {$CLOUDFLARE_AUTH_TOKEN}' \
-  -d '{ 
+  -d '{
     "messages": [
-        { 
-            "role": "system", 
-            "content": "You are a friendly assistant" 
-        }, 
-        { 
-            "role": "user", 
-            "content": "Tell me a Singlish joke!" 
+        {
+            "role": "system",
+            "content": "You are a friendly assistant"
+        },
+        {
+            "role": "user",
+            "content": "Tell me a Singlish joke!"
         }
     ],
     "stream": false
@@ -79,14 +79,13 @@ print(completion["result"]["choices"][0]["message"]["content"])
 Cloudflare also supports OpenAI compatible endpoints for text generation (/v1/chat/completions) 
 
 {% tabs %}
-{% tab title="curl" %} 
-```
+{% tab title="curl" %}
+```bash
 curl --request POST \
   --url https://api.cloudflare.com/client/v4/accounts/{$CLOUDFLARE_ACCOUNT_ID}/ai/v1/chat/completions \
   -H 'Authorization: Bearer {$CLOUDFLARE_AUTH_TOKEN}' \
   -H 'Content-Type: application/json' \
-  -d '
-    {
+  -d '{
       "model": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
       "messages": [
         {
