@@ -40,7 +40,7 @@
   * [Bedrock Access Gateway](guides/inferencing/bedrock_access_gateway.md)
   * [AWS Sagemaker](https://github.com/aisingapore/sealion/blob/b61c5f6789d5a74d3fbf7bbec5cd3ff5c237c4dc/guides/inferencing/Gemma-SEA-LION-v4-27B-Instruct.ipynb)
   * [vLLM on Linux](guides/inferencing/vllm_linux.md)
-  * [Cloudflare Workers AI Platform](guides/inferencing/cloudflare.md)
+  * [Cloudflare Workers AI](guides/inferencing/cloudflare.md)
   <!-- * [SEA-LION on Local](guides/inferencing/local_hosting.md) -->
   <!-- * [SEA-LION on Cloud](guides/inferencing/cloud_hosting.md) -->
 <!-- * [Prompting](guides/prompting/README.md)

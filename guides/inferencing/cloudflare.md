@@ -1,4 +1,4 @@
-# SEA-LION via Cloudflare Workers AI Platform
+# SEA-LION via Cloudflare Workers AI
 
 Our Gemma-SEALION-v4-27B-IT model is now supported on the Cloudflare Workers AI for on-demand inferencing, subject to Cloudflare's [Data Usage](https://developers.cloudflare.com/workers-ai/platform/data-usage/) and [Pricing Plans](https://developers.cloudflare.com/workers-ai/platform/pricing/).
 
@@ -31,6 +31,7 @@ After creating your API token, authenticate and make requests to the Worker AI A
 {% tabs %}
 {% tab title="curl" %} 
 ```
+
 curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/aisingapore/gemma-sea-lion-v4-27b-it \
   -X POST \
   -H "Authorization: Bearer $CLOUDFLARE_AUTH_TOKEN" \
@@ -81,6 +82,7 @@ Cloudflare also supports OpenAI compatible endpoints for text generation (/v1/ch
 {% tabs %}
 {% tab title="curl" %} 
 ```
+
 curl --request POST \
   --url https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/chat/completions \
   -H "Authorization: Bearer $CLOUDFLARE_AUTH_TOKEN" \
@@ -94,8 +96,7 @@ curl --request POST \
           "content": "Tell me a Singlish joke"
         }
       ]
-    }
-'
+    }'
 ```
 {% endtab %}
 
