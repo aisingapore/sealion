@@ -31,10 +31,9 @@ After creating your API token, authenticate and make requests to the Worker AI A
 {% tabs %}
 {% tab title="curl" %} 
 ```
-
-curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/aisingapore/gemma-sea-lion-v4-27b-it \
+curl https://api.cloudflare.com/client/v4/accounts/{$CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/aisingapore/gemma-sea-lion-v4-27b-it \
   -X POST \
-  -H "Authorization: Bearer $CLOUDFLARE_AUTH_TOKEN" \
+  -H 'Authorization: Bearer {$CLOUDFLARE_AUTH_TOKEN}' \
   -d '{ 
     "messages": [
         { 
@@ -82,11 +81,10 @@ Cloudflare also supports OpenAI compatible endpoints for text generation (/v1/ch
 {% tabs %}
 {% tab title="curl" %} 
 ```
-
 curl --request POST \
-  --url https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/chat/completions \
-  -H "Authorization: Bearer $CLOUDFLARE_AUTH_TOKEN" \
-  -H "Content-Type: application/json" \
+  --url https://api.cloudflare.com/client/v4/accounts/{$CLOUDFLARE_ACCOUNT_ID}/ai/v1/chat/completions \
+  -H 'Authorization: Bearer {$CLOUDFLARE_AUTH_TOKEN}' \
+  -H 'Content-Type: application/json' \
   -d '
     {
       "model": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
