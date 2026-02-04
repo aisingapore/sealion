@@ -7,7 +7,7 @@
 The SEA-Guard suite currently consists of 4 specialized models:
 
 * **[Qwen-SEA-Guard-4B](./qwenNllama-sea-guard.md)** (`https://huggingface.co/aisingapore/Qwen-SEA-Guard-4B-040226`) is a **4B Image-to-Text** model serving as a lightweight visual safety guardrail, specifically optimized for efficient edge applications where low latency is critical.
-* **[Qwen-SEA-Guard-8B](./qqwenNllama-sea-guard.md)** (`https://huggingface.co/aisingapore/Qwen-SEA-Guard-8B-040226`) is an **8B Image-to-Text** model that offers a balanced visual moderation solution with stronger reasoning capabilities for more nuanced content detection.
+* **[Qwen-SEA-Guard-8B](./qwenNllama-sea-guard.md)** (`https://huggingface.co/aisingapore/Qwen-SEA-Guard-8B-040226`) is an **8B Image-to-Text** model that offers a balanced visual moderation solution with stronger reasoning capabilities for more nuanced content detection.
 * **[Llama-SEA-Guard-8B](./qwenNllama-sea-guard.md)** (`https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-040226`) is an **8B Text Generation** model. This text-only safety specialist is optimized for chat moderation and policy enforcement, ensuring safe interactions in dialogue systems.
 * **[Gemma-SEA-Guard-12B](./gemma-sea-guard.md)** (`https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-040226`) is a high-capacity **12B Image-Text-to-Text** multimodal safety model designed for complex content analysis, capable of interpreting intricate relationships between visual and textual data.
 
