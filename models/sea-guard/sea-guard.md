@@ -1,14 +1,19 @@
-# SEA-LION v4
+## SEA-Guard Model Overview
 
-SEA-LION version 4, first released in Aug 2025, is our first multimodal models trained on Southeast Asian text, each with their unique strengths:
-- [Gemma-SEA-LION-v4-27B](./gemma-sea-lion-v4-27B.md) is suited for translation, abstractive summarisation, natural language inference and causal reasoning, metaphor understanding, question answering, paraphrase and sentiment analysis applications where regional language support and advanced reasoning is critical.
-- [Gemma-SEA-LION-v4-27B-IT](./gemma-sea-lion-v4-27B.md#training-procedure) is suited for knowledge-intensive tasks, and for high-demand contexts where comprehensive language comprehension are essential.
-- [Gemma-SEA-LION-v4-27B-IT-GGUF, NVFP4, FP8_Dynamic](./gemma-sea-lion-v4-27B.md#gemma-sea-lion-v4-27b-it-quantized-version) supports inference on a range of consumer-grade GPUs and are compatible with various inference engines.
-- [Gemma-SEA-LION-v4-27B-VL](./gemma-sea-lion-v4-27B-VL.md)  is our powerful vision-language model, expertly trained to interpret both images and text with a deep, nuanced understanding of Southeast Asian cultural contexts.
-- [Qwen-SEA-LION-v4-32B-IT](./qwen-sea-lion-v4-32B.md) is our flagship instruction-tuned model, designed for maximum performance in general SEA context tasks.
-- [Qwen-SEA-LION-v4-32B-IT-4BIT, 8BIT](./qwen-sea-lion-v4-32B.md#available-versions)  offers a near-perfect balance of performance and efficiency, making the power of SEA-LION accessible on resource-constrained hardware like consumer-grade GPUs.
-- [Qwen-SEA-LION-v4-4B-VL and 8B-VL](./qwen-sea-lion-v4-VL.md) are our latest specialized vision-language models featuring a native 256K context window and superior OCR capabilities for Indonesian, Thai, and Vietnamese. The 4B model is optimized for efficient edge deployment, while the 8B model is engineered for complex multi-modal reasoning. 
+**SEA-Guard**, released on **4 Feb 2026**, is our premier suite of safety and moderation models tailored for the Southeast Asian landscape. This collection focuses on robust visual and textual guardrails, ensuring AI deployments remain secure and culturally compliant across the region.
 
-SEA-LION v4 continues our mission to create language models that understand and respond with greater cultural awareness and depth across Southeast Asia. In addition, SEA-LION v4 has the ability to handle both image and text input as a multimodal model.
+### The SEA-Guard Collection 
 
-For detailed information of each of the SEA-LION v4 models, please refer to their individual documentation pages via the links above.
+The SEA-Guard suite currently consists of 4 specialized models:
+
+* **[Qwen-SEA-Guard-4B](./qwenNllama-sea-guard.md)** (`https://huggingface.co/aisingapore/Qwen-SEA-Guard-4B-040226`) is a **4B Image-to-Text** model serving as a lightweight visual safety guardrail, specifically optimized for efficient edge applications where low latency is critical.
+* **[Qwen-SEA-Guard-8B](./qqwenNllama-sea-guard.md)** (`https://huggingface.co/aisingapore/Qwen-SEA-Guard-8B-040226`) is an **8B Image-to-Text** model that offers a balanced visual moderation solution with stronger reasoning capabilities for more nuanced content detection.
+* **[Llama-SEA-Guard-8B](./qwenNllama-sea-guard.md)** (`https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-040226`) is an **8B Text Generation** model. This text-only safety specialist is optimized for chat moderation and policy enforcement, ensuring safe interactions in dialogue systems.
+* **[Gemma-SEA-Guard-12B](./gemma-sea-guard.md)** (`https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-040226`) is a high-capacity **12B Image-Text-to-Text** multimodal safety model designed for complex content analysis, capable of interpreting intricate relationships between visual and textual data.
+
+### Our Commitment to Safe Regional AI
+
+The SEA-Guard collection advances our mission to build AI that is not only culturally intelligent but also inherently safe. By providing specialized guardrails for both text and vision, these models enable developers to deploy AI solutions across Southeast Asia with confidence in their safety and compliance standards.
+
+> **Note:** For detailed integration guides and benchmark data for each SEA-Guard model, please refer to their individual documentation pages via the links above.
+
