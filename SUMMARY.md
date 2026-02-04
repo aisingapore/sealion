@@ -8,8 +8,8 @@
   * [Code of Conduct](overview/code_of_conduct.md)
   * [FAQ](overview/faq.md)
 
-## Models
-* [SEA-GUARD (Latest)](models/sea-guard/sea-guard.md)
+## Models 
+* [SEA-GUARD (Latest)](models/sea-guard/sea-guard.md) 
   * [Gemma-SEA-GUARD-12B](models/sea-guard/gemma-sea-guard.md)
   * [Qwen and Llama SEA-GUARD](models/sea-guard/qwenNllama-sea-guard.md)
 * [SEA-LION v4](models/sea-lion-v4/sea-lion-v4.md)
