@@ -2,7 +2,17 @@
 
 SEA-LION models are available for download via the following channels:
 
-## SEA-LION v4 (Latest)
+## SEA-GUARD (Latest)
+[Full HuggingFace SEA-Guard Collection](https://huggingface.co/collections/aisingapore/sea-uard)
+
+|Model	                        |Download                                                      |
+|-------------------------------|--------------------------------------------------------------|
+|Qwen-SEA-Guard-4B	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-Guard-4B-040226)|
+|Qwen-SEA-Guard-8B	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-Guard-8B-040226)|
+|Llama-SEA-Guard-8B	        |[HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-040226)|
+|Gemma-SEA-Guard-12B	        |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-040226)|
+
+## SEA-LION v4
 [Full HuggingFace SEA-LION v4 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v4-68aa7bb8061d497a4f9f2fec)
 
 **Qwen-SEA-LION-v4-VL**

@@ -9,6 +9,9 @@
   * [FAQ](overview/faq.md)
 
 ## Models
+* [SEA-GUARD (Latest)](models/sea-guard/sea-guard.md)
+  * [Gemma-SEA-GUARD-12B](models/sea-guard/gemma-sea-guard.md)
+  * [Qwen and Llama SEA-GUARD](models/sea-guard/qwenNllama-sea-guard.md)
 * [SEA-LION v4 (Latest)](models/sea-lion-v4/sea-lion-v4.md)
   * [Gemma-SEA-LION-v4-27B](models/sea-lion-v4/gemma-sea-lion-v4-27B.md)
   * [Gemma-SEA-LION-v4-27B-VL](models/sea-lion-v4/gemma-sea-lion-v4-27B-VL.md)

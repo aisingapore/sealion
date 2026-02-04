@@ -12,6 +12,9 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection | Size | Context Length | Training Strategy          | Available in            |
 |------------------|------|----------------|----------------------------|-------------------------|
+| **[SEA-GUARD](/models/sea-guard/sea-guard.md)** | 4B, 8B  | 128K           | SFT¹ of Qwen-SEA-LION-v4-4B-VL, Qwen-SEA-LION-v4-8B-VL  | VLM    |
+|                  | 8B   | 128K           | SFT¹ of Llama-SEA-LION-v3-8B-IT | Instruct    |
+|                  | 12B   | 128K           | SFT¹ of Gemma 3 12B IT | VLM    |
 | **[SEA-LION v4](/models/sea-lion-v4/sea-lion-v4.md)** | 4B, 8B  | 256K           | SFT¹ of Qwen3-VL-4B-Instruct, Qwen3-VL-8B-Instruct  | VLM    |
 |                  | 27B   | 128K           | CPT² of Gemma 3 27B IT | Base, Instruct, GGUF, NVFP4, FP8_Dynamic    |
 |                  | 27B  | 128K           | SFT¹ of Gemma-SEA-LION-v4-27B-IT | VLM    |
@@ -40,6 +43,12 @@ SEA-LION has seen:
 * In v3, outperforms similar sized open source models, and even some larger models in both general and SEA capabilities
 * In v3.5, ability to handle reasoning tasks, with the versatility of handling general tasks as well while maintaining similar performance with state-of-the-art models.
 * In v4, our first multimodal SEA-LION models, extending capabilities beyond text to handle image + text inputs with massive 256K native context windows and specialized regional OCR, while continuing our focus on Southeast Asian languages, culture, and use cases.
+
+SEA-Guard: The Protector
+
+Building on the sophisticated reasoning and multimodal foundation laid by SEA-LION v4, we are proud to introduce the first generation of SEA-Guard.
+
+Released on 4 Feb 2026, SEA-Guard is the dedicated safety counterpart to the SEA-LION family. As our foundational models gained the power to "see" (Multimodality in v4) and "think" (Reasoning in v3.5), the need for a culturally attuned safety layer became paramount.
 
 We use a holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering) but also [meticulously handcrafted linguistic and cultural diagnostic tests tailored to Southeast Asia](https://arxiv.org/abs/2309.06085v2).
 
