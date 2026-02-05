@@ -50,6 +50,7 @@ SEA-Guard: The Protector
 
 Building on the sophisticated reasoning and multimodal foundation laid by SEA-LION v4, we are proud to introduce the first generation of SEA-Guard. Released on 4 Feb 2026, SEA-Guard is the dedicated safety counterpart to the SEA-LION family. As our foundational models gained the power to "see" (Multimodality in v4) and "think" (Reasoning in v3.5), the need for a culturally attuned safety layer became paramount.
 
+
 We use a holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering) but also [meticulously handcrafted linguistic and cultural diagnostic tests tailored to Southeast Asia](https://arxiv.org/abs/2309.06085v2).
 
 Visit our [Leaderboard](https://leaderboard.sea-lion.ai/) for more detailed breakdown on:

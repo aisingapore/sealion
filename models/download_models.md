@@ -2,9 +2,11 @@
 
 SEA-LION models are available for download via the following channels:
 
+
 ## SEA-LION v4 (Latest)
 [Full HuggingFace SEA-LION v4 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v4)
 
+<br>
 
 **Apertus-SEA-LION-v4-8B**
 |Model	                        |Download                                                      |

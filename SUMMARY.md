@@ -12,6 +12,7 @@
 * [SEA-LION v4 (Latest)](models/sea-lion-v4/sea-lion-v4.md)
   * [Apertus-SEA-LION-v4-8B](models/sea-lion-v4/apertus-sea-lion-v4-8B.md)
   * [Gemma-SEA-LION-v4-4B-VL](models/sea-lion-v4/gemma-sea-lion-v4-4B-VL.md)
+
   * [Gemma-SEA-LION-v4-27B](models/sea-lion-v4/gemma-sea-lion-v4-27B.md)
   * [Gemma-SEA-LION-v4-27B-VL](models/sea-lion-v4/gemma-sea-lion-v4-27B-VL.md)
   * [Qwen-SEA-LION-v4-32B-IT](models/sea-lion-v4/qwen-sea-lion-v4-32B.md)
@@ -45,6 +46,7 @@
   * [Bedrock Access Gateway](guides/inferencing/bedrock_access_gateway.md)
   * [AWS Sagemaker](https://github.com/aisingapore/sealion/blob/b61c5f6789d5a74d3fbf7bbec5cd3ff5c237c4dc/guides/inferencing/Gemma-SEA-LION-v4-27B-Instruct.ipynb)
   * [vLLM on Linux](guides/inferencing/vllm_linux.md)
+  * [Cloudflare Workers AI](guides/inferencing/cloudflare.md)
   <!-- * [SEA-LION on Local](guides/inferencing/local_hosting.md) -->
   <!-- * [SEA-LION on Cloud](guides/inferencing/cloud_hosting.md) -->
 <!-- * [Prompting](guides/prompting/README.md)
