@@ -1,10 +1,10 @@
-# Running SEA-LION Models for Inference
-
-SEA-LION models are freely available for [download](/models/download_models.md), and can be run for inference in various ways. The following guides provide technical how-tos for setting up SEA-LION inference using different approaches:
+# Run SEA-LION Models for Inferenceing
+This section covers the various environments where SEA-LION models can be hosted, ranging from fully managed cloud services to self-hosted high-performance infrastructure. SEA-LION models are freely available for [download](/models/download_models.md). The following guides provide technical how-tos for setting up SEA-LION inference using different approaches:
 
 1. [Using our provided SEA-LION API](./api.md)
-2. Running SEA-LION on a local machine
+2. Running SEA-LION on a local machine (coming soon)
 3. Deploying SEA-LION on the cloud
+
     - [Create SEA-LION endpoint on Google Vertex AI](./vertex_ai.md)
     - [Importing and Using Llama-SEA-LION models in a Serverless On-Demand Environment with Amazon Bedrock](./amazon_bedrock.md)
     - [OpenAI-compatible APIs with Llama-SEA-LION models and Bedrock Access Gateway](./bedrock_access_gateway.md)
@@ -12,3 +12,4 @@ SEA-LION models are freely available for [download](/models/download_models.md),
     - [Deploying SEA-LION using vLLM on Linux server](./vllm_linux.md)
 4. Leveraging our Partner API Platforms
     - [Cloudflare Workers AI](./cloudflare.md)
+

@@ -2,36 +2,24 @@
 
 SEA-LION models are available for download via the following channels:
 
-## SEA-GUARD (Latest)
-[Full HuggingFace SEA-Guard Collection](https://huggingface.co/collections/aisingapore/sea-uard)
 
+## SEA-LION v4 (Latest)
+[Full HuggingFace SEA-LION v4 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v4)
+
+<br>
+
+**Apertus-SEA-LION-v4-8B**
 |Model	                        |Download                                                      |
 |-------------------------------|--------------------------------------------------------------|
-|Qwen-SEA-Guard-4B	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-Guard-4B-040226)|
-|Qwen-SEA-Guard-8B	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-Guard-8B-040226)|
-|Llama-SEA-Guard-8B	        |[HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-040226)|
-|Gemma-SEA-Guard-12B	        |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-040226)|
+|**Apertus-SEA-LION-v4-8B-IT** (Latest)       |[HuggingFace](https://huggingface.co/aisingapore/Apertus-SEA-LION-v4-8B-IT)|
+<br>
 
-## SEA-LION v4
-[Full HuggingFace SEA-LION v4 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v4-68aa7bb8061d497a4f9f2fec)
-
-**Qwen-SEA-LION-v4-VL**
+**Gemma-SEA-LION-v4-VL**
 |Model	                        |Download                                                      |
 |-------------------------------|--------------------------------------------------------------|
-|Qwen-SEA-LION-v4-4B-VL	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-4B-VL)|
-|Qwen-SEA-LION-v4-8B-VL	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-8B-VL)|
-
-**Qwen-SEA-LION-v4-32B-IT**
-|Model	                        |Download                                                      |
-|-------------------------------|--------------------------------------------------------------|
-|Qwen-SEA-LION-v4-32B-IT	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT)|
-|Qwen-SEA-LION-v4-32B-IT-4BIT	    |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-4BIT) |
-|Qwen-SEA-LION-v4-32B-IT-8BIT	    |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT) |
-
-**Gemma-SEA-LION-v4-27B-VL**
-|Model	                        |Download                                                      |
-|-------------------------------|--------------------------------------------------------------|
+|**Gemma-SEA-LION-v4-4B-VL** (Latest)       |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-4B-VL)|
 |Gemma-SEA-LION-v4-27B-VL	        |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-VL)|
+<br>
 
 **Gemma-SEA-LION-v4-27B**
 |Model	                        |Download                                                      |
@@ -41,6 +29,21 @@ SEA-LION models are available for download via the following channels:
 |Gemma-SEA-LION-v4-27B-IT-GGUF	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF), [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4-27B-IT) |
 |Gemma-SEA-LION-v4-27B-IT-NVFP4	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-NVFP4) |
 |Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic	|[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-FP8-Dynamic) |
+<br>
+
+**Qwen-SEA-LION-v4-VL**
+|Model	                        |Download                                                      |
+|-------------------------------|--------------------------------------------------------------|
+|Qwen-SEA-LION-v4-4B-VL	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-4B-VL)|
+|Qwen-SEA-LION-v4-8B-VL	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-8B-VL)|
+<br>
+
+**Qwen-SEA-LION-v4-32B-IT**
+|Model	                        |Download                                                      |
+|-------------------------------|--------------------------------------------------------------|
+|Qwen-SEA-LION-v4-32B-IT	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT)|
+|Qwen-SEA-LION-v4-32B-IT-4BIT	    |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-4BIT) |
+|Qwen-SEA-LION-v4-32B-IT-8BIT	    |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT) |
 
 <br>
 
@@ -115,3 +118,13 @@ SEA-LION models are available for download via the following channels:
 | SEA-LION-v1-7B          | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-v1-7B)      |
 | SEA-LION-v1-7B-IT | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-v1-7B-IT)      |
 | SEA-LION-v1-7B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-v1-7B-IT-GGUF)     
+
+## SEA-GUARD 
+[Full HuggingFace SEA-Guard Collection](https://huggingface.co/collections/aisingapore/sea-uard)
+
+|Model	                        |Download                                                      |
+|-------------------------------|--------------------------------------------------------------|
+|Qwen-SEA-Guard-4B	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-Guard-4B-040226)|
+|Qwen-SEA-Guard-8B	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-Guard-8B-040226)|
+|Llama-SEA-Guard-8B	        |[HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-040226)|
+|Gemma-SEA-Guard-12B	        |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-040226)|
