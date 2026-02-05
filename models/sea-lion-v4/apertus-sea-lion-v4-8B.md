@@ -187,18 +187,17 @@ The instruction fine-tuning text dataset comprises of a collection of OSS & synt
 
 **Datasets for Instruction Fine Tuning**:
 
-- <https://huggingface.co/datasets/aisingapore/filtered_joined_prompt_v1_resp_qwen_32b>
-- <https://huggingface.co/datasets/aisingapore/translated_english_500k_formatted_resp_qwen32b>
+- 🤗[aisingapore/SEA-Instruct-2602](https://huggingface.co/datasets/aisingapore/SEA-Instruct-2602)
 
 **Datasets for Tool-calling**:
 
-- <https://huggingface.co/datasets/allenai/Dolci-Instruct-SFT-Tool-Use>
-- <https://huggingface.co/datasets/Agent-Ark/Toucan-1.5M>
+- 🤗[allenai/Dolci-Instruct-SFT-Tool-Use](https://huggingface.co/datasets/allenai/Dolci-Instruct-SFT-Tool-Use)
+- 🤗[Agent-Ark/Toucan-1.5M](https://huggingface.co/datasets/Agent-Ark/Toucan-1.5M)
 
 **Datasets for Reinforcement Learning:**
 
-- <https://huggingface.co/datasets/nvidia/Nemotron-Cascade-RL-Instruction-Following>
-- <https://huggingface.co/datasets/openai/gsm8k>
+- 🤗[nvidia/Nemotron-Cascade-RL-Instruction-Following](https://huggingface.co/datasets/nvidia/Nemotron-Cascade-RL-Instruction-Following)
+- 🤗[openai/gsm8k](https://huggingface.co/datasets/openai/gsm8k)
 
 ### Training Procedure
 
