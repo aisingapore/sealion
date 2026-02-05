@@ -22,13 +22,21 @@ The SEA-LION models have served as a foundation for developing localized AI solu
 </tr>
 <tr>
 <td valign="top">SEA-LION v4</td>
-<td><p>→ <a href="https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-VL">Gemma 3 27B SEA-LION v4 (Multimodal)</a>: The first multimodal release in the SEA-LION family, based on the Gemma 3 27B architecture. Co-developed with Google, this 27B model supports a 128K context window. It underwent post-training on ~10M samples across 11 SEA languages and features vision-text capabilities for document understanding and visual Q&A. This model supports text and image understanding with a commercially permissive license. It is designed to handle Southeast Asian cultural nuances and visual contexts.</p>
-<p></p><p>→ <a href="https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-4B-VL"> Qwen-SEA-LION-v4-4B/8B-IT (Flagship)</a>: The lightweight flagship multimodal model built on the Qwen3-VL framework, optimized for regional linguistic and cultural nuances.</p>
-<p></p><p>→ <a href="">Apertus 8B SEA-LION v4 (Coming Soon)</a>: A fully open regional adaptation based on the Swiss AI "Apertus" architecture, focusing on highly efficient, transparent, and community-driven multilingual support. Features 15T token pre-training across 1,000+ languages with a focus on deep multilingual depth and transparency.
+<td><p>→ <a href="https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-VL">Gemma 3 27B/4B SEA-LION v4 (Multimodal)</a>: The first multimodal release in the SEA-LION family, based on the Gemma 3 architecture. Co-developed with Google, these models support a 128K context window. It underwent post-training on ~10M samples across 11 SEA languages and features vision-text capabilities for document understanding and visual Q&A. This model supports text and image understanding with a commercially permissive license. It is designed to handle Southeast Asian cultural nuances and visual contexts.</p>
+<p></p><p>→ <a href="https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-4B-VL"> Qwen-SEA-LION-v4-4B/8B-IT</a>: The lightweight flagship multimodal model built on the Qwen3-VL framework, optimized for regional linguistic and cultural nuances.</p>
+<p></p><p>→ <a href="">Apertus 8B SEA-LION v4</a>: A fully open regional adaptation based on the Swiss AI "Apertus" architecture, focusing on highly efficient, transparent, and community-driven multilingual support. Features 15T token pre-training across 1,000+ languages with a focus on deep multilingual depth and transparency.
 </p>
-<p></p><p>→ <a href="">Gemma 3 4B SEA-LION v4 (Coming Soon)</a>: A lightweight, edge-optimized multimodal variant of the v4 family, designed to bring robust Southeast Asian language and vision capabilities to mobile and resource-constrained devices. Inherits Gemma 3's 128K context window and SigLIP-based vision capabilities for efficient on-device reasoning.
-
 </td>
+</tr>
+<tr>
+  <td valign="top">SEA-Guard</td>
+  <td>A specialized collection of safety-focused LLMs built on the SEA-LION family released on 4 Feb 2026. 
+    <p>→ <a href="https://huggingface.co/aisingapore/Qwen-SEA-Guard-4B-040226">Qwen-SEA-Guard-4B/8B (Image-to-Text)</a>: The 4B variant is a lightweight visual guardrail optimized for edge applications, while the 8B offers balanced visual moderation with stronger reasoning capabilities.</p>
+    <p></p>
+    <p>→ <a href="https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-040226">Llama-SEA-Guard-8B (Text Generation)</a>: A text-only safety specialist optimized for chat moderation and policy enforcement, ensuring safe interactions in dialogue systems.</p>
+    <p></p>
+    <p>→ <a href="https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-040226">Gemma-SEA-Guard-12B (Multimodal)</a>: The high-capacity safety flagship capable of interpreting complex relationships between visual and textual data for deep content analysis.</p>
+  </td>
 </tr>
 </tbody></table>
 
