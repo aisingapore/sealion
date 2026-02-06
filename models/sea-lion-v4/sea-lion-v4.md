@@ -42,7 +42,7 @@ SEA-LION version 4, released in August 2025, represents our first collection of 
 
 * [**Qwen-SEA-LION-v4-32B-IT**](./qwen-sea-lion-v4-32B.md)
     Our flagship instruction-tuned model, designed for maximum performance in general SEA context tasks.
-    * *Available Variants:* [**Qwen-SEA-LION-v4-32B-IT-4BIT / 8BIT**(./qwen-sea-lion-v4-32B.md#available-versions)] offer a near-perfect balance of performance and efficiency, making the power of SEA-LION accessible on resource-constrained hardware like consumer-grade GPUs.
+    * *Available Variants:* [**Qwen-SEA-LION-v4-32B-IT-4BIT / 8BIT**](./qwen-sea-lion-v4-32B.md#available-versions)] offer a near-perfect balance of performance and efficiency, making the power of SEA-LION accessible on resource-constrained hardware like consumer-grade GPUs.
 
 
 SEA-LION v4 continues our mission to create language models that understand and respond with greater cultural awareness and depth across Southeast Asia. In addition, SEA-LION v4 has the ability to handle both image and text input as a multimodal model.
