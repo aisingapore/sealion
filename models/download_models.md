@@ -120,11 +120,12 @@ SEA-LION models are available for download via the following channels:
 | SEA-LION-v1-7B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-v1-7B-IT-GGUF)     
 
 ## SEA-GUARD 
-[Full HuggingFace SEA-Guard Collection](https://huggingface.co/collections/aisingapore/sea-uard)
+[Full HuggingFace SEA-Guard Collection](https://huggingface.co/collections/aisingapore/sea-guard)
 
 |Model	                        |Download                                                      |
 |-------------------------------|--------------------------------------------------------------|
 |Qwen-SEA-Guard-4B	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-Guard-4B-040226)|
 |Qwen-SEA-Guard-8B	        |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-Guard-8B-040226)|
 |Llama-SEA-Guard-8B	        |[HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-040226)|
+
 |Gemma-SEA-Guard-12B	        |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-040226)|
