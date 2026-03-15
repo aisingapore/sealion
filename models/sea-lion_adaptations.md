@@ -38,6 +38,14 @@ The SEA-LION models have served as a foundation for developing localized AI solu
     <p>→ <a href="https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-040226">Gemma-SEA-Guard-12B (Multimodal)</a>: The high-capacity safety flagship capable of interpreting complex relationships between visual and textual data for deep content analysis.</p>
   </td>
 </tr>
+
+<tr>
+  <td valign="top">SEA-Embedding</td>
+  <td>A suite of high-performance encoder-only models specifically architected for Southeast Asian languages, providing state-of-the-art vector representations for RAG and semantic search.
+    <p>→ <a href="https://huggingface.co/aisingapore/SEA-Embedding-300M">ModernBERT-SEA-Embedding (Encoder)</a>: Our flagship encoder line utilizing the ModernBERT architecture. It offers superior efficiency and long-context handling, specifically tuned for the unique scripts and linguistic structures of the SEA region.</p>
+    <p>→ <a href="https://huggingface.co/intfloat/multilingual-e5-large">E5-SEA-Embedding (Encoder)</a>: A high-precision semantic encoder line fine-tuned from the E5-large foundation, optimized for maximum accuracy in cross-lingual retrieval and semantic matching across regional and global languages.</p>
+  </td>
+</tr>
 </tbody></table>
 
 ## Impact and Future Directions

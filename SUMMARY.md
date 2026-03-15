@@ -9,10 +9,12 @@
   * [FAQ](overview/faq.md)
 
 ## Models
-* [SEA-LION v4 (Latest)](models/sea-lion-v4/sea-lion-v4.md)
+* [SEA-LION-Embedding (Latest)](models/sea-embedding/sea-embedding.md)  
+  * [SEA-LION-ModernBERT](models/sea-embedding/sea-modernbert.md) 
+  * [SEA-LION-Embedding-E5](models/sea-embedding/sea-e5.md) 
+* [SEA-LION v4](models/sea-lion-v4/sea-lion-v4.md)
   * [Apertus-SEA-LION-v4-8B](models/sea-lion-v4/apertus-sea-lion-v4-8B.md)
   * [Gemma-SEA-LION-v4-4B-VL](models/sea-lion-v4/gemma-sea-lion-v4-4B-VL.md)
-
   * [Gemma-SEA-LION-v4-27B](models/sea-lion-v4/gemma-sea-lion-v4-27B.md)
   * [Gemma-SEA-LION-v4-27B-VL](models/sea-lion-v4/gemma-sea-lion-v4-27B-VL.md)
   * [Qwen-SEA-LION-v4-32B-IT](models/sea-lion-v4/qwen-sea-lion-v4-32B.md)
@@ -30,6 +32,7 @@
 * [SEA-GUARD](models/sea-guard/sea-guard.md)  
   * [Gemma-SEA-GUARD-12B](models/sea-guard/gemma-sea-guard.md) 
   * [Qwen and Llama SEA-GUARD](models/sea-guard/qwenNllama-sea-guard.md) 
+
 * [Getting the models](models/download_models.md)
 
 ## Benchmarks

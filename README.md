@@ -1,4 +1,4 @@
-**Southeast Asian Languages in One Network**
+# **Southeast Asian Languages in One Network**
 
 _Built for Southeast Asia, by Southeast Asia_
 
@@ -26,6 +26,9 @@ This site provides information and resources on SEA-LION, including how to acces
 | **[SEA-LION v2](/models/sea-lion-v2/sea-lion-v2.md)**  | 8B   | 8192           | CPT² of Llama3             | Base, Instruct, GGUF    |
 | **[SEA-LION v1](/models/sea-lion-v1/sea-lion-v1.md)**  | 3B   | 2048           | Pre-training from scratch  | Base                    |
 |                  | 7B   | 2048           | Pre-training from scratch  | Instruct                |
+| **[SEA-LION-Embedding](/models/sea-embedding/sea-embedding.md)** | 300M, 600M  | 8K           | ModernBERT from scratch  | Base-Embedding, Checkpoints    |
+|                  | 300M, 600M   | 8K           | SFT¹ of SEA-LION-ModernBERT-Embedding | Tuned-Embedding    |
+|                  | 600M   | 512           | SFT¹ of E5-Large | Tuned-Embedding    |
 | **[SEA-GUARD](/models/sea-guard/sea-guard.md)** | 4B, 8B  | 128K           | SFT¹ of Qwen-SEA-LION-v4-4B-VL, Qwen-SEA-LION-v4-8B-VL  | VLM    |
 |                  | 8B   | 128K           | SFT¹ of Llama-SEA-LION-v3-8B-IT | Instruct    |
 |                  | 12B   | 128K           | SFT¹ of Gemma 3 12B IT | VLM    |
@@ -46,9 +49,16 @@ SEA-LION has seen:
 * In v3.5, ability to handle reasoning tasks, with the versatility of handling general tasks as well while maintaining similar performance with state-of-the-art models.
 * In v4, our first multimodal SEA-LION models, extending capabilities beyond text to handle image + text inputs with massive 256K native context windows and specialized regional OCR, while continuing our focus on Southeast Asian languages, culture, and use cases.
 
+SEA-LION-Embedding: The Vector Foundation
+
+The SEA-LION-Embedding suite provides the semantic foundation for the ecosystem. Released in March 2026, these models represent a significant leap in regional retrieval performance. Tested on the SEA-BED (Southeast Asia Embedding Benchmark), which utilizes human-curated native data rather than machine translations, our embeddings consistently set new state-of-the-art records for 10 regional languages across retrieval, reranking, and semantic textual similarity tasks.
+
+
 SEA-Guard: The Protector
 
 Building on the sophisticated reasoning and multimodal foundation laid by SEA-LION v4, we are proud to introduce the first generation of SEA-Guard. Released on 4 Feb 2026, SEA-Guard is the dedicated safety counterpart to the SEA-LION family. As our foundational models gained the power to "see" (Multimodality in v4) and "think" (Reasoning in v3.5), the need for a culturally attuned safety layer became paramount.
+
+
 
 
 We use a holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering) but also [meticulously handcrafted linguistic and cultural diagnostic tests tailored to Southeast Asia](https://arxiv.org/abs/2309.06085v2).
