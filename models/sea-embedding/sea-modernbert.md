@@ -30,7 +30,7 @@ For tokenization, the model employs our custom [Gemma3](https://storage.googleap
 
 ### Model Sources
 
-- **Repository:** The weights for this model and its various training stages are being released to support transparency, research, and diverse downstream applications. **[Link to HF Repo](https://huggingface.co/collections/aisingapore/sea-lion-modernbert-and-sea-lion-embedding)**
+- **Repository:** The weights for this model and its various training stages are being released to support transparency, research, and diverse downstream applications. **[Link to HF Repo](https://huggingface.co/collections/aisingapore/sea-lion-modernbert-and-embedding)**
 
 ## Uses
 

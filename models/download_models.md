@@ -3,7 +3,7 @@
 SEA-LION models are available for download via the following channels:
 
 ## SEA-Embedding (Latest) 
-[Full HuggingFace SEA-LION-Embedding Collection](https://huggingface.co/collections/aisingapore/sea-lion-modernbert-and-sea-lion-embedding)
+[Full HuggingFace SEA-LION-Embedding Collection](https://huggingface.co/collections/aisingapore/sea-lion-modernbert-and-embedding)
 
 |Model	                        |Download                                                      |
 |------------------------------------|--------------------------------------------------------------|
