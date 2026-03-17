@@ -26,7 +26,7 @@ This site provides information and resources on SEA-LION, including how to acces
 | **[SEA-LION v2](/models/sea-lion-v2/sea-lion-v2.md)**  | 8B   | 8192           | CPT² of Llama3             | Base, Instruct, GGUF    |
 | **[SEA-LION v1](/models/sea-lion-v1/sea-lion-v1.md)**  | 3B   | 2048           | Pre-training from scratch  | Base                    |
 |                  | 7B   | 2048           | Pre-training from scratch  | Instruct                |
-| **[SEA-LION-Embedding](/models/sea-embedding/sea-embedding.md)** | 300M, 600M  | 8K           | ModernBERT from scratch  | Base-Embedding, Checkpoints    |
+| **[SEA-LION Embedding](/models/sea-embedding/sea-embedding.md)** | 300M, 600M  | 8K           | ModernBERT from scratch  | Base-Embedding, Checkpoints    |
 |                  | 300M, 600M   | 8K           | SFT¹ of SEA-LION-ModernBERT-Embedding | Tuned-Embedding    |
 |                  | 600M   | 512           | SFT¹ of E5-Large | Tuned-Embedding    |
 | **[SEA-GUARD](/models/sea-guard/sea-guard.md)** | 4B, 8B  | 128K           | SFT¹ of Qwen-SEA-LION-v4-4B-VL, Qwen-SEA-LION-v4-8B-VL  | VLM    |
