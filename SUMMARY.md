@@ -10,7 +10,7 @@
 
 ## Models
 * [SEA-LION Embedding (Latest)](models/sea-embedding/sea-embedding.md)  
-  * [SEA-LION-ModernBERT](models/sea-embedding/sea-modernbert.md) 
+  * [SEA-LION-ModernBERT and Embedding](models/sea-embedding/sea-modernbert.md) 
   * [SEA-LION-Embedding-E5](models/sea-embedding/sea-e5.md) 
 * [SEA-LION v4](models/sea-lion-v4/sea-lion-v4.md)
   * [Apertus-SEA-LION-v4-8B](models/sea-lion-v4/apertus-sea-lion-v4-8B.md)
