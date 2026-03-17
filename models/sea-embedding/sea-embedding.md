@@ -1,6 +1,6 @@
-# SEA-LION-Embedding
+# SEA-LION Embedding
 
-[**SEA-LION-Embedding**](https://huggingface.co/collections/aisingapore/sea-lion-modernbert-and-embedding), released in March 2026, is a suite of high-performance encoder models specifically architected for Southeast Asian languages. The collection features two primary product lines:
+[**SEA-LION Embedding**](https://huggingface.co/collections/aisingapore/sea-lion-modernbert-and-embedding), released in March 2026, is a suite of high-performance encoder models specifically architected for Southeast Asian languages. The collection features two primary product lines:
 
 - [SEA-LION-ModernBERT (Efficiency & Context)](./sea-modernbert.md): Built on the ModernBERT architecture, these models feature a native 8,192 token context window and are optimized for high-throughput production environments and long-document RAG.
 
