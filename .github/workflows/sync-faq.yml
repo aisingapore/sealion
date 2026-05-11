@@ -37,6 +37,8 @@ jobs:
               params={"expand": "body.export_view", "status": "draft"},
               auth=(username, token)
           )
+          print(f"Status code: {resp.status_code}")
+          print(f"Response: {resp.text[:500]}")
           resp.raise_for_status()
 
           html = resp.json()["body"]["export_view"]["value"]
