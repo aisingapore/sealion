@@ -4,10 +4,13 @@ on:
   schedule:
     - cron: '0 6 * * *'  # Daily at 2pm SGT (UTC+8)
   workflow_dispatch:       # Manual trigger
+  push:
+    branches:
+      - PLAY-1089-confluence-faq-sync
 
 env:
   TARGET_FILE: "overview/faq.md"
-  PR_BASE_BRANCH: "main"
+  PR_BASE_BRANCH: "PLAY-1089-confluence-faq-sync"
   CONFLUENCE_PAGE_ID: ${{ secrets.CONFLUENCE_PAGE_ID }}
   CONFLUENCE_BASE_URL: ${{ secrets.CONFLUENCE_BASE_URL }}
   CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
@@ -25,33 +28,8 @@ jobs:
 
       - name: Fetch FAQ from Confluence and convert to Markdown
         run: |
-          pip install html2text --quiet
-
-          curl -s \
-            -u "${CONFLUENCE_USERNAME}:${CONFLUENCE_API_TOKEN}" \
-            "${CONFLUENCE_BASE_URL}/wiki/rest/api/content/${CONFLUENCE_PAGE_ID}?expand=body.export_view" \
-            -o confluence_response.json
-
-          # Extract HTML and convert to Markdown
-          python3 << EOF
-          import json, html2text, os
-
-          with open("confluence_response.json") as f:
-              data = json.load(f)
-
-          html = data["body"]["export_view"]["value"]
-
-          h = html2text.HTML2Text()
-          h.ignore_links = False
-          markdown = h.handle(html)
-
-          with open(os.environ["TARGET_FILE"], "w") as f:
-              f.write(markdown)
-
-          print("Done — faq.md written")
-          EOF
-
-          rm confluence_response.json
+          cd scripts && npm install --quiet && cd ..
+          node scripts/sync_faq.js
 
       - name: Create PR if changes
         uses: peter-evans/create-pull-request@v6
