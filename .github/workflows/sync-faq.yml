@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '*/30 * * * *'  # Every 30 minutes for testing
   workflow_dispatch:         # Manual trigger — use this to test without waiting
+  push:
+    branches:
+      - PLAY-1089-confluence-faq-sync
 
 jobs:
   sync-faq:
