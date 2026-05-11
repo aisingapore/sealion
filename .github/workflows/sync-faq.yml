@@ -1,0 +1,59 @@
+name: Sync FAQ from Confluence
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Every 30 minutes for testing
+  workflow_dispatch:         # Manual trigger — use this to test without waiting
+
+jobs:
+  sync-faq:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Fetch FAQ from Confluence and convert to Markdown
+        env:
+          CONFLUENCE_BASE_URL: ${{ secrets.CONFLUENCE_BASE_URL }}
+          CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
+          CONFLUENCE_API_TOKEN: ${{ secrets.CONFLUENCE_API_TOKEN }}
+          CONFLUENCE_CLOUD_ID: ${{ secrets.CONFLUENCE_CLOUD_ID }}
+        run: |
+          pip install html2text requests --quiet
+
+          python3 << 'EOF'
+          import requests, html2text, os
+
+          base_url = os.environ["CONFLUENCE_BASE_URL"]
+          username = os.environ["CONFLUENCE_USERNAME"]
+          token = os.environ["CONFLUENCE_API_TOKEN"]
+          page_id = "1398276098"
+
+          resp = requests.get(
+              f"{base_url}/rest/api/content/{page_id}",
+              params={"expand": "body.export_view", "status": "draft"},
+              auth=(username, token)
+          )
+          resp.raise_for_status()
+
+          html = resp.json()["body"]["export_view"]["value"]
+
+          h = html2text.HTML2Text()
+          h.ignore_links = False
+          markdown = h.handle(html)
+
+          with open("overview/faq.md", "w") as f:
+              f.write(markdown)
+
+          print("Done — faq.md written")
+          EOF
+
+      - name: Create PR if changes
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "docs: sync FAQ from Confluence"
+          title: "docs: sync FAQ from Confluence"
+          body: "Automated sync of FAQ content from Confluence page 1398276098."
+          branch: confluence-faq-sync
+          base: PLAY-1089-confluence-faq-sync
