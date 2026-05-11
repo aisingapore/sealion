@@ -2,11 +2,19 @@ name: Sync FAQ from Confluence
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Every 30 minutes for testing
-  workflow_dispatch:         # Manual trigger — use this to test without waiting
+    - cron: '0 2 * * *'  # Daily at 2am UTC
+  workflow_dispatch:       # Manual trigger
   push:
     branches:
       - PLAY-1089-confluence-faq-sync
+
+env:
+  CONFLUENCE_PAGE_ID: "1398276098"
+  TARGET_FILE: "overview/faq.md"
+  PR_BASE_BRANCH: "PLAY-1089-confluence-faq-sync"
+  CONFLUENCE_BASE_URL: ${{ secrets.CONFLUENCE_BASE_URL }}
+  CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
+  CONFLUENCE_API_TOKEN: ${{ secrets.CONFLUENCE_API_TOKEN }}
 
 jobs:
   sync-faq:
@@ -19,21 +27,17 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Fetch FAQ from Confluence and convert to Markdown
-        env:
-          CONFLUENCE_BASE_URL: ${{ secrets.CONFLUENCE_BASE_URL }}
-          CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
-          CONFLUENCE_API_TOKEN: ${{ secrets.CONFLUENCE_API_TOKEN }}
         run: |
           pip install html2text --quiet
 
           curl -s \
             -u "${CONFLUENCE_USERNAME}:${CONFLUENCE_API_TOKEN}" \
-            "${CONFLUENCE_BASE_URL}/wiki/rest/api/content/1398276098?expand=body.export_view&status=draft" \
+            "${CONFLUENCE_BASE_URL}/wiki/rest/api/content/${CONFLUENCE_PAGE_ID}?expand=body.export_view" \
             -o confluence_response.json
 
           # Extract HTML and convert to Markdown
-          python3 << 'EOF'
-          import json, html2text
+          python3 << EOF
+          import json, html2text, os
 
           with open("confluence_response.json") as f:
               data = json.load(f)
@@ -44,7 +48,7 @@ jobs:
           h.ignore_links = False
           markdown = h.handle(html)
 
-          with open("overview/faq.md", "w") as f:
+          with open(os.environ["TARGET_FILE"], "w") as f:
               f.write(markdown)
 
           print("Done — faq.md written")
@@ -58,6 +62,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "docs: sync FAQ from Confluence"
           title: "docs: sync FAQ from Confluence"
-          body: "Automated sync of FAQ content from Confluence page 1398276098."
+          body: "Automated sync of FAQ content from Confluence page ${{ env.CONFLUENCE_PAGE_ID }}."
           branch: confluence-faq-sync
-          base: PLAY-1089-confluence-faq-sync
+          base: ${{ env.PR_BASE_BRANCH }}
