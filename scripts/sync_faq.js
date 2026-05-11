@@ -38,7 +38,7 @@ async function getPageContent(pageId) {
   const data = await res.json();
   const html = stripConfluenceMacros(data.body.storage.value);
 
-  const turndown = new TurndownService();
+  const turndown = new TurndownService({ headingStyle: "atx", bulletListMarker: "-" });
   return turndown.turndown(html);
 }
 
