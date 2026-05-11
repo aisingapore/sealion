@@ -23,6 +23,11 @@ jobs:
         run: |
           pip install html2text --quiet
 
+          # Debug: verify secret lengths
+          echo "Username length: ${#CONFLUENCE_USERNAME}"
+          echo "Token length: ${#CONFLUENCE_API_TOKEN}"
+          echo "Base URL: ${CONFLUENCE_BASE_URL}"
+
           # Fetch using curl (same as local test)
           curl -s \
             -u "${CONFLUENCE_USERNAME}:${CONFLUENCE_API_TOKEN}" \
