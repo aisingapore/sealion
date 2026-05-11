@@ -27,9 +27,9 @@ jobs:
           python3 << 'EOF'
           import requests, html2text, os
 
-          base_url = os.environ["CONFLUENCE_BASE_URL"]
-          username = os.environ["CONFLUENCE_USERNAME"]
-          token = os.environ["CONFLUENCE_API_TOKEN"]
+          base_url = os.environ["CONFLUENCE_BASE_URL"].strip()
+          username = os.environ["CONFLUENCE_USERNAME"].strip()
+          token = os.environ["CONFLUENCE_API_TOKEN"].strip()
           page_id = "1398276098"
 
           resp = requests.get(
