@@ -40,3 +40,4 @@ jobs:
           body: "Automated sync of FAQ content from Confluence page ${{ env.CONFLUENCE_PAGE_ID }}."
           branch: confluence-faq-sync
           base: ${{ env.PR_BASE_BRANCH }}
+          add-paths: overview/faq.md
