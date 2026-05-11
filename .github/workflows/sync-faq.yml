@@ -33,7 +33,7 @@ jobs:
           page_id = "1398276098"
 
           resp = requests.get(
-              f"{base_url}/rest/api/content/{page_id}",
+              f"{base_url}/wiki/rest/api/content/{page_id}",
               params={"expand": "body.export_view", "status": "draft"},
               auth=(username, token)
           )
