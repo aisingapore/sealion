@@ -26,18 +26,10 @@ jobs:
         run: |
           pip install html2text --quiet
 
-          # Debug: verify secret lengths
-          echo "Username length: ${#CONFLUENCE_USERNAME}"
-          echo "Token length: ${#CONFLUENCE_API_TOKEN}"
-          echo "Base URL: ${CONFLUENCE_BASE_URL}"
-
-          # Fetch using curl (same as local test)
           curl -s \
             -u "${CONFLUENCE_USERNAME}:${CONFLUENCE_API_TOKEN}" \
             "${CONFLUENCE_BASE_URL}/wiki/rest/api/content/1398276098?expand=body.export_view&status=draft" \
             -o confluence_response.json
-
-          cat confluence_response.json
 
           # Extract HTML and convert to Markdown
           python3 << 'EOF'
@@ -57,6 +49,8 @@ jobs:
 
           print("Done — faq.md written")
           EOF
+
+          rm confluence_response.json
 
       - name: Create PR if changes
         uses: peter-evans/create-pull-request@v6
