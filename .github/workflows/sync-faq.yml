@@ -2,7 +2,7 @@ name: Sync FAQ from Confluence
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Daily at 2pm SGT (UTC+8)
+    - cron: '0 6 * * 1-4'  # Mon-Thu at 2pm SGT (UTC+8)
   workflow_dispatch:
 
 env:
@@ -15,7 +15,7 @@ env:
 
 jobs:
   sync-faq:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, da-team]
     permissions:
       contents: write
       pull-requests: write
