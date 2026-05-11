@@ -3,18 +3,14 @@ name: Sync FAQ from Confluence
 on:
   schedule:
     - cron: '0 6 * * *'  # Daily at 2pm SGT (UTC+8)
-  workflow_dispatch:       # Manual trigger
-  push:
-    branches:
-      - PLAY-1089-confluence-faq-sync
+  workflow_dispatch:
 
 env:
-  TARGET_FILE: "overview/faq.md"
-  PR_BASE_BRANCH: "PLAY-1089-confluence-faq-sync"
-  CONFLUENCE_PAGE_ID: ${{ secrets.CONFLUENCE_PAGE_ID }}
   CONFLUENCE_BASE_URL: ${{ secrets.CONFLUENCE_BASE_URL }}
   CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
   CONFLUENCE_API_TOKEN: ${{ secrets.CONFLUENCE_API_TOKEN }}
+  CONFLUENCE_PAGE_ID: ${{ secrets.CONFLUENCE_PAGE_ID }}
+  TARGET_FILE: "overview/faq.md"
 
 jobs:
   sync-faq:
@@ -23,21 +19,21 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch FAQ from Confluence and convert to Markdown
+      - name: Fetch and convert Confluence FAQ to Markdown
         run: |
           cd scripts && npm install --quiet && cd ..
           node scripts/sync_faq.js
 
-      - name: Create PR if changes
+      - name: Open PR with updated FAQ
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "docs: sync FAQ from Confluence"
-          title: "docs: sync FAQ from Confluence"
-          body: "Automated sync of FAQ content from Confluence page ${{ env.CONFLUENCE_PAGE_ID }}."
+          title: "Syncing FAQ Page from Confluence, maintained by Partnerships team"
+          body: "Automated sync of FAQ content from Confluence."
           branch: confluence-faq-sync
-          base: ${{ env.PR_BASE_BRANCH }}
+          base: main
           add-paths: overview/faq.md
