@@ -10,21 +10,6 @@ function getEnv(key) {
   return val.trim();
 }
 
-function stripConfluenceMacros(html) {
-  return html
-    .replace(
-      /<ac:structured-macro[^>]*ac:name="code"[^>]*>[\s\S]*?(?:<ac:parameter ac:name="language">([^<]*)<\/ac:parameter>)?[\s\S]*?<ac:plain-text-body><!\[CDATA\[([\s\S]*?)\]\]><\/ac:plain-text-body>[\s\S]*?<\/ac:structured-macro>/g,
-      (_, lang, code) => `<pre><code class="language-${lang || ""}">${code}</code></pre>`
-    )
-    .replace(
-      /<ac:structured-macro[^>]*ac:name="(info|note|warning|tip)"[^>]*>[\s\S]*?<ac:rich-text-body>([\s\S]*?)<\/ac:rich-text-body>[\s\S]*?<\/ac:structured-macro>/g,
-      (_, type, body) =>
-        `<blockquote><p><strong>${type.toUpperCase()}:</strong></p>${body}</blockquote>`
-    )
-    .replace(/<ac:emoticon[^>]*ac:emoji-fallback="([^"]*)"[^>]*\/>/g, (_, emoji) => emoji)
-    .replace(/<ac:emoticon[^>]*\/>/g, "")
-    .replace(/<\/?ac:[^>]*>/g, "");
-}
 
 async function getPageContent(pageId) {
   const baseUrl = getEnv("CONFLUENCE_BASE_URL");
