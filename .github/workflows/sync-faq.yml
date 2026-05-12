@@ -1,0 +1,40 @@
+name: Sync FAQ from Confluence
+
+on:
+  schedule:
+    - cron: '0 6 * * 1-4'  # Mon-Thu at 2pm SGT (UTC+8)
+  workflow_dispatch:
+
+env:
+  CONFLUENCE_BASE_URL: ${{ secrets.CONFLUENCE_BASE_URL }}
+  CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
+  CONFLUENCE_API_TOKEN: ${{ secrets.CONFLUENCE_API_TOKEN }}
+  CONFLUENCE_SPACE_KEY: ${{ secrets.CONFLUENCE_SPACE_KEY }}
+  CONFLUENCE_PAGE_ID: ${{ secrets.CONFLUENCE_PAGE_ID }}
+  TARGET_FILE: "overview/faq.md"
+
+jobs:
+  sync-faq:
+    runs-on: [self-hosted, da-team]
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch and convert Confluence FAQ to Markdown
+        run: |
+          cd scripts && npm install --quiet && cd ..
+          node scripts/sync_faq.js
+
+      - name: Open PR with updated FAQ
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "docs: sync FAQ from Confluence"
+          title: "Syncing FAQ Page from Confluence, maintained by Partnerships team"
+          body: "Automated sync of FAQ content from Confluence."
+          branch: confluence-faq-sync
+          base: main
+          add-paths: overview/faq.md
