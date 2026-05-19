@@ -10,56 +10,53 @@ This site provides information and resources on SEA-LION, including how to acces
 
 ## Key Features of SEA-LION
 
-| Model Collection | Size | Context Length | Training Strategy          | Available in            |
-|------------------|------|----------------|----------------------------|-------------------------|
-| **[SEA-LION v4](/models/sea-lion-v4/sea-lion-v4.md)** | 4B  | 128K             | SFT¹ of Gemma 3 4B IT (Latest)  | VLM    |
-|                  | 8B  | 65K            | SFT¹ of Apertus-8B-Instruct-2509  (Latest)| Instruct, Reasoning    |
-|                  | 4B, 8B  | 256K           | SFT¹ of Qwen3-VL-4B-Instruct, Qwen3-VL-8B-Instruct  | VLM    |
-|                  | 27B   | 128K           | CPT² of Gemma 3 27B IT | Base, Instruct, GGUF, NVFP4, FP8_Dynamic    |
-|                  | 27B  | 128K           | SFT¹ of Gemma-SEA-LION-v4-27B-IT | VLM    |
-|                  | 32B  | 128K           | SFT¹ of Qwen3-32B | Instruct, GPTQ-4BIT, GPTQ-8BIT    |
-| **[SEA-LION v3.5](/models/sea-lion-v3.5/sea-lion-v3.5.md)** | 8B   | 128K           | SFT¹ of Llama-SEA-LION-v3-8B-IT | Reasoning, GGUF    |
-|                  | 70B  | 128K           | SFT¹ of Llama-SEA-LION-v3-70B-IT | Reasoning, GGUF    |
-| **[SEA-LION v3](/models/sea-lion-v3/sea-lion-v3.md)**  | 9B   | 8192           | CPT² of Gemma2            | Base, Instruct, GGUF    |
-|                  | 8B   | 128K           | CPT² of Llama 3.1 8B       | Base, Instruct, GGUF    |
-|                  | 70B  | 128K           | CPT² of Llama 3.1 70B      | Base, Instruct, GGUF    |
-| **[SEA-LION v2](/models/sea-lion-v2/sea-lion-v2.md)**  | 8B   | 8192           | CPT² of Llama3             | Base, Instruct, GGUF    |
-| **[SEA-LION v1](/models/sea-lion-v1/sea-lion-v1.md)**  | 3B   | 2048           | Pre-training from scratch  | Base                    |
-|                  | 7B   | 2048           | Pre-training from scratch  | Instruct                |
-| **[SEA-LION Embedding](/models/sea-embedding/sea-embedding.md)** | 300M, 600M  | 8K           | ModernBERT from scratch  | Base-Embedding, Checkpoints    |
-|                  | 300M, 600M   | 8K           | SFT¹ of SEA-LION-ModernBERT-Embedding | Tuned-Embedding    |
-|                  | 600M   | 512           | SFT¹ of E5-Large | Tuned-Embedding    |
-| **[SEA-GUARD](/models/sea-guard/sea-guard.md)** | 4B, 8B  | 128K           | SFT¹ of Qwen-SEA-LION-v4-4B-VL, Qwen-SEA-LION-v4-8B-VL  | VLM    |
-|                  | 8B   | 128K           | SFT¹ of Llama-SEA-LION-v3-8B-IT | Instruct    |
-|                  | 12B   | 128K           | SFT¹ of Gemma 3 12B IT | VLM    |
+| Model Collection                                                 | Size       | Context Length | Training Strategy                                      | Available in                             |
+| ---------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------ | ---------------------------------------- |
+| **[SEA-LION v4.5](/models/sea-lion-v4.5/sea-lion-v4.5.md)**      | E2B        | 128K           | SFT¹ of gemma-4-E2B                                    | Dense                                    |
+|                                                                  | 27B        | 262K           | SFT¹ of Qwen3.6-27B                                    | Dense, DFlash                            |
+| **[SEA-LION v4](/models/sea-lion-v4/sea-lion-v4.md)**            | 4B         | 128K           | SFT¹ of Gemma 3 4B IT (Latest)                         | VLM                                      |
+|                                                                  | 8B         | 65K            | SFT¹ of Apertus-8B-Instruct-2509 (Latest)              | Instruct, Reasoning                      |
+|                                                                  | 4B, 8B     | 256K           | SFT¹ of Qwen3-VL-4B-Instruct, Qwen3-VL-8B-Instruct     | VLM                                      |
+|                                                                  | 27B        | 128K           | CPT² of Gemma 3 27B IT                                 | Base, Instruct, GGUF, NVFP4, FP8_Dynamic |
+|                                                                  | 27B        | 128K           | SFT¹ of Gemma-SEA-LION-v4-27B-IT                       | VLM                                      |
+|                                                                  | 32B        | 128K           | SFT¹ of Qwen3-32B                                      | Instruct, GPTQ-4BIT, GPTQ-8BIT           |
+| **[SEA-LION v3.5](/models/sea-lion-v3.5/sea-lion-v3.5.md)**      | 8B         | 128K           | SFT¹ of Llama-SEA-LION-v3-8B-IT                        | Reasoning, GGUF                          |
+|                                                                  | 70B        | 128K           | SFT¹ of Llama-SEA-LION-v3-70B-IT                       | Reasoning, GGUF                          |
+| **[SEA-LION v3](/models/sea-lion-v3/sea-lion-v3.md)**            | 9B         | 8192           | CPT² of Gemma2                                         | Base, Instruct, GGUF                     |
+|                                                                  | 8B         | 128K           | CPT² of Llama 3.1 8B                                   | Base, Instruct, GGUF                     |
+|                                                                  | 70B        | 128K           | CPT² of Llama 3.1 70B                                  | Base, Instruct, GGUF                     |
+| **[SEA-LION v2](/models/sea-lion-v2/sea-lion-v2.md)**            | 8B         | 8192           | CPT² of Llama3                                         | Base, Instruct, GGUF                     |
+| **[SEA-LION v1](/models/sea-lion-v1/sea-lion-v1.md)**            | 3B         | 2048           | Pre-training from scratch                              | Base                                     |
+|                                                                  | 7B         | 2048           | Pre-training from scratch                              | Instruct                                 |
+| **[SEA-LION Embedding](/models/sea-embedding/sea-embedding.md)** | 300M, 600M | 8K             | ModernBERT from scratch                                | Base-Embedding, Checkpoints              |
+|                                                                  | 300M, 600M | 8K             | SFT¹ of SEA-LION-ModernBERT-Embedding                  | Tuned-Embedding                          |
+|                                                                  | 600M       | 512            | SFT¹ of E5-Large                                       | Tuned-Embedding                          |
+| **[SEA-GUARD](/models/sea-guard/sea-guard.md)**                  | 4B, 8B     | 128K           | SFT¹ of Qwen-SEA-LION-v4-4B-VL, Qwen-SEA-LION-v4-8B-VL | VLM                                      |
+|                                                                  | 8B         | 128K           | SFT¹ of Llama-SEA-LION-v3-8B-IT                        | Instruct                                 |
+|                                                                  | 12B        | 128K           | SFT¹ of Gemma 3 12B IT                                 | VLM                                      |
 
 ¹ Supervised Fine-Tuning
 
 ² Continued Pre-Training
 
-
 ## Performance and Benchmarks
 
 SEA-LION has seen:
 
-* In v1, ability to outperform most models based on SEA-HELM (Southeast Asian Holistic Evaluation of Language Models) when it was released
-* In v2, outperformance for SEA tasks, while retaining credible performance on standard (English) benchmarks
-* In v2.1, key improvements in conversational abilities across SEA languages, while providing more helpful and contextually appropriate responses to user prompts
-* In v3, outperforms similar sized open source models, and even some larger models in both general and SEA capabilities
-* In v3.5, ability to handle reasoning tasks, with the versatility of handling general tasks as well while maintaining similar performance with state-of-the-art models.
-* In v4, our first multimodal SEA-LION models, extending capabilities beyond text to handle image + text inputs with massive 256K native context windows and specialized regional OCR, while continuing our focus on Southeast Asian languages, culture, and use cases.
+- In v1, ability to outperform most models based on SEA-HELM (Southeast Asian Holistic Evaluation of Language Models) when it was released
+- In v2, outperformance for SEA tasks, while retaining credible performance on standard (English) benchmarks
+- In v2.1, key improvements in conversational abilities across SEA languages, while providing more helpful and contextually appropriate responses to user prompts
+- In v3, outperforms similar sized open source models, and even some larger models in both general and SEA capabilities
+- In v3.5, ability to handle reasoning tasks, with the versatility of handling general tasks as well while maintaining similar performance with state-of-the-art models.
+- In v4, our first multimodal SEA-LION models, extending capabilities beyond text to handle image + text inputs with massive 256K native context windows and specialized regional OCR, while continuing our focus on Southeast Asian languages, culture, and use cases.
 
 SEA-LION-Embedding: The Vector Foundation
 
 The SEA-LION-Embedding suite provides the semantic foundation for the ecosystem. Released in March 2026, these models represent a significant leap in regional retrieval performance. Tested on the SEA-BED (Southeast Asia Embedding Benchmark), which utilizes human-curated native data rather than machine translations, our embeddings consistently set new state-of-the-art records for 10 regional languages across retrieval, reranking, and semantic textual similarity tasks.
 
-
 SEA-Guard: The Protector
 
 Building on the sophisticated reasoning and multimodal foundation laid by SEA-LION v4, we are proud to introduce the first generation of SEA-Guard. Released on 4 Feb 2026, SEA-Guard is the dedicated safety counterpart to the SEA-LION family. As our foundational models gained the power to "see" (Multimodality in v4) and "think" (Reasoning in v3.5), the need for a culturally attuned safety layer became paramount.
-
-
-
 
 We use a holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering) but also [meticulously handcrafted linguistic and cultural diagnostic tests tailored to Southeast Asia](https://arxiv.org/abs/2309.06085v2).
 
@@ -90,10 +87,10 @@ We welcome contributions to SEA-LION! Check out the [contributing guide](overvie
 
 Some ways to contribute:
 
-* Report bugs and issues
-* Enhance the documentation
-* Add more model evaluation tasks and metrics
-* Train versions of the model in more SEA languages
+- Report bugs and issues
+- Enhance the documentation
+- Add more model evaluation tasks and metrics
+- Train versions of the model in more SEA languages
 
 Check out our [collaborations guide](overview/contributions.md) also, for possible ways to further enhance and expand the capabilities of SEA-LION together.
 
@@ -134,4 +131,4 @@ SEA-LION would not be possible without a growing list of Singapore, regional, an
 
 ## Contact
 
-If you have questions, comments, or issues, please open a GitHub issue or contact us via  [sealion@aisingapore.org](mailto:sealion@aisingapore.org).
+If you have questions, comments, or issues, please open a GitHub issue or contact us via [sealion@aisingapore.org](mailto:sealion@aisingapore.org).
