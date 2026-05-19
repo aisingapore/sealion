@@ -29,10 +29,4 @@ Our high-capacity flagship causal and vision-language series built on Qwen3.6. I
 <!--
   - Dynamic Compute (Adaption) variants
   - Hardware-Optimized (4-bit / 8-bit) Quantizations
-
-### Collaborative Models
-
-- [Adaption-SEA-LION]()
-
-A specialized collaborative model engineered alongside ecosystem partners designed specifically for dynamic token-routing and runtime efficiency in regional enterprise applications.
 -->
