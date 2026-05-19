@@ -25,7 +25,8 @@ Our high-capacity flagship causal and vision-language series built on Qwen3.6. I
   Refer to the detailed page to explore full benchmarks, technical specifications, and configuration details for the entire Qwen family:
   - Base & Multimodal Foundations
   - High-Throughput Booster (Assistant version)
-  <!--
+
+<!--
   - Dynamic Compute (Adaption) variants
   - Hardware-Optimized (4-bit / 8-bit) Quantizations
 
