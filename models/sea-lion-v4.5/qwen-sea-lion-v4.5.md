@@ -38,6 +38,8 @@ For tokenization, the model employs the default tokenizer used in Qwen3.6.
 - **License:** [Apache-2.0](https://github.com/QwenLM/Qwen3.6/blob/main/LICENSE)
 - **Finetuned from model:** <https://huggingface.co/Qwen/Qwen3.6-27B>
 
+SpecDecoder was Finedtuned from [z-lab/Qwen3.6-27B-DFlash](https://huggingface.co/z-lab/Qwen3.6-27B-DFlash) targeted to [Qwen-SEA-LION-v4.5-27B-IT](<(https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT)>)
+
 ### Model Sources
 
 **Qwen-SEA-LION-v4.5-27B-IT** models are available for download via the following channels:
