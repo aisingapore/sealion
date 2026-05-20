@@ -12,8 +12,8 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection                                                 | Size       | Context Length | Training Strategy                                      | Available in                             |
 | ---------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------ | ---------------------------------------- |
-| **[SEA-LION v4.5](/models/sea-lion-v4.5/sea-lion-v4.5.md)**      | E2B        | 128K           | SFT¹ of gemma-4-E2B                                    | Dense                                    |
-|                                                                  | 27B        | 262K           | SFT¹ of Qwen3.6-27B                                    | Dense, DFlash                            |
+| **[SEA-LION v4.5](/models/sea-lion-v4.5/sea-lion-v4.5.md)**      | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 | Instruct                                 |
+|                                                                  | 27B        | 262K           | SFT¹ of Qwen3.6-27B                                    | Instruct, SpecDecoder                    |
 | **[SEA-LION v4](/models/sea-lion-v4/sea-lion-v4.md)**            | 4B         | 128K           | SFT¹ of Gemma 3 4B IT (Latest)                         | VLM                                      |
 |                                                                  | 8B         | 65K            | SFT¹ of Apertus-8B-Instruct-2509 (Latest)              | Instruct, Reasoning                      |
 |                                                                  | 4B, 8B     | 256K           | SFT¹ of Qwen3-VL-4B-Instruct, Qwen3-VL-8B-Instruct     | VLM                                      |

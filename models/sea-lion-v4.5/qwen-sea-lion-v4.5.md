@@ -4,9 +4,9 @@ Last update: 2026-05-19
 
 **SEA-LION** is a collection of Large Language Models (LLMs) which have been pretrained and instruct-tuned for the Southeast Asia (SEA) region.
 
-The **Qwen-SEA-LION-v4.5-27B-IT** sub-collection — comprising the standard high-fidelity model and its speed-optimized companion, the **27B-IT-Assistant** — is built upon the Qwen3.6-27B dense architecture, a 27-billion parameter model featuring a hybrid Linear and Full Attention design. To ensure deep domain adaptation, both models underwent extensive distillation from Qwen/Qwen3.5-397B-A17B on the updated aisingapore/SEA-Instruct-2602 dataset. This instills native multilingual and multicultural fluency across English and key SEA languages (Burmese, Indonesian, Filipino, Malay, Tamil, Thai, and Vietnamese), with the Assistant variant specifically engineered to maximize throughput and minimize inference latency in production environments.
+The **Qwen-SEA-LION-v4.5-27B-IT** sub-collection — comprising the standard high-fidelity model and its speed-optimized companion, the **27B-IT-SpecDecoder** — is built upon the Qwen3.6-27B dense architecture, a 27-billion parameter model featuring a hybrid Linear and Full Attention design. To ensure deep domain adaptation, both models underwent extensive distillation from Qwen/Qwen3.5-397B-A17B on the updated aisingapore/SEA-Instruct-2602 dataset. This instills native multilingual and multicultural fluency across English and key SEA languages (Burmese, Indonesian, Filipino, Malay, Tamil, Thai, and Vietnamese), with the SpecDecoder variant specifically engineered to maximize throughput and minimize inference latency in production environments.
 
-**Qwen-SEA-LION-v4.5-27B-IT-Assistant** is a draft model using speculative decoding method to employ a lightweight **block diffusion** model to draft multiple tokens in parallel trained from **Qwen-SEA-LION-v4.5-27B-IT**. This is the drafter model, which must be paired with aisingapore/Qwen-SEA-LION-v4.5-27B-IT.
+**Qwen-SEA-LION-v4.5-27B-IT-SpecDecoder** is a draft model using speculative decoding method to employ a lightweight **block diffusion** model to draft multiple tokens in parallel trained from **Qwen-SEA-LION-v4.5-27B-IT**. This is the drafter model, which must be paired with aisingapore/Qwen-SEA-LION-v4.5-27B-IT.
 
 Qwen-SEA-LION-v4.5-27B-IT inherits the following features from Qwen3.6:
 
@@ -44,10 +44,10 @@ For tokenization, the model employs the default tokenizer used in Qwen3.6.
 
 [HuggingFace SEA-LION v4.5 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v45)
 
-| Model                               | Download                                                                              |
-| ----------------------------------- | ------------------------------------------------------------------------------------- |
-| Qwen-SEA-LION-v4.5-27B-IT           | [HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT)           |
-| Qwen-SEA-LION-v4.5-27B-IT-Assistant | [HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT-Assistant) |
+| Model                                 | Download                                                                                |
+| ------------------------------------- | --------------------------------------------------------------------------------------- |
+| Qwen-SEA-LION-v4.5-27B-IT             | [HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT)             |
+| Qwen-SEA-LION-v4.5-27B-IT-SpecDecoder | [HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT-SpecDecoder) |
 
 ## How to Get Started with the Model
 
@@ -487,11 +487,11 @@ Tampines
 ============================================================
 ```
 
-Use the code below to get aisingapore/Qwen3.6-27B-Assistant booster with vLLM.
+Use the code below to get aisingapore/Qwen-SEA-LION-v4.527B-IT-SpecDecoder booster with vLLM.
 
 ```
 CUDA_VISIBLE_DEVICES=0 vllm serve aisingapore/Qwen-SEA-LION-v4.5-27B-IT \
---speculative-config '{"method": "dflash", "model": "aisingapore/Qwen3.6-27B-Assistant", "num_speculative_tokens": 16}' \
+--speculative-config '{"method": "dflash", "model": "aisingapore/Qwen-SEA-LION-v4.5-27B-IT-SpecDecoder", "num_speculative_tokens": 16}' \
 --attention-backend flash_attn \
 --max-num-batched-tokens 32768 \
 --gdn-prefill-backend triton

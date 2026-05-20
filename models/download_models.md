@@ -4,20 +4,20 @@ SEA-LION models are available for download via the following channels:
 
 ## SEA-Lion v4.5 (Latest)
 
-[Full HuggingFace SEA-LION v4.5 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v4.5)
+[Full HuggingFace SEA-LION v4.5 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v45)
 
-**Gemma-SEA-LION-v4.5-E2B**
+**Gemma-SEA-LION-v4.5-E2B-IT**
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
-|Gemma-SEA-LION-v4.5-E2B |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B)|
+|Gemma-SEA-LION-v4.5-E2B-IT |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B-IT)|
 
 <br>
 
-**Qwen-SEA-LION-v4.5-27B**
+**Qwen-SEA-LION-v4.5-27B-IT**
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
-|Qwen-SEA-LION-v4.5-27B |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B)|
-|Qwen-SEA-LION-v4.5-27B-DFlash |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-DFlash)|
+|Qwen-SEA-LION-v4.5-27B-IT |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT)|
+|Qwen-SEA-LION-v4.5-27B-IT-SDecoder |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT-SDecoder)|
 
 <br>
 
