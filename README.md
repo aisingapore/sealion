@@ -49,6 +49,7 @@ SEA-LION has seen:
 - In v3, outperforms similar sized open source models, and even some larger models in both general and SEA capabilities
 - In v3.5, ability to handle reasoning tasks, with the versatility of handling general tasks as well while maintaining similar performance with state-of-the-art models.
 - In v4, our first multimodal SEA-LION models, extending capabilities beyond text to handle image + text inputs with massive 256K native context windows and specialized regional OCR, while continuing our focus on Southeast Asian languages, culture, and use cases.
+- In v4.5, rapid specialization of state-of-the-art open foundation models via knowledge distillation and model merging, delivering high-capacity reasoning and agentic tool-use capabilities alongside speed-optimized booster configurations for low-latency production deployment.
 
 SEA-LION-Embedding: The Vector Foundation
 
