@@ -56,13 +56,13 @@ curl https://api.sea-lion.ai/v1/chat/completions \
   -H 'Authorization: Bearer YOUR_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '{
-    "model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+    "model": "aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
     "messages": [
       {
         "role": "user",
         "content": "Tell me a Singlish joke!"
       }
-    ],
+    ]
   }'
 ```
 {% endtab %}
@@ -73,11 +73,11 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key=YOUR_API_KEY,
-    base_url="https://api.sea-lion.ai/v1" 
+    base_url="https://api.sea-lion.ai/v1"
 )
 
 completion = client.chat.completions.create(
-    model="aisingapore/Gemma-SEA-LION-v4-27B-IT",
+    model="aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
     messages=[
         {
             "role": "user",
@@ -358,6 +358,107 @@ print(completion.choices[0].message.content)
 {% endtab %}
 {% endtabs %}
 
+
+#### Calling our Embedding models
+
+SEA-LION's API provides text embeddings via the `/v1/embeddings` endpoint using the `BAAI/bge-m3` model, which produces 1024-dimensional vectors.
+
+{% hint style="info" %}
+Use the `requests` library (or raw HTTP) for embedding calls. The OpenAI Python SDK adds an `encoding_format` parameter that is not supported by this endpoint.
+{% endhint %}
+
+{% tabs %}
+{% tab title="curl" %}
+```
+curl https://api.sea-lion.ai/v1/embeddings \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "model": "BAAI/bge-m3",
+    "input": [
+      "Singapore is a tropical island city-state.",
+      "The Lion City sits at the tip of the Malay Peninsula."
+    ]
+  }'
+```
+{% endtab %}
+
+{% tab title="python" %}
+```python
+import requests
+
+response = requests.post(
+    "https://api.sea-lion.ai/v1/embeddings",
+    headers={
+        "Authorization": f"Bearer {YOUR_API_KEY}",
+        "Content-Type": "application/json"
+    },
+    json={
+        "model": "BAAI/bge-m3",
+        "input": [
+            "Singapore is a tropical island city-state.",
+            "The Lion City sits at the tip of the Malay Peninsula."
+        ]
+    }
+)
+
+response.raise_for_status()
+embeddings = [item["embedding"] for item in response.json()["data"]]
+print(f"Number of embeddings: {len(embeddings)}")
+print(f"Embedding dimension: {len(embeddings[0])}")
+```
+{% endtab %}
+{% endtabs %}
+
+#### Sentence Similarity
+
+Embeddings can be used to measure semantic similarity between sentences using cosine similarity.
+
+{% tabs %}
+{% tab title="python" %}
+```python
+import math
+import requests
+
+def get_embeddings(texts, api_key):
+    response = requests.post(
+        "https://api.sea-lion.ai/v1/embeddings",
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json"
+        },
+        json={"model": "BAAI/bge-m3", "input": texts}
+    )
+    response.raise_for_status()
+    return [item["embedding"] for item in response.json()["data"]]
+
+def cosine_similarity(a, b):
+    dot = sum(x * y for x, y in zip(a, b))
+    norm_a = math.sqrt(sum(x ** 2 for x in a))
+    norm_b = math.sqrt(sum(x ** 2 for x in b))
+    return dot / (norm_a * norm_b)
+
+api_key = YOUR_API_KEY
+
+sentences = [
+    "The food in Singapore is delicious.",
+    "Singapore has amazing cuisine.",
+    "The weather today is very hot.",
+]
+
+embeddings = get_embeddings(sentences, api_key)
+
+for i in range(len(sentences)):
+    for j in range(i + 1, len(sentences)):
+        sim = cosine_similarity(embeddings[i], embeddings[j])
+        print(f"[{i}] vs [{j}] similarity: {sim:.4f}")
+        print(f"  '{sentences[i]}'")
+        print(f"  '{sentences[j]}'")
+```
+{% endtab %}
+{% endtabs %}
+
+Sentences with similar meaning (e.g. food-related) score higher (≈0.94) than unrelated ones (≈0.55–0.60).
 
 ## Rate Limits
 
