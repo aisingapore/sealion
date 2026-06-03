@@ -1,7 +1,6 @@
 # SEA-LION API
 
-
-The SEA-LION API provides a quick and simple interface to our various SEA-LION models for text generation, translation, summarization, and more. 
+The SEA-LION API provides a quick and simple interface to our various SEA-LION models for text generation, translation, summarization, and more.
 
 Usage of the SEA-LION API is subject to our [Terms of Use](https://sea-lion.ai/terms-of-use/) and [Privacy Policy](https://sea-lion.ai/privacy-policy/)
 
@@ -12,18 +11,18 @@ To get started with SEA-LION API, you'll need to first create an API key via our
 1. Sign in to SEA-LION Playground via your Google account
 
 2. Navigate to our API Key Manager page by clicking on
- - `API Key` on the side menu, or
- - `Launch Key Manager` on the home dashboard
+
+- `API Key` on the side menu, or
+- `Launch Key Manager` on the home dashboard
 
 <figure><img src="./images/api_key_navigation.png" img width="100%"></figure>
-
 
 3. Click on the "Create New Trial API Key" button, and enter a name for your API key.
 
 <!-- ![API Key Create](./images/api_key_create.png) -->
 <figure><img src="./images/api_key_create.png" img width="100%"></figure>
 
-An API key will be generated for you after you click "Create". **Make sure to copy or download the generated key** and keep it in a safe place since you won't be able to view it again. 
+An API key will be generated for you after you click "Create". **Make sure to copy or download the generated key** and keep it in a safe place since you won't be able to view it again.
 
 <!-- ![API Key Save](./images/api_key_save.png) -->
 <figure><img src="./images/api_key_save.png" width=400></figure>
@@ -40,6 +39,7 @@ To find the available SEA-LION models for your API key, use the following curl c
 curl 'https://api.sea-lion.ai/v1/models' \
   -H 'Authorization: Bearer YOUR_API_KEY'
 ```
+
 Replace YOUR_API_KEY with your generated API key.
 
 ### Step 2: Call the API
@@ -49,7 +49,8 @@ SEA-LION's API endpoints for chat are compatible with OpenAI's API and libraries
 #### Calling our Instruct models
 
 {% tabs %}
-{% tab title="curl" %} 
+{% tab title="curl" %}
+
 ```
 curl https://api.sea-lion.ai/v1/chat/completions \
   -H 'accept: text/plain' \
@@ -65,9 +66,11 @@ curl https://api.sea-lion.ai/v1/chat/completions \
     ]
   }'
 ```
+
 {% endtab %}
 
 {% tab title="python" %}
+
 ```python
 from openai import OpenAI
 
@@ -88,6 +91,7 @@ completion = client.chat.completions.create(
 
 print(completion.choices[0].message.content)
 ```
+
 {% endtab %}
 {% endtabs %}
 
@@ -96,7 +100,8 @@ print(completion.choices[0].message.content)
 Our v3.5 models offers dynamic reasoning capabilities, and defaults to reasoning with `thinking_mode="on"` passed to the chat template. To use non-thinking mode ie. standard generations, pass `thinking_mode="off"` to the chat template instead.
 
 {% tabs %}
-{% tab title="curl" %} 
+{% tab title="curl" %}
+
 ```
 curl https://api.sea-lion.ai/v1/chat/completions \
   -H 'accept: text/plain' \
@@ -109,21 +114,23 @@ curl https://api.sea-lion.ai/v1/chat/completions \
         "role": "user",
         "content": "Tell me a Singlish joke!"
       }
-    ],  
+    ],
     "chat_template_kwargs": {
 	    "thinking_mode": "off"
     }
   }'
 ```
+
 {% endtab %}
 
 {% tab title="python" %}
+
 ```python
 from openai import OpenAI
 
 client = OpenAI(
     api_key=YOUR_API_KEY,
-    base_url="https://api.sea-lion.ai/v1" 
+    base_url="https://api.sea-lion.ai/v1"
 )
 
 completion = client.chat.completions.create(
@@ -143,6 +150,7 @@ completion = client.chat.completions.create(
 
 print(completion.choices[0].message.content)
 ```
+
 {% endtab %}
 {% endtabs %}
 
@@ -152,7 +160,8 @@ If you are not observing any changes in response when toggling `thinking_mode` o
 You can disable cache temporarily for your testing by setting the `no-cache` flag to `true`
 
 {% tabs %}
-{% tab title="curl" %} 
+{% tab title="curl" %}
+
 ```
 curl https://api.sea-lion.ai/v1/chat/completions \
   -H 'accept: text/plain' \
@@ -165,7 +174,7 @@ curl https://api.sea-lion.ai/v1/chat/completions \
         "role": "user",
         "content": "Tell me a Singlish joke!"
       }
-    ],  
+    ],
     "chat_template_kwargs": {
 	    "thinking_mode": "off"
     },
@@ -174,15 +183,17 @@ curl https://api.sea-lion.ai/v1/chat/completions \
     }
   }'
 ```
+
 {% endtab %}
 
 {% tab title="python" %}
+
 ```python
 from openai import OpenAI
 
 client = OpenAI(
     api_key=YOUR_API_KEY,
-    base_url="https://api.sea-lion.ai/v1" 
+    base_url="https://api.sea-lion.ai/v1"
 )
 
 completion = client.chat.completions.create(
@@ -196,7 +207,7 @@ completion = client.chat.completions.create(
     extra_body={
         "chat_template_kwargs": {
             "thinking_mode": "off"
-        }, 
+        },
         "cache": {
             "no-cache": True
         }
@@ -205,6 +216,7 @@ completion = client.chat.completions.create(
 
 print(completion.choices[0].message.content)
 ```
+
 {% endtab %}
 {% endtabs %}
 
@@ -223,7 +235,8 @@ Note: The safety model **does not** support system prompts or multi-turn convers
 **Mode 1: Prompt-only Classification**
 
 {% tabs %}
-{% tab title="curl" %} 
+{% tab title="curl" %}
+
 ```
 curl https://api.sea-lion.ai/v1/chat/completions \
   -H 'accept: text/plain' \
@@ -240,15 +253,17 @@ curl https://api.sea-lion.ai/v1/chat/completions \
   "stream": false
 }'
 ```
+
 {% endtab %}
 
 {% tab title="python" %}
+
 ```python
 from openai import OpenAI
 
 client = OpenAI(
     api_key=YOUR_API_KEY,
-    base_url="https://api.sea-lion.ai/v1" 
+    base_url="https://api.sea-lion.ai/v1"
 )
 
 completion = client.chat.completions.create(
@@ -263,13 +278,15 @@ completion = client.chat.completions.create(
 
 print(completion.choices[0].message.content)
 ```
+
 {% endtab %}
 {% endtabs %}
 
 **Mode 2: Prompt + Response Classification**
 
 {% tabs %}
-{% tab title="curl" %} 
+{% tab title="curl" %}
+
 ```
 curl https://api.sea-lion.ai/v1/chat/completions \
   -H 'accept: text/plain' \
@@ -286,15 +303,17 @@ curl https://api.sea-lion.ai/v1/chat/completions \
   "stream": false
 }'
 ```
+
 {% endtab %}
 
 {% tab title="python" %}
+
 ```python
 from openai import OpenAI
 
 client = OpenAI(
     api_key=YOUR_API_KEY,
-    base_url="https://api.sea-lion.ai/v1" 
+    base_url="https://api.sea-lion.ai/v1"
 )
 
 completion = client.chat.completions.create(
@@ -309,13 +328,15 @@ completion = client.chat.completions.create(
 
 print(completion.choices[0].message.content)
 ```
+
 {% endtab %}
 {% endtabs %}
 
 **Mode 3: Response-only Classification**
 
 {% tabs %}
-{% tab title="curl" %} 
+{% tab title="curl" %}
+
 ```
 curl https://api.sea-lion.ai/v1/chat/completions \
   -H 'accept: text/plain' \
@@ -332,15 +353,17 @@ curl https://api.sea-lion.ai/v1/chat/completions \
   "stream": false
 }'
 ```
+
 {% endtab %}
 
 {% tab title="python" %}
+
 ```python
 from openai import OpenAI
 
 client = OpenAI(
     api_key=YOUR_API_KEY,
-    base_url="https://api.sea-lion.ai/v1" 
+    base_url="https://api.sea-lion.ai/v1"
 )
 
 completion = client.chat.completions.create(
@@ -355,90 +378,50 @@ completion = client.chat.completions.create(
 
 print(completion.choices[0].message.content)
 ```
+
 {% endtab %}
 {% endtabs %}
 
-
 #### Calling our Embedding models
 
-SEA-LION's API provides text embeddings via the `/v1/embeddings` endpoint using the `BAAI/bge-m3` model, which produces 1024-dimensional vectors.
+[SEA-LION-ModernBERT-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M) is a 1024-dimensional embedding model supporting 11 Southeast Asian languages with an 8k token context window. Use it locally via the `sentence-transformers` library.
 
 {% hint style="info" %}
-Use the `requests` library (or raw HTTP) for embedding calls. The OpenAI Python SDK adds an `encoding_format` parameter that is not supported by this endpoint.
+Install the required library first:
+```
+pip install -U sentence-transformers
+```
 {% endhint %}
 
 {% tabs %}
-{% tab title="curl" %}
-```
-curl https://api.sea-lion.ai/v1/embeddings \
-  -H 'Authorization: Bearer YOUR_API_KEY' \
-  -H 'Content-Type: application/json' \
-  -d '{
-    "model": "BAAI/bge-m3",
-    "input": [
-      "Singapore is a tropical island city-state.",
-      "The Lion City sits at the tip of the Malay Peninsula."
-    ]
-  }'
-```
-{% endtab %}
-
 {% tab title="python" %}
 ```python
-import requests
+from sentence_transformers import SentenceTransformer
 
-response = requests.post(
-    "https://api.sea-lion.ai/v1/embeddings",
-    headers={
-        "Authorization": f"Bearer {YOUR_API_KEY}",
-        "Content-Type": "application/json"
-    },
-    json={
-        "model": "BAAI/bge-m3",
-        "input": [
-            "Singapore is a tropical island city-state.",
-            "The Lion City sits at the tip of the Malay Peninsula."
-        ]
-    }
-)
+model = SentenceTransformer("aisingapore/SEA-LION-ModernBERT-Embedding-600M")
 
-response.raise_for_status()
-embeddings = [item["embedding"] for item in response.json()["data"]]
+sentences = [
+    "Singapore is a tropical island city-state.",
+    "The Lion City sits at the tip of the Malay Peninsula.",
+]
+
+embeddings = model.encode(sentences)
 print(f"Number of embeddings: {len(embeddings)}")
-print(f"Embedding dimension: {len(embeddings[0])}")
+print(f"Embedding dimension: {embeddings.shape[1]}")
 ```
 {% endtab %}
 {% endtabs %}
 
 #### Sentence Similarity
 
-Embeddings can be used to measure semantic similarity between sentences using cosine similarity.
+Embeddings can be used to measure semantic similarity between sentences. Pass `prompt_name="STS"` when encoding for best similarity results.
 
 {% tabs %}
 {% tab title="python" %}
 ```python
-import math
-import requests
+from sentence_transformers import SentenceTransformer
 
-def get_embeddings(texts, api_key):
-    response = requests.post(
-        "https://api.sea-lion.ai/v1/embeddings",
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json"
-        },
-        json={"model": "BAAI/bge-m3", "input": texts}
-    )
-    response.raise_for_status()
-    return [item["embedding"] for item in response.json()["data"]]
-
-def cosine_similarity(a, b):
-    dot = sum(x * y for x, y in zip(a, b))
-    norm_a = math.sqrt(sum(x ** 2 for x in a))
-    norm_b = math.sqrt(sum(x ** 2 for x in b))
-    return dot / (norm_a * norm_b)
-
-api_key = YOUR_API_KEY
+model = SentenceTransformer("aisingapore/SEA-LION-ModernBERT-Embedding-600M")
 
 sentences = [
     "The food in Singapore is delicious.",
@@ -446,19 +429,19 @@ sentences = [
     "The weather today is very hot.",
 ]
 
-embeddings = get_embeddings(sentences, api_key)
+embeddings = model.encode(sentences, prompt_name="STS")
+similarities = model.similarity(embeddings, embeddings)
 
 for i in range(len(sentences)):
     for j in range(i + 1, len(sentences)):
-        sim = cosine_similarity(embeddings[i], embeddings[j])
-        print(f"[{i}] vs [{j}] similarity: {sim:.4f}")
+        print(f"[{i}] vs [{j}] similarity: {similarities[i][j]:.4f}")
         print(f"  '{sentences[i]}'")
         print(f"  '{sentences[j]}'")
 ```
 {% endtab %}
 {% endtabs %}
 
-Sentences with similar meaning (e.g. food-related) score higher (≈0.94) than unrelated ones (≈0.55–0.60).
+Sentences with similar meaning (e.g. food-related) score higher (≈0.93) than unrelated ones (≈0.57–0.58).
 
 ## Rate Limits
 
@@ -469,7 +452,3 @@ SEA-LION API usage frequency will be subject to rate limits applied on requests 
 As of 18 Mar 2025, our rate limits is set to **10 requests per minute per user**.
 
 If you have any questions or want to speak about getting a rate limit increase, reach out to sealion@aisingapore.org.
-
-
-
-
