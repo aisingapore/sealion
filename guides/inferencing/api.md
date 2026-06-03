@@ -95,6 +95,68 @@ print(completion.choices[0].message.content)
 {% endtab %}
 {% endtabs %}
 
+#### Agentic Tool Use
+
+The SEA-LION v4.5 model supports function calling, enabling agentic workflows where the model autonomously decides which tools to call, processes results, and continues until the task is complete.
+
+{% tabs %}
+{% tab title="python" %}
+```python
+from openai import OpenAI
+import json
+
+client = OpenAI(
+    api_key=YOUR_API_KEY,
+    base_url="https://api.sea-lion.ai/v1"
+)
+
+tools = [
+    {
+        "type": "function",
+        "function": {
+            "name": "get_weather",
+            "description": "Get the current weather for a city",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "city": {"type": "string", "description": "The city name"}
+                },
+                "required": ["city"]
+            }
+        }
+    }
+]
+
+def get_weather(city):
+    # Replace with a real weather API call
+    mock_data = {"Singapore": "32°C, humid", "Jakarta": "30°C, cloudy"}
+    return mock_data.get(city, "Weather data unavailable")
+
+messages = [{"role": "user", "content": "What is the weather in Singapore and Jakarta?"}]
+
+# Agentic loop: runs until the model stops calling tools
+while True:
+    response = client.chat.completions.create(
+        model="aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
+        messages=messages,
+        tools=tools,
+        tool_choice="auto"
+    )
+    msg = response.choices[0].message
+    messages.append(msg)
+
+    if response.choices[0].finish_reason == "tool_calls":
+        for tc in msg.tool_calls:
+            args = json.loads(tc.function.arguments)
+            result = get_weather(args["city"])
+            messages.append({"role": "tool", "tool_call_id": tc.id, "content": result})
+    else:
+        print(msg.content)
+        break
+```
+{% endtab %}
+{% endtabs %}
+
 #### Calling our Reasoning models
 
 Our v3.5 models offers dynamic reasoning capabilities, and defaults to reasoning with `thinking_mode="on"` passed to the chat template. To use non-thinking mode ie. standard generations, pass `thinking_mode="off"` to the chat template instead.
@@ -382,7 +444,7 @@ print(completion.choices[0].message.content)
 {% endtab %}
 {% endtabs %}
 
-#### Calling our Embedding models
+<!-- #### Calling our Embedding models
 
 [SEA-LION-ModernBERT-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M) is a 1024-dimensional embedding model supporting 11 Southeast Asian languages with an 8k token context window. Use it locally via the `sentence-transformers` library.
 
@@ -442,6 +504,7 @@ for i in range(len(sentences)):
 {% endtabs %}
 
 Sentences with similar meaning (e.g. food-related) score higher (≈0.93) than unrelated ones (≈0.57–0.58).
+-->
 
 ## Rate Limits
 
