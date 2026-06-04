@@ -101,6 +101,7 @@ The SEA-LION v4.5 model supports function calling, enabling agentic workflows wh
 
 {% tabs %}
 {% tab title="python" %}
+
 ```python
 from openai import OpenAI
 import json
@@ -154,6 +155,7 @@ while True:
         print(msg.content)
         break
 ```
+
 {% endtab %}
 {% endtabs %}
 
@@ -444,46 +446,82 @@ print(completion.choices[0].message.content)
 {% endtab %}
 {% endtabs %}
 
-<!-- #### Calling our Embedding models
+#### Calling our Embedding models
 
-[SEA-LION-ModernBERT-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M) is a 1024-dimensional embedding model supporting 11 Southeast Asian languages with an 8k token context window. Use it locally via the `sentence-transformers` library.
-
-{% hint style="info" %}
-Install the required library first:
-```
-pip install -U sentence-transformers
-```
-{% endhint %}
+[SEA-LION-ModernBERT-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M) produces 1024-dimensional embeddings and supports 11 Southeast Asian languages with an 8k token context window.
 
 {% tabs %}
+{% tab title="curl" %}
+```
+curl https://api.sea-lion.ai/v1/embeddings \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "model": "aisingapore/SEA-LION-ModernBERT-Embedding-600M",
+    "input": [
+      "Singapore is a tropical island city-state.",
+      "The Lion City sits at the tip of the Malay Peninsula."
+    ]
+  }'
+```
+{% endtab %}
+
 {% tab title="python" %}
 ```python
-from sentence_transformers import SentenceTransformer
+import requests
 
-model = SentenceTransformer("aisingapore/SEA-LION-ModernBERT-Embedding-600M")
+response = requests.post(
+    "https://api.sea-lion.ai/v1/embeddings",
+    headers={
+        "Authorization": f"Bearer {YOUR_API_KEY}",
+        "Content-Type": "application/json"
+    },
+    json={
+        "model": "aisingapore/SEA-LION-ModernBERT-Embedding-600M",
+        "input": [
+            "Singapore is a tropical island city-state.",
+            "The Lion City sits at the tip of the Malay Peninsula."
+        ]
+    }
+)
 
-sentences = [
-    "Singapore is a tropical island city-state.",
-    "The Lion City sits at the tip of the Malay Peninsula.",
-]
-
-embeddings = model.encode(sentences)
+response.raise_for_status()
+embeddings = [item["embedding"] for item in response.json()["data"]]
 print(f"Number of embeddings: {len(embeddings)}")
-print(f"Embedding dimension: {embeddings.shape[1]}")
+print(f"Embedding dimension: {len(embeddings[0])}")
 ```
 {% endtab %}
 {% endtabs %}
 
 #### Sentence Similarity
 
-Embeddings can be used to measure semantic similarity between sentences. Pass `prompt_name="STS"` when encoding for best similarity results.
+Embeddings can be used to measure semantic similarity between sentences using cosine similarity.
 
 {% tabs %}
 {% tab title="python" %}
 ```python
-from sentence_transformers import SentenceTransformer
+import math
+import requests
 
-model = SentenceTransformer("aisingapore/SEA-LION-ModernBERT-Embedding-600M")
+def get_embeddings(texts, api_key):
+    response = requests.post(
+        "https://api.sea-lion.ai/v1/embeddings",
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json"
+        },
+        json={"model": "aisingapore/SEA-LION-ModernBERT-Embedding-600M", "input": texts}
+    )
+    response.raise_for_status()
+    return [item["embedding"] for item in response.json()["data"]]
+
+def cosine_similarity(a, b):
+    dot = sum(x * y for x, y in zip(a, b))
+    norm_a = math.sqrt(sum(x ** 2 for x in a))
+    norm_b = math.sqrt(sum(x ** 2 for x in b))
+    return dot / (norm_a * norm_b)
+
+api_key = YOUR_API_KEY
 
 sentences = [
     "The food in Singapore is delicious.",
@@ -491,20 +529,19 @@ sentences = [
     "The weather today is very hot.",
 ]
 
-embeddings = model.encode(sentences, prompt_name="STS")
-similarities = model.similarity(embeddings, embeddings)
+embeddings = get_embeddings(sentences, api_key)
 
 for i in range(len(sentences)):
     for j in range(i + 1, len(sentences)):
-        print(f"[{i}] vs [{j}] similarity: {similarities[i][j]:.4f}")
+        sim = cosine_similarity(embeddings[i], embeddings[j])
+        print(f"[{i}] vs [{j}] similarity: {sim:.4f}")
         print(f"  '{sentences[i]}'")
         print(f"  '{sentences[j]}'")
 ```
 {% endtab %}
 {% endtabs %}
 
-Sentences with similar meaning (e.g. food-related) score higher (≈0.93) than unrelated ones (≈0.57–0.58).
--->
+Sentences with similar meaning (e.g. food-related) score higher (≈0.95) than unrelated ones (≈0.63–0.65).
 
 ## Rate Limits
 
@@ -512,6 +549,6 @@ Limits help us mitigate misuse and manage API capacity and help ensure that ever
 
 SEA-LION API usage frequency will be subject to rate limits applied on requests per minute (RPM).
 
-As of 18 Mar 2025, our rate limits is set to **10 requests per minute per user**.
+As of 04 Jun 2026, our rate limits is set to **10 requests per minute per user**.
 
 If you have any questions or want to speak about getting a rate limit increase, reach out to sealion@aisingapore.org.
