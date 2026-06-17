@@ -2,7 +2,7 @@ name: Runner canary
 on:
   push:
     branches: [PLAY-1089-confluence-faq-sync]
-  workflow_dispatch
+  workflow_dispatch:
 jobs:
   ping:
     runs-on: [self-hosted, da-team]
