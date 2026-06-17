@@ -1,0 +1,8 @@
+name: Runner canary
+on: workflow_dispatch
+jobs:
+  ping:
+    runs-on: [self-hosted, da-team]
+    timeout-minutes: 3
+    steps:
+      - run: echo "runner alive on $(hostname)"
