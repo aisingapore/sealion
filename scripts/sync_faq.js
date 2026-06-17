@@ -24,6 +24,18 @@ async function getPageContent(pageId) {
   const html = data.body.export_view.value;
 
   const turndown = new TurndownService({ headingStyle: "atx", bulletListMarker: "-" });
+
+  // Strip only the first Confluence info panel (the "synced / DO NOT DELETE" banner).
+  let bannerRemoved = false;
+  turndown.remove((node) => {
+    if (bannerRemoved) return false;
+    const isBanner =
+      node.nodeName === "DIV" &&
+      /confluence-information-macro/.test(node.getAttribute("class") || "");
+    if (isBanner) bannerRemoved = true;
+    return isBanner;
+  });
+
   return turndown.turndown(html);
 }
 
