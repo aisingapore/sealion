@@ -9,15 +9,17 @@ SEA-LION models are available for download via the following channels:
 **Gemma-SEA-LION-v4.5-E2B-IT**
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
-|Gemma-SEA-LION-v4.5-E2B-IT |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B-IT)|
+|Gemma-SEA-LION-v4.5-E2B-IT |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B-IT), [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4.5-E2B-IT)|
+|Gemma-SEA-LION-v4.5-E2B-IT-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B-IT-GGUF), [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4.5-E2B-IT) |
 
 <br>
 
 **Qwen-SEA-LION-v4.5-27B-IT**
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
-|Qwen-SEA-LION-v4.5-27B-IT |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT)|
-|Qwen-SEA-LION-v4.5-27B-IT-SDecoder |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT-SDecoder)|
+|Qwen-SEA-LION-v4.5-27B-IT |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT), [Ollama](https://ollama.com/aisingapore/Qwen-SEA-LION-v4.5-27B-IT) |
+| Qwen-SEA-LION-v4.5-27B-IT-SpecDecoder | [HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT-SpecDecoder) |
+|Qwen-SEA-LION-v4.5-27B-IT-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT-GGUF), [Ollama](https://ollama.com/aisingapore/Qwen-SEA-LION-v4.5-27B-IT) |
 
 <br>
 
