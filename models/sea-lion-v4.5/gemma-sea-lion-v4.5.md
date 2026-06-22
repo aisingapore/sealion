@@ -40,6 +40,16 @@ For tokenization, the model employs the default tokenizer used in `gemma-4-E2B-i
 
 ## How to Get Started with the Model
 
+### Download the Models
+
+Gemma-SEA-LION-v4.5-E2B-IT models are available for download via the following channels:
+🤗[HuggingFace SEA-LION v4.5 Collection](<(https://huggingface.co/collections/aisingapore/sea-lion-v45)>)
+
+| Model                           | Download                                                                                                                                               |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Gemma-SEA-LION-v4.5-E2B-IT      | [HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B-IT), [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4.5-E2B-IT)      |
+| Gemma-SEA-LION-v4.5-E2B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B-IT-GGUF), [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4.5-E2B-IT) |
+
 Use the code below to get started with the model with 🤗 Transformers libraries.
 
 ```
