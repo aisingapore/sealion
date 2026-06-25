@@ -15,7 +15,7 @@ env:
 
 jobs:
   sync-faq:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, sealion]
     permissions:
       contents: write
       pull-requests: write
