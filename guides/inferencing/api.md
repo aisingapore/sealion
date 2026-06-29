@@ -452,6 +452,7 @@ print(completion.choices[0].message.content)
 
 {% tabs %}
 {% tab title="curl" %}
+
 ```
 curl https://api.sea-lion.ai/v1/embeddings \
   -H 'Authorization: Bearer YOUR_API_KEY' \
@@ -464,32 +465,28 @@ curl https://api.sea-lion.ai/v1/embeddings \
     ]
   }'
 ```
+
 {% endtab %}
 
 {% tab title="python" %}
-```python
-import requests
 
-response = requests.post(
-    "https://api.sea-lion.ai/v1/embeddings",
-    headers={
-        "Authorization": f"Bearer {YOUR_API_KEY}",
-        "Content-Type": "application/json"
-    },
-    json={
-        "model": "aisingapore/SEA-LION-ModernBERT-Embedding-600M",
-        "input": [
-            "Singapore is a tropical island city-state.",
-            "The Lion City sits at the tip of the Malay Peninsula."
-        ]
-    }
+```python
+from openai import OpenAI
+
+client = OpenAI(api_key="YOUR_API_KEY", base_url="https://api.sea-lion.ai/v1/embeddings")
+
+result = client.embeddings.create(
+    model="aisingapore/SEA-LION-ModernBERT-Embedding-600M",
+    input=[
+        "Singapore is a tropical island city-state.",
+        "The Lion City sits at the tip of the Malay Peninsula.",
+    ],
 )
 
-response.raise_for_status()
-embeddings = [item["embedding"] for item in response.json()["data"]]
-print(f"Number of embeddings: {len(embeddings)}")
-print(f"Embedding dimension: {len(embeddings[0])}")
+for item in result.data:
+    print(f"index {item.index}: dim={len(item.embedding)}")
 ```
+
 {% endtab %}
 {% endtabs %}
 
@@ -499,6 +496,7 @@ Embeddings can be used to measure semantic similarity between sentences using co
 
 {% tabs %}
 {% tab title="python" %}
+
 ```python
 import math
 import requests
@@ -538,6 +536,7 @@ for i in range(len(sentences)):
         print(f"  '{sentences[i]}'")
         print(f"  '{sentences[j]}'")
 ```
+
 {% endtab %}
 {% endtabs %}
 
