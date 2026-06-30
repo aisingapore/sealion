@@ -5,8 +5,10 @@ Last update: 2026-03-16
 **SEA-LION** is a collection of Large Language Models (LLMs) and encoders which have been pretrained and fine-tuned for the Southeast Asia (SEA) region.
 
 <!-- Introduction -->
+
 ## Introduction
-SEA-LION stands for *Southeast Asian Languages In One Network*. 
+
+SEA-LION stands for _Southeast Asian Languages In One Network_.
 
 This encoder-only model leverages the advanced **ModernBERT** architecture combined with the Gemma 3 SentencePiece tokenizer. The adoption of the **Gemma 3 tokenizer** with ModernBERT allows the model to achieve highly efficient and culturally nuanced text processing. This combination significantly improves the tokenization fertility and compression rates for complex regional scripts and diverse Southeast Asian languages, enabling the model to handle longer context windows and cross-lingual tasks with greater computational efficiency.
 
@@ -36,25 +38,25 @@ For tokenization, the model employs our custom [Gemma3](https://storage.googleap
 
 This model card details one of the variants available within this ModernBERT-based collection.
 
-| Model Variant | Model Repository | Suggesting Applications & Use Cases |
-| --- | --- | --- |
-| **Fine-tuned Embedding Models** | - [aisingapore/SEA-LION-E5-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-E5-Embedding-600M) <br> - [aisingapore/SEA-LION-ModernBERT-Embedding-300M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-300M) <br> - [aisingapore/SEA-LION-ModernBERT-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M) | - Retrieval-Augmented Generation (RAG) <br> - Information retrieval, and search <br> - Similarity comparisons |
-| **Pre-trained Encoder Models** | - [aisingapore/SEA-LION-ModernBERT-300M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M) <br> - [aisingapore/SEA-LION-ModernBERT-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M) <br> | - Fill mask <br>- Text classification <br> - Fine-tuning for downstream tasks (e.g., sentiment analysis, classification). |
-| **Pre-trained Model Checkpoints** | - [aisingapore/SEA-LION-ModernBERT-300M-checkpoints](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M-checkpoints) <br> - [aisingapore/SEA-LION-ModernBERT-600M-checkpoints](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M-checkpoints) <br> | - Continued Pre-Training (CPT) <br> - Fine-tuning for downstream tasks (e.g., sentiment analysis, classification). |
+| Model Variant                     | Model Repository                                                                                                                                                                                                                                                                                                                                                        | Suggesting Applications & Use Cases                                                                                       |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Fine-tuned Embedding Models**   | - [aisingapore/SEA-LION-E5-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-E5-Embedding-600M) <br> - [aisingapore/SEA-LION-ModernBERT-Embedding-300M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-300M) <br> - [aisingapore/SEA-LION-ModernBERT-Embedding-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M) | - Retrieval-Augmented Generation (RAG) <br> - Information retrieval, and search <br> - Similarity comparisons             |
+| **Pre-trained Encoder Models**    | - [aisingapore/SEA-LION-ModernBERT-300M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M) <br> - [aisingapore/SEA-LION-ModernBERT-600M](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M) <br>                                                                                                                                                   | - Fill mask <br>- Text classification <br> - Fine-tuning for downstream tasks (e.g., sentiment analysis, classification). |
+| **Pre-trained Model Checkpoints** | - [aisingapore/SEA-LION-ModernBERT-300M-checkpoints](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M-checkpoints) <br> - [aisingapore/SEA-LION-ModernBERT-600M-checkpoints](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M-checkpoints) <br>                                                                                                   | - Continued Pre-Training (CPT) <br> - Fine-tuning for downstream tasks (e.g., sentiment analysis, classification).        |
 
 The checkpoints repository contains available of model variants.
 
-| Model Variant | Suggesting Applications & Use Cases |
-| --- | --- |
-| stage1-pre-training/SEA-LION-PT-300M.pt | Composer checkpoint from the **Pre-Training Stage** suitable for continued pre-training (CPT). |
-| stage1-pre-training/SEA-LION-PT-300M | Folder for the HuggingFace checkpoints from the **Pre-Training Stage**, suitable for continued pre-training or fine tuning. |
-| stage2-mid-training/SEA-LION-MT-300M-w-decay.pt | Composer checkpoint from the **Mid-Training stage** with learning rate annealing suitable for fine tuning with learning rate warmup. |
-| stage2-mid-training/SEA-LION-MT-300M-wo-decay.pt | Composer checkpoint from the **Mid-Training stage** without learning rate annealing suitable for continued pre-training (CPT) and fine tuning without learning rate warmup. |
-| stage2-mid-training/SEA-LION-MT-300M-wo-decay | Folder for the HuggingFace checkpoints from the **Mid-Training stage** without learning rate annealing. suitable for continued pre-training (CPT) and fine tuning without learning rate warmup. |
+| Model Variant                                    | Suggesting Applications & Use Cases                                                                                                                                                             |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| stage1-pre-training/SEA-LION-PT-300M.pt          | Composer checkpoint from the **Pre-Training Stage** suitable for continued pre-training (CPT).                                                                                                  |
+| stage1-pre-training/SEA-LION-PT-300M             | Folder for the HuggingFace checkpoints from the **Pre-Training Stage**, suitable for continued pre-training or fine tuning.                                                                     |
+| stage2-mid-training/SEA-LION-MT-300M-w-decay.pt  | Composer checkpoint from the **Mid-Training stage** with learning rate annealing suitable for fine tuning with learning rate warmup.                                                            |
+| stage2-mid-training/SEA-LION-MT-300M-wo-decay.pt | Composer checkpoint from the **Mid-Training stage** without learning rate annealing suitable for continued pre-training (CPT) and fine tuning without learning rate warmup.                     |
+| stage2-mid-training/SEA-LION-MT-300M-wo-decay    | Folder for the HuggingFace checkpoints from the **Mid-Training stage** without learning rate annealing. suitable for continued pre-training (CPT) and fine tuning without learning rate warmup. |
 
-Note: For stage2-mid-train*ing checkpoints with learning rate annealing, please refer to* [*aisingapore/SEA-LION-ModernBERT-300M*](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M) and [*aisingapore/SEA-LION-ModernBERT-600M*](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M)
+Note: For stage2-mid-train*ing checkpoints with learning rate annealing, please refer to* [_aisingapore/SEA-LION-ModernBERT-300M_](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M) and [_aisingapore/SEA-LION-ModernBERT-600M_](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M)
 
-*Note: If you are deploying our models for your specific use case, we would love to hear from you! Please feel free to* [*contact us*](mailto:sealion@aisingapore.org) *to share your experience or explore potential collaborations.*
+_Note: If you are deploying our models for your specific use case, we would love to hear from you! Please feel free to_ [_contact us_](mailto:sealion@aisingapore.org) _to share your experience or explore potential collaborations._
 
 ### Bias, Risks, and Limitations
 
@@ -65,6 +67,25 @@ The model was not tested for robustness against adversarial usage. It is importa
 Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model.
 
 ## How to Get Started with the Model
+
+Use this code snippet below to run inference with the model via the API.
+
+```
+from openai import OpenAI
+
+client = OpenAI(api_key="YOUR_API_KEY", base_url="https://api.sea-lion.ai/v1/embeddings")
+
+result = client.embeddings.create(
+    model="aisingapore/SEA-LION-ModernBERT-Embedding-600M",
+    input=[
+        "Singapore is a tropical island city-state.",
+        "The Lion City sits at the tip of the Malay Peninsula.",
+    ],
+)
+
+for item in result.data:
+    print(f"index {item.index}: dim={len(item.embedding)}")
+```
 
 Use the code below to download the model locally.
 
@@ -107,7 +128,8 @@ pipeline = pipeline(
 )
 pipeline("Plants create  through a process known as photosynthesis.")
 ```
-*Note: To get started with Continued Pre-Training of the Composer checkpoints, we recommend refering to this [guide](https://huggingface.co/blog/thomas-sounack/bioclinical-modernbert-tutorial).*
+
+_Note: To get started with Continued Pre-Training of the Composer checkpoints, we recommend refering to this [guide](https://huggingface.co/blog/thomas-sounack/bioclinical-modernbert-tutorial)._
 
 ---
 
@@ -119,22 +141,22 @@ The models are pre-trained from scratch through a two-phase pipeline, beginning 
 
 The pre-trained checkpoints were pre-trained from scratch on a number of trillion tokens corpus with the following linguistic and thematic distribution:
 
-| Data Source | Percentage |
-| --- | --- |
-| code | 10% |
-| EN - English | 35% |
-| ID - Indonesian | 8% |
-| JV - Javanese | 0.5% |
-| KM - Khmer | 1.5% |
-| LO - Lao | 0.5% |
-| MS - Malay | 4.75% |
-| MY - Burmese | 1.75% |
-| SU - Sundanese | 0.5% |
-| TA - Tamil | 4.5% |
-| TH - Thai | 8% |
-| TL - Filipino | 2.5% |
-| VI - Vietnamese | 8.5% |
-| ZH - Chinese | 14% |
+| Data Source     | Percentage |
+| --------------- | ---------- |
+| code            | 10%        |
+| EN - English    | 35%        |
+| ID - Indonesian | 8%         |
+| JV - Javanese   | 0.5%       |
+| KM - Khmer      | 1.5%       |
+| LO - Lao        | 0.5%       |
+| MS - Malay      | 4.75%      |
+| MY - Burmese    | 1.75%      |
+| SU - Sundanese  | 0.5%       |
+| TA - Tamil      | 4.5%       |
+| TH - Thai       | 8%         |
+| TL - Filipino   | 2.5%       |
+| VI - Vietnamese | 8.5%       |
+| ZH - Chinese    | 14%        |
 
 ## Evaluation
 
@@ -144,10 +166,9 @@ The pre-trained checkpoints were pre-trained from scratch on a number of trillio
 
 The model is evaluated across three primary benchmark suites to provide a comprehensive assessment of embedding quality across Southeast Asian, Chinese, and English contexts:
 
-- [**SEA-BED (Southeast Asia Embedding Benchmark)**](<https://arxiv.org/pdf/2508.12243>): The primary testing suite, consisting of 169 datasets across 10 Southeast Asian languages (Burmese, Filipino, Indonesian, Khmer, Malay, Lao, Tamil, Tetum, Thai, and Vietnamese). Notably, 71% of these datasets are native-authored or human-curated to preserve regional linguistic properties.
+- [**SEA-BED (Southeast Asia Embedding Benchmark)**](https://arxiv.org/pdf/2508.12243): The primary testing suite, consisting of 169 datasets across 10 Southeast Asian languages (Burmese, Filipino, Indonesian, Khmer, Malay, Lao, Tamil, Tetum, Thai, and Vietnamese). Notably, 71% of these datasets are native-authored or human-curated to preserve regional linguistic properties.
 - **CMTEB (Chinese Massive Text Embedding Benchmark)**: A specialised subset of MTEB focused on Chinese language tasks, used to evaluate performance in one of the region's most prominent scripts.
 - **MTEB (Massive Text Embedding Benchmark)**: The industry-standard global benchmark used to gauge general-purpose English embedding performance across a wide array of tasks.
-
 
 ## Results
 
@@ -169,16 +190,16 @@ Carbon emission was estimated using the fact sheet from TRG [Datacenters](https:
 
 SEA-LION-ModernBERT-300M is an encoder model using the ModernBERT architecture.
 
-| Parameter | SEA-LION-ModernBERT |
-| --- | --- |
-| Layers | 22  |
-| d_model | 768  |
-| head_dim | 12 |
-| Vocabulary | 262144 |
-| Sequence Length | 8k |
+| Parameter       | SEA-LION-ModernBERT |
+| --------------- | ------------------- |
+| Layers          | 22                  |
+| d_model         | 768                 |
+| head_dim        | 12                  |
+| Vocabulary      | 262144              |
+| Sequence Length | 8k                  |
 
 ## More Information
 
-This is the repository for the commercial fine-tuned model. The model has *not* been aligned for safety. Developers and users should perform their own safety fine-tuning and related security measures. In no event shall the authors be held liable for any claims, damages, or other liabilities arising from the use of the released weights and codes.
+This is the repository for the commercial fine-tuned model. The model has _not_ been aligned for safety. Developers and users should perform their own safety fine-tuning and related security measures. In no event shall the authors be held liable for any claims, damages, or other liabilities arising from the use of the released weights and codes.
 
 For more info, please contact us at [sealion@aisingapore.org](mailto:sealion@aisingapore.org)
