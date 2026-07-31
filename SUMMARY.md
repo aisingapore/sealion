@@ -63,6 +63,7 @@
 
 - [Capabilities & Tool-Use](guides/tool_calling/tool_calling.md)
   - [Tool Implementation Example](guides/tool_calling/tool_examples.md)
+  - [SEA-LION MCP Server](guides/tool_calling/mcp.md)
 
 <!-- * [Capabilities & Tool-Use](guides/tool_calling/tool_calling-01_Intro.md)
   * [SEA-LION Implementation Example](guides/tool_calling/tool_calling-02_SEA-LION.md)
