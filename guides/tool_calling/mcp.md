@@ -15,11 +15,11 @@ Claude Desktop handles the OAuth flow for you automatically. It's the most strai
 3. Enter a name (e.g. SEA-LION MCP) and the URL: <https://mcp.sea-lion.ai>
 4. Click Add and Connect
 
-![Claude Desktop Add custom connector dialog with the SEA-LION MCP name and URL filled in](images/sea-lion-mcp-public-docs/claude-desktop-add-custom-connector.png)
+<figure><img src="./images/mcp_claude_desktop_add_custom_connector.png" alt="Claude Desktop Add custom connector dialog with the SEA-LION MCP name and URL filled in" width="70%"></figure>
 
 5. Click on **Allow Access** and sign in with your Google account
 
-![SEA-LION Application Access Request screen with the Allow Access button](images/sea-lion-mcp-public-docs/claude-desktop-allow-access.png)
+<figure><img src="./images/mcp_claude_desktop_allow_access.png" alt="SEA-LION Application Access Request screen with the Allow Access button" width="70%"></figure>
 
 ## Connect via Claude Code CLI
 
@@ -47,9 +47,9 @@ Once integrated, SEA-LION MCP works invisibly in the background. Users can simpl
 
 Can you translate this article into Malay for our Singapore audience?
 
-![Translation prompt with Claude requesting permission to use the SEA-LION Translate localize tool](images/sea-lion-mcp-public-docs/translate-prompt-tool-request.png)
+<figure><img src="./images/mcp_translate_prompt_tool_request.png" alt="Translation prompt with Claude requesting permission to use the SEA-LION Translate localize tool" width="100%"></figure>
 
-![The article translated into Malay and localized for a Singaporean audience](images/sea-lion-mcp-public-docs/translate-output-malay.png)
+<figure><img src="./images/mcp_translate_output_malay.png" alt="The article translated into Malay and localized for a Singaporean audience" width="100%"></figure>
 
 Claude automatically calls SEA-LION's translation engine, localising the content for the right tone and context.
 
