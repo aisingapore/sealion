@@ -1,4 +1,4 @@
-# Model Card for Qwen-SEA-LION-v4.5-27B-IT
+# Model Card for Qwen-SEA-LION-v4.5-27B
 
 Last update: 2026-05-19
 
@@ -50,7 +50,7 @@ SpecDecoder was Finedtuned from [z-lab/Qwen3.6-27B-DFlash](https://huggingface.c
 | ------------------------------------- | --------------------------------------------------------------------------------------- |
 | Qwen-SEA-LION-v4.5-27B-IT             | [HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT), [Ollama](https://ollama.com/aisingapore/Qwen-SEA-LION-v4.5-27B-IT)             |
 | Qwen-SEA-LION-v4.5-27B-IT-SpecDecoder | [HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT-SpecDecoder) |
-|Qwen-SEA-LION-v4.5-27B-IT-GGUF	|[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT-GGUF), [Ollama](https://ollama.com/aisingapore/Qwen-SEA-LION-v4.5-27B-IT) |
+| Qwen-SEA-LION-v4.5-27B-IT-GGUF	|[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT-GGUF), [Ollama](https://ollama.com/aisingapore/Qwen-SEA-LION-v4.5-27B-IT) |
 
 ## How to Get Started with the Model
 

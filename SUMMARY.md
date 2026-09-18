@@ -10,7 +10,9 @@
 
 ## Models
 
-- [SEA-LION v4.5 (Latest)](models/sea-lion-v4.5/sea-lion-v4.5.md)
+- [SEA-LION v4.8 (Latest)](models/sea-lion-v4.8/sea-lion-v4.8.md)
+  - [Nemotron-SEA-LION-v4.8](models/sea-lion-v4.8/nemotron-sea-lion-v4.8.md)
+- [SEA-LION v4.5](models/sea-lion-v4.5/sea-lion-v4.5.md)
   - [Gemma-SEA-LION-v4.5](models/sea-lion-v4.5/gemma-sea-lion-v4.5.md)
   - [Qwen-SEA-LION-v4.5](models/sea-lion-v4.5/qwen-sea-lion-v4.5.md)
 - [SEA-LION v4](models/sea-lion-v4/sea-lion-v4.md)

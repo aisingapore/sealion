@@ -1,4 +1,4 @@
-# Gemma-SEA-LION-v4.5-E2B-IT
+# Gemma-SEA-LION-v4.5-E2B
 
 _Last update: 2026-05-19_
 

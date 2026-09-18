@@ -1,6 +1,6 @@
-## SEA-LION v4.5 (Latest)
+## SEA-LION v4.5
 
-SEA-LION version 4.5, released in May 2026, is our latest collection of foundational, agentic, and multimodal models optimized for Southeast Asia. Utilizing advanced post-training methodologies—such as knowledge distillation and model merging—this suite delivers state-of-the-art regional fluency, precise tool use, and high computational efficiency.
+SEA-LION version 4.5, released in May 2026, agentic, and multimodal models optimized for Southeast Asia. Utilizing advanced post-training methodologies—such as knowledge distillation and model merging—this suite delivers state-of-the-art regional fluency, precise tool use, and high computational efficiency.
 
 ### Gemma-SEA-LION-v4.5 (E2B Series)
 

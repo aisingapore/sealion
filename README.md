@@ -12,8 +12,10 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection                                                 | Size       | Context Length | Training Strategy                                      | Available in                             |
 | ---------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------ | ---------------------------------------- |
-| **[SEA-LION v4.5](/models/sea-lion-v4.5/sea-lion-v4.5.md)**      | E2B        | 128K           | SFT¹ of gemma-4-E2B-it (Latest)                        | Instruct, GGUF                           |
-|                                                                  | 27B        | 262K           | SFT¹ of Qwen3.6-27B (Latest)                           | Instruct, SpecDecoder, GGUF              |
+| **[SEA-LION v4.8](/models/sea-lion-v4.5/sea-lion-v4.8.md)**      | 30B-A3B    | 128K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8   |
+|                                                                  | 120B-A12B  | 128K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8 |
+| **[SEA-LION v4.5](/models/sea-lion-v4.5/sea-lion-v4.5.md)**      | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 | Instruct, GGUF                           |
+|                                                                  | 27B        | 262K           | SFT¹ of Qwen3.6-27B                                    | Instruct, SpecDecoder, GGUF              |
 | **[SEA-LION v4](/models/sea-lion-v4/sea-lion-v4.md)**            | 4B         | 128K           | SFT¹ of Gemma 3 4B IT                                  | VLM                                      |
 |                                                                  | 8B         | 65K            | SFT¹ of Apertus-8B-Instruct-2509                       | Instruct, Reasoning                      |
 |                                                                  | 4B, 8B     | 256K           | SFT¹ of Qwen3-VL-4B-Instruct, Qwen3-VL-8B-Instruct     | VLM                                      |
@@ -50,6 +52,7 @@ SEA-LION has seen:
 - In v3.5, ability to handle reasoning tasks, with the versatility of handling general tasks as well while maintaining similar performance with state-of-the-art models.
 - In v4, our first multimodal SEA-LION models, extending capabilities beyond text to handle image + text inputs with massive 256K native context windows and specialized regional OCR, while continuing our focus on Southeast Asian languages, culture, and use cases.
 - In v4.5, rapid specialization of state-of-the-art open foundation models via knowledge distillation and model merging, delivering high-capacity reasoning and agentic tool-use capabilities alongside speed-optimized booster configurations for low-latency production deployment.
+- In v4.8, extended language coverage across 13 regional languages—including Burmese, Malay, and key sub-national languages—paired with advanced post-training for enhanced multi-turn chat and instruction-following, rigorously benchmarked under the upgraded SEA-HELM suite with deeper cultural competence (KALAHI) and country-entity knowledge evaluation.
 
 SEA-LION-Embedding: The Vector Foundation
 
@@ -119,6 +122,20 @@ If you are using SEA-LION v3 for your work, please cite it as:
       archivePrefix={arXiv},
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2504.05747},
+}
+```
+
+If you are using SEA-LION embedding for your work, please cite it as:
+
+```bibtex
+@misc{2606.03027,
+      title={SEA-LION-Embedding: Open and Reproducible Text Embeddings for Southeast Asia}, 
+      author={Peerat Limkonchotiwat and Raymond Ng and Sarana Nutanong and Jian Gang Ngui},
+      year={2026},
+      eprint={2606.03027},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.03027}, 
 }
 ```
 

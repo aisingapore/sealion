@@ -2,7 +2,27 @@
 
 SEA-LION models are available for download via the following channels:
 
-## SEA-Lion v4.5 (Latest)
+## SEA-Lion v4.8 (Latest)
+
+[Full HuggingFace SEA-LION v4.8 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v48)
+
+**Nemotron-SEA-LION-v4.8**
+|Model |Download |
+|-------------------------------|--------------------------------------------------------------|
+|Nemotron-SEA-LION-v4.8-30B-A3B-Base |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-30B-A3B-Base), [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v4.8-30B-A3B-Base)|
+|Nemotron-SEA-LION-v4.8-30B-A3B |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-30B-A3B), [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v4.8-30B-A3B)              |
+|Nemotron-SEA-LION-v4.8-30B-A3B-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-30B-A3B-GGUF), [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v4.8-30B-A3B-GGUF) |
+|Nemotron-SEA-LION-v4.8-30B-A3B-NVFP4 |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-30B-A3B-NVFP4)                                                                           |
+|Nemotron-SEA-LION-v4.8-30B-A3B-FP8 |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-30B-A3B-FP8)                                                                               |
+|Nemotron-SEA-LION-v4.8-120B-A12B-Base |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base), [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base)|
+|Nemotron-SEA-LION-v4.8-120B-A12B |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B), [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B)        |
+|Nemotron-SEA-LION-v4.8-120B-A12B-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-GGUF), [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-GGUF) |
+|Nemotron-SEA-LION-v4.8-120B-A12B-NVFP4 |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-NVFP4)                                                                       |
+|Nemotron-SEA-LION-v4.8-120B-A12B-FP8 |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-FP8)                                                                           |
+
+<br>
+
+## SEA-Lion v4.5
 
 [Full HuggingFace SEA-LION v4.5 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v45)
 
@@ -18,7 +38,7 @@ SEA-LION models are available for download via the following channels:
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
 |Qwen-SEA-LION-v4.5-27B-IT |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT), [Ollama](https://ollama.com/aisingapore/Qwen-SEA-LION-v4.5-27B-IT) |
-| Qwen-SEA-LION-v4.5-27B-IT-SpecDecoder | [HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT-SpecDecoder) |
+|Qwen-SEA-LION-v4.5-27B-IT-SpecDecoder | [HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT-SpecDecoder) |
 |Qwen-SEA-LION-v4.5-27B-IT-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT-GGUF), [Ollama](https://ollama.com/aisingapore/Qwen-SEA-LION-v4.5-27B-IT) |
 
 <br>
