@@ -80,7 +80,7 @@ The architecture is based on the highly efficient Nemotron-3-Super foundation. T
 
 Use the code below to get started with the model with 🤗 Transformers libraries.
 
-```
+```python
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 model_name = "aisingapore/Nemotron-SEA-LION-v4.8-30B-A3B"
