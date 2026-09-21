@@ -165,15 +165,13 @@ We recommend the FP8 static checkpoint as the default for both model sizes. It i
 
 NVFP4 is the option when memory is the binding constraint on NVIDIA hardware. It has the smallest footprint of our formats, at a small quality cost relative to FP8. As it is specifically optimized for Blackwell GPUs, it is expected to run natively as W4A4, though we have not benchmarked this yet.
 
-INT4 GPTQ is intended for portability: Ampere GPUs and non-NVIDIA vLLM backends where FP8 and NVFP4 kernels are unavailable, or deployments where download size is the priority. It carries a larger quality gap than the other formats, so we suggest it only where the hardware leaves no alternative.
-
 ## How to Get Started with a Quantized Model
 
 ### Using `vLLM`
 
 You can serve the model using `vllm` [[link](https://docs.vllm.ai/en/stable/features/quantization/llm_compressor/fp8/#online-dynamic-quantization)]:
 
-```
+```python
 from vllm import LLM, SamplingParams
 llm = LLM(
     model="aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-FP8",
