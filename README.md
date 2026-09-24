@@ -12,9 +12,9 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection                                                 | Size       | Context Length | Training Strategy                                      | Available in                             |
 | ---------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------ | ---------------------------------------- |
-| **[SEA-LION v4.8](/models/sea-lion-v4.5/sea-lion-v4.8.md)**      | 30B-A3B    | 128K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8   |
+| **[SEA-LION v4.8](/models/sea-lion-v4.8/sea-lion-v4.8.md)**      | 30B-A3B    | 128K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8   |
 |                                                                  | 120B-A12B  | 128K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8 |
-| **[SEA-LION v4.5](/models/sea-lion-v4.5/sea-lion-v4.5.md)**      | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 | Instruct, GGUF                           |
+| **[SEA-LION v4.5](/models/sea-lion-v4./sea-lion-v4.5.md)**      | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 | Instruct, GGUF                           |
 |                                                                  | 27B        | 262K           | SFT¹ of Qwen3.6-27B                                    | Instruct, SpecDecoder, GGUF              |
 | **[SEA-LION v4](/models/sea-lion-v4/sea-lion-v4.md)**            | 4B         | 128K           | SFT¹ of Gemma 3 4B IT                                  | VLM                                      |
 |                                                                  | 8B         | 65K            | SFT¹ of Apertus-8B-Instruct-2509                       | Instruct, Reasoning                      |
