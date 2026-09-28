@@ -24,7 +24,7 @@ For tokenization, the model employs the default tokenizer used in nvidia/NVIDIA-
 - **Funded by:** Singapore NRF
 - **Shared by:** AI Products Pillar, AI Singapore
 - **Model type:** Base LLM (Mamba2-Transformer Hybrid MoE)
-- **Context Length:** 8K (Base model), 128K 
+- **Context Length:** 8K (Base model), 256K 
 - **Language(s):** Balinese, Burmese, English, Indonesian, Javanese, Khmer, Lao, Malay, Mandarin, Sundanese, Tamil, Thai, and Vietnamese
 - **License:** [Other](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-30B-A3B-Base/blob/main/NOTICE.md)
 - **Finetuned from model:** [nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16)
