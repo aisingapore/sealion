@@ -23,6 +23,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
       - name: Fetch and convert Confluence FAQ to Markdown
         run: |
           cd scripts && npm install --quiet && cd ..
