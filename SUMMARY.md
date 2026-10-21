@@ -10,7 +10,7 @@
 
 ## Models
 
-- [SEA-LION-Guard v2 (Latest)](models/sea-guard-v2/sea-lion-guard-v2.md)
+- [SEA-LION-Guard v2 (Latest)](models/sea-guard-v2/sea-lion-guard-v2.md)  
   - [Gemma-SEA-LION-Guard-v2](models/sea-guard-v2/gemma-sea-lion-guard-v2.md)
 - [SEA-LION v4.8](models/sea-lion-v4.8/sea-lion-v4.8.md)
   - [Nemotron-SEA-LION-v4.8](models/sea-lion-v4.8/nemotron-sea-lion-v4.8.md)
