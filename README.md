@@ -12,8 +12,10 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection                                                 | Size       | Context Length | Training Strategy                                      | Available in                             |
 | ---------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------ | ---------------------------------------- |
-| **[SEA-LION v4.8](/models/sea-lion-v4.8/sea-lion-v4.8.md)**      | 30B-A3B    | 256K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8   |
-|                                                                  | 120B-A12B  | 256K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8 |
+| **[SEA-LION-Guard v2](models/sea-guard-v2/sea-lion-guard-v2.md)**| 31B        | 256K           | SFT¹ of gemma-4-31B-it                                 | Instruct              |
+|                                                                  | E4B, E2B   | 128K           | SFT¹ of gemma-4-E4B-it, gemma-4-E2B-it                 | Instruct              |
+| **[SEA-LION v4.8](/models/sea-lion-v4.8/sea-lion-v4.8.md)**      | 30B-A3B    | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8   |
+|                                                                  | 120B-A12B  | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8 |
 | **[SEA-LION v4.5](/models/sea-lion-v4.5/sea-lion-v4.5.md)**      | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 | Instruct, GGUF                           |
 |                                                                  | 27B        | 262K           | SFT¹ of Qwen3.6-27B                                    | Instruct, SpecDecoder, GGUF              |
 | **[SEA-LION v4](/models/sea-lion-v4/sea-lion-v4.md)**            | 4B         | 128K           | SFT¹ of Gemma 3 4B IT                                  | VLM                                      |
@@ -33,7 +35,7 @@ This site provides information and resources on SEA-LION, including how to acces
 | **[SEA-LION Embedding](/models/sea-embedding/sea-embedding.md)** | 300M, 600M | 8K             | ModernBERT from scratch                                | Base-Embedding, Checkpoints              |
 |                                                                  | 300M, 600M | 8K             | SFT¹ of SEA-LION-ModernBERT-Embedding                  | Tuned-Embedding                          |
 |                                                                  | 600M       | 512            | SFT¹ of E5-Large                                       | Tuned-Embedding                          |
-| **[SEA-GUARD](/models/sea-guard/sea-guard.md)**                  | 4B, 8B     | 128K           | SFT¹ of Qwen-SEA-LION-v4-4B-VL, Qwen-SEA-LION-v4-8B-VL | VLM                                      |
+| **[SEA-GUARD (renamed as SEA-LION-GUARD v1)](/models/sea-guard/sea-guard.md)**                  | 4B, 8B     | 128K           | SFT¹ of Qwen-SEA-LION-v4-4B-VL, Qwen-SEA-LION-v4-8B-VL | VLM                                      |
 |                                                                  | 8B         | 128K           | SFT¹ of Llama-SEA-LION-v3-8B-IT                        | Instruct                                 |
 |                                                                  | 12B        | 128K           | SFT¹ of Gemma 3 12B IT                                 | VLM                                      |
 
@@ -58,9 +60,10 @@ SEA-LION-Embedding: The Vector Foundation
 
 The SEA-LION-Embedding suite provides the semantic foundation for the ecosystem. Released in March 2026, these models represent a significant leap in regional retrieval performance. Tested on the SEA-BED (Southeast Asia Embedding Benchmark), which utilizes human-curated native data rather than machine translations, our embeddings consistently set new state-of-the-art records for 10 regional languages across retrieval, reranking, and semantic textual similarity tasks.
 
-SEA-Guard: The Protector
+SEA-LION-Guard: The Protector
 
-Building on the sophisticated reasoning and multimodal foundation laid by SEA-LION v4, we are proud to introduce the first generation of SEA-Guard. Released on 4 Feb 2026, SEA-Guard is the dedicated safety counterpart to the SEA-LION family. As our foundational models gained the power to "see" (Multimodality in v4) and "think" (Reasoning in v3.5), the need for a culturally attuned safety layer became paramount.
+- In v1, building on the sophisticated reasoning and multimodal foundation laid by SEA-LION v4, we are proud to introduce the first generation of SEA-Guard. Released on 4 Feb 2026, SEA-Guard is the dedicated safety counterpart to the SEA-LION family. As our foundational models gained the power to "see" (Multimodality in v4) and "think" (Reasoning in v3.5), the need for a culturally attuned safety layer became paramount.
+- In v2, we elevate safety from passive moderation to active governance. Built on the Gemma-4 foundation architecture, Gemma-SEA-LION-Guard-v2 (31B, E4B, and E2B) transitions from traditional text filtering to real-time Action Governance, Bring Your Own Policy (BYOP) enforcement, and Multi-Turn Context Evaluation across a massive 256K context window. Engineered specifically for agentic deployments, v2 replaces freeform text responses with calibrated, type-safe decision outputs (content_moderation, rule_applicability, and rule_violation)—enabling software to intercept unauthorized tool calls, enforce custom enterprise rules, and detect multi-turn scam patterns across 8 Southeast Asian languages.
 
 We use a holistic approach to evaluation, including not just traditional Natural Language Processing (NLP) benchmarking tasks (such as sentiment analysis and question answering) but also [meticulously handcrafted linguistic and cultural diagnostic tests tailored to Southeast Asia](https://arxiv.org/abs/2309.06085v2).
 
@@ -136,6 +139,18 @@ If you are using SEA-LION embedding for your work, please cite it as:
       archivePrefix={arXiv},
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2606.03027}, 
+}
+```
+
+```bibtex
+@misc{2602.01618,
+      title={SEA-Guard: Culturally Grounded Multilingual Safeguard for Southeast Asia}, 
+      author={Panuthep Tasawong and Jian Gang Ngui and Alham Fikri Aji and Trevor Cohn and Peerat Limkonchotiwat},
+      year={2026},
+      eprint={2602.01618},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2602.01618}, 
 }
 ```
 

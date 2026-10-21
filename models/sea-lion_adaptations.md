@@ -32,15 +32,22 @@ The SEA-LION models have served as a foundation for developing localized AI solu
 </td>
 </tr>
 <tr>
-  <td valign="top">SEA-Guard</td>
+  <td valign="top">SEA-Guard (renamed as SEA-LION-GUARD) </td>
   <td>A specialized collection of safety-focused LLMs built on the SEA-LION family released on 4 Feb 2026. 
     <p>→ <a href="https://huggingface.co/aisingapore/Qwen-SEA-Guard-4B-040226">Qwen-SEA-Guard-4B/8B (Image-to-Text)</a>: The 4B variant is a lightweight visual guardrail optimized for edge applications, while the 8B offers balanced visual moderation with stronger reasoning capabilities.</p>
     <p></p>
     <p>→ <a href="https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-040226">Llama-SEA-Guard-8B (Text Generation)</a>: A text-only safety specialist optimized for chat moderation and policy enforcement, ensuring safe interactions in dialogue systems.</p>
     <p></p>
     <p>→ <a href="https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-040226">Gemma-SEA-Guard-12B (Multimodal)</a>: The high-capacity safety flagship capable of interpreting complex relationships between visual and textual data for deep content analysis.</p>
+    Next-generation safety and action governance models featuring Bring Your Own Policy (BYOP) enforcement, real-time tool interception, and multi-turn context evaluation across 8 SEA languages. 
+    <p>→ <a href="https://huggingface.co/aisingapore/Gemma-SEA-LION-Guard-v2-E2B">Gemma-SEA-LION-Guard-v2-E2B (128K Context)</a>: An ultra-lightweight edge guardrail optimized for low-latency tool interaction evaluation and rapid API checks on constrained devices.</p>
+    <p></p>
+    <p>→ <a href="https://huggingface.co/aisingapore/Gemma-SEA-LION-Guard-v2-E4B">Gemma-SEA-LION-Guard-v2-E4B (128K Context)</a>: An efficient, mid-tier guardrail delivering balanced reasoning speed for real-time action governance in local enterprise deployments.</p>
+    <p></p>
+    <p>→ <a href="https://huggingface.co/aisingapore/Gemma-SEA-LION-Guard-v2-31B">Gemma-SEA-LION-Guard-v2-31B (256K Context)</a>: The high-capacity flagship model built on Gemma-4, designed for deep policy evaluation, long-context scam detection, and multi-turn jailbreak analysis.</p>
   </td>
 </tr>
+
 
 <tr>
   <td valign="top">SEA-LION Embedding</td>

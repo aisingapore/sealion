@@ -2,7 +2,20 @@
 
 SEA-LION models are available for download via the following channels:
 
-## SEA-Lion v4.8 (Latest)
+## SEA-LION-GUARD v2  (Latest)
+
+[Full HuggingFace SEA-LION-GUARD v2 Collection](https://huggingface.co/collections/aisingapore/sea-lion-guard-v2)
+
+**Gemma-SEA-LION-Guard-v2**
+|Model |Download |
+|-------------------------------|--------------------------------------------------------------|
+|Gemma-SEA-LION-Guard-v2-31B |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-Guard-v2-31B)|
+|Gemma-SEA-LION-Guard-v2-E4B |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-Guard-v2-E4B)|
+|Gemma-SEA-LION-Guard-v2-E2B |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-Guard-v2-E2B)|
+
+<br>
+
+## SEA-LION v4.8
 
 [Full HuggingFace SEA-LION v4.8 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v48)
 
@@ -22,7 +35,7 @@ SEA-LION models are available for download via the following channels:
 
 <br>
 
-## SEA-Lion v4.5
+## SEA-LION v4.5
 
 [Full HuggingFace SEA-LION v4.5 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v45)
 
@@ -43,7 +56,7 @@ SEA-LION models are available for download via the following channels:
 
 <br>
 
-## SEA-Lion Embedding
+## SEA-LION Embedding
 
 [Full HuggingFace SEA-LION-Embedding Collection](https://huggingface.co/collections/aisingapore/sea-lion-modernbert-and-embedding)
 
@@ -68,13 +81,13 @@ SEA-LION models are available for download via the following channels:
 **Apertus-SEA-LION-v4-8B**
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
-|**Apertus-SEA-LION-v4-8B-IT** |[HuggingFace](https://huggingface.co/aisingapore/Apertus-SEA-LION-v4-8B-IT)|
+|Apertus-SEA-LION-v4-8B-IT |[HuggingFace](https://huggingface.co/aisingapore/Apertus-SEA-LION-v4-8B-IT)|
 <br>
 
 **Gemma-SEA-LION-v4-VL**
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
-|**Gemma-SEA-LION-v4-4B-VL** |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-4B-VL)|
+|Gemma-SEA-LION-v4-4B-VL |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-4B-VL)|
 |Gemma-SEA-LION-v4-27B-VL |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-VL)|
 <br>
 
@@ -178,9 +191,9 @@ SEA-LION models are available for download via the following channels:
 
 <br>
 
-## SEA-GUARD
+## SEA-GUARD (renamed as SEA-LION-GUARD v1)
 
-[Full HuggingFace SEA-Guard Collection](https://huggingface.co/collections/aisingapore/sea-guard)
+[Full HuggingFace SEA-LION-GUARD v1 Collection](https://huggingface.co/collections/aisingapore/sea-guard-sea-lion-guard-v1)
 
 | Model               | Download                                                                     |
 | ------------------- | ---------------------------------------------------------------------------- |
