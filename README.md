@@ -12,9 +12,9 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection                                                 | Size       | Context Length | Training Strategy                                      | Available in                             |
 | ---------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------ | ---------------------------------------- |
-| **[SEA-LION-Guard v2](models/sea-guard-v2/sea-lion-guard-v2.md)**| 31B        | 256K           | SFT¹ of gemma-4-31B-it                                 | Instruct              |
-|                                                                  | E4B, E2B   | 128K           | SFT¹ of gemma-4-E4B-it, gemma-4-E2B-it                 | Instruct              |
-| **[SEA-LION v4.8](/models/sea-lion-v4.8/sea-lion-v4.8.md)**      | 30B-A3B    | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8   |
+| **[SEA-LION-Guard v2](models/sea-guard-v2/sea-lion-guard-v2.md)**| 31B        | 256K           | SFT¹ of gemma-4-31B-it  (Latest)                       | Instruct              |
+|                                                                  | E4B, E2B   | 128K           | SFT¹ of gemma-4-E4B-it, gemma-4-E2B-it  (Latest)       | Instruct              |
+| **[SEA-LION v4.8](/models/sea-lion-v4.8/sea-lion-v4.8.md)**      | 30B-A3B    | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16  | Base, Instruct, GGUF, NVFP4, FP8   |
 |                                                                  | 120B-A12B  | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8 |
 | **[SEA-LION v4.5](/models/sea-lion-v4.5/sea-lion-v4.5.md)**      | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 | Instruct, GGUF                           |
 |                                                                  | 27B        | 262K           | SFT¹ of Qwen3.6-27B                                    | Instruct, SpecDecoder, GGUF              |
