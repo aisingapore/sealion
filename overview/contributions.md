@@ -16,7 +16,7 @@ We offer various partnership modalities to suit different needs and interests, w
 
 _Using our model (self-service)_
 
-SEA-LION models are open-source so do feel free to download them for your own needs. If SEA-LION manages to be helpful to you/your team, we would love to hear about it and share your successes with our wider commnunity. Send us a note at sealion@aisingapore.org.
+SEA-LION models are open-source so do feel free to download them for your own needs. If SEA-LION manages to be helpful to you/your team, we would love to hear about it and share your successes with our wider community. Send us a note at sealion@aisingapore.org.
 
 ### Joint Model Building
 
