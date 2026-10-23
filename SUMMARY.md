@@ -46,7 +46,7 @@
 ## Benchmarks
 
 - [SEA-HELM](benchmarks/sea-helm.md)
-- [SEA-HELM-AUDIO](benchmarks/sea-helm-audio.md)
+- [SEA-HELM Audio](benchmarks/sea-helm-audio.md)
 
 <!-- Uncomment the items below as and when the content becomes available -->
 
