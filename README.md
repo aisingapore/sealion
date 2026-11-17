@@ -12,8 +12,11 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection                                                 | Size       | Context Length | Training Strategy                                      | Available in                             |
 | ---------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------ | ---------------------------------------- |
-| **[SEA-LION-Guard v2](models/sea-guard-v2/sea-lion-guard-v2.md)**| 31B        | 256K           | SFT¹ of gemma-4-31B-it  (Latest)                       | Instruct              |
-|                                                                  | E4B, E2B   | 128K           | SFT¹ of gemma-4-E4B-it, gemma-4-E2B-it  (Latest)       | Instruct              |
+| **[SEA-LION v5](/models/sea-lion-v5/sea-lion-v5.md)**            | 397B-A17B  | 262K           | SFT¹ of Qwen3.5-397B-A17B Plus Qwen4Exp                |  Instruct, GGUF, NVFP4, FP8                          |
+|                                                                  | 27B        | 262K           | SFT¹ of Qwen3.8-27B                                    |  Instruct                            |
+|                                                                  | 9B         | 262K           | SFT¹ of Qwen3.5-9B                                    |  Instruct                            |
+|                                                                  | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 |Instruct              |
+|                                                                  | E4B        | 64K            | SFT¹ of Nemotron-3.5-Bolt-E4B-BF16                     | Instruct              |
 | **[SEA-LION v4.8](/models/sea-lion-v4.8/sea-lion-v4.8.md)**      | 30B-A3B    | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16  | Base, Instruct, GGUF, NVFP4, FP8   |
 |                                                                  | 120B-A12B  | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8 |
 | **[SEA-LION v4.5](/models/sea-lion-v4.5/sea-lion-v4.5.md)**      | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 | Instruct, GGUF                           |
@@ -38,6 +41,8 @@ This site provides information and resources on SEA-LION, including how to acces
 | **[SEA-GUARD (renamed as SEA-LION-GUARD v1)](/models/sea-guard/sea-guard.md)**                  | 4B, 8B     | 128K           | SFT¹ of Qwen-SEA-LION-v4-4B-VL, Qwen-SEA-LION-v4-8B-VL | VLM                                      |
 |                                                                  | 8B         | 128K           | SFT¹ of Llama-SEA-LION-v3-8B-IT                        | Instruct                                 |
 |                                                                  | 12B        | 128K           | SFT¹ of Gemma 3 12B IT                                 | VLM                                      |
+| **[SEA-LION-Guard v2](models/sea-guard-v2/sea-lion-guard-v2.md)**| 31B        | 256K           | SFT¹ of gemma-4-31B-it  (Latest)                       | Instruct              |
+|                                                                  | E4B, E2B   | 128K           | SFT¹ of gemma-4-E4B-it, gemma-4-E2B-it  (Latest)       | Instruct              |
 
 ¹ Supervised Fine-Tuning
 
@@ -55,6 +60,7 @@ SEA-LION has seen:
 - In v4, our first multimodal SEA-LION models, extending capabilities beyond text to handle image + text inputs with massive 256K native context windows and specialized regional OCR, while continuing our focus on Southeast Asian languages, culture, and use cases.
 - In v4.5, rapid specialization of state-of-the-art open foundation models via knowledge distillation and model merging, delivering high-capacity reasoning and agentic tool-use capabilities alongside speed-optimized booster configurations for low-latency production deployment.
 - In v4.8, extended language coverage across 13 regional languages—including Burmese, Malay, and key sub-national languages—paired with advanced post-training for enhanced multi-turn chat and instruction-following, rigorously benchmarked under the upgraded SEA-HELM suite with deeper cultural competence (KALAHI) and country-entity knowledge evaluation.
+- In v5, scaled regional multimodal and agentic performance across edge-to-enterprise deployments—spanning Gemma-4 E2B, Nemotron 3.5 Bolt E4B, and a flagship 397B Mixture-of-Experts (MoE) model adapted to the Qwen4Exp architecture with QSA Hybrid Attention and a CPU-offloaded 328 GB N-gram Embedding layer—leveraging tokenizers with up to 8,900 native non-Latin characters and On-Policy Distillation (OPD) alignment to achieve frontier SEA-HELM scores with lossless FP8 and NVFP4 quantization.
 
 SEA-LION-Embedding: The Vector Foundation
 

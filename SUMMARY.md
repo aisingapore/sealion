@@ -10,8 +10,9 @@
 
 ## Models
 
-- [SEA-LION-GUARD v2 (Latest)](models/sea-guard-v2/sea-lion-guard-v2.md)  
-  - [Gemma-SEA-LION-Guard-v2](models/sea-guard-v2/gemma-sea-lion-guard-v2.md)
+- [SEA-LION v5 (latest)](models/sea-lion-v5/sea-lion-v5.md)
+  - [Gemma/Nemotron-SEA-LION-v5](models/sea-lion-v5/gemma-sea-lion-v5.md)
+  - [Qwen-SEA-LION-v5](models/sea-lion-v5/qwen-sea-lion-v5.md)
 - [SEA-LION v4.8](models/sea-lion-v4.8/sea-lion-v4.8.md)
   - [Nemotron-SEA-LION-v4.8](models/sea-lion-v4.8/nemotron-sea-lion-v4.8.md)
 - [SEA-LION v4.5](models/sea-lion-v4.5/sea-lion-v4.5.md)
@@ -40,6 +41,8 @@
 - [SEA-GUARD](models/sea-guard/sea-guard.md)
   - [Gemma-SEA-GUARD-12B](models/sea-guard/gemma-sea-guard.md)
   - [Qwen and Llama SEA-GUARD](models/sea-guard/qwenNllama-sea-guard.md)
+- [SEA-LION-GUARD v2)](models/sea-guard-v2/sea-lion-guard-v2.md)  
+  - [Gemma-SEA-LION-Guard-v2](models/sea-guard-v2/gemma-sea-lion-guard-v2.md)
 
 - [Getting the models](models/download_models.md)
 
