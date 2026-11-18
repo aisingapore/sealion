@@ -2,18 +2,36 @@
 
 SEA-LION models are available for download via the following channels:
 
-## SEA-LION-GUARD v2  (Latest)
+## SEA-LION v5 (Latest)
 
-[Full HuggingFace SEA-LION-GUARD v2 Collection](https://huggingface.co/collections/aisingapore/sea-lion-guard-v2)
+[Full HuggingFace SEA-LION v5 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v5)
 
-**Gemma-SEA-LION-Guard-v2**
+
+**Qwen-SEA-LION-v5-397B-A17B-Plus**
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
-|Gemma-SEA-LION-Guard-v2-31B |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-Guard-v2-31B)|
-|Gemma-SEA-LION-Guard-v2-E4B |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-Guard-v2-E4B)|
-|Gemma-SEA-LION-Guard-v2-E2B |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-Guard-v2-E2B)|
+|Qwen-SEA-LION-v5-397B-A17B-Plus |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus)|
+|Qwen-SEA-LION-v5-397B-A17B-Plus |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus) |
+|Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF), [Ollama](https://ollama.com/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus) |
+|Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4) |
+|Qwen-SEA-LION-v5-397B-A17B-Plus-FP8 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-FP8) |
 
 <br>
+
+**Gemma-SEA-LION-v5-E2B**
+|Model |Download |
+|-------------------------------|--------------------------------------------------------------|
+|Gemma-SEA-LION-v4.5-E2B |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B), [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4.5-E2B)|
+
+<br>  
+
+**Nemotron-SEA-LION-v5-E4B**
+|Model |Download |
+|-------------------------------|--------------------------------------------------------------|
+|Nemotron-SEA-LION-v5-E4B |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B), [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v5-E4B)|
+
+<br>
+
 
 ## SEA-LION v4.8
 
@@ -201,3 +219,16 @@ SEA-LION models are available for download via the following channels:
 | Qwen-SEA-Guard-8B   | [HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-Guard-8B-040226)   |
 | Llama-SEA-Guard-8B  | [HuggingFace](https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-040226)  |
 | Gemma-SEA-Guard-12B | [HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-040226) |
+
+## SEA-LION-GUARD v2
+
+[Full HuggingFace SEA-LION-GUARD v2 Collection](https://huggingface.co/collections/aisingapore/sea-lion-guard-v2)
+
+**Gemma-SEA-LION-Guard-v2**
+|Model |Download |
+|-------------------------------|--------------------------------------------------------------|
+|Gemma-SEA-LION-Guard-v2-31B |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-Guard-v2-31B)|
+|Gemma-SEA-LION-Guard-v2-E4B |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-Guard-v2-E4B)|
+|Gemma-SEA-LION-Guard-v2-E2B |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-Guard-v2-E2B)|
+
+<br>

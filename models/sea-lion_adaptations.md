@@ -30,6 +30,15 @@ The SEA-LION models have served as a foundation for developing localized AI solu
 <p></p><p>→ <a href="https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT">Qwen-SEA-LION-v4.5-27B-IT</a>: High-capacity flagship instruction-tuned and multimodal model built on Qwen 3.6. Features a native 262K context window, robust multi-turn reasoning, and deep regional fluency across 7 key SEA languages. High-throughput with speculative decoding booster model utilizing block diffusion algorithms to significantly accelerate production inference latency without sacrificing output quality.</p>
 <p></p><p>→ <a href="https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8">Nemotron-SEA-LION-v4.8</a>: Extended regional foundation model featuring broad coverage across 13 regional languages—including Burmese, Malay, and key sub-national languages like Balinese, Javanese, and Sundanese. Advanced continue pre-training on parallel corpus to post-training methodologies—such as agentic on-policy distillation delivers state-of-the-art regional fluency and high computational efficiency, cultural competence assessments and country-entity knowledge verification.</p>
 </td>
+</tr>  
+<tr>
+<td valign="top">SEA-LION v5</td>
+<td><p>→ <a href="https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-IT">Qwen-SEA-LION-v5-397B-A17B-IT (Multimodal MoE)</a>: The flagship Mixture-of-Experts (MoE) multimodal model adapted from Qwen3.5-397B-A17B to the Qwen4Exp architecture. Leveraging a tokenizer with up to 8,900 native non-Latin characters, it combines QSA Hybrid Attention, Gated Residuals, and a CPU-offloaded 328 GB N-gram Embedding layer at layer 2—aligned via On-Policy Distillation (OPD) for frontier regional reasoning and long-context efficiency.</p>
+<p></p><p>→ <a href="https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B-IT">Qwen-SEA-LION-v5-27B-IT</a>: High-capacity mid-tier model built on the Qwen architecture and aligned via On-Policy Distillation (OPD), delivering strong multimodal and long-context regional reasoning with lossless FP8 and NVFP4 quantized deployment options.</p>
+<p></p><p>→ <a href="https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-9B-IT">Qwen-SEA-LION-v5-9B-IT</a>: Compact dense Qwen-based model designed for efficient local enterprise inference, retaining strong Southeast Asian linguistic fluency and instruction-following capabilities with minimal memory overhead.</p>
+<p></p><p>→ <a href="https://huggingface.co/aisingapore/Gemma-SEA-LION-v5-E2B-IT">Gemma-SEA-LION-v5-E2B-IT</a>: Ultra-efficient edge model built on Gemma-4, utilizing native tokenizer support for up to 8,900 non-Latin characters to deliver low-latency multimodal processing, precise function-calling, and autonomous agentic tool use on resource-constrained devices.</p>
+<p></p><p>→ <a href="https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-Bolt-E4B-IT">Nemotron-SEA-LION-v5-Bolt-E4B-IT</a>: High-throughput local deployment model built on Nemotron 3.5 Bolt, engineered for rapid inference speed, balanced regional reasoning, and structured enterprise workflows.</p>
+</td>
 </tr>
 <tr>
   <td valign="top">SEA-Guard (renamed as SEA-LION-GUARD) </td>
