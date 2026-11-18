@@ -12,7 +12,7 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection                                                 | Size       | Context Length | Training Strategy                                      | Available in                             |
 | ---------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------ | ---------------------------------------- |
-| **[SEA-LION v5](/models/sea-lion-v5/sea-lion-v5.md)**            | 397B-A17B  | 262K           | SFT¹ of Qwen3.5-397B-A17B Plus Qwen4Exp                |  Instruct, GGUF, NVFP4, FP8                          |
+| **[SEA-LION v5](/models/sea-lion-v5/sea-lion-v5.md)**  (latest)          | 397B-A17B  | 262K           | SFT¹ of Qwen3.5-397B-A17B Plus Qwen4Exp                |  Instruct, GGUF, NVFP4, FP8                          |
 |                                                                  | 27B        | 262K           | SFT¹ of Qwen3.8-27B                                    |  Instruct                            |
 |                                                                  | 9B         | 262K           | SFT¹ of Qwen3.5-9B                                    |  Instruct                            |
 |                                                                  | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 |Instruct              |
