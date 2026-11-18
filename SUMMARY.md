@@ -38,7 +38,7 @@
 - [SEA-LION Embedding](models/sea-embedding/sea-embedding.md)
   - [SEA-LION-ModernBERT and Embedding](models/sea-embedding/sea-modernbert.md)
   - [SEA-LION-Embedding-E5](models/sea-embedding/sea-e5.md)
-- [SEA-GUARD](models/sea-guard/sea-guard.md)
+- [SEA-LION-GUARD](models/sea-guard/sea-guard.md)
   - [Gemma-SEA-GUARD-12B](models/sea-guard/gemma-sea-guard.md)
   - [Qwen and Llama SEA-GUARD](models/sea-guard/qwenNllama-sea-guard.md)
 - [SEA-LION-GUARD v2](models/sea-guard-v2/sea-lion-guard-v2.md)  
