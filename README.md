@@ -115,7 +115,7 @@ If you use SEA-LION in your work, please cite it as:
 @misc{sea_lion_2024,
   title={SEA-LION (Southeast Asian Languages In One Network): A Family of Large Language Models for Southeast Asia},
   author={AI Singapore},
-  year={2024},
+  year={2024},  
   howpublished={\url{https://github.com/aisingapore/sealion}}
 }
 ```

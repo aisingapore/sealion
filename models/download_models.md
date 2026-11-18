@@ -23,7 +23,7 @@ SEA-LION models are available for download via the following channels:
 |-------------------------------|--------------------------------------------------------------|
 |Gemma-SEA-LION-v4.5-E2B |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B), [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4.5-E2B)|
 
-<br>
+<br>  
 
 **Nemotron-SEA-LION-v5-E4B**
 |Model |Download |

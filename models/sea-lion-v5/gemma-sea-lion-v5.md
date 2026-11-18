@@ -13,7 +13,7 @@ From [google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it), Gemm
 - Native function calling for agentic workflows, plus code generation, completion and correction
 - Native support for the system role, for more structured and controllable conversations
 - Out-of-the-box support for 35+ languages, with pre-training on 140+ languages
-- Efficient local execution on laptops and mobile devices
+- Efficient local execution on laptops and mobile devices  
 
 **Nemotron-SEA-LION-v5-E4B** Nemotron-SEA-LION-v5-E4B is based on [nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16), NVIDIA's post-trained version of Google DeepMind's [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it). Nemotron 3.5 Bolt E4B is a small language model with 8B parameters (4B effective). It takes text input, generates text output, and has a 64K-token context window.
 
