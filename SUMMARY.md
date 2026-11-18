@@ -41,7 +41,7 @@
 - [SEA-GUARD](models/sea-guard/sea-guard.md)
   - [Gemma-SEA-GUARD-12B](models/sea-guard/gemma-sea-guard.md)
   - [Qwen and Llama SEA-GUARD](models/sea-guard/qwenNllama-sea-guard.md)
-- [SEA-LION-GUARD v2)](models/sea-guard-v2/sea-lion-guard-v2.md)  
+- [SEA-LION-GUARD v2](models/sea-guard-v2/sea-lion-guard-v2.md)  
   - [Gemma-SEA-LION-Guard-v2](models/sea-guard-v2/gemma-sea-lion-guard-v2.md)
 
 - [Getting the models](models/download_models.md)

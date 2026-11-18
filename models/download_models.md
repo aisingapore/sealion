@@ -7,7 +7,7 @@ SEA-LION models are available for download via the following channels:
 [Full HuggingFace SEA-LION v5 Collection](https://huggingface.co/collections/aisingapore/sea-lion-v5)
 
 
-**Qwen-SEA-LION-v5-397B-A17B-Plus**
+**Qwen-SEA-LION-v5-397B-A17B-Plus** (latest)
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
 |Qwen-SEA-LION-v5-397B-A17B-Plus |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus)|
