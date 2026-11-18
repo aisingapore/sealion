@@ -2,16 +2,10 @@ $schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
   title: SEA-LION
   structure:
-    - type: section
-      key: section-docs
-      title: Documentation
-      path: docs
+    - type: space
+      key: space-sealion
+      title: SEA-LION
+      path: sealion
       default: true
-      children:
-        - type: space
-          key: space-sealion
-          title: SEA-LION
-          path: sealion
-          default: true
-          content:
-            directory: ./
+      content:
+        directory: ./
