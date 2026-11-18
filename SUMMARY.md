@@ -54,6 +54,7 @@
 
 - [Model Deployment & Inferencing](guides/inferencing/README.md)
   - [SEA-LION API](guides/inferencing/api.md)
+  - [Adaption Inference](guides/inferencing/adaption.md)
   - [Google Vertex AI](guides/inferencing/vertex_ai.md)
   - [Amazon Bedrock Custom Model Import](guides/inferencing/amazon_bedrock.md)
   - [Bedrock Access Gateway](guides/inferencing/bedrock_access_gateway.md)
