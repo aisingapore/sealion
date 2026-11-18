@@ -11,5 +11,6 @@ This section covers the various environments where SEA-LION models can be hosted
     - [Deploying Gemma-SEA-LION models using AWS Sagemaker AI](./Gemma-SEA-LION-v4-27B-Instruct.ipynb)
     - [Deploying SEA-LION using vLLM on Linux server](./vllm_linux.md)
 4. Leveraging our Partner API Platforms
+    - [Adaption Inference](./adaption.md)
     - [Cloudflare Workers AI](./cloudflare.md)
 
