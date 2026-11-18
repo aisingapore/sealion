@@ -12,7 +12,7 @@ SEA-LION models are available for download via the following channels:
 |-------------------------------|--------------------------------------------------------------|
 |Qwen-SEA-LION-v5-397B-A17B-Plus |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus)|
 |Qwen-SEA-LION-v5-397B-A17B-Plus |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus) |
-|Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF), [Ollama](https://ollama.com/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus) |
+|Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF) |
 |Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4) |
 |Qwen-SEA-LION-v5-397B-A17B-Plus-FP8 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-FP8) |
 
