@@ -17,8 +17,8 @@ This site provides information and resources on SEA-LION, including how to acces
 |                                                                  | 9B         | 262K           | SFT¹ of Qwen3.5-9B                                    |  Instruct                            |
 |                                                                  | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 |Instruct              |
 |                                                                  | E4B        | 64K            | SFT¹ of Nemotron-3.5-Bolt-E4B-BF16                     | Instruct              |
-| **[SEA-LION v4.8](/models/sea-lion-v4.8/sea-lion-v4.8.md)**      | 30B-A3B    | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16  | Base, Instruct, GGUF, NVFP4, FP8   |
-|                                                                  | 120B-A12B  | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8 |
+| **[SEA-LION v4.8](/models/sea-lion-v4.8/sea-lion-v4.8.md)**      | 30B-A3B    | 262K           | CPT², SFT¹ of NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16  | Base, Instruct, GGUF, NVFP4, FP8   |
+|                                                                  | 120B-A12B  | 262K           | CPT², SFT¹ of NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8 |
 | **[SEA-LION v4.5](/models/sea-lion-v4.5/sea-lion-v4.5.md)**      | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 | Instruct, GGUF                           |
 |                                                                  | 27B        | 262K           | SFT¹ of Qwen3.6-27B                                    | Instruct, SpecDecoder, GGUF              |
 | **[SEA-LION v4](/models/sea-lion-v4/sea-lion-v4.md)**            | 4B         | 128K           | SFT¹ of Gemma 3 4B IT                                  | VLM                                      |
@@ -164,7 +164,7 @@ If you are using SEA-LION embedding for your work, please cite it as:
 
 AI Singapore is a national programme supported by the National Research Foundation, Singapore and hosted by the National University of Singapore. Any opinion, finding, conclusion or recommendation expressed in this material are those of the author(s) and do not reflect the views of National Research Foundation, Singapore, or the National University of Singapore.
 
-We also grateful for the support of the Infocomm Media Development Authority (IMDA) of Singapore.
+We are also grateful for the support of the Infocomm Media Development Authority (IMDA) of Singapore.
 
 SEA-LION would not be possible without a growing list of Singapore, regional, and international collaborators. Please see our website for more details.
 
