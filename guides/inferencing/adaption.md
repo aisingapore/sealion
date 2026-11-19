@@ -7,7 +7,7 @@ Please follow these steps to sign up with Adaption, create an API key, and call 
 | **Model ID**            | **Base model**              |
 |-------------------------|-----------------------------|
 | nemotron-SEA-LION-v4.8-120b-a12b | [Nemotron SEA-LION v4.8 120B](/models/sea-lion-v4.8/nemotron-sea-lion-v4.8.md) |
-| qwen397b-flashnext      | Qwen 397B FlashNext         |
+| qwen-SEA-LION-v5-397b-a17b-plus      | [Qwen SEA-LION v5 397B A17B Plus](/models/sea-lion-v5/qwen-sea-lion-v5.md)         |
 
 
 ## 1. Sign up
