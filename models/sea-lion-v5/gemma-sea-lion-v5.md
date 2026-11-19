@@ -2,7 +2,9 @@
 
 *Last update: 2026-11-18*
 
-**Gemma-SEA-LION-v5-E2B** Gemma-SEA-LION-v5-E2B is based on [google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it), the instruction-tuned version of Google DeepMind's [Gemma 4 E2B](https://huggingface.co/google/gemma-4-E2B). Gemma 4 E2B is a multimodal model with 2.3B effective parameters (5.1B with embeddings). It takes text, image and audio input, generates text output, and has a 128K-token context window.
+### Gemma-SEA-LION-v5-E2B
+
+Gemma-SEA-LION-v5-E2B is based on [google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it), the instruction-tuned version of Google DeepMind's [Gemma 4 E2B](https://huggingface.co/google/gemma-4-E2B). Gemma 4 E2B is a multimodal model with 2.3B effective parameters (5.1B with embeddings). It takes text, image and audio input, generates text output, and has a 128K-token context window.
 
 From [google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it), Gemma-SEA-LION-v5-E2B inherits:
 
@@ -15,7 +17,9 @@ From [google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it), Gemm
 - Out-of-the-box support for 35+ languages, with pre-training on 140+ languages
 - Efficient local execution on laptops and mobile devices  
 
-**Nemotron-SEA-LION-v5-E4B** Nemotron-SEA-LION-v5-E4B is based on [nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16), NVIDIA's post-trained version of Google DeepMind's [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it). Nemotron 3.5 Bolt E4B is a small language model with 8B parameters (4B effective). It takes text input, generates text output, and has a 64K-token context window.
+### Nemotron-SEA-LION-v5-E4B
+
+Nemotron-SEA-LION-v5-E4B is based on [nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16), NVIDIA's post-trained version of Google DeepMind's [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it). Nemotron 3.5 Bolt E4B is a small language model with 8B parameters (4B effective). It takes text input, generates text output, and has a 64K-token context window.
 
 From [nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16), Nemotron-SEA-LION-v5-E4B inherits:
 

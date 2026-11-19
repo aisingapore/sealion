@@ -6,7 +6,7 @@ Please follow these steps to sign up with Adaption, create an API key, and call 
 
 | **Model ID**            | **Base model**              |
 |-------------------------|-----------------------------|
-| nemotron-sealion48-120b | Nemotron SEA-LION v4.8 120B |
+| nemotron-SEA-LION-v4.8-120b-a12b | [Nemotron SEA-LION v4.8 120B](/models/sea-lion-v4.8/nemotron-sea-lion-v4.8.md) |
 | qwen397b-flashnext      | Qwen 397B FlashNext         |
 
 
@@ -40,13 +40,13 @@ Call `responses.create` with one of the model IDs above:
 ```python
 from adaption import Adaption
 
-client = Adaption()  # reads ADAPTION_API_KEY
+ client = Adaption()  # reads ADAPTION_API_KEY
 
-response = client.responses.create(
-    model="nemotron-sealion48-120b",
-    instructions="You are a helpful assistant.",
-    input="Where is Lau Pa Sat? Tell me in a single sentence.",
-)
+ response = client.responses.create(
+     model="nemotron-SEA-LION-v4.8-120b-a12b",
+     instructions="You are a helpful assistant.",
+     input="Where is Lau Pa Sat? Tell me in a single sentence.",
+ )
 
-print(response.output_text)
+ print(response.output_text)
 ```
