@@ -12,13 +12,13 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection                                                 | Size       | Context Length | Training Strategy                                      | Available in                             |
 | ---------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------ | ---------------------------------------- |
-| **[SEA-LION v5](/models/sea-lion-v5/sea-lion-v5.md)**  (latest)  | 397B-A17B  | 262K           | SFT¹ of Qwen3.5-397B-A17B Plus Qwen4Exp                |  Instruct, GGUF, NVFP4, FP8                          |
-|                                                                  | 27B        | 262K           | SFT¹ of Qwen3.8-27B                                    |  Instruct                            |
-|                                                                  | 9B         | 262K           | SFT¹ of Qwen3.5-9B                                    |  Instruct                            |
-|                                                                  | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 |Instruct              |
-|                                                                  | E4B        | 64K            | SFT¹ of Nemotron-3.5-Bolt-E4B-BF16                     | Instruct              |
-| **[SEA-LION v4.8](/models/sea-lion-v4.8/sea-lion-v4.8.md)**      | 30B-A3B    | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16  | Base, Instruct, GGUF, NVFP4, FP8   |
-|                                                                  | 120B-A12B  | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16 (Latest)| Base, Instruct, GGUF, NVFP4, FP8 |
+| **[SEA-LION v5](/models/sea-lion-v5/sea-lion-v5.md)**  (latest)  | 397B-A17B  | 262K           | SFT¹ of Qwen3.5-397B-A17B Plus Qwen4Exp                |  Instruct, GGUF, NVFP4, FP8              |
+|                                                                  | 27B        | 262K           | SFT¹ of Qwen3.8-27B                                    |  Instruct, GGUF, NVFP4, FP8              |
+|                                                                  | 9B         | 262K           | SFT¹ of Qwen3.5-9B                                     |  Instruct, GGUF, NVFP4, FP8              |
+|                                                                  | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 |Instruct, GGUF, NVFP4, FP8                |
+|                                                                  | E4B        | 64K            | SFT¹ of Nemotron-3.5-Bolt-E4B-BF16                     | Instruct, GGUF, NVFP4, FP8               |
+| **[SEA-LION v4.8](/models/sea-lion-v4.8/sea-lion-v4.8.md)**      | 30B-A3B    | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16  | Base, Instruct, GGUF, NVFP4, FP8         |
+|                                                                  | 120B-A12B  | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16| Base, Instruct, GGUF, NVFP4, FP8        |
 | **[SEA-LION v4.5](/models/sea-lion-v4.5/sea-lion-v4.5.md)**      | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 | Instruct, GGUF                           |
 |                                                                  | 27B        | 262K           | SFT¹ of Qwen3.6-27B                                    | Instruct, SpecDecoder, GGUF              |
 | **[SEA-LION v4](/models/sea-lion-v4/sea-lion-v4.md)**            | 4B         | 128K           | SFT¹ of Gemma 3 4B IT                                  | VLM                                      |
@@ -38,11 +38,11 @@ This site provides information and resources on SEA-LION, including how to acces
 | **[SEA-LION Embedding](/models/sea-embedding/sea-embedding.md)** | 300M, 600M | 8K             | ModernBERT from scratch                                | Base-Embedding, Checkpoints              |
 |                                                                  | 300M, 600M | 8K             | SFT¹ of SEA-LION-ModernBERT-Embedding                  | Tuned-Embedding                          |
 |                                                                  | 600M       | 512            | SFT¹ of E5-Large                                       | Tuned-Embedding                          |
-| **[SEA-GUARD (renamed as SEA-LION-GUARD v1)](/models/sea-guard/sea-guard.md)**                  | 4B, 8B     | 128K           | SFT¹ of Qwen-SEA-LION-v4-4B-VL, Qwen-SEA-LION-v4-8B-VL | VLM                                      |
+| **[SEA-GUARD (renamed as SEA-LION-GUARD v1)](/models/sea-guard/sea-guard.md)**                  | 4B, 8B     | 128K           | SFT¹ of Qwen-SEA-LION-v4-4B-VL, Qwen-SEA-LION-v4-8B-VL | VLM       |
 |                                                                  | 8B         | 128K           | SFT¹ of Llama-SEA-LION-v3-8B-IT                        | Instruct                                 |
 |                                                                  | 12B        | 128K           | SFT¹ of Gemma 3 12B IT                                 | VLM                                      |
-| **[SEA-LION-Guard v2](models/sea-guard-v2/sea-lion-guard-v2.md)**| 31B        | 256K           | SFT¹ of gemma-4-31B-it  (Latest)                       | Instruct              |
-|                                                                  | E4B, E2B   | 128K           | SFT¹ of gemma-4-E4B-it, gemma-4-E2B-it  (Latest)       | Instruct              |
+| **[SEA-LION-Guard v2](models/sea-guard-v2/sea-lion-guard-v2.md)**| 31B        | 256K           | SFT¹ of gemma-4-31B-it  (Latest)                       | Instruct                                 |
+|                                                                  | E4B, E2B   | 128K           | SFT¹ of gemma-4-E4B-it, gemma-4-E2B-it  (Latest)       | Instruct                                 |
 
 ¹ Supervised Fine-Tuning
 
