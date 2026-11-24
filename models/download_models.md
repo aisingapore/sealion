@@ -26,7 +26,7 @@ SEA-LION models are available for download via the following channels:
 |Qwen-SEA-LION-v5-27B-NVFP4 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B-NVFP4) |
 |Qwen-SEA-LION-v5-27B-FP8 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B-FP8) |
 
-<br>
+<br>  
 
 **Qwen-SEA-LION-v5-9B** (latest)
 |Model |Download |
@@ -37,8 +37,7 @@ v5
 |Qwen-SEA-LION-v5-9B-NVFP4 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-9B-NVFP4) |
 |Qwen-SEA-LION-v5-9B-FP8 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-9B-FP8) |
 
-<br>
-
+<br>   
 
 **Gemma-SEA-LION-v5-E2B** (latest)
 |Model |Download |
