@@ -103,21 +103,6 @@ SEA-LION models are available for download via the following channels:
 
 <br>
 
-## SEA-LION Embedding
-
-[Full HuggingFace SEA-LION-Embedding Collection](https://huggingface.co/collections/aisingapore/sea-lion-modernbert-and-embedding)
-
-| Model                                | Download                                                                               |
-| ------------------------------------ | -------------------------------------------------------------------------------------- |
-| SEA-LION-ModernBERT-300M-checkpoints | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M-checkpoints) |
-| SEA-LION-ModernBERT-600M-checkpoints | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M-checkpoints) |
-| SEA-LION-ModernBERT-300M             | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M)             |
-| SEA-LION-ModernBERT-600M             | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M)             |
-| SEA-LION-ModernBERT-Embedding-300M   | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-300M)        |
-| SEA-LION-ModernBERT-Embedding-600M   | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M)        |
-| SEA-LION-E5-Embedding-600M           | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-E5-Embedding-600M)           |
-
-<br>
 
 ## SEA-LION v4
 
@@ -237,6 +222,23 @@ SEA-LION models are available for download via the following channels:
 | SEA-LION-v1-7B-IT-GGUF | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-v1-7B-IT-GGUF) |
 
 <br>
+
+## SEA-LION Embedding
+
+[Full HuggingFace SEA-LION-Embedding Collection](https://huggingface.co/collections/aisingapore/sea-lion-modernbert-and-embedding)
+
+| Model                                | Download                                                                               |
+| ------------------------------------ | -------------------------------------------------------------------------------------- |
+| SEA-LION-ModernBERT-300M-checkpoints | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M-checkpoints) |
+| SEA-LION-ModernBERT-600M-checkpoints | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M-checkpoints) |
+| SEA-LION-ModernBERT-300M             | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M)             |
+| SEA-LION-ModernBERT-600M             | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M)             |
+| SEA-LION-ModernBERT-Embedding-300M   | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-300M)        |
+| SEA-LION-ModernBERT-Embedding-600M   | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M)        |
+| SEA-LION-E5-Embedding-600M           | [HuggingFace](https://huggingface.co/aisingapore/SEA-LION-E5-Embedding-600M)           |
+
+<br>
+
 
 ## SEA-GUARD (renamed as SEA-LION-GUARD v1)
 
