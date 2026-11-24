@@ -54,7 +54,7 @@ SEA-LION models are available for download via the following channels:
 |Nemotron-SEA-LION-v5-E4B-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B-GGUF)<!-- , [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v5-E4B-GGUF)-->|
 |Nemotron-SEA-LION-v5-E4B-NVFP4 |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B-NVFP4)<!-- , [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v5-E4B-NVFP4)-->|
 |Nemotron-SEA-LION-v5-E4B-FP8 |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B-FP8)<!-- , [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v5-E4B-FP8)-->|
-<br>
+<br>  
 
 
 ## SEA-LION v4.8
