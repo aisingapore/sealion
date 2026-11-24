@@ -12,11 +12,11 @@ This site provides information and resources on SEA-LION, including how to acces
 
 | Model Collection                                                 | Size       | Context Length | Training Strategy                                      | Available in                             |
 | ---------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------ | ---------------------------------------- |
-| **[SEA-LION v5](/models/sea-lion-v5/sea-lion-v5.md)**  (latest)  | 397B-A17B  | 262K           | SFT¹ of Qwen3.5-397B-A17B Plus Qwen4Exp                |  Instruct, GGUF, NVFP4, FP8              |
-|                                                                  | 27B        | 262K           | SFT¹ of Qwen3.8-27B                                    |  Instruct, GGUF, NVFP4, FP8              |
-|                                                                  | 9B         | 262K           | SFT¹ of Qwen3.5-9B                                     |  Instruct, GGUF, NVFP4, FP8              |
-|                                                                  | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 |Instruct, GGUF, NVFP4, FP8                |
-|                                                                  | E4B        | 64K            | SFT¹ of Nemotron-3.5-Bolt-E4B-BF16                     | Instruct, GGUF, NVFP4, FP8               |
+| **[SEA-LION v5](/models/sea-lion-v5/sea-lion-v5.md)**  (latest)  | 397B-A17B  | 262K           | SFT¹ of Qwen3.5-397B-A17B Plus Qwen4Exp                |  Instruct, SpecDecoder, GGUF, NVFP4, FP8              |
+|                                                                  | 27B        | 262K           | SFT¹ of Qwen3.8-27B                                    |  Instruct, SpecDecoder, GGUF, NVFP4, FP8              |
+|                                                                  | 9B         | 262K           | SFT¹ of Qwen3.5-9B                                     |  Instruct, SpecDecoder, GGUF, NVFP4, FP8              |
+|                                                                  | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 |Instruct, SpecDecoder, GGUF, NVFP4, FP8                |
+|                                                                  | E4B        | 64K            | SFT¹ of Nemotron-3.5-Bolt-E4B-BF16                     | Instruct, SpecDecoder, GGUF, NVFP4, FP8               |
 | **[SEA-LION v4.8](/models/sea-lion-v4.8/sea-lion-v4.8.md)**      | 30B-A3B    | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16  | Base, Instruct, GGUF, NVFP4, FP8         |
 |                                                                  | 120B-A12B  | 262K           | CPT²,SFT¹ of NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16| Base, Instruct, GGUF, NVFP4, FP8        |
 | **[SEA-LION v4.5](/models/sea-lion-v4.5/sea-lion-v4.5.md)**      | E2B        | 128K           | SFT¹ of gemma-4-E2B-it                                 | Instruct, GGUF                           |

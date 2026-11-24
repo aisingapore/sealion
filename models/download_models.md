@@ -11,6 +11,7 @@ SEA-LION models are available for download via the following channels:
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
 |Qwen-SEA-LION-v5-397B-A17B-Plus |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus)|
+|Qwen-SEA-LION-v5-397B-A17B-Plus-SpecDecoder |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-SpecDecoder) |
 |Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF) |
 |Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4) |
 |Qwen-SEA-LION-v5-397B-A17B-Plus-FP8 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-FP8) |
@@ -21,6 +22,7 @@ SEA-LION models are available for download via the following channels:
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
 |Qwen-SEA-LION-v5-27B |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B)|
+|Qwen-SEA-LION-v5-27B-SpecDecoder |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B-SpecDecoder) |
 |Qwen-SEA-LION-v5-27B-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B-GGUF) |
 |Qwen-SEA-LION-v5-27B-NVFP4 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B-NVFP4) |
 |Qwen-SEA-LION-v5-27B-FP8 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B-FP8) |
@@ -31,6 +33,7 @@ SEA-LION models are available for download via the following channels:
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
 |Qwen-SEA-LION-v5-9B |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-9B)|
+|Qwen-SEA-LION-v5-9B-SpecDecoder |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-9B-SpecDecoder) |
 |Qwen-SEA-LION-v5-9B-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-9B-GGUF) |
 |Qwen-SEA-LION-v5-9B-NVFP4 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-9B-NVFP4) |
 |Qwen-SEA-LION-v5-9B-FP8 |[HuggingFace](https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-9B-FP8) |
@@ -41,6 +44,7 @@ SEA-LION models are available for download via the following channels:
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
 |Gemma-SEA-LION-v4.5-E2B |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B)<!-- , [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4.5-E2B)-->|
+|Gemma-SEA-LION-v4.5-E2B-SpecDecoder |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B-SpecDecoder)<!-- , [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4.5-E2B-GGUF)-->|
 |Gemma-SEA-LION-v4.5-E2B-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B-GGUF)<!-- , [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4.5-E2B-GGUF)-->|
 |Gemma-SEA-LION-v4.5-E2B-NVFP4 |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B-NVFP4)<!-- , [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4.5-E2B-NVFP4)-->|
 |Gemma-SEA-LION-v4.5-E2B-FP8 |[HuggingFace](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B-FP8)<!-- , [Ollama](https://ollama.com/aisingapore/Gemma-SEA-LION-v4.5-E2B-FP8)-->|
@@ -51,6 +55,7 @@ SEA-LION models are available for download via the following channels:
 |Model |Download |
 |-------------------------------|--------------------------------------------------------------|
 |Nemotron-SEA-LION-v5-E4B |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B)<!-- , [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v5-E4B)-->|
+|Nemotron-SEA-LION-v5-E4B-SpecDecoder |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B-SpecDecoder)<!-- , [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v5-E4B-GGUF)-->|
 |Nemotron-SEA-LION-v5-E4B-GGUF |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B-GGUF)<!-- , [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v5-E4B-GGUF)-->|
 |Nemotron-SEA-LION-v5-E4B-NVFP4 |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B-NVFP4)<!-- , [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v5-E4B-NVFP4)-->|
 |Nemotron-SEA-LION-v5-E4B-FP8 |[HuggingFace](https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B-FP8)<!-- , [Ollama](https://ollama.com/aisingapore/Nemotron-SEA-LION-v5-E4B-FP8)-->|
