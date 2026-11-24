@@ -2,7 +2,8 @@
 
 *Last update: 2026-11-18*
 
-**Qwen-SEA-LION-v5-397B-A17B-Plus**
+### Qwen-SEA-LION-v5-397B-A17B-Plus
+
 Qwen-SEA-LION-v5-397B-A17B-Plus is based on [Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B), converted to Qwen4Exp, the architecture of [Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next). It is a multimodal Mixture-of-Experts model with about 398B effective parameters (569B with its n-gram tables), about 19B of them activated per token. It takes text, image and video input, generates text output, and has a 262,144-token context window.
 
 From [Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B), Qwen-SEA-LION-v5-397B-A17B-Plus inherits:
@@ -16,7 +17,8 @@ From [Qwen/Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B), Qw
 - Coverage of 201 languages and dialects, with nuanced cultural and regional understanding
 - A native context of 262,144 tokens, extensible to about 1M tokens with YaRN
 
-**Qwen-SEA-LION-v5-27B**
+### Qwen-SEA-LION-v5-27B
+
 Qwen-SEA-LION-v5-27B is based on [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B), the Qwen team's post-trained 27B model in the Qwen3.8 family. Qwen3.8-27B is a multimodal model with 27B parameters. It takes text, image and video input, generates text output, and has a 262,144-token context window.
 
 From [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B), Qwen-SEA-LION-v5-27B inherits:
@@ -29,7 +31,7 @@ From [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B), Qwen-SEA-LION-
 - Native multi-token prediction (MTP) for faster inference with speculative decoding
 - A native context of 262,144 tokens, extensible to about 1M tokens with YaRN
 
- **Qwen-SEA-LION-v5-9B**
+ ### Qwen-SEA-LION-v5-9B
  Qwen-SEA-LION-v5-9B is based on [Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B), the post-trained version of the Qwen team's [Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base). Qwen3.5-9B is a multimodal model with 9B parameters. It takes text, image and video input, generates text output, and has a 262,144-token context window.
 
 From [Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B), Qwen-SEA-LION-v5-9B inherits:
