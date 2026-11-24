@@ -11,4 +11,4 @@ Our work in SEA-LION, now part of Singapore’s National Multi-Modal Large Langu
 
 SEA-LION is trained on more content produced in Southeast Asian languages like Thai, Vietnamese and Bahasa Indonesia to ensure better representation in data and alignment compared to Western or Chinese models. SEA-LION models understand nuances in SEA languages and demonstrate greater awareness of cultural context specific to the region. 
 
-This lowers the bar for governments, industries, and academia that seek LLM solutions that fit local languages and reflect local cultural norms, since WIRED-centric models can pose langauge barriers and misalign with local sensibilities in the SEA region. 
+This lowers the bar for governments, industries, and academia that seek LLM solutions that fit local languages and reflect local cultural norms, since WIRED-centric models can pose language barriers and misalign with local sensibilities in the SEA region. 
